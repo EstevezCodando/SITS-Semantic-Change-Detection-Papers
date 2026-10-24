@@ -1,0 +1,348 @@
+{
+ "repos": {
+  "TorchGeo": {
+   "repo": "torchgeo/torchgeo",
+   "ok": true,
+   "stars": 4211,
+   "license": "MIT",
+   "pushed": "2026-10-23",
+   "archived": false,
+   "desc": "TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data"
+  },
+  "Open-CD": {
+   "repo": "likyoo/open-cd",
+   "ok": true,
+   "stars": 896,
+   "license": "Apache-2.0",
+   "pushed": "2026-06-15",
+   "archived": false,
+   "desc": "A Change Detection Repo Standing on the Shoulders of Giants"
+  },
+  "PyTorch Change Models / AnyChange": {
+   "repo": "Z-Zheng/pytorch-change-models",
+   "ok": true,
+   "stars": 269,
+   "license": "Apache-2.0",
+   "pushed": "2026-08-03",
+   "archived": false,
+   "desc": "torchange - A Unified Change Representation Learning Benchmark Library"
+  },
+  "SpaceNet 7 solutions": {
+   "repo": "SpaceNetChallenge/SpaceNet7_Multi-Temporal_Solutions",
+   "ok": true,
+   "stars": 66,
+   "license": "Apache-2.0",
+   "pushed": "2021-01-29",
+   "archived": false,
+   "desc": null
+  },
+  "TSSCD": {
+   "repo": "CUG-BEODL/TSSCD",
+   "ok": true,
+   "stars": 52,
+   "license": "MIT",
+   "pushed": "2024-12-17",
+   "archived": false,
+   "desc": "Temporal semantic segmentation change detection"
+  },
+  "U-TAE / PaPs": {
+   "repo": "VSainteuf/utae-paps",
+   "ok": true,
+   "stars": 226,
+   "license": "MIT",
+   "pushed": "2024-08-20",
+   "archived": false,
+   "desc": "PyTorch implementation of U-TAE and PaPs for satellite image time series panoptic segmentation."
+  },
+  "ChangeFormer": {
+   "repo": "wgcban/ChangeFormer",
+   "ok": true,
+   "stars": 627,
+   "license": "MIT",
+   "pushed": "2024-01-31",
+   "archived": false,
+   "desc": "[IGARSS'22]: A Transformer-Based Siamese Network for Change Detection"
+  },
+  "ChangeMamba (MambaCD)": {
+   "repo": "ChenHongruixuan/MambaCD",
+   "ok": true,
+   "stars": 656,
+   "license": "Apache-2.0",
+   "pushed": "2026-04-24",
+   "archived": false,
+   "desc": "[IEEE TGRS 2024] ChangeMamba: Remote Sensing Change Detection Based on Spatio-Temporal State Space Model"
+  },
+  "MapFormer": {
+   "repo": "mxbh/mapformer",
+   "ok": true,
+   "stars": 43,
+   "license": null,
+   "pushed": "2023-10-05",
+   "archived": false,
+   "desc": null
+  },
+  "CCDC": {
+   "repo": "GERSL/CCDC",
+   "ok": true,
+   "stars": 108,
+   "license": "MIT",
+   "pushed": "2024-10-30",
+   "archived": false,
+   "desc": " Algorithm developed for Continuous Change Detection and Classification (CCDC) of land cover using all available Landsat data."
+  },
+  "FC-Siam (Daudt)": {
+   "repo": "rcdaudt/fully_convolutional_change_detection",
+   "ok": true,
+   "stars": 234,
+   "license": null,
+   "pushed": "2020-06-23",
+   "archived": false,
+   "desc": null
+  },
+  "STANet": {
+   "repo": "justchenhao/STANet",
+   "ok": true,
+   "stars": 477,
+   "license": "BSD-2-Clause",
+   "pushed": "2023-03-11",
+   "archived": false,
+   "desc": "official implementation of the spatial-temporal attention neural network (STANet) for remote sensing image change detection"
+  },
+  "PerASCD": {
+   "repo": "SathShen/PerASCD",
+   "ok": true,
+   "stars": 7,
+   "license": "MIT",
+   "pushed": "2026-06-01",
+   "archived": false,
+   "desc": null
+  },
+  "Seg2Change": {
+   "repo": "yogurts-sy/Seg2Change",
+   "ok": true,
+   "stars": 38,
+   "license": null,
+   "pushed": "2026-09-09",
+   "archived": false,
+   "desc": "[ACM MM 2026] Seg2Change: Adapting Open-Vocabulary Semantic Segmentation Model for Remote Sensing Change Detection"
+  },
+  "SAMPolyBuild": {
+   "repo": "wchh-2000/SAMPolyBuild",
+   "ok": true,
+   "stars": 84,
+   "license": "Apache-2.0",
+   "pushed": "2025-07-20",
+   "archived": false,
+   "desc": "Adapting the Segment Anything Model for Polygonal Building Extraction"
+  },
+  "DINO Soars": {
+   "repo": "rfaulk/DINO_Soars",
+   "ok": true,
+   "stars": 28,
+   "license": null,
+   "pushed": "2026-08-06",
+   "archived": false,
+   "desc": null
+  },
+  "GeoAI (geoai-py + plugin QGIS)": {
+   "repo": "opengeos/geoai",
+   "ok": false,
+   "status": 403
+  },
+  "segment-geospatial (samgeo)": {
+   "repo": "opengeos/segment-geospatial",
+   "ok": false,
+   "status": 403
+  },
+  "geemap": {
+   "repo": "gee-community/geemap",
+   "ok": false,
+   "status": 403
+  },
+  "Deepness (plugin QGIS)": {
+   "repo": "PUTvision/qgis-plugin-deepness",
+   "ok": false,
+   "status": 403
+  },
+  "IAMAP (plugin QGIS)": {
+   "repo": "umr-amap/iamap",
+   "ok": false,
+   "status": 403
+  },
+  "Geo-SAM (plugin QGIS)": {
+   "repo": "coolzhao/Geo-SAM",
+   "ok": false,
+   "status": 403
+  },
+  "Semi-Automatic Classification Plugin": {
+   "repo": "semiautomaticgit/SemiAutomaticClassificationPlugin",
+   "ok": false,
+   "status": 403
+  },
+  "MOLUSCE (plugin QGIS)": {
+   "repo": "nextgis/qgis_molusce",
+   "ok": false,
+   "status": 403
+  },
+  "sits (R)": {
+   "repo": "e-sensing/sits",
+   "ok": false,
+   "status": 403
+  },
+  "gdalcubes": {
+   "repo": "appelmar/gdalcubes",
+   "ok": false,
+   "status": 403
+  },
+  "openEO Python client": {
+   "repo": "Open-EO/openeo-python-client",
+   "ok": false,
+   "status": 403
+  },
+  "XGBoost": {
+   "repo": "dmlc/xgboost",
+   "ok": false,
+   "status": 403
+  },
+  "LightGBM": {
+   "repo": "microsoft/LightGBM",
+   "ok": false,
+   "status": 403
+  },
+  "Ultralytics (YOLO)": {
+   "repo": "ultralytics/ultralytics",
+   "ok": false,
+   "status": 403
+  },
+  "Segment Anything (SAM)": {
+   "repo": "facebookresearch/segment-anything",
+   "ok": false,
+   "status": 403
+  },
+  "SAM 3": {
+   "repo": "facebookresearch/sam3",
+   "ok": false,
+   "status": 403
+  },
+  "Grounded-SAM": {
+   "repo": "IDEA-Research/Grounded-Segment-Anything",
+   "ok": false,
+   "status": 403
+  },
+  "DINOv3": {
+   "repo": "facebookresearch/dinov3",
+   "ok": false,
+   "status": 403
+  },
+  "Prithvi-EO-2.0": {
+   "repo": "NASA-IMPACT/Prithvi-EO-2.0",
+   "ok": false,
+   "status": 403
+  },
+  "Scale-MAE": {
+   "repo": "bair-climate-initiative/scale-mae",
+   "ok": false,
+   "status": 403
+  },
+  "DOFA": {
+   "repo": "zhu-xlab/DOFA",
+   "ok": false,
+   "status": 403
+  },
+  "STAC spec": {
+   "repo": "radiantearth/stac-spec",
+   "ok": false,
+   "status": 403
+  },
+  "RoadTracer": {
+   "repo": "mitroadmaps/roadtracer",
+   "ok": false,
+   "status": 403
+  }
+ },
+ "pypi": {
+  "torchgeo": {
+   "ok": true,
+   "version": "0.10.1",
+   "license": "",
+   "requires_python": ">=3.12"
+  },
+  "geoai-py": {
+   "ok": true,
+   "version": "0.43.1",
+   "license": "MIT License",
+   "requires_python": ">=3.12"
+  },
+  "segment-geospatial": {
+   "ok": true,
+   "version": "1.4.2",
+   "license": "MIT license",
+   "requires_python": ">=3.10"
+  },
+  "geemap": {
+   "ok": true,
+   "version": "0.38.9",
+   "license": "MIT",
+   "requires_python": ">=3.12"
+  },
+  "xgboost": {
+   "ok": true,
+   "version": "3.4.1",
+   "license": "",
+   "requires_python": ">=3.12"
+  },
+  "lightgbm": {
+   "ok": true,
+   "version": "4.7.0",
+   "license": "",
+   "requires_python": ">=3.10"
+  },
+  "ultralytics": {
+   "ok": true,
+   "version": "8.4.184",
+   "license": "AGPL-3.0",
+   "requires_python": ">=3.8"
+  },
+  "openeo": {
+   "ok": true,
+   "version": "0.53.0",
+   "license": "Apache-2.0",
+   "requires_python": ">=3.9"
+  },
+  "pystac": {
+   "ok": true,
+   "version": "1.15.2",
+   "license": "Apache-2.0",
+   "requires_python": ">=3.10"
+  },
+  "rasterio": {
+   "ok": true,
+   "version": "1.5.2",
+   "license": "",
+   "requires_python": ">=3.12"
+  },
+  "optuna": {
+   "ok": true,
+   "version": "5.0.0",
+   "license": "",
+   "requires_python": ">=3.9"
+  },
+  "shap": {
+   "ok": true,
+   "version": "0.54.1",
+   "license": "MIT License",
+   "requires_python": ">=3.12"
+  },
+  "open-cd": {
+   "ok": false,
+   "status": "HTTP Error 404: Not Found"
+  },
+  "leafmap": {
+   "ok": true,
+   "version": "0.63.1",
+   "license": "MIT license",
+   "requires_python": ">=3.9"
+  }
+ },
+ "data": "2026-10-24"
+}
