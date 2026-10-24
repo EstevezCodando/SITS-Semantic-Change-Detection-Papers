@@ -48,11 +48,11 @@ Resolução muito mais fina que Planet.
 | [[Zheng_2021_ChangeEverywhereSingle\|Zheng 2021]] | emprega conjunto de dados | 16 | 5, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | emprega conjunto de dados | 13 | 2, 5, 6, 9, 10 | extraído automaticamente (não lido) |
 | [[Zhang_2025_UniChangeUnifyingChange\|Zhang 2025]] | emprega conjunto de dados | 12 | 1, 6, 7, 8, 9 | extraído automaticamente (não lido) |
-| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | emprega conjunto de dados | 12 | 3, 18, 21, 22, 24 | extraído automaticamente (não lido) |
-| [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 11 | 1, 6, 7, 8, 9 | extraído automaticamente (não lido) |
+| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | emprega conjunto de dados | 12 | 3, 18, 21, 22, 24 | lido (profundo) |
+| [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 11 | 1, 6, 7, 8, 9 | lido (profundo) |
 | [[Bandara_2022_TransformerSiameseNetwork\|Bandara 2022]] | emprega conjunto de dados | 7 | 3, 4 | extraído automaticamente (não lido) |
 | [[Zheng_2024_SegmentAnyChange\|Zheng 2024]] | emprega conjunto de dados | 7 | 2, 6, 7, 8 | extraído automaticamente (não lido) |
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | emprega conjunto de dados | 6 | 9, 11, 17, 18 | extraído automaticamente (não lido) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | emprega conjunto de dados | 6 | 9, 11, 17, 18 | lido (profundo) |
 | [[Bou_2026_RemoteSensingChange\|Bou 2026]] | emprega conjunto de dados | 6 | 4, 5, 7 | extraído automaticamente (não lido) |
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | emprega conjunto de dados | 4 | 15, 17 | extraído automaticamente (não lido) |
 | [[Lei_2026_RemoteSensingImage\|Lei 2026]] | emprega conjunto de dados | 4 | 10, 32, 34 | extraído automaticamente (não lido) |

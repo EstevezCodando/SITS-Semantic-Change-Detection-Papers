@@ -42,8 +42,8 @@ A data exata da mudança fica incerta dentro do período.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | aplica etapa de preparo | 22 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 21 | 7, 8 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | aplica etapa de preparo | 22 | 1, 2, 3, 4, 5 | lido (profundo) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 21 | 7, 8 | lido (profundo) |
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | aplica etapa de preparo | 16 | 3, 5, 6, 7, 9 | extraído automaticamente (não lido) |
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | aplica etapa de preparo | 10 | 3, 4, 5, 6, 7 | lido (profundo) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | aplica etapa de preparo | 9 | 8, 13 | extraído automaticamente (não lido) |

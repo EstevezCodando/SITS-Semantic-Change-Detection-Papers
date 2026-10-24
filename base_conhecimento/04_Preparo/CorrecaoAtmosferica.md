@@ -42,9 +42,9 @@ Algumas séries operam sem correção atmosférica.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | aplica etapa de preparo | 9 | 2, 5, 13, 15, 22 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | aplica etapa de preparo | 9 | 2, 5, 13, 15, 22 | lido (parcial) |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | aplica etapa de preparo | 8 | 2, 3, 9 | extraído automaticamente (não lido) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | aplica etapa de preparo | 5 | 1, 4, 9, 13, 16 | extraído automaticamente (não lido) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | aplica etapa de preparo | 5 | 1, 4, 9, 13, 16 | lido (profundo) |
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | aplica etapa de preparo | 4 | 4, 8, 20 | extraído automaticamente (não lido) |
 
 ## Navegação

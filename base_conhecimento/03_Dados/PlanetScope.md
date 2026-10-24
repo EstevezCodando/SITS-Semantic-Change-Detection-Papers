@@ -44,8 +44,8 @@ Variabilidade radiométrica entre satélites; quantidade de bandas pode variar e
 |---|---|---:|---|---|
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza dado/sensor | 34 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | utiliza dado/sensor | 20 | 1, 2, 3, 5, 6 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 15 | 1, 2, 3, 4, 11 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 13 | 7, 8, 10, 12, 22 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 15 | 1, 2, 3, 4, 11 | lido (profundo) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 13 | 7, 8, 10, 12, 22 | lido (profundo) |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | utiliza dado/sensor | 8 | 1, 2, 3, 5 | extraído automaticamente (não lido) |
 | [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | utiliza dado/sensor | 4 | 4, 6 | extraído automaticamente (não lido) |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | utiliza dado/sensor | 3 | 1, 2 | lido (profundo) |

@@ -47,10 +47,10 @@ Resíduos de nuvem e sombra viram mudança falsa.
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | aplica etapa de preparo | 12 | 3, 6, 7, 8, 11 | lido (profundo) |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | aplica etapa de preparo | 12 | 1, 2, 3, 4, 8 | extraído automaticamente (não lido) |
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | aplica etapa de preparo | 11 | 3, 4, 6, 8, 9 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 10 | 2, 7, 24, 25 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 10 | 2, 7, 24, 25 | lido (profundo) |
 | [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | aplica etapa de preparo | 9 | 2, 3, 6, 10 | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | aplica etapa de preparo | 7 | 1, 2, 19 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | aplica etapa de preparo | 7 | 3, 7, 9, 10 | extraído automaticamente (não lido) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | aplica etapa de preparo | 7 | 3, 7, 9, 10 | lido (parcial) |
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | aplica etapa de preparo | 6 | 1, 3, 4, 6 | extraído automaticamente (não lido) |
 | [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | aplica etapa de preparo | 6 | 2, 4, 6, 10 | extraído automaticamente (não lido) |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | aplica etapa de preparo | 5 | 2, 3, 6 | extraído automaticamente (não lido) |

@@ -45,9 +45,9 @@ Limites de memória e de geometrias; reprodutibilidade depende do código.
 | [[Wu_2020_GeemapPythonPackage\|Wu 2020]] | usa ferramenta | 20 | 1, 2 | extraído automaticamente (não lido) |
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | usa ferramenta | 17 | 2, 3, 4, 6, 8 | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | usa ferramenta | 11 | 1, 2, 3, 4, 6 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | usa ferramenta | 8 | 7, 8 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | usa ferramenta | 8 | 7, 8 | lido (profundo) |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | usa ferramenta | 8 | 9, 10, 15 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | usa ferramenta | 6 | 15, 20, 21 | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | usa ferramenta | 6 | 15, 20, 21 | lido (parcial) |
 | [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | usa ferramenta | 6 | 2, 6, 7, 16 | extraído automaticamente (não lido) |
 | [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | usa ferramenta | 6 | 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | usa ferramenta | 5 | 6, 24, 26 | extraído automaticamente (não lido) |

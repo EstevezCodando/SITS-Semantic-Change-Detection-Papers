@@ -46,7 +46,7 @@ Cadência não é mensal antes de set/2020; sem correção atmosférica nos estu
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | utiliza dado/sensor | 21 | 2, 3, 4, 5, 13 | lido (profundo) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | utiliza dado/sensor | 16 | 3, 6, 8, 10, 13 | extraído automaticamente (não lido) |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | utiliza dado/sensor | 4 | 2, 3, 4, 6 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 3 | 2, 12, 13 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 3 | 2, 12, 13 | lido (profundo) |
 | [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | utiliza dado/sensor | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação

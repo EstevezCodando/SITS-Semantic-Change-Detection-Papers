@@ -42,8 +42,8 @@ Não escala para vigilância regional.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza dado/sensor | 41 | 2, 6, 7, 8, 12 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza dado/sensor | 24 | 1, 11, 12, 13, 17 | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza dado/sensor | 41 | 2, 6, 7, 8, 12 | lido (parcial) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza dado/sensor | 24 | 1, 11, 12, 13, 17 | lido (parcial) |
 | [[Osco_2023_SegmentAnythingModel\|Osco 2023]] | utiliza dado/sensor | 9 | 4, 5, 9, 18 | extraído automaticamente (não lido) |
 
 ## Navegação

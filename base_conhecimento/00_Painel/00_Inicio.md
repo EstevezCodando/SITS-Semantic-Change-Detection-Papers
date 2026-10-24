@@ -8,7 +8,7 @@ tags: [painel]
 
 Base de conhecimento construída em 24/10/2026 a partir de **103 artigos** com texto convertido em Markdown. **Autor da coleta:** Jean Michael Estevez Alvarez.
 
-**Situação de leitura:** 12 lidos em profundidade · 5 em leitura parcial · 86 por extração automática (não lidos por mim) · 82 registros do catálogo sem texto integral.
+**Situação de leitura:** 18 lidos em profundidade · 9 em leitura parcial · 76 por extração automática (não lidos por mim) · 82 registros do catálogo sem texto integral.
 
 ## Mapas principais
 

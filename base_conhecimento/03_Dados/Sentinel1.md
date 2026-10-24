@@ -46,7 +46,7 @@ Ruído speckle; interpretação menos direta.
 | [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | utiliza dado/sensor | 19 | 2, 3, 5, 6, 8 | extraído automaticamente (não lido) |
 | [[Kerdreux_2025_EfficientSelfSupervised\|Kerdreux 2025]] | utiliza dado/sensor | 17 | 1, 2, 3, 5, 6 | extraído automaticamente (não lido) |
 | [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | utiliza dado/sensor | 14 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza dado/sensor | 14 | 2, 6, 7, 9, 18 | extraído automaticamente (não lido) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza dado/sensor | 14 | 2, 6, 7, 9, 18 | lido (parcial) |
 | [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | utiliza dado/sensor | 13 | 1, 6, 7, 10, 11 | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | utiliza dado/sensor | 10 | 1, 2, 4, 7, 10 | extraído automaticamente (não lido) |
 | [[Xiong_2024_NeuralPlasticityInspired\|Xiong 2024]] | utiliza dado/sensor | 10 | 4, 7, 10, 13, 14 | extraído automaticamente (não lido) |

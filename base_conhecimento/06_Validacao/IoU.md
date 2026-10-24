@@ -43,15 +43,15 @@ Sensível a objetos pequenos.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Wang_2025_SAMTestingReliability\|Wang 2025]] | é avaliado por | 68 | 9, 10, 11, 12, 13 | lido (profundo) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | é avaliado por | 53 | 1, 10, 11, 12, 13 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | é avaliado por | 53 | 1, 10, 11, 12, 13 | lido (profundo) |
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | é avaliado por | 49 | 1, 6, 7, 8, 9 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | é avaliado por | 45 | 5, 6, 8, 9, 11 | extraído automaticamente (não lido) |
-| [[Li_2024_NewLearningParadigm\|Li 2024]] | é avaliado por | 41 | 1, 7, 8, 9, 10 | extraído automaticamente (não lido) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | é avaliado por | 45 | 5, 6, 8, 9, 11 | lido (parcial) |
+| [[Li_2024_NewLearningParadigm\|Li 2024]] | é avaliado por | 41 | 1, 7, 8, 9, 10 | lido (profundo) |
 | [[Zhang_2025_UniChangeUnifyingChange\|Zhang 2025]] | é avaliado por | 41 | 1, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Carion_2025_SAMSegmentAnything\|Carion 2025]] | é avaliado por | 36 | 5, 8, 9, 22, 23 | extraído automaticamente (não lido) |
 | [[Zheng_2021_ChangeEverywhereSingle\|Zheng 2021]] | é avaliado por | 30 | 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Simeoni_2025_DINOv3\|Simeoni 2025]] | é avaliado por | 23 | 5, 9, 11, 13, 14 | extraído automaticamente (não lido) |
-| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | é avaliado por | 22 | 19, 20, 21, 22, 24 | extraído automaticamente (não lido) |
+| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | é avaliado por | 22 | 19, 20, 21, 22, 24 | lido (profundo) |
 | [[Zhang_2025_RecurrentSemanticChange\|Zhang 2025]] | é avaliado por | 21 | 6, 7, 8, 12 | extraído automaticamente (não lido) |
 | [[Lee_2026_RoadChangeDetection\|Lee 2026]] | é avaliado por | 21 | 10, 11, 13, 14, 15 | extraído automaticamente (não lido) |
 | [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | é avaliado por | 20 | 7, 8, 9 | extraído automaticamente (não lido) |
@@ -64,11 +64,11 @@ Sensível a objetos pequenos.
 | [[Sanca_2023_ENDENDDEEP\|Sanca 2023]] | é avaliado por | 15 | 4, 5, 7 | extraído automaticamente (não lido) |
 | [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | é avaliado por | 14 | 5, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | é avaliado por | 13 | 1, 4, 5 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | é avaliado por | 13 | 8, 10, 12, 17, 19 | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | é avaliado por | 13 | 8, 10, 12, 17, 19 | lido (parcial) |
 | [[Guo_2025_HRMSSCDHigh\|Guo 2025]] | é avaliado por | 13 | 5, 6 | extraído automaticamente (não lido) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | é avaliado por | 13 | 8, 11, 12, 13, 14 | extraído automaticamente (não lido) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | é avaliado por | 13 | 8, 11, 12, 13, 14 | lido (profundo) |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | é avaliado por | 12 | 6, 7, 8, 9 | lido (profundo) |
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | é avaliado por | 12 | 10, 11, 12, 13, 16 | extraído automaticamente (não lido) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | é avaliado por | 12 | 10, 11, 12, 13, 16 | lido (profundo) |
 | [[Xiong_2024_NeuralPlasticityInspired\|Xiong 2024]] | é avaliado por | 11 | 9, 10, 11, 12, 13 | extraído automaticamente (não lido) |
 | [[Reed_2022_ScaleMAEScale\|Reed 2022]] | é avaliado por | 11 | 1, 2, 7, 8 | extraído automaticamente (não lido) |
 | [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | é avaliado por | 10 | 8, 9, 10, 13 | extraído automaticamente (não lido) |

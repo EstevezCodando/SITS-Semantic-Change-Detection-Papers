@@ -43,7 +43,7 @@ Pode não ser captada por classificadores de cobertura por data.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |

@@ -42,7 +42,7 @@ Aéreo e bitemporal.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | emprega conjunto de dados | 11 | 8, 9, 10, 11, 13 | extraído automaticamente (não lido) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | emprega conjunto de dados | 11 | 8, 9, 10, 11, 13 | lido (profundo) |
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | emprega conjunto de dados | 8 | 4, 7, 8, 10, 12 | extraído automaticamente (não lido) |
 | [[Zhang_2025_RecurrentSemanticChange\|Zhang 2025]] | emprega conjunto de dados | 7 | 6, 8, 9, 11, 12 | extraído automaticamente (não lido) |
 | [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | emprega conjunto de dados | 7 | 2, 3, 6, 7, 9 | lido (profundo) |

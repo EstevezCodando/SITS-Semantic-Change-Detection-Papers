@@ -47,7 +47,7 @@ Inclui fogo e degradação como perda; resolução de 30 m.
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | emprega conjunto de dados | 11 | 2, 5, 6, 10, 14 | extraído automaticamente (não lido) |
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | emprega conjunto de dados | 6 | 3, 5, 15, 16 | lido (profundo) |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | emprega conjunto de dados | 6 | 1, 2 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | emprega conjunto de dados | 3 | 2, 6 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | emprega conjunto de dados | 3 | 2, 6 | lido (profundo) |
 | [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | emprega conjunto de dados | 3 | 1, 2 | extraído automaticamente (não lido) |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | emprega conjunto de dados | 2 | 2, 11 | extraído automaticamente (não lido) |
 

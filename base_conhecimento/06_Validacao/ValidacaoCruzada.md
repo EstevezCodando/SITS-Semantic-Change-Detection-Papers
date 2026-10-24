@@ -43,7 +43,7 @@ Folds não espaciais vazam.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | adota desenho de validação | 3 | 4, 5 | lido (profundo) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | adota desenho de validação | 3 | 26, 28 | extraído automaticamente (não lido) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | adota desenho de validação | 3 | 26, 28 | lido (parcial) |
 | [[Brown_2025_AlphaEarthFoundationsEmbedding\|Brown 2025]] | adota desenho de validação | 3 | 3, 8, 10 | extraído automaticamente (não lido) |
 
 ## Navegação

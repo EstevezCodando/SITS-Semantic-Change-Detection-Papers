@@ -42,7 +42,7 @@ Custo e cobertura temporal limitada.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza dado/sensor | 10 | 5, 6, 8, 10 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza dado/sensor | 10 | 5, 6, 8, 10 | lido (parcial) |
 | [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | utiliza dado/sensor | 4 | 2, 5 | extraído automaticamente (não lido) |
 
 ## Navegação

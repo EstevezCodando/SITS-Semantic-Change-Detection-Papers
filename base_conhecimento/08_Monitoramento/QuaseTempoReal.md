@@ -46,7 +46,7 @@ Latência depende de nuvem e de revisão.
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | discute aspecto de monitoramento | 34 | 1, 2, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | discute aspecto de monitoramento | 19 | 1, 2, 3, 17, 18 | extraído automaticamente (não lido) |
 | [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | discute aspecto de monitoramento | 10 | 2, 3, 6, 8, 10 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | discute aspecto de monitoramento | 9 | 15, 16, 17, 26, 28 | extraído automaticamente (não lido) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | discute aspecto de monitoramento | 9 | 15, 16, 17, 26, 28 | lido (parcial) |
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | discute aspecto de monitoramento | 9 | 2, 3, 4, 5, 11 | extraído automaticamente (não lido) |
 | [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | discute aspecto de monitoramento | 7 | 2, 3, 4, 7, 15 | extraído automaticamente (não lido) |
 | [[Mai_2025_TowardsNextGeneration\|Mai 2025]] | discute aspecto de monitoramento | 7 | 7, 8, 9 | extraído automaticamente (não lido) |

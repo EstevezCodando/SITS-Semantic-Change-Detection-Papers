@@ -43,9 +43,9 @@ Seleção e ajuste devem ficar dentro do treino.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Tianqi_2016_XGBoostScalableTree\|Tianqi 2016]] | utiliza método | 56 | 1, 3, 5, 7, 8 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza método | 15 | 6, 18, 22, 23, 24 | extraído automaticamente (não lido) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza método | 15 | 6, 18, 22, 23, 24 | lido (parcial) |
 | [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | utiliza método | 8 | 1, 5 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza método | 7 | 10, 16 | extraído automaticamente (não lido) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza método | 7 | 10, 16 | lido (parcial) |
 
 ## Navegação
 

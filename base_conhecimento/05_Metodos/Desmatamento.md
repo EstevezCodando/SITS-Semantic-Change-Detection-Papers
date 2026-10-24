@@ -47,7 +47,7 @@ Fogo e degradação podem ser contados como perda em produtos de referência.
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |

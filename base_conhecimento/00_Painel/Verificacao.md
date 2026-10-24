@@ -8,14 +8,14 @@ tags: [painel]
 
 Executada em 24/10/2026 pelo script `scripts/kb_build.py`.
 
-- **Notas Markdown:** 245; **wikilinks:** 4473.
+- **Notas Markdown:** 245; **wikilinks:** 4513.
 - **Links quebrados:** 0.
 - **Nomes de arquivo duplicados:** 0.
 - **Notas órfãs (sem link de entrada):** 0.
 - **Artigos com YAML incompleto:** 0.
 - **Artigos cuja seção 8 não traz página, seção ou “não informado”:** 0.
 - **Trechos de evidência não localizados no texto (página não encontrada):** 0.
-- **Figuras copiadas e embutidas:** 23 de 23.
+- **Figuras copiadas e embutidas:** 51 de 51.
 
 ## Canvas
 

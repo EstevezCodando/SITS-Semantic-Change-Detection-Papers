@@ -42,8 +42,8 @@ Apenas dois instantes.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | emprega conjunto de dados | 11 | 3, 9, 10, 12, 13 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | emprega conjunto de dados | 3 | 12, 27 | extraído automaticamente (não lido) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | emprega conjunto de dados | 11 | 3, 9, 10, 12, 13 | lido (profundo) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | emprega conjunto de dados | 3 | 12, 27 | lido (parcial) |
 
 ## Navegação
 

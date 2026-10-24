@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P34_Shen2026_Foundation-Model-Driven-Semantic-Change-Dete
 markdown_fonte: "output/pdf/P34_Shen2026_Foundation-Model-Driven-Semantic-Change-Detection-in-Remote-/document.md"
 paginas: 19
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (profundo)"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: []
 conjuntos_dados: ["[[SECOND|SECOND]]", "[[HRSCD|HRSCD]]"]
@@ -17,14 +17,14 @@ metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transform
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[CorrecaoAtmosferica|Correção atmosférica e reflectância]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[AumentoDados|Aumento de dados]]"]
 validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[Desbalanceamento|Desbalanceamento de classes]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/profunda]
 ---
 
 # Shen 2026 — Foundation Model-Driven Semantic Change Detection in Remote Sensing Imagery
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +36,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Como acoplar **modelos fundacionais de sensoriamento remoto** à detecção de mudança semântica (SCD, "de-para") sem decodificadores rígidos presos a um backbone, e como estabilizar o treino. Propõe o **PerASCD**: encoder ViT pré-treinado com PerA + ViT-Adapter, o **Cascaded Gated Decoder (CG-Decoder)** com o **Change-Aware Gating Module (CAGM)** e a **Soft Semantic Consistency Loss (SSCLoss)** (p. 1–2, 4–7).
 
 - “Building upon this, we present PerASCD, a robust and unified SCD framework driven by the RS foundation model PerA.” (p. 1, seção Início)
 - “Furthermore, we propose a Soft Semantic Consistency Loss (SSCLoss) to mitigate the numerical instability often encountered during the training of large-scale models.” (p. 1, seção Início)
@@ -48,6 +50,12 @@ Resumo: não localizado no texto convertido.
 - “Patel, “A TransformerBased Siamese Network for Change Detection,” in IGARSS 2022 - 2022 IEEE International Geoscience and Remote Sensing Symposium, Jul.” (p. 17, seção V. C ONCLUSION AND D ISCUSSION)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- **SECOND:** 4.662 pares aéreos 512 × 512, resolução de 0,5 a 3 m, 7 classes (sem mudança, solo não vegetado, árvore, vegetação baixa, água, edifício, quadras); divisão padrão 2.968 treino / 1.694 teste (p. 8).
+- **LandsatSCD:** Xinjiang, 1990–2020, **30 m**, 8.468 pares gerados em grande parte por aumento de dados, 2.385 mantidos após filtro; divisão 3:1:1 = 1.431 / 477 / 477; quatro classes (terra agrícola, deserto, edifícios, água) (p. 8).
+- Nenhum Planet; nenhum dado de 3–5 m em série temporal. Os dois são bitemporais.
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **SAR**: 2 ocorrências (p. 4, 16)
@@ -70,6 +78,13 @@ Resumo: não localizado no texto convertido.
 - **Aumento de dados**: 3 ocorrências (p. 8, 11)
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
+
+**Evidência (leitura) — Método:**
+
+- **PerA** (pré-treino autossupervisionado que une contraste e MIM) em RSRSD-5M; o backbone é o **ViT-G/16-1024** com pesos oficiais; ViT-Adapter gera 4 escalas (p. 4–5, 8).
+- **CG-Decoder:** blocos em cascata, de grosso a fino, processando três fluxos (pré, pós e mudança); compressão de características com CBAM + convolução; fusão de característica rasa e profunda pelo **CAGM** (pesos global × local, sigmoide, fator (1 + W_global) ⊙ W_local) (p. 5–6, eqs. 1–12).
+- **SSCLoss:** substitui o hinge de margem da SCLoss por **softplus com temperatura τ**; a hipótese é que o gradiente que liga e desliga na margem causa quedas "em penhasco" com precisão mista (p. 7, eqs. 13–15).
+- Treino: PyTorch, RTX 4090, **SGD** momentum 0,9, batch 8, weight decay 1e-5, AMP; lr inicial 0,1 em SECOND e **1,0** (mín. 0,5) em LandsatSCD, decaimento polinomial com aquecimento de 10 %; DropPath 0,3; flips e color jitter; mesmas perdas do SCanNet exceto a SSCLoss (p. 8, 11).
 
 - **Estratégia temporal (detecção automática, verificar):** bitemporal / pares (auto: 12 menções)
 **Métodos detectados automaticamente:**
@@ -97,6 +112,18 @@ Resumo: não localizado no texto convertido.
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
+**Evidência (leitura) — Métricas e resultados:**
+
+- Métricas: OA, mIoU (média de "sem mudança" e "mudança agregada"), **SeK** e **F_scd** (p. 8, eqs. 16–25).
+- **SECOND** (tabela I, p. 11): PerASCD OA 88,70, F_scd 66,41, mIoU 74,33, **SeK 26,11**, contra Mamba-FCS 88,62/65,78/74,07/25,50 e SCanNet 87,57/63,53/73,03/23,18.
+- **LandsatSCD:** PerASCD OA 96,84, F_scd 90,90, mIoU 90,54, **SeK 65,21**, contra Mamba-FCS 60,26 e SCanNet 54,77 (p. 11).
+- **Troca de backbone** com o CG-Decoder (tabela II, p. 12): ResNet50 SeK 24,63; VMamba-B 25,31; Swin-L 25,40; ViT-L SatMAE 24,51; ViT-L ScaleMAE 24,56; **ResNet50 pré-treinado em SeCo 22,79 (abaixo do SCanNet 23,84)**. O artigo diz que o pré-treino em RS não supera sempre o de ImageNet (p. 12).
+- **Custo** (tabela III, p. 13): com ResNet50 o CG-Decoder reduz FLOPs de 263,54 G para 159,34 G; com PerA os parâmetros ficam em ~548 M e 2.853 G de FLOPs; 182,67 ms por par.
+- **Ablação** (tabela IV, p. 13): PerASCD com decodificador do SCanNet SeK 25,72; sem CAGM 25,46; **com a SCLoss original 26,07**; PerASCD 26,11. O texto admite que a SSCLoss "não traz melhora substancial" no SECOND; o benefício é estabilidade (p. 13).
+- **Eficiência de dados** (tabela V, p. 14): com 50 % dos dados SeK 24,21 e F_scd 64,79, acima do SCanNet com 100 % (23,84 e 64,30). Com 10 %: 19,29 (PerA+CG) vs 18,94 (PerA+SCanNet) vs 15,72 (SCanNet).
+- **Instabilidade numérica** (tabela VI, p. 15): com SCLoss em FP16 há quedas independentemente do clipping de gradiente; com SSCLoss (τ = 0,5) e clipping 1,5 o F_scd é 90,90 sem instabilidade, mas sem clipping a instabilidade volta; FP32 não a mostra.
+- **Temperatura τ:** LandsatSCD melhor em τ = 0,5 (SeK 65,21); SECOND praticamente plano de 0,005 a 1 (SeK 26,10–26,23; tabelas VII–VIII, p. 15–16).
+
 **Trechos numéricos detectados automaticamente (verificar):**
 - “On the challenging SECOND dataset, PerASCD improves the 𝐹 𝑠𝑐𝑑 by 2.88% and the SeK by 2.93% over the baseline SCanNet.” (p. 9, seção 4) Mamba-FCS which is recently published SCD metho)
 - “Notably, the superiority in the SeK metric is even more pronounced, with improvements of 0.61% (SECOND) and 4.95% (LandsatSCD) over Mamba-FCS.” (p. 9, seção 4) Mamba-FCS which is recently published SCD metho)
@@ -104,9 +131,16 @@ Resumo: não localizado no texto convertido.
 
 ## 9. Limitações e condições de aplicabilidade
 
-Não informado (nenhum trecho de limitação detectado).
+**Evidência (leitura) — Limites declarados e observações:**
+
+- Os autores listam: τ exige ajuste; custo computacional alto (548 M parâmetros) dificulta borda; **sem teste com SAR–óptico ou LLM** (p. 16).
+- **Observações minhas:** (a) o ganho de +0,61 em SECOND sobre o Mamba-FCS é pequeno e vem de **uma só execução com semente fixa** (p. 8), sem desvio ou intervalo; (b) o +4,95 em LandsatSCD ocorre num conjunto em que a maioria dos pares veio de aumento de dados e a divisão 3:1:1 é feita depois dele, com risco de vazamento entre treino e teste que o artigo não discute; (c) a lr de 1,0 e a variação entre 90,48 e 90,90 na tabela VI são do mesmo tamanho do ganho atribuído à SSCLoss; (d) o título de "interpretabilidade" se apoia em mapas de calor do CAGM e numa hipótese dos autores sobre faixas de peso 0,3–0,7 (p. 14), não em teste causal; (e) o texto extraído tem tabelas II, III e V embaralhadas; usei só valores que aparecem de forma consistente em mais de um trecho.
+- Os rótulos "-" na tabela I (resultados reproduzidos dos artigos) misturam números copiados e reexecutados (p. 11).
+
 
 ## 10. Reprodutibilidade: código, dados, dependências e informações ausentes
+
+- Código: github.com/SathShen/PerASCD (p. 1). Pesos oficiais do PerA citados; hiperparâmetros completos (p. 8, 11).
 
 - **Código/dados:** sim: github.com/SathShen/PerASCD.git (p. 1)
 - URL citada: https://github.com/SathShen/PerASCD.git (p. 1)
@@ -117,6 +151,18 @@ Não informado (nenhum trecho de limitação detectado).
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Custo 5 (p. 2, 14, 15, 16); Falsos alertas 2 (p. 8, 14); Quase tempo real 1 (p. 18); Persistência / confirmação 1 (p. 7); Rastreabilidade 1 (p. 8)
+
+**Interpretação — O que reaproveitar:**
+
+- **Troca de backbone sem trocar o decodificador:** o CG-Decoder aceita CNN, Swin, ViT e VMamba; útil para testar encoders pré-treinados sem reescrever a cabeça.
+- **Receita de treino estável:** FP32 ou clipping de gradiente quando se usa perda com margem; monitorar quedas em "penhasco" na curva de validação.
+- **Métrica F_scd e SeK** com mIoU (já em uso em P36/P28) e a definição de IoU de "mudança agregada".
+- **Curva de eficiência de dados (10/50/100 %)** como protocolo para medir quanto rótulo o pré-treino economiza.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Benchmarks de 0,5–3 m e 30 m, **bitemporais**; nenhum teste em 3–5 m nem em séries.
+- Backbone de 548 M de parâmetros inviável para treino local sem GPU grande; as variantes ResNet50 ou VMamba-B são o ponto de partida realista (SeK 24,6–25,3 no SECOND).
 
 ## 12. Relações justificadas com outras notas
 
@@ -142,6 +188,18 @@ Não informado (nenhum trecho de limitação detectado).
 - adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 7, 8, 9)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+
+## Figuras selecionadas
+
+![[Shen_2026_FoundationModelDriven_p4_Fig.2.png|520]]
+*Fig. 2. Overall pipeline: (a) PerA Pre-training: A selfsupervised paradigm combining contrastive learning and (p. 4; recorte do PDF convertido)*
+
+![[Shen_2026_FoundationModelDriven_p10_Fig.6.png|520]]
+*Fig. 6. Examples of results provided by different methods in the comparative experiments. (a) Results on the SECOND dataset; (p. 10; recorte do PDF convertido)*
+
+![[Shen_2026_FoundationModelDriven_p5_Fig.3.png|520]]
+*Fig. 3. Architecture of PerASCD. (p. 5; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

@@ -43,7 +43,7 @@ Janela em pixels muda com a resolução.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | aplica etapa de preparo | 12 | 6, 14, 15, 16 | lido (profundo) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | aplica etapa de preparo | 8 | 3, 4, 12, 13 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | aplica etapa de preparo | 8 | 3, 4, 12, 13 | lido (profundo) |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | aplica etapa de preparo | 7 | 1, 2, 5, 6 | extraído automaticamente (não lido) |
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | aplica etapa de preparo | 7 | 8, 11, 12, 13, 16 | extraído automaticamente (não lido) |
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | aplica etapa de preparo | 4 | 6, 11, 17, 20 | extraído automaticamente (não lido) |

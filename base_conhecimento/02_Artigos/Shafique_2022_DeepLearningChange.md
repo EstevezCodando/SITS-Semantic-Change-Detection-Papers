@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P126_Shafique2022_Deep-Learning-Based-Change-Detection-in
 markdown_fonte: "output/pdf/P126_Shafique2022_Deep-Learning-Based-Change-Detection-in-Remote-Sensing-Image/document.md"
 paginas: 40
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (parcial)"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Edificacoes|Edificações e urbanização]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: ["[[SAR|Radar (SAR)]]", "[[WorldView|WorldView]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[OSCD|OSCD]]"]
@@ -17,14 +17,14 @@ metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[UNet|U-Net]]", "[[RedeSiamesa
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[CorrecaoAtmosferica|Correção atmosférica e reflectância]]", "[[AumentoDados|Aumento de dados]]", "[[Corregistro|Corregistro e georreferenciamento]]"]
 validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[PrecisaoRecall|Precisão e recall]]", "[[Kappa|Coeficiente kappa]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial]
 ---
 
 # Shafique 2022 — Deep Learning-Based Change Detection in Remote Sensing Images: A Review
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -35,6 +35,10 @@ tags: [artigo, leitura/automatica]
 - **Tipo de documento:** artigo completo (texto integral convertido).
 
 ## 2. Problema investigado e contribuição principal
+
+**Evidência (leitura):**
+
+Revisão da **detecção de mudança com aprendizado profundo** organizada **por tipo de dado** (SAR, multiespectral, hiperespectral, VHR e imagens heterogêneas) e por paradigma (supervisionado, não supervisionado, semissupervisionado) (p. 1, 3–4).
 
 **Resumo detectado automaticamente (p. 1):** Abstract: Images gathered from different satellites are vastly available these days due to the fast development of remote sensing (RS) technology. These images significantly enhance the data sources of change detection (CD). CD is a technique of recognizing the dissimilarities in the images acquired at distinct intervals and are used for numerous applications, such as urban area development, disaster management, land cover object identification, etc. In recent years, deep learning (DL) techniques have been used tremendously in change detection processes, where it has achieved great success because of their practical applications. Some researchers have even claimed that DL approaches outperform traditional approaches and enhance change detection accuracy. Therefore, this review focuses on deep learning techniques, such as supervised, unsupervised, and semi-supervised for different change …
 
@@ -74,6 +78,26 @@ tags: [artigo, leitura/automatica]
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método da revisão:**
+
+- Artigos de 2015 a 2021 (foco em 2019–2020, alguns de 2021), de editoras como Elsevier, IEEE e Remote Sensing e de conferências como IGARSS e ISPRS; **68 artigos** de aprendizado profundo para CD (p. 4). A busca é descrita em três fases (título, resumo, leitura integral), sem cadeia de busca nem bases declaradas no trecho lido.
+- Estrutura: seção 3 datasets por tipo de sensor (tabelas 2–8); seção 4 arquiteturas; seção 5 literatura por tipo de dado (tabelas 9–12); seção 6 métricas; seção 7 discussão (p. 4).
+
+**Evidência (leitura) — Principais conteúdos lidos:**
+
+- **Sensores** (tabela 2, p. 5): lista de satélites com revisita e resolução; não inclui Planet/PlanetScope entre os exemplos (conferido no trecho lido).
+- **Métricas** (p. 27): precisão, revocação, especificidade, F1, acurácia, kappa, IoU e PCC; a revisão destaca que os dados de CD são **extremamente desbalanceados** (p. 27).
+- **Resultados de exemplo** (tabelas 14–18, p. 27–31): comparam métodos em conjuntos diferentes, **cada tabela com métricas distintas**: SAR (K de 34,95 a 91,66), VHR (F1 0,68 de CDNet a 0,8756 de U-Net++, OA 0,9673), hiperespectral (Att R2U-Net F1 0,952), multiespectral (F1 de 13,15 de CVA a 80,99 do método proposto) e heterogêneas (OA 95,86 a 98,05). São "exemplos" de trabalhos anteriores, não um benchmark unificado (p. 27).
+
+**Evidência (leitura) — Desafios apontados (seção 7, p. 31–33):**
+
+1. **Amostras de treino** escassas; alternativas: transfer learning, aumento de dados, GAN, autocodificadores (p. 31).
+2. **Conhecimento prévio**: o mapa de mudança tende a ser maior que a área alterada; abordagens fracas e semissupervisionadas precisam melhorar (p. 31).
+3. **Registro de imagens**: faltam conjuntos públicos; erros de co-registro e imagens fora do nadir seguem sem solução (p. 31–32).
+4. **Complexidade da imagem de SR**: objetos de cores, tamanhos e rotações diversos; o problema é "fundamentalmente mal posto" (p. 32).
+5. **Mapas de mudança múltiplos**: a maioria dos estudos é binária; poucos fazem mudança multiclasse (p. 32).
+- Conclusão: faltam estudos com dados heterogêneos, multirresolução e informação global de imagens grandes (p. 33).
+
 - **Estratégia temporal (detecção automática, verificar):** bitemporal e série (auto: 22 pares; 30 série)
 **Métodos detectados automaticamente:**
 - método/família **CNN**: 29 ocorrências (p. 15, 16, 17, 18, 19)
@@ -105,6 +129,11 @@ tags: [artigo, leitura/automatica]
 
 ## 9. Limitações e condições de aplicabilidade
 
+**Evidência (leitura) — Limites e observações:**
+
+- **Observações minhas:** (a) a revisão cobre até 2021, portanto não inclui Transformers de CD (BIT, ChangeFormer só entram se citados), modelos Mamba, modelos fundacionais nem NICFI; (b) a seleção dos 68 artigos não é sistemática (sem bases, strings nem critérios de exclusão numerados no trecho lido); (c) comparar métricas de tabelas 14–18 entre si não faz sentido; (d) a equação do kappa/PRE nas equações 6–8 aparece com termos repetidos na extração (p. 27), então conferir no PDF antes de citar.
+- Por ter lido só parte, **não cito** conclusões das seções 4 e 5.
+
 **Trechos detectados automaticamente (verificar contexto):**
 - “PBCD is the conventional approach and identifies changes by comparing pixels, and as a result, it cannot overcome the limits of radiometric variations and misregistration across various dates or sensors.” (p. 2, seção 1. Introduction and Background)
 - “Because of the increased variability among image objects, PBCD approaches, which are generally appropriate for middle- and low-resolution RS images, frequently fail to operate in VHR imagery.” (p. 2, seção 1. Introduction and Background)
@@ -122,6 +151,17 @@ tags: [artigo, leitura/automatica]
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Custo 7 (p. 7, 16, 17, 26); Falsos alertas 3 (p. 20, 24); Quase tempo real 1 (p. 13); Sistema operacional 1 (p. 5)
+
+**Interpretação — O que reaproveitar:**
+
+- **Taxonomia por tipo de dado e por supervisão** para organizar a literatura e justificar o recorte "óptico de resolução média/alta, pares ou séries".
+- **Lista de desafios** (poucos rótulos, registro, desbalanceamento, mudança multiclasse) como referência para a seção de lacunas.
+- **Ressalva sobre métricas em dados desbalanceados**: F1/IoU da classe de mudança e kappa, não acurácia global.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Defasada para 2022–2026; usar apenas como contexto histórico.
+- Não trata de séries temporais nem de mosaicos Planet.
 
 ## 12. Relações justificadas com outras notas
 
@@ -149,6 +189,18 @@ tags: [artigo, leitura/automatica]
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+
+## Figuras selecionadas
+
+![[Shafique_2022_DeepLearningChange_p12_Figure3.png|520]]
+*Figure 3. The workflow of the change detection architecture. (p. 12; recorte do PDF convertido)*
+
+![[Shafique_2022_DeepLearningChange_p28_Figure4.png|520]]
+*Figure 4. Visual comparison of CD results using various methods for Farmland C : ( a ) reference, (p. 28; recorte do PDF convertido)*
+
+![[Shafique_2022_DeepLearningChange_p2_Figure1.png|520]]
+*Figure 1. Traditional change detection method. (p. 2; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P32_Szwarcman2025_Prithvi-EO-2-0-A-Versatile-Multitempora
 markdown_fonte: "output/pdf/P32_Szwarcman2025_Prithvi-EO-2-0-A-Versatile-Multitemporal-Foundation-Model-fo/document.md"
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (parcial)"
 tarefas: []
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[Sentinel1|Sentinel-1]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: []
@@ -17,14 +17,14 @@ metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transform
 preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]", "[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
 validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial]
 ---
 
 # Szwarcman 2024 — Prithvi-EO-2.0: A Versatile Multitemporal Foundation Model for Earth Observation Applications
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +36,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Apresentar o **Prithvi-EO-2.0**, um **modelo fundacional geoespacial multitemporal** (MAE com ViT 3D) pré-treinado em séries do HLS a 30 m, e mostrar que serve a tarefas de resoluções e domínios diferentes (de 0,1 m a 15 m) com ajuste fino em uma só GPU (p. 1–2). **Não é um modelo de detecção de mudança**; é um backbone que se acopla a cabeças de segmentação, classificação ou regressão.
 
 - “1 ## Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications Daniela Szwarcman [1,] [†], Sujit Roy [2,3,] [ †] [,] [ ‡] (Senior Member, IEEE), Paolo Fraccaro [1,] [ †] [,] [ ‡], Þorsteinn Elí Gíslason ” (p. 1, seção Início)
 - “within the EO community, we developed a new multi-temporal GFM called Prithvi-EO-2.0 .” (p. 2, seção I. I NTRODUCTION)
@@ -49,6 +51,13 @@ Resumo: não localizado no texto convertido.
 - “The dataset consists of 446 512 × 512 images covering 14 biomes, 357 ecoregions, and 6 continents of the world across 11 flood events between 2018 and 2020.” (p. 6, seção 0.1. As described in section III-A, the samples have shape)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- **Pré-treino:** HLS (Landsat 8/9 + Sentinel-2) a 30 m, **seis bandas** (azul, verde, vermelho, NIR, SWIR1, SWIR2); sequências de **4 datas** com intervalo de 1 a 6 meses entre 2014 e 2023; patches 256 × 256; **4,2 M amostras de treino e 46 mil de validação**; descartes: > 1 % de pixels ausentes ou > 20 % de nuvem (Fmask); amostragem estratificada por cobertura (Copernicus Land Cover 100 m) e 846 ecorregiões; áreas urbanas sobreamostradas (p. 2–3).
+- **GEO-Bench:** 6 conjuntos de classificação e 6 de segmentação (tabela I, p. 6); só as bandas multiespectrais compatíveis com cada modelo; imagens redimensionadas para 224 × 224 (p. 6).
+- **Tarefas de aplicação (tabela III, p. 7):** inundação (Sen1Floods11, 446 imagens), cicatriz de incêndio (805), intensidade de queima (5.692, 3 datas), deslizamento (3.799), segmentação de cultura nos EUA (5.000, 3 datas) e na França (2.433 com 38–61 datas), classificação na Europa (335.125), GPP (975) e biomassa acima do solo (3.400 com 12 datas).
+- Nenhum teste em Planet ou em mosaico 3–5 m.
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **Sentinel-2**: 37 ocorrências (p. 2, 6, 7, 8, 9)
@@ -74,6 +83,12 @@ Resumo: não localizado no texto convertido.
 - **Normalização / escala**: 4 ocorrências (p. 5, 8, 9)
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
+
+**Evidência (leitura) — Método:**
+
+- **MAE com ViT**, embeddings **3D** de patch e posição (cubos t = 1, h, w) e metadados opcionais de **latitude/longitude e ano/dia do ano**, somados como viés aprendido com probabilidade de descarte 0,1; versões 300 M (ViT-L) e 600 M (ViT-H), com e sem TL (p. 4–5).
+- Pré-treino: 400 épocas em A100, ~21.000 GPU-horas (300 M) e ~58.000 (600 M); lote global 3.840, lr máx. 5e-4, weight decay 0,05, recorte 4 × 224 × 224 e flips (p. 5).
+- **Protocolo de benchmark:** 10 tentativas de otimização bayesiana de hiperparâmetros (Optuna/TerraTorch-iterate), depois **10 repetições com sementes diferentes**; decodificador UPerNet para transformers e U-Net para ResNets; camada linear na classificação (p. 5–6). Fine-tuning de cada aplicação em uma única GPU (p. 5).
 
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 37 menções vs 0 de pares)
 **Métodos detectados automaticamente:**
@@ -102,6 +117,16 @@ Resumo: não localizado no texto convertido.
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
+**Evidência (leitura) — Métricas e resultados:**
+
+- Acurácia (classificação), mIoU (segmentação), IoU da classe, F1, R² e RMSE conforme a tarefa (p. 5).
+- **GEO-Bench:** os modelos 600 M e 600 M-TL têm o melhor desempenho combinado nos 12 conjuntos e nos de segmentação; na classificação DOFA aparece entre os melhores (p. 11). O Prithvi-EO-2.0-100M supera o Prithvi-EO-1.0-100M em ~3 % no escore geral, e o resumo fala em até 8 % (p. 1, 11). Modelos com TL superam os sem TL (p. 12).
+- **Tarefas de alta resolução** (árvores por drone, gado) vão bem mesmo com pré-treino só em 30 m (p. 12).
+- **Inundação** (tabela IV, p. 12): IoU da água 79,6 (v1.0-100M) → 83,1 (v2.0-600M-TL), +3,5; mIoU 88,3 → 90,3.
+- **Cicatriz de incêndio** (tabela V, p. 12): IoU da cicatriz 76,8 → 83,2 (600 M), +5,6 a +6,4 conforme a versão.
+- **Biomassa:** com apenas multiespectral aproxima modelos multimodais; **adicionar SAR como bandas não melhorou** (p. 16).
+- **GPP** (tabela XV, p. 16): R² 2018–2021 de 0,88/0,80/0,83/0,74 para o 600 M-TL contra 0,72/0,77/0,73/0,66 do random forest com índices; média do ResNet18 0,75 vs 0,81.
+
 **Trechos numéricos detectados automaticamente (verificar):**
 - “Through extensive benchmarking with GEO-Bench, the model outperforms the previous Prithvi- EO model by 8% across a range of tasks.” (p. 1, seção 2 data archive at 30-m resolution, the new model i)
 - “Interestingly, although the mIoU is generally low for all models, they seem capable of distinguishing unburnt from burnt areas, with IoU 0 above 67%.” (p. 12, seção 2.0 improves over its previous version. Given the )
@@ -110,11 +135,18 @@ Resumo: não localizado no texto convertido.
 
 ## 9. Limitações e condições de aplicabilidade
 
+**Evidência (leitura) — Limites declarados e observações:**
+
+- Trabalho futuro citado: comparar com modelos multimodais e avaliar o custo de acrescentar dados no ajuste fino (p. 17).
+- **Observações minhas:** (a) o ganho de "até 8 %" e de "3 %" vem de agregados de benchmarks muito heterogêneos, em escalas de métrica diferentes (acurácia, mIoU, F1); o artigo mesmo diz que a média é "apropriada" apesar da natureza distinta; (b) a variação do m-cashew-plant depende de a classe 0 ausente no teste ser prevista ou não (p. 11), o que mostra sensibilidade da métrica; (c) vários ganhos são menores que 1 desvio-padrão (p. ex., inundação 600 M vs 300 M, tabela IV); (d) nenhuma das tarefas é detecção de mudança semântica bitemporal; o mais próximo é a cicatriz de incêndio e a intensidade de queima, mas com cabeça de segmentação, não comparação de datas; (e) o pré-treino é em **30 m**; para 3–5 m o artigo só afirma boa transferência em tarefas de alta resolução sem detalhar a perda; (f) como as tabelas II e IX–XIV foram lidas só em parte, não cito números delas.
+
 **Trechos detectados automaticamente (verificar contexto):**
 - “However, all models seem to struggle to differentiate between the various severity classes, with the Prithvi models demonstrating better overall performance.” (p. 13, seção 2.0 improves over its previous version. Given the unbalanced)
 - “This is because multispectral sensors are only capable of sensing the reflectance of the top layer of canopy, and so cannot be used to accurately estimate biomass of vegetation obscured by a full canopy.” (p. 15, seção 2.0 improves over its previous version. Given the unbalanced)
 
 ## 10. Reprodutibilidade: código, dados, dependências e informações ausentes
+
+- Pesos no Hugging Face (`ibm-nasa-geospatial/Prithvi-EO-2.0`), código no GitHub (`NASA-IMPACT/Prithvi-EO-2.0`) e integração ao **TerraTorch** com os carregadores das tarefas (p. 1–2).
 
 - **Código/dados:** sim: huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2 (p. 1)
 - URL citada: https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2 (p. 1)
@@ -128,6 +160,18 @@ Resumo: não localizado no texto convertido.
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Rastreabilidade 4 (p. 2, 5, 7); Latência / frequência 1 (p. 1); Persistência / confirmação 1 (p. 3); Custo 1 (p. 16)
+
+**Interpretação — O que reaproveitar:**
+
+- **Backbone multitemporal pré-treinado** (sequência de datas + metadados de data/local) para extração de características de uma série de mosaicos, em vez de dois instantes.
+- **Protocolo de comparação** do GEO-Bench com 10 repetições e ajuste de hiperparâmetros com o mesmo orçamento, útil para não comparar modelos com esforços desiguais.
+- **TerraTorch** como infraestrutura de ajuste fino em uma GPU.
+- **Descarte de metadados** durante o pré-treino para funcionar quando data e local faltam.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Seis bandas do HLS a 30 m: **não há as bandas Planet** (azul, verde, vermelho, NIR a 3–5 m); seria preciso reamostrar ou refazer o pré-treino, e o ganho nesse caso não foi medido.
+- Não resolve a "pergunta de mudança" sozinho; precisa de cabeça e rótulos próprios.
 
 ## 12. Relações justificadas com outras notas
 
@@ -150,6 +194,18 @@ Resumo: não localizado no texto convertido.
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 7 ocorrências (p. 3, 7, 9, 10)
 - aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 6 ocorrências (p. 10, 16)
 - adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 27 ocorrências (p. 5, 6, 8, 9, 11)
+
+## Figuras selecionadas
+
+![[Szwarcman_2024_PrithviVersatileMultitemporal_p4_Fig.3.png|520]]
+*Fig. 3: Prithvi-EO-2.0 architecture and general pretraining framework. (p. 4; recorte do PDF convertido)*
+
+![[Szwarcman_2024_PrithviVersatileMultitemporal_p11_Figure6.png|520]]
+*Figure 6 shows the aggregated results of benchmarking (p. 11; recorte do PDF convertido)*
+
+![[Szwarcman_2024_PrithviVersatileMultitemporal_p7_Fig.4.png|520]]
+*Fig. 4: Locations of the burn intensity dataset used in training (p. 7; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

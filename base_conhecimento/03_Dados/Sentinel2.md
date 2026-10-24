@@ -44,14 +44,14 @@ Não resolve edificações de 3–5 m.
 |---|---|---:|---|---|
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | utiliza dado/sensor | 55 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | utiliza dado/sensor | 38 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza dado/sensor | 37 | 2, 6, 7, 8, 9 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza dado/sensor | 30 | 7, 8, 9, 12, 14 | extraído automaticamente (não lido) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza dado/sensor | 37 | 2, 6, 7, 8, 9 | lido (parcial) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza dado/sensor | 30 | 7, 8, 9, 12, 14 | lido (parcial) |
 | [[Xiong_2024_NeuralPlasticityInspired\|Xiong 2024]] | utiliza dado/sensor | 29 | 4, 10, 11, 13, 14 | extraído automaticamente (não lido) |
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | utiliza dado/sensor | 25 | 8, 9, 20, 21 | extraído automaticamente (não lido) |
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza dado/sensor | 19 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | utiliza dado/sensor | 18 | 1, 3, 4, 7, 8 | extraído automaticamente (não lido) |
 | [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | utiliza dado/sensor | 16 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 12 | 7, 8, 10, 12, 18 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 12 | 7, 8, 10, 12, 18 | lido (profundo) |
 | [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | utiliza dado/sensor | 12 | 1, 2, 5 | extraído automaticamente (não lido) |
 | [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | utiliza dado/sensor | 12 | 1, 6, 7, 8, 9 | extraído automaticamente (não lido) |
 | [[Ferreira_2022_BuildingEarthObservation\|Ferreira 2022]] | utiliza dado/sensor | 10 | 1, 2, 3 | extraído automaticamente (não lido) |

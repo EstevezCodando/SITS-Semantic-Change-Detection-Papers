@@ -43,10 +43,10 @@ Escala mal com grandes volumes.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | utiliza método | 30 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza método | 15 | 5, 18, 20, 24, 25 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza método | 7 | 15, 22, 29 | extraído automaticamente (não lido) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza método | 15 | 5, 18, 20, 24, 25 | lido (parcial) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza método | 7 | 15, 22, 29 | lido (parcial) |
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza método | 5 | 2, 3 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza método | 3 | 2, 12 | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza método | 3 | 2, 12 | lido (parcial) |
 
 ## Navegação
 

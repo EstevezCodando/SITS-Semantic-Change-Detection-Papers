@@ -47,12 +47,12 @@ Não recuperam detalhe que a resolução não resolve.
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | utiliza método | 93 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Lei_2026_RemoteSensingImage\|Lei 2026]] | utiliza método | 93 | 6, 7, 14, 15, 18 | extraído automaticamente (não lido) |
 | [[Chen_2021_RemoteSensingImage\|Chen 2021]] | utiliza método | 83 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | utiliza método | 73 | 1, 2, 3, 4, 6 | extraído automaticamente (não lido) |
-| [[Li_2024_NewLearningParadigm\|Li 2024]] | utiliza método | 62 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza método | 59 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | utiliza método | 73 | 1, 2, 3, 4, 6 | lido (profundo) |
+| [[Li_2024_NewLearningParadigm\|Li 2024]] | utiliza método | 62 | 1, 2, 3, 4, 5 | lido (profundo) |
+| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza método | 59 | 1, 2, 3, 4, 5 | lido (parcial) |
 | [[Bandara_2022_TransformerSiameseNetwork\|Bandara 2022]] | utiliza método | 55 | 1, 2, 4, 5 | extraído automaticamente (não lido) |
 | [[Reed_2022_ScaleMAEScale\|Reed 2022]] | utiliza método | 37 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | utiliza método | 33 | 3, 4, 5, 8, 9 | extraído automaticamente (não lido) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | utiliza método | 33 | 3, 4, 5, 8, 9 | lido (profundo) |
 | [[Kerdreux_2025_EfficientSelfSupervised\|Kerdreux 2025]] | utiliza método | 32 | 4, 5, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | utiliza método | 31 | 7, 11, 13, 15, 16 | extraído automaticamente (não lido) |
 | [[Zheng_2024_SegmentAnyChange\|Zheng 2024]] | utiliza método | 29 | 4, 7, 8, 9, 10 | extraído automaticamente (não lido) |

@@ -43,8 +43,8 @@ Desvios de 5–10 m em alguns mosaicos mensais.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Cubillas_2024_LandClassificationPlugin\|Cubillas 2024]] | aplica etapa de preparo | 7 | 1, 2, 3, 5 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | aplica etapa de preparo | 3 | 2, 26, 32 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | aplica etapa de preparo | 3 | 12, 20 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | aplica etapa de preparo | 3 | 2, 26, 32 | lido (parcial) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | aplica etapa de preparo | 3 | 12, 20 | lido (parcial) |
 
 ## Navegação
 

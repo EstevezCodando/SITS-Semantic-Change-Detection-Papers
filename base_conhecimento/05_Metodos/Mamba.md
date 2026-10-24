@@ -42,8 +42,8 @@ Menos documentados em séries Planet.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | utiliza método | 49 | 1, 2, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | utiliza método | 12 | 3, 4, 9, 11, 12 | extraído automaticamente (não lido) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | utiliza método | 49 | 1, 2, 4, 5, 6 | lido (profundo) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | utiliza método | 12 | 3, 4, 9, 11, 12 | lido (profundo) |
 
 ## Navegação
 

@@ -47,7 +47,7 @@ Diferenças de geometria entre datas.
 | [[Zheng_2024_SegmentAnyChange\|Zheng 2024]] | emprega conjunto de dados | 10 | 2, 6, 7, 8, 9 | extraído automaticamente (não lido) |
 | [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | emprega conjunto de dados | 9 | 5, 7, 8, 9 | extraído automaticamente (não lido) |
 | [[Bou_2026_RemoteSensingChange\|Bou 2026]] | emprega conjunto de dados | 8 | 4, 5, 7 | extraído automaticamente (não lido) |
-| [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 6 | 6, 7, 8 | extraído automaticamente (não lido) |
+| [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 6 | 6, 7, 8 | lido (profundo) |
 | [[Zhou_2025_SChangerChangeDetection\|Zhou 2025]] | emprega conjunto de dados | 5 | 1, 8, 9, 10 | extraído automaticamente (não lido) |
 | [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | emprega conjunto de dados | 5 | 5, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | emprega conjunto de dados | 2 | 2, 5 | extraído automaticamente (não lido) |

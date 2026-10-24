@@ -43,7 +43,7 @@ Criticado; ainda dominado pela não-mudança.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | é avaliado por | 37 | 6, 7, 8, 9, 10 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | é avaliado por | 11 | 16, 17, 21, 27 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | é avaliado por | 11 | 16, 17, 21, 27 | lido (parcial) |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | é avaliado por | 10 | 6, 9, 11, 12, 13 | lido (profundo) |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | é avaliado por | 8 | 1, 7 | lido (profundo) |
 | [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | é avaliado por | 8 | 1, 6, 7 | extraído automaticamente (não lido) |

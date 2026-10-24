@@ -43,7 +43,7 @@ Largura de ~1 pixel em 5 m; conectividade importa.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Bastani_2018_RoadTracerAutomaticExtraction\|Bastani 2018]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Buslaev_2018_FullyConvolutionalNetwork\|Buslaev 2018]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Lee_2026_RoadChangeDetection\|Lee 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |

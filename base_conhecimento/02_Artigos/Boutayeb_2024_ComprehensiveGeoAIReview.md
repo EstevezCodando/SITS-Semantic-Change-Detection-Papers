@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P171_Boutayeb2024_A-comprehensive-GeoAI-review-Progress-C
 markdown_fonte: "output/pdf/P171_Boutayeb2024_A-comprehensive-GeoAI-review-Progress-Challenges-and-Outlook/document.md"
 paginas: 50
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (parcial)"
 tarefas: []
 sensores: ["[[UAV|UAV / drones]]", "[[SAR|Radar (SAR)]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[OpenStreetMap|OpenStreetMap]]", "[[xBD|xBD]]"]
@@ -17,14 +17,14 @@ metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[LSTM|Redes recorrentes (LSTM)
 preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[Corregistro|Corregistro e georreferenciamento]]"]
 validacao: ["[[ValidacaoCruzada|Validação cruzada]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[mAP|mAP]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial]
 ---
 
 # Boutayeb 2024 — A comprehensive GeoAI review: Progress, Challenges and Outlooks
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +36,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Revisão ampla de **GeoAI** (IA aplicada a dados geoespaciais), com três perguntas: **RQ1** como GeoAI contribui para resultados precisos em diversas áreas; **RQ2** quais os desafios; **RQ3** quais as perspectivas (p. 1–2). Cobre agricultura de precisão, planejamento urbano, meio ambiente, água, desastres e saúde (p. 31). **Não é uma revisão de detecção de mudança.**
 
 - “According to Gao , GeoAI can be regarded as : # “ a branch of AI whose objective is to implement intelligent computer programs aiming to imitate human perception, particularly with regard to spatial reasoning and geographical dynamics. # ” ” (p. 2, seção 1 Introduction)
 - “Furthermore, and to situate the aim of this work in relation to previous works, a great deal of research is carried out on this subject, as shown in Table 1, while touching on different sub-branches of geospatial field, but without giving a” (p. 2, seção 1 Introduction)
@@ -78,6 +80,19 @@ Resumo: não localizado no texto convertido.
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método:**
+
+- Busca por palavras-chave na base **Scopus e no Google Scholar** (p. 2). Não vi no trecho lido número de artigos incluídos, critérios de inclusão nem fluxo PRISMA.
+- Análise estatística e semântica (nuvem de palavras, artigos por ano, por área e por país da universidade do autor correspondente); a maioria dos artigos é de **2022 em diante**, com predominância de universidades chinesas e depois americanas (p. 31–32).
+
+**Evidência (leitura) — Conteúdos úteis:**
+
+- **Tipo de dado:** a revisão cita sensores como SkySat (50 cm, Planet Labs) na tabela de satélites (p. 12) e usa imagens de PlanetScope, WorldView, GeoEye, SkySat e Pléiades em exemplos (p. 23, 29).
+- **PlanetScope em área queimada:** Cho et al. aplicam U-Net a imagens PlanetScope RGB+NIR com NDVI e textura em tons de cinza, com **F1 de até 93 %** (p. 29). O número é do estudo citado, não da revisão.
+- **Cobertura arbórea urbana:** CNN semissupervisionada com DeepLabv3+ e imagens WorldView-2/3, GeoEye-1, SkySat e Pléiades, **acurácia global de 95 %** (p. 23).
+- **Desafios (RQ2, p. 32–33):** heterogeneidade de dados; volume de dados geoespaciais; modelos mais exatos com poucos dados; controle de qualidade de dados abertos; soberania de dados; processamento em tempo real; tempos de treino e inferência; arquiteturas específicas para dados geoespaciais; modelos que lidam com dados atualizados por **ajuste fino periódico**; segurança contra ataques adversariais; escalabilidade; validação de múltiplos modelos em uma mesma tarefa.
+- **Perspectivas (RQ3, p. 33):** novas arquiteturas para dados geoespaciais, **explicabilidade**, IoT e **padrões de treino e inferência** análogos a STAC e OGC.
+
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 19 menções vs 1 de pares)
 **Métodos detectados automaticamente:**
 - método/família **CNN**: 35 ocorrências (p. 6, 7, 16, 17, 18)
@@ -107,6 +122,10 @@ Resumo: não localizado no texto convertido.
 
 ## 9. Limitações e condições de aplicabilidade
 
+**Evidência (leitura) — Limites e observações:**
+
+- **Observações minhas:** (a) a revisão é ampla e de segundo nível; não permite extrair método de detecção de mudança nem comparação de desempenho; (b) os números que cita (F1 93 %, acurácia 95 %) vêm de estudos distintos, com dados e métricas diferentes, e não são comparáveis entre si; (c) o método de busca é pouco detalhado no trecho lido, e a seleção parece conveniente; (d) a nuvem de palavras e os contadores por país descrevem a amostra escolhida, não o campo; (e) como li só parte, não afirmo nada sobre as seções de agricultura, saúde e água.
+
 **Trechos detectados automaticamente (verificar contexto):**
 - “GeoAI generation geospatial|Present the close and the domain. between relationship deep very quickly learning geospatial|DiscoverthephilosophicalfoundationsoftheGeoAIwhilehighlightingfundamentalissuessuchasthelack of ethical of the and its ” (p. 4, seção 1 Introduction)
 - “Explore Discover of Present Discover of Exploring of Determine Provide its Discover cations GeoAI and on and (2020) of Thirteenth Com- Data Peo- Technology Electronics, Informa- Wuhan Applications Geography Intelligence Engineering Protec- ” (p. 4, seção 1 Introduction)
@@ -121,6 +140,17 @@ Resumo: não localizado no texto convertido.
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Quase tempo real 9 (p. 15, 16, 17, 26, 28); Custo 7 (p. 6, 8, 14, 24, 32); Alertas 2 (p. 15, 32); Sistema operacional 1 (p. 15); Latência / frequência 1 (p. 29)
+
+**Interpretação — O que reaproveitar:**
+
+- **Lista de desafios (RQ2)** como linguagem para a seção de lacunas e riscos (qualidade de dados abertos, atualização por ajuste fino periódico, validação, escala).
+- **Ponteiro para estudos com PlanetScope** (área queimada com U-Net, F1 93 %) que podem ser verificados nas fontes originais antes de qualquer citação.
+- **Ideia de padronização** (STAC/OGC) para treino e inferência, útil para o desenho do fluxo de dados.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Usar como contexto do termo "GeoAI" (ligação com os plugins de QGIS que revisamos) e não como evidência de desempenho.
+- Conferir os estudos originais antes de reutilizar qualquer número.
 
 ## 12. Relações justificadas com outras notas
 
@@ -147,6 +177,18 @@ Resumo: não localizado no texto convertido.
 - aplica etapa de preparo: [[Corregistro|Corregistro e georreferenciamento]] — 3 ocorrências (p. 12, 20)
 - adota desenho de validação: [[ValidacaoCruzada|Validação cruzada]] — 3 ocorrências (p. 26, 28)
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 9 ocorrências (p. 15, 16, 17, 26, 28)
+
+## Figuras selecionadas
+
+![[Boutayeb_2024_ComprehensiveGeoAIReview_p5_Figure2.png|520]]
+*Figure 2: Review workflow. (p. 5; recorte do PDF convertido)*
+
+![[Boutayeb_2024_ComprehensiveGeoAIReview_p5_Figure3.png|520]]
+*Figure 3: Example of linear regression. (p. 5; recorte do PDF convertido)*
+
+![[Boutayeb_2024_ComprehensiveGeoAIReview_p7_Figure7.png|520]]
+*Figure 7: CNN architecture. (p. 7; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

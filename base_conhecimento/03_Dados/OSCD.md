@@ -49,7 +49,7 @@ Poucos pares; resolução de 10 m.
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | emprega conjunto de dados | 6 | 4, 5, 7, 10, 11 | lido (profundo) |
 | [[Shen_2021_S2LookingSatelliteSide\|Shen 2021]] | emprega conjunto de dados | 4 | 2, 6 | extraído automaticamente (não lido) |
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | emprega conjunto de dados | 4 | 15, 17 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | emprega conjunto de dados | 3 | 8, 18 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | emprega conjunto de dados | 3 | 8, 18 | lido (parcial) |
 
 ## Navegação
 

@@ -21,9 +21,19 @@
       "file": "02_Artigos/Wagner_2023_MappingTropicalForest.md"
     },
     {
-      "id": "a_P05",
+      "id": "a_P03",
       "x": 40,
       "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#3B82F6",
+      "type": "file",
+      "file": "02_Artigos/Carter_2024_DetectionForestDisturbance.md"
+    },
+    {
+      "id": "a_P05",
+      "x": 40,
+      "y": 590,
       "width": 320,
       "height": 180,
       "color": "#3B82F6",
@@ -33,7 +43,7 @@
     {
       "id": "a_P07",
       "x": 40,
-      "y": 590,
+      "y": 850,
       "width": 320,
       "height": 180,
       "color": "#3B82F6",
@@ -41,19 +51,19 @@
       "file": "02_Artigos/Vizzari_2022_PlanetScopeSentinelSentinel.md"
     },
     {
-      "id": "a_P03",
+      "id": "a_P09",
       "x": 40,
-      "y": 850,
+      "y": 1110,
       "width": 320,
       "height": 180,
       "color": "#3B82F6",
       "type": "file",
-      "file": "02_Artigos/Carter_2024_DetectionForestDisturbance.md"
+      "file": "02_Artigos/GonzalezVelez_2026_TropicalDryForest.md"
     },
     {
       "id": "a_P04",
       "x": 40,
-      "y": 1110,
+      "y": 1370,
       "width": 320,
       "height": 180,
       "color": "#3B82F6",
@@ -63,22 +73,12 @@
     {
       "id": "a_P06",
       "x": 40,
-      "y": 1370,
-      "width": 320,
-      "height": 180,
-      "color": "#3B82F6",
-      "type": "file",
-      "file": "02_Artigos/Simsek_2025_DeterminationLandLand.md"
-    },
-    {
-      "id": "a_P09",
-      "x": 40,
       "y": 1630,
       "width": 320,
       "height": 180,
       "color": "#3B82F6",
       "type": "file",
-      "file": "02_Artigos/GonzalezVelez_2026_TropicalDryForest.md"
+      "file": "02_Artigos/Simsek_2025_DeterminationLandLand.md"
     },
     {
       "id": "a_P91",
@@ -151,9 +151,19 @@
       "file": "05_Metodos/UNet.md"
     },
     {
-      "id": "c_PlanetScope",
+      "id": "c_MosaicosCompostos",
       "x": 560,
       "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "04_Preparo/MosaicosCompostos.md"
+    },
+    {
+      "id": "c_PlanetScope",
+      "x": 560,
+      "y": 850,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -163,22 +173,12 @@
     {
       "id": "c_Desmatamento",
       "x": 560,
-      "y": 850,
-      "width": 320,
-      "height": 180,
-      "color": "#8B5CF6",
-      "type": "file",
-      "file": "05_Metodos/Desmatamento.md"
-    },
-    {
-      "id": "c_MosaicosCompostos",
-      "x": 560,
       "y": 1110,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
       "type": "file",
-      "file": "04_Preparo/MosaicosCompostos.md"
+      "file": "05_Metodos/Desmatamento.md"
     },
     {
       "id": "c_MascaraNuvem",
@@ -279,7 +279,7 @@
     },
     {
       "id": "e5",
-      "fromNode": "a_P05",
+      "fromNode": "a_P03",
       "fromSide": "right",
       "toNode": "c_PlanetScope",
       "toSide": "left",
@@ -288,6 +288,42 @@
     },
     {
       "id": "e6",
+      "fromNode": "a_P03",
+      "fromSide": "right",
+      "toNode": "c_PlanetNICFI",
+      "toSide": "left",
+      "label": "dado",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e7",
+      "fromNode": "a_P03",
+      "fromSide": "right",
+      "toNode": "c_UNet",
+      "toSide": "left",
+      "label": "método",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e8",
+      "fromNode": "a_P03",
+      "fromSide": "right",
+      "toNode": "c_MosaicosCompostos",
+      "toSide": "left",
+      "label": "preparo",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e9",
+      "fromNode": "a_P05",
+      "fromSide": "right",
+      "toNode": "c_PlanetScope",
+      "toSide": "left",
+      "label": "dado",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10",
       "fromNode": "a_P05",
       "fromSide": "right",
       "toNode": "c_UNet",
@@ -296,7 +332,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e7",
+      "id": "e11",
       "fromNode": "a_P07",
       "fromSide": "right",
       "toNode": "c_PlanetNICFI",
@@ -305,44 +341,8 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e8",
-      "fromNode": "a_P03",
-      "fromSide": "right",
-      "toNode": "c_PlanetScope",
-      "toSide": "left",
-      "label": "dado",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e9",
-      "fromNode": "a_P03",
-      "fromSide": "right",
-      "toNode": "c_PlanetNICFI",
-      "toSide": "left",
-      "label": "dado",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e10",
-      "fromNode": "a_P03",
-      "fromSide": "right",
-      "toNode": "c_UNet",
-      "toSide": "left",
-      "label": "método",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e11",
-      "fromNode": "a_P03",
-      "fromSide": "right",
-      "toNode": "c_MosaicosCompostos",
-      "toSide": "left",
-      "label": "preparo",
-      "toEnd": "arrow"
-    },
-    {
       "id": "e12",
-      "fromNode": "a_P04",
+      "fromNode": "a_P09",
       "fromSide": "right",
       "toNode": "c_PlanetScope",
       "toSide": "left",
@@ -351,16 +351,7 @@
     },
     {
       "id": "e13",
-      "fromNode": "a_P04",
-      "fromSide": "right",
-      "toNode": "c_PlanetNICFI",
-      "toSide": "left",
-      "label": "dado",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e14",
-      "fromNode": "a_P04",
+      "fromNode": "a_P09",
       "fromSide": "right",
       "toNode": "c_UNet",
       "toSide": "left",
@@ -368,17 +359,26 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e15",
-      "fromNode": "a_P04",
+      "id": "e14",
+      "fromNode": "a_P09",
       "fromSide": "right",
-      "toNode": "c_Desmatamento",
+      "toNode": "c_MosaicosCompostos",
       "toSide": "left",
-      "label": "tarefa",
+      "label": "preparo",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e15",
+      "fromNode": "a_P09",
+      "fromSide": "right",
+      "toNode": "c_MascaraNuvem",
+      "toSide": "left",
+      "label": "preparo",
       "toEnd": "arrow"
     },
     {
       "id": "e16",
-      "fromNode": "a_P06",
+      "fromNode": "a_P04",
       "fromSide": "right",
       "toNode": "c_PlanetScope",
       "toSide": "left",
@@ -387,34 +387,16 @@
     },
     {
       "id": "e17",
-      "fromNode": "a_P06",
+      "fromNode": "a_P04",
       "fromSide": "right",
-      "toNode": "c_MosaicosCompostos",
-      "toSide": "left",
-      "label": "preparo",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e18",
-      "fromNode": "a_P06",
-      "fromSide": "right",
-      "toNode": "c_Normalizacao",
-      "toSide": "left",
-      "label": "preparo",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e19",
-      "fromNode": "a_P09",
-      "fromSide": "right",
-      "toNode": "c_PlanetScope",
+      "toNode": "c_PlanetNICFI",
       "toSide": "left",
       "label": "dado",
       "toEnd": "arrow"
     },
     {
-      "id": "e20",
-      "fromNode": "a_P09",
+      "id": "e18",
+      "fromNode": "a_P04",
       "fromSide": "right",
       "toNode": "c_UNet",
       "toSide": "left",
@@ -422,8 +404,26 @@
       "toEnd": "arrow"
     },
     {
+      "id": "e19",
+      "fromNode": "a_P04",
+      "fromSide": "right",
+      "toNode": "c_Desmatamento",
+      "toSide": "left",
+      "label": "tarefa",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e20",
+      "fromNode": "a_P06",
+      "fromSide": "right",
+      "toNode": "c_PlanetScope",
+      "toSide": "left",
+      "label": "dado",
+      "toEnd": "arrow"
+    },
+    {
       "id": "e21",
-      "fromNode": "a_P09",
+      "fromNode": "a_P06",
       "fromSide": "right",
       "toNode": "c_MosaicosCompostos",
       "toSide": "left",
@@ -432,9 +432,9 @@
     },
     {
       "id": "e22",
-      "fromNode": "a_P09",
+      "fromNode": "a_P06",
       "fromSide": "right",
-      "toNode": "c_MascaraNuvem",
+      "toNode": "c_Normalizacao",
       "toSide": "left",
       "label": "preparo",
       "toEnd": "arrow"

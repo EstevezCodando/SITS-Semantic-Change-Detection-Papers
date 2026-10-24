@@ -44,10 +44,10 @@ Classificar uma data não valida transições mensais.
 |---|---|---:|---|---|
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[He_2024_TimeSeriesLand\|He 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Guo_2025_HRMSSCDHigh\|Guo 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |

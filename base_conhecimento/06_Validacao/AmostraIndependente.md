@@ -43,7 +43,7 @@ Cara de produzir.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | adota desenho de validação | 6 | 2, 8, 9, 10 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | adota desenho de validação | 3 | 1, 6, 13 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | adota desenho de validação | 3 | 1, 6, 13 | lido (profundo) |
 
 ## Navegação
 

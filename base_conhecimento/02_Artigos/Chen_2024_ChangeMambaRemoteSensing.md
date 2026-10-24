@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P28_Chen2024_ChangeMamba-Remote-Sensing-Change-Detection-
 markdown_fonte: "output/pdf/P28_Chen2024_ChangeMamba-Remote-Sensing-Change-Detection-With-Spatiotempo/document.md"
 paginas: 19
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (profundo)"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: ["[[xBD|xBD]]", "[[HRSCD|HRSCD]]", "[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]"]
@@ -17,14 +17,14 @@ metodos: ["[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de
 preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
 validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/profunda]
 ---
 
 # Chen 2024 — ChangeMamba: Remote Sensing Change Detection With Spatiotemporal State Space Model
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +36,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Verificar se a arquitetura **Mamba** (modelo de espaço de estados com varredura 2D) serve para detecção de mudança em imagens ópticas de alta resolução, nas três subtarefas **BCD** (binária), **SCD** (semântica) e **BDA** (avaliação de dano em edifícios). Propõe **MambaBCD, MambaSCD e MambaBDA**, com encoder VMamba compartilhado e um decodificador de mudança com **três mecanismos de modelagem espaço-temporal** (sequencial, cruzado e paralelo) (p. 1–2, 5–8).
 
 - “For the change decoder, which is available in all three architectures, we propose three spatio-temporal relationship modeling mechanisms, which can be naturally combined with the Mamba architecture and fully utilize its attribute to achieve” (p. 1, seção Início)
 - “In this paper, we present the first attempt at introducing Mamba architecture for CD tasks and propose several spatiotemporal state space models (collectively called ChangeMamba) to realize effective and robust CD.” (p. 2, seção I. I NTRODUCTION)
@@ -50,6 +52,11 @@ Resumo: não localizado no texto convertido.
 - “It comprises two aerial datasets from Christchurch, New Zealand, captured in April 2012 and 2016, with a spatial resolution of 0.3 meters/pixel.” (p. 9, seção IV. E XPERIMENTS A ND D ISCUSSIONS)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Cinco benchmarks (tabela I, p. 9): **SYSU-CD** (Hong Kong, 20.000 pares 256², 0,5 m, categoria-agnóstico), **LEVIR-CD+** (985 pares 1024², 0,5 m, edifícios), **WHU-CD** (um par de 32.508 × 15.354 px, 0,3 m, edifícios), **SECOND** (4.662 pares 512², 0,5–3 m, SCD) e **xBD** (11.034 pares 1024², < 0,8 m, 15 países, dano em 4 níveis).
+- Todos **bitemporais ópticos RGB**; nenhum em 3–5 m, nenhum Planet.
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **Imagens aéreas**: 5 ocorrências (p. 9, 18)
@@ -70,6 +77,12 @@ Resumo: não localizado no texto convertido.
 - **Aumento de dados**: 2 ocorrências (p. 9, 11)
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
+
+**Evidência (leitura) — Método:**
+
+- **Encoder:** VMamba de quatro estágios, blocos VSS com módulo SS2D e *cross-scan* em quatro direções, complexidade linear no número de tokens (p. 5–6).
+- **Decodificador de mudança:** três mecanismos de interação espaço-temporal combinados (p. 7–8); MambaSCD acrescenta dois decodificadores semânticos de cobertura do solo e deriva o "de-para" mascarando os mapas de cobertura com o mapa binário (p. 5–6). MambaBDA usa um decodificador de localização e um de classificação de dano (p. 6).
+- Três tamanhos (Tiny, Small, Base). Treino em PyTorch, **AdamW**, batch 16, recortes **256 × 256**, 20.000 iterações em SYSU e 50.000 nos demais, flips e rotação; inferência no tamanho original (p. 9). O valor numérico da taxa de aprendizado e do weight decay está ilegível na extração; **conferir no PDF**.
 
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 33 menções vs 10 de pares)
 **Métodos detectados automaticamente:**
@@ -98,13 +111,29 @@ Resumo: não localizado no texto convertido.
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
-Não informado (nenhum trecho com métrica e valor detectado).
+**Evidência (leitura) — Métricas e resultados:**
+
+- BCD: Rec, Pre, OA, F1, IoU, KC; SCD: OA, F1, mIoU, **SeK**; BDA: F1 de localização, F1 por nível de dano, **F1_overall = 0,3·F1_loc + 0,7·F1_clf** (p. 10).
+- **SYSU-CD** (tabela III, p. 10): MambaBCD-Base F1 83,11 e IoU 71,10; Small F1 82,83; melhor CNN/Transformer da lista SwinSUNet F1 81,58.
+- **SECOND** (tabela VII, p. 13): MambaSCD-Base SeK **22,92**, F1 55,32 e mIoU 73,68; Small SeK 22,83; Tiny 22,08; SCanNet 21,57; BiSRNet 21,18. O treino é no conjunto de treino e o teste no de teste (nota da tabela).
+- **xBD:** MambaBDA supera o DamFormer em +2,64, +4,12 e +4,39 de F1_overall, com ganho vindo da classificação de dano e não da localização (p. 12). "Minor damage" é a classe mais confundida (p. 13).
+- **Mecanismos espaço-temporais** (tabela XI, p. 16): sobre a linha de base, SYSU F1 81,11 → 82,83; SECOND SeK 21,15 → 22,83; xBD F1_overall 77,77 → 81,14. Sobre o Transformer: +0,77 de F1, +0,52 de SeK e +1,10 de F1_overall (p. 16). Cada mecanismo isolado dá quase o mesmo (F1 82,17–82,24) e juntos 82,83 (tabela XII).
+- **Backbones** (tabela XIII, p. 17): VMamba-Small F1 82,83 vs Swin-Small 82,22 e EfficientNet-B5 82,26.
+- **Custo:** MambaBCD-Tiny 17,13 M de parâmetros e 45,74 GFLOPs; Base 84,70 M e 179,32 GFLOPs (tabela VI, p. 13).
+- **Robustez a degradação** (LEVIR-CD+, p. 17): com desfoque gaussiano σ de 0 a 2 o F1 do MambaBCD cai 8,73 % contra ~60 % de SiamCRNN-101 e DSIFN; com ruído (σ = 20) cai 8,26 %; mudança de escala para 0,5 cai 12,03 % contra 14,99–16,41 %.
+
 
 ## 9. Limitações e condições de aplicabilidade
 
-Não informado (nenhum trecho de limitação detectado).
+**Evidência (leitura) — Limites declarados e observações:**
+
+- Trabalho futuro citado: Mamba mais adequado a dados de sensoriamento remoto, **dados multimodais e séries temporais**, modelos fundacionais (p. 18).
+- **Observações minhas:** (a) no SECOND o MambaSCD-Tiny e o Base têm OA 90,44 e 90,36 enquanto o Small tem 86,48, com F1 e SeK próximos; é uma discrepância na tabela VII (p. 13) que o texto não explica; (b) os ganhos sobre SCanNet no SECOND são de ~1,3 ponto de SeK e vêm de uma execução por configuração, sem desvio; (c) no SECOND os números de SeK deste artigo (22,9) não são comparáveis a P34 (26,1) sem checar protocolo e divisão; P34 relata SCanNet em 23,18 e 23,84 em lugares diferentes; (d) a avaliação de robustez é só em LEVIR-CD+ e com degradações sintéticas, não com variação real de sensor ou fenologia; (e) o "Mamba é linear" vale em FLOPs/memória; o tempo real de treino não é comparado.
+
 
 ## 10. Reprodutibilidade: código, dados, dependências e informações ausentes
+
+- Código aberto: github.com/ChenHongruixuan/MambaCD (p. 1, 9); hiperparâmetros quase completos.
 
 - **Código/dados:** sim: github.com/ChenHongruixuan/MambaCD (p. 1)
 - URL citada: https://github.com/ChenHongruixuan/MambaCD (p. 1)
@@ -116,6 +145,18 @@ Não informado (nenhum trecho de limitação detectado).
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Custo 6 (p. 2, 3, 13, 15, 17)
+
+**Interpretação — O que reaproveitar:**
+
+- **Encoder VMamba** como alternativa de custo linear ao Transformer para tiles grandes ou mosaicos extensos; a família já aparece como backbone em P34 (VMamba-B, SeK 25,31 no SECOND).
+- **Derivar o "de-para" de dois mapas de cobertura mascarados pelo mapa binário** (MambaSCD): bom desenho quando há rótulos de cobertura por data.
+- **Teste de robustez com desfoque, ruído e escala** como protocolo barato para simular diferenças entre mosaicos Planet (resolução efetiva, ruído).
+- **F1_overall 0,3/0,7** como exemplo de métrica composta localização + classificação.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Imagem RGB de 0,3–3 m e pares bitemporais; as bandas NIR e a resolução de 3–5 m não foram testadas.
+- Dano em edifícios (xBD) é evento discreto; floresta e estradas têm limites difusos.
 
 ## 12. Relações justificadas com outras notas
 
@@ -140,6 +181,18 @@ Não informado (nenhum trecho de limitação detectado).
 - aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 3 ocorrências (p. 7, 15)
 - adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 8 ocorrências (p. 9, 11, 12, 13, 14)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+
+## Figuras selecionadas
+
+![[Chen_2024_ChangeMambaRemoteSensing_p6_Fig.2.png|520]]
+*Fig. 2: The specific structure of the encoder network is based on the visual state space model used in our three architectures. (p. 6; recorte do PDF convertido)*
+
+![[Chen_2024_ChangeMambaRemoteSensing_p7_Fig.4.png|520]]
+*Fig. 4: The specific structure of the change decoder used in MambaBCD, MambaSCD, and MambaBDA architectures based on the proposed (p. 7; recorte do PDF convertido)*
+
+![[Chen_2024_ChangeMambaRemoteSensing_p6_Fig.3.png|520]]
+*Fig. 3: Illustration of the (a) self-attention mechanism , (p. 6; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

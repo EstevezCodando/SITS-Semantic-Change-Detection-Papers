@@ -9,7 +9,7 @@ arquivo_fonte: "coleta/P113_Jelas2024_Deforestation-detection-using-deep-learnin
 markdown_fonte: "output/pdf/P113_Jelas2024_Deforestation-detection-using-deep-learning-based-semantic-s/document.md"
 paginas: 24
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
+status_leitura: "lido (parcial)"
 tarefas: ["[[Desmatamento|Desmatamento]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: ["[[UAV|UAV / drones]]", "[[Landsat|Landsat]]", "[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[PRODES|PRODES (INPE)]]", "[[DETER|DETER (INPE)]]"]
@@ -17,14 +17,14 @@ metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RandomFores
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]"]
 validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
 ferramentas: ["[[QGIS|QGIS]]", "[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial]
 ---
 
 # Jelas 2024 — Deforestation detection using deep learning-based semantic segmentation techniques: a systematic review
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +36,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Revisão sistemática (PRISMA) do uso de **segmentação semântica com aprendizado profundo para detectar desmatamento** em imagens de satélite e de VANT, no período de 2018 a 2022 (p. 1, 4).
 
 - “To address these issues, this study aims to contribute to the development of a more precise and automated approach for deforestation detection using satellite data through comparative evaluations of the reviewed models, showcasing the benef” (p. 3, seção 1 Introduction)
 
@@ -75,6 +77,18 @@ Resumo: não localizado no texto convertido.
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método da revisão:**
+
+- Busca em **Scopus e Web of Science** em março de 2023, com as palavras "deforestation", "segmentation" e "deep learning": **95 artigos** (70 Scopus e 25 WoS); 15 duplicados removidos; 53 excluídos por tipo, idioma e período; **27 elegíveis**; 5 excluídos por não serem segmentação de desmatamento com aprendizado profundo; **22 incluídos** (p. 4). Critérios: inglês, 2018–2022, apenas artigo de periódico (p. 4, tabela 2).
+- Um especialista em imagens de satélite participou da seleção dos subtemas (p. 6).
+
+**Evidência (leitura) — Desafios e tendências apontados:**
+
+- A necessidade de grandes volumes de dados (um estudo usou 1.716.000 imagens, com 40.392 de desmatamento e 1.675.608 sem desmatamento; outro 480.000) e o uso de aumento por rotação e flips (p. 21).
+- **Perda de informação espacial e representação insuficiente** em CNNs; propostas: aprendizagem e fusão multiescala (ASPP, SPP, DASPP/WASPP-Net, U-Net com SPP: acurácia 86,71 %, IoU 75,59 %, F1 82,88 %) (p. 21).
+- **Sobreajuste**: mecanismos de atenção (AXNet) e convoluções em grupo com embaralhamento (p. 22).
+- O Google Earth/GEE como apoio para validar (PRODES, DETER) e refinar anotações (p. 21).
+
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 20 menções vs 0 de pares)
 **Métodos detectados automaticamente:**
 - método/família **U-Net**: 94 ocorrências (p. 1, 6, 7, 8, 9)
@@ -103,6 +117,13 @@ Resumo: não localizado no texto convertido.
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
+**Evidência (leitura) — Resultados agregados:**
+
+- Dos 22 estudos, **12 (55 %) detectam desmatamento diretamente**, 6 (27 %) incêndio florestal, 2 (9 %) desertificação e 2 (9 %) áreas de mineração (p. 6).
+- **Satélite em 64 %** dos casos e **VANT em 36 %** (p. 6, 20).
+- **U-Net em 45 %** dos estudos, com a maior acurácia citada (99,91 %, Wang et al. 2022, em dados de VANT); DeepLabV3 em 14 % (98,143 %); ResNet, SegNet e FCN em ~5 % cada (precisão 91,85 %, OA média 99,5 % e PA 99,67 %) (p. 20).
+- O texto compara **acurácias de estudos com dados e protocolos diferentes** (por exemplo, Morales 2018 com bases privadas de VANT; Torres 2021 na Amazônia; Wang 2022 em VANT) (p. 20).
+
 **Trechos numéricos detectados automaticamente (verificar):**
 - “(2021) proposed a convolutional neural network-based method for detecting deforestation in Finland, achieving an overall accuracy of 92.78%.” (p. 2, seção 1 Introduction)
 - “(2020) developed a deep learning-based framework for detecting deforestation in Greater Khingan Mountains in northeast China, achieving an overall accuracy of 93.60% by using direct method, while 93.80% by using indirect method.” (p. 2, seção 1 Introduction)
@@ -110,6 +131,10 @@ Resumo: não localizado no texto convertido.
 - “Highest Precision (0.989)<br>5.” (p. 9, seção 3.3 Remote sensing technology for)
 
 ## 9. Limitações e condições de aplicabilidade
+
+**Evidência (leitura) — Limites e observações:**
+
+- **Observações minhas:** (a) a busca é estreita (três palavras, duas bases, só artigos de periódico), exclui conferências e preprints e portanto a maior parte da literatura de visão computacional; (b) 22 estudos tornam as porcentagens frágeis (55 % = 12 de 22); (c) a "maior acurácia" de 99,91 % é de VANT em um estudo e não se compara com os demais; acurácia global em desmatamento, que é classe rara, pode ficar alta mesmo com recall baixo; (d) a revisão trata de **segmentação de cobertura/desmatamento em uma data**, não de detecção de mudança bitemporal ou em série, e não discute Planet/NICFI; (e) não vi no trecho lido uma análise de risco de vazamento espacial entre treino e teste nos estudos incluídos.
 
 **Trechos detectados automaticamente (verificar contexto):**
 - “Conventional machine learning algorithms such as Support Vector Machine (SVM) and Random Forest (RF), while effective, have limitations compared to deep learning algorithms in detecting the deforestation (Alonso et al., 2020).” (p. 2, seção 1 Introduction)
@@ -126,6 +151,16 @@ Resumo: não localizado no texto convertido.
 
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Falsos alertas 1 (p. 19); Custo 1 (p. 20)
+
+**Interpretação — O que reaproveitar:**
+
+- **Estratégia PRISMA** (identificação → triagem → elegibilidade → inclusão) com cadeias de busca registradas, útil para documentar a nossa própria coleta.
+- **Lista de arquiteturas** de segmentação (U-Net, DeepLabV3, SegNet, FCN) e a taxonomia multiescala (aprendizagem vs fusão) como vocabulário de apoio.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Serve como mapa introdutório e para justificar linhas de base; **não** fornece evidência comparável de desempenho, pois mistura sensores, resoluções e métricas.
+- Cobertura até 2022; não inclui modelos fundacionais ou Mamba.
 
 ## 12. Relações justificadas com outras notas
 
@@ -152,6 +187,15 @@ Resumo: não localizado no texto convertido.
 - adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 7 ocorrências (p. 13, 16, 17)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
+
+## Figuras selecionadas
+
+![[Jelas_2024_DeforestationDetectionDeep_p5_FIGURE1.png|520]]
+*FIGURE 1 (p. 5; recorte do PDF convertido)*
+
+![[Jelas_2024_DeforestationDetectionDeep_p13_FIGURE2.png|520]]
+*FIGURE 2 (p. 13; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

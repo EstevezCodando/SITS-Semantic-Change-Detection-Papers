@@ -11,11 +11,11 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 | Artigo | Classificação | Quase tempo real | Latência / frequência | Falsos alertas | Persistência / confirmação | Revisão humana | Drift | Custo | Rastreabilidade | Alertas | Sistema operacional |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | retrospectivo | — | 1 (p. 3) | — | 5 (p. 7) | 3 (p. 3, 6) | — | — | — | 1 (p. 16) | — |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | 1 (p. 2) | — | — | 1 (p. 4) | — | — | — | — | — |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | retrospectivo | — | 1 (p. 2) | — | — | 1 (p. 4) | — | — | — | — | — |
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | 1 (p. 3) | — | 3 (p. 1, 2) | — | — | — | 4 (p. 1, 3) | 2 (p. 1) |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | retrospectivo | — | — | — | — | — | — | — | — | — | — |
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | 3 (p. 10, 12) | — | — | — |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | 2 (p. 2) | — | — | 2 (p. 23, 24) | 1 (p. 8) | — | — |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | retrospectivo | — | — | — | 2 (p. 2) | — | — | 2 (p. 23, 24) | 1 (p. 8) | — | — |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | retrospectivo | — | — | — | — | — | — | — | — | — | — |
 | [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | retrospectivo | — | 20 (p. 1, 2) | — | 1 (p. 4) | — | — | — | — | — | — |
@@ -110,7 +110,7 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 
 ## Leitura da tabela
 
-- Classificações curadas (leitura): [[Wagner_2023_MappingTropicalForest|Wagner 2023]] → retrospectivo; [[Vincent_2024_SatelliteImageTime|Vincent 2024]] → retrospectivo; [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] → retrospectivo; [[Etten_2021_MultiTemporalUrban|Etten 2021]] → retrospectivo; [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] → retrospectivo; [[Wu_2026_GeoAIPythonPackage|Wu 2026]] → ferramenta (sem avaliação).
+- Classificações curadas (leitura): [[Wagner_2023_MappingTropicalForest|Wagner 2023]] → retrospectivo; [[Vincent_2024_SatelliteImageTime|Vincent 2024]] → retrospectivo; [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] → retrospectivo; [[Etten_2021_MultiTemporalUrban|Etten 2021]] → retrospectivo; [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] → retrospectivo; [[Wu_2026_GeoAIPythonPackage|Wu 2026]] → ferramenta (sem avaliação); [[Carter_2024_DetectionForestDisturbance|Carter 2024]] → retrospectivo; [[GonzalezVelez_2026_TropicalDryForest|GonzalezVelez 2026]] → retrospectivo.
 - “candidato a sistema operacional” significa apenas que o texto menciona operação e alertas; **deve ser verificado** (ex.: sistemas DETER).
 - Lacuna principal: [[L01_ValidacaoOperacional]].
 

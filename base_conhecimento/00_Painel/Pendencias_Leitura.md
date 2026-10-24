@@ -11,13 +11,19 @@ Registro explícito do que foi lido e do que falta. Prioridade: artigos com extr
 ## Lidos em profundidade
 
 - [[Wagner_2023_MappingTropicalForest|Wagner 2023]]
+- [[Carter_2024_DetectionForestDisturbance|Carter 2024]]
 - [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]]
 - [[Vizzari_2022_PlanetScopeSentinelSentinel|Vizzari 2022]]
+- [[GonzalezVelez_2026_TropicalDryForest|GonzalezVelez 2026]]
 - [[Etten_2021_MultiTemporalUrban|Etten 2021]]
 - [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]]
 - [[Vincent_2024_SatelliteImageTime|Vincent 2024]]
 - [[Daudt_2019_MultitaskLearningLarge|Daudt 2019]]
 - [[Yang_2021_AsymmetricSiameseNetworks|Yang 2021]]
+- [[Chen_2024_ChangeMambaRemoteSensing|Chen 2024]]
+- [[Shen_2026_FoundationModelDriven|Shen 2026]]
+- [[Shu_2025_SCDNewBenchmark|Shu 2025]]
+- [[Li_2024_NewLearningParadigm|Li 2024]]
 - [[Wu_2026_GeoAIPythonPackage|Wu 2026]]
 - [[Tresson_2026_IAMAPUnlockingDeep|Tresson 2026]]
 - [[Febrita_2025_EvaluatingDrivenAutomated|Febrita 2025]]
@@ -27,22 +33,16 @@ Registro explícito do que foi lido e do que falta. Prioridade: artigos com extr
 
 - [[Dalagnol_2023_MappingTropicalForest|Dalagnol 2023]] — ver seção 9 da nota
 - [[He_2024_TimeSeriesLand|He 2024]] — ver seção 9 da nota
+- [[Szwarcman_2024_PrithviVersatileMultitemporal|Szwarcman 2024]] — ver seção 9 da nota
 - [[Olofsson_2014_GoodPracticesEstimating|Olofsson 2014]] — ver seção 9 da nota
+- [[Jelas_2024_DeforestationDetectionDeep|Jelas 2024]] — ver seção 9 da nota
+- [[Shafique_2022_DeepLearningChange|Shafique 2022]] — ver seção 9 da nota
 - [[Aszkowski_2023_DeepnessDeepNeural|Aszkowski 2023]] — ver seção 9 da nota
 - [[Wang_2024_GeoSamTesting|Wang 2024]] — ver seção 9 da nota
+- [[Boutayeb_2024_ComprehensiveGeoAIReview|Boutayeb 2024]] — ver seção 9 da nota
 
 ## Extração automática (não lidos) — ordenados por número de conceitos ligados
 
-- [[Shafique_2022_DeepLearningChange|Shafique 2022]] — 23 conceitos
-- [[Jelas_2024_DeforestationDetectionDeep|Jelas 2024]] — 22 conceitos
-- [[Boutayeb_2024_ComprehensiveGeoAIReview|Boutayeb 2024]] — 22 conceitos
-- [[Shen_2026_FoundationModelDriven|Shen 2026]] — 21 conceitos
-- [[Chen_2024_ChangeMambaRemoteSensing|Chen 2024]] — 20 conceitos
-- [[Li_2024_NewLearningParadigm|Li 2024]] — 20 conceitos
-- [[Carter_2024_DetectionForestDisturbance|Carter 2024]] — 19 conceitos
-- [[GonzalezVelez_2026_TropicalDryForest|GonzalezVelez 2026]] — 19 conceitos
-- [[Szwarcman_2024_PrithviVersatileMultitemporal|Szwarcman 2024]] — 18 conceitos
-- [[Shu_2025_SCDNewBenchmark|Shu 2025]] — 18 conceitos
 - [[Lu_2025_VisionFoundationModels|Lu 2025]] — 18 conceitos
 - [[Simsek_2025_DeterminationLandLand|Simsek 2025]] — 17 conceitos
 - [[Bou_2026_RemoteSensingChange|Bou 2026]] — 17 conceitos

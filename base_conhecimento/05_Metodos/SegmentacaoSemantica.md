@@ -43,7 +43,7 @@ Uma imagem isolada não é evidência de detecção temporal.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[He_2024_TimeSeriesLand\|He 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |

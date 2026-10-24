@@ -47,7 +47,7 @@ Planet Fusion (diário, gap-filled) não equivale ao mosaico mensal convencional
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | utiliza dado/sensor | 39 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | utiliza dado/sensor | 17 | 2, 3, 5, 6, 7 | extraído automaticamente (não lido) |
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza dado/sensor | 13 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 12 | 2, 4, 5, 12, 13 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 12 | 2, 4, 5, 12, 13 | lido (profundo) |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | utiliza dado/sensor | 11 | 1, 2, 3, 8, 9 | extraído automaticamente (não lido) |
 | [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | utiliza dado/sensor | 10 | 1, 3, 4, 13 | extraído automaticamente (não lido) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | utiliza dado/sensor | 9 | 6, 8, 13 | extraído automaticamente (não lido) |

@@ -42,15 +42,15 @@ Resolução e interpretabilidade diferentes do óptico.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza dado/sensor | 65 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
+| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza dado/sensor | 65 | 1, 2, 3, 4, 5 | lido (parcial) |
 | [[Lei_2026_RemoteSensingImage\|Lei 2026]] | utiliza dado/sensor | 65 | 4, 5, 6, 7, 9 | extraído automaticamente (não lido) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 42 | 1, 2, 3, 5, 7 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 42 | 1, 2, 3, 5, 7 | lido (profundo) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | utiliza dado/sensor | 26 | 1, 2, 3, 4, 6 | extraído automaticamente (não lido) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | utiliza dado/sensor | 26 | 1, 4, 5, 9, 11 | extraído automaticamente (não lido) |
 | [[Kerdreux_2025_EfficientSelfSupervised\|Kerdreux 2025]] | utiliza dado/sensor | 21 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Lu_2025_VisionFoundationModels\|Lu 2025]] | utiliza dado/sensor | 18 | 3, 4, 5, 9, 10 | extraído automaticamente (não lido) |
 | [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | utiliza dado/sensor | 15 | 1, 3, 6, 7, 10 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza dado/sensor | 15 | 12, 13, 16, 17, 28 | extraído automaticamente (não lido) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza dado/sensor | 15 | 12, 13, 16, 17, 28 | lido (parcial) |
 | [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | utiliza dado/sensor | 13 | 1, 2, 3, 5, 6 | extraído automaticamente (não lido) |
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | utiliza dado/sensor | 7 | 8, 17, 18, 19, 20 | extraído automaticamente (não lido) |
 | [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | utiliza dado/sensor | 5 | 2, 3, 13 | extraído automaticamente (não lido) |

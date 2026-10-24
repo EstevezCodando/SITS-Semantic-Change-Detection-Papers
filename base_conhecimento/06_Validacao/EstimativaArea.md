@@ -45,7 +45,7 @@ Exige amostra independente e rótulos de referência.
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | é avaliado por | 12 | 1, 5, 7, 14, 15 | extraído automaticamente (não lido) |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | é avaliado por | 6 | 4, 6, 12 | extraído automaticamente (não lido) |
 | [[Brown_2025_AlphaEarthFoundationsEmbedding\|Brown 2025]] | é avaliado por | 4 | 3, 8, 9, 10 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | é avaliado por | 3 | 6, 12 | extraído automaticamente (não lido) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | é avaliado por | 3 | 6, 12 | lido (profundo) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | é avaliado por | 3 | 7, 14 | extraído automaticamente (não lido) |
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | é avaliado por | 3 | 2, 15 | extraído automaticamente (não lido) |
 

@@ -54,8 +54,8 @@ Transições raras; número de classes cresce com N².
 | [[Yongshuo_2025_SemanticRemoteSensing\|Yongshuo 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Huang_2025_TextSCDLeveragingText\|Huang 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Bou_2026_RemoteSensingChange\|Bou 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
+| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 
