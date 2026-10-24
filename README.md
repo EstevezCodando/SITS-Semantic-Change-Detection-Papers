@@ -4,7 +4,7 @@
 
 Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em séries temporais de imagens de satélite (SITS-SCD), orientada a **mosaicos mensais Planet de 3–5 m (2020–2026)**: supressão vegetal, novas construções, abertura de vias e outras transições de cobertura. Cada entrada informa **onde**, **entre quais datas** e **de qual cobertura para qual cobertura** o estudo trata, com comentário de método, aplicação e limite. A coletânea inclui ainda artigos sobre **GeoAI e plugins de QGIS**, bibliotecas verificadas e um guia metodológico para o experimento do projeto.
 
-> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Nem todos os artigos foram lidos: 27 têm ficha de leitura profunda ou parcial com páginas citadas; os demais têm apenas extração automática (veja [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)).
+> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Nem todos os artigos foram lidos: 41 têm ficha de leitura profunda ou parcial com páginas citadas; os demais têm apenas extração automática (veja [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)).
 
 ## Sobre esta coleta
 
@@ -33,13 +33,15 @@ Além da lista de artigos, este repositório documenta todo o tratamento aplicad
 | 6. Conversão para Markdown | Os PDFs foram convertidos em Markdown com marcadores de página e figuras recortadas, com ferramenta própria e validação. | 97 documentos convertidos | `output/pdf/` (fora do git), `scripts/convert_pdfs.ps1`, `scripts/pdf_to_markdown.py`, `scripts/validate_pdf_markdown.py`, `scripts/PDF_PIPELINE.md` |
 | 7. Extração automática | Para cada texto: sensores, conjuntos de dados, métodos, métricas, hiperparâmetros, frases com números, URLs de código, legendas de figuras e resumo, sempre com a página. | `dados/kb_extract.json` e chunks por seção para RAG | `scripts/kb_extract.py`, `scripts/chunk_text.py`, `dados/chunks/` (fora do git) |
 | 8. Primeiro vault Obsidian | Notas por artigo, conceitos, pipeline, experimentos e grafo. | Vault anterior, mantido | `vault/` |
-| 9. Leitura profunda | Leitura de texto integral ou parcial, com fichas que separam o que o artigo diz (com página) do que é interpretação. | 27 fichas por artigo (11 de prioridade alta, 6 de GeoAI/QGIS e as demais dos artigos com mais conceitos ligados) e 7 sínteses | `dados/leitura_profunda/` |
-| 10. Nova base de conhecimento | Vault em `00_Painel` … `99_Templates`: notas de artigo com 12 seções e YAML, conceitos, 10 MOCs, lacunas, matriz comparativa, tabela de monitoramento (retrospectivo ou operacional), figuras, anexos e templates. | 103 artigos, 93 conceitos, 51 figuras, 245 notas | `base_conhecimento/`, `scripts/kb_*.py` |
-| 11. Mapas e grafo | Canvas metodológico e 4 canvases temáticos (cartões 320×180, grupos por etapa) e guia de cores do grafo por pasta. | 5 canvases com checagem geométrica sem sobreposição | `base_conhecimento/01_Mapas/`, `base_conhecimento/.obsidian/graph.json` |
+| 9. Leitura profunda | Leitura de texto integral ou parcial, com fichas que separam o que o artigo diz (com página) do que é interpretação. | 41 fichas por artigo e 7 sínteses; os artigos de maior relevância para o objetivo foram lidos em uma segunda rodada | `dados/leitura_profunda/` |
+| 10. Nova base de conhecimento | Vault em `00_Painel` … `99_Templates`: notas de artigo com 12 seções e YAML, conceitos, 10 MOCs, lacunas, matriz comparativa, tabela de monitoramento (retrospectivo ou operacional), figuras, anexos e templates. | 103 artigos, 78 conceitos, 88 figuras, 12865 notas | `base_conhecimento/`, `scripts/kb_*.py` |
+| 10b. Relevância e trilha para o objetivo | Ranking automático de relevância sobre os 97 textos; segunda rodada de leitura dos artigos com Planet de 3–5 m, construção, supressão de vegetação, vias e alertas; faixas de relevância A–D no campo `relevancia_objetivo`; nota `Trilha_Objetivo_Planet5m` com o fluxo dados → preparo → rótulos → modelo → pós-processamento temporal → validação → monitoramento. | faixas A, B, C e D por artigo; trilha e canvas da trilha | `scripts/kb_rank.py`, `dados/ranking_relevancia.json`, `base_conhecimento/01_Mapas/Trilha_Objetivo_Planet5m.md` |
+| 10c. Reorganização do grafo | Artigos coloridos por relevância; links de artigos não lidos limitados a sensor, dado, tarefa e poucos métodos; links curados pela leitura nos artigos lidos; painéis e tabelas-índice ocultos no grafo; relações entre artigos com explicação. | grafo com núcleo legível (A e B) e visões prontas em `Guia_Grafo` | `base_conhecimento/.obsidian/graph.json`, `base_conhecimento/00_Painel/Guia_Grafo.md` |
+| 11. Mapas e grafo | Canvas metodológico, canvases temáticos e canvas da trilha (cartões 320×180, grupos por etapa) e guia de cores do grafo. | 6 canvases com checagem geométrica sem sobreposição | `base_conhecimento/01_Mapas/`, `base_conhecimento/.obsidian/graph.json` |
 | 12. Verificação | Links quebrados, duplicados, notas órfãs, YAML, rastreabilidade das evidências, página de cada trecho e validade dos canvases. | 0 quebrados, 0 duplicados, 0 órfãs, 0 trechos sem página | `base_conhecimento/00_Painel/Verificacao.md` |
 | 13. Empacotamento | Pasta compactada da base para levar ao Obsidian. | `base_conhecimento.zip` (fora do git) | raiz |
 
-**Estado da leitura.** Das notas de artigo da base, 18 estão como *lido (profundo)*, 9 como *lido (parcial)* e 76 como *extraído automaticamente (não lido)*. A lista de pendências está em `base_conhecimento/00_Painel/Pendencias_Leitura.md`.
+**Estado da leitura.** Das notas de artigo da base, 26 estão como *lido (profundo)*, 15 como *lido (parcial)* e 62 como *extraído automaticamente (não lido)*. Relevância para o objetivo (Planet de ~5 m: construção, supressão de vegetação, vias): 16 artigos A, 15 B, 10 C e 62 não avaliados (D). A lista de pendências, com o ranking dos próximos a ler, está em `base_conhecimento/00_Painel/Pendencias_Leitura.md`.
 
 **Regras seguidas no tratamento:** originais e notas existentes preservados; nada inventado, usando "não informado" quando o texto não traz o dado; cada afirmação de método ou resultado com página ou seção; resultados de benchmarks diferentes não são ordenados entre si; evidência e interpretação ficam separadas.
 
@@ -1125,7 +1127,7 @@ dados/links_original.json resultado da checagem dos URLs do documento original
 dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs
 dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)
 dados/kb_extract.json     extracao automatica por artigo (entidades, numeros, URLs, figuras) com pagina
-dados/leitura_profunda/   27 fichas de leitura (profunda ou parcial) e 7 sinteses; fonte do vault
+dados/leitura_profunda/   41 fichas de leitura (profunda ou parcial) e 7 sinteses; fonte do vault
 output/                   PDFs convertidos em Markdown e figuras (ferramenta propria; fora do git)
 base_conhecimento.zip      pacote da base (fora do git)
 vault/                    vault Obsidian anterior (artigos, conceitos, pipeline, experimentos, reuso)

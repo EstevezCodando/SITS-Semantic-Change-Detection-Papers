@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P168_Wu2020_geemap-A-Python-package-for-interactive-
 paginas: 3
 tipo_documento: "artigo curto (≤4 páginas; verificar)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
 metodos: []
 preparo: []
 validacao: []
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Wu 2020 — geemap: A Python package for interactive mapping with Google Earth Engine
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -84,7 +87,7 @@ Não informado (nenhum trecho de limitação detectado).
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 20 ocorrências (p. 1, 2)
+- Nenhuma relação com suporte suficiente foi criada para este artigo (evita ligações por coincidência de palavras).
 
 ## Anotações do leitor
 

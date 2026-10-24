@@ -9,22 +9,25 @@ arquivo_fonte: "coleta/P04_Wang2024_AI-based-Validation-of-Deforestation-Using-H
 markdown_fonte: "output/pdf/P04_Wang2024_AI-based-Validation-of-Deforestation-Using-High-Resolution-S/document.md"
 paginas: 6
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e perturbação florestal]]"]
-sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[PlanetProdutos|Produtos Planet (visão geral)]]"]
-conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]", "[[MapBiomas|MapBiomas]]"]
+status_leitura: "lido (profundo)"
+relevancia_objetivo: "A"
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+conjuntos_dados: ["[[MapBiomas|MapBiomas]]", "[[DETER|DETER (INPE)]]"]
 metodos: ["[[UNet|U-Net]]", "[[RandomForest|Random Forest]]"]
-preparo: ["[[Textura|Textura (GLCM)]]", "[[Rotulagem|Rotulagem e anotação]]"]
+preparo: ["[[AumentoDados|Aumento de dados]]"]
 validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Wang 2024 — AI-based Validation of Deforestation Using High-Resolution Satellite Imagery in the Brazilian Amazon
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — Par NICFI antes e depois com U-Net bitemporal de supressão (F1 0,83), mas divisão aleatória e amostra pequena.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -35,6 +38,10 @@ tags: [artigo, leitura/automatica]
 - **Tipo de documento:** artigo completo (texto integral convertido).
 
 ## 2. Problema investigado e contribuição principal
+
+**Evidência (leitura):**
+
+**Confirmar automaticamente alertas de desmatamento** da Amazônia brasileira com **um par de imagens Planet NICFI (antes e depois)** em cada local sugerido por produtos de baixa resolução (DETER, SAD, GLAD, SIRAD-X via MapBiomas Alerta), distinguindo **desmatamento novo** do já existente. O objetivo é substituir a validação manual do Imazon (p. 1–2).
 
 **Resumo detectado automaticamente (p. 1):** Forests play an important role in the Earth systems for carbon sequestration and climate change mitigation, yet they have been increasingly disturbed by deforestation and forest degradation at an unprecedented pace. The Brazilian Amazon, for instance, experienced a 140% rise in deforestation from 2012 to 2020, with a record loss of 13,200 km² between August 2020 and July 2021. Alarmingly, 87% of 2019 deforestation alerts occurred on private properties, with 61% in legally restricted areas. Existing deforestation monitoring systems, such as PRODES and the Global Forest Change dataset, use about 30m resolution satellite imagery, which is insufficient for operational validation at fine scales. The Deforestation Alert System by Imazon leverages highresolution PlanetScope data (3-4m) but faces challenges due to fewer spectral bands and variations in reflectance values across different satelli…
 
@@ -49,6 +56,12 @@ tags: [artigo, leitura/automatica]
 - “Taking the Brazilian Amazon as an example, deforestation has been rapidly growing by 140% from 2012 to 2020, and between August 2020 and July 2021 alone, this region experienced a huge forest loss of 13,200 km², marking the highest deforest” (p. 1, seção Abstract)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Locais de desmatamento do **MapBiomas Alerta** (2022) como verdade; para cada um, **um par de imagens NICFI** (R, G, B, NIR) por GEE, antes e depois (p. 3).
+- **1.912 imagens** na área de 55°–52,5° O e 2,5° S–0° (perto do Rio Amazonas) (p. 3).
+- Divisão **aleatória 80/10/10** (treino, validação, teste) (p. 3).
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **PlanetScope**: 8 ocorrências (p. 1, 2, 3, 5)
@@ -72,6 +85,12 @@ tags: [artigo, leitura/automatica]
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método:**
+
+- **U-Net bitemporal** (4 blocos de encoder e 4 de decoder; convoluções 3 × 3 com stride 2 para reduzir; camada de projeção final em mapa de probabilidade de desmatado e não desmatado); perda **Dice** (p. 2–3).
+- Linhas de base: **Random Forest** de 50 árvores por pixel e **rede densa** de 5 camadas de 512 neurônios, ambas sobre pixel isolado (p. 3).
+- Adam, lr 1e-4, 50 épocas; aumento por rotações e flips; melhor modelo escolhido pelo maior F1 de validação (p. 3–4).
+
 - **Estratégia temporal (detecção automática, verificar):** bitemporal / pares (auto: 7 menções)
 **Métodos detectados automaticamente:**
 - método/família **U-Net**: 17 ocorrências (p. 2, 3, 4, 5)
@@ -91,15 +110,30 @@ tags: [artigo, leitura/automatica]
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
+**Evidência (leitura) — Resultados (tabela 1, p. 5):**
+
+| Modelo | F1 | Precisão | Recall | Acurácia |
+|---|---|---|---|---|
+| Random Forest | 0,5505 | 0,6712 | 0,4665 | 0,9456 |
+| Rede densa | 0,5833 | 0,4729 | 0,7608 | 0,9223 |
+| **U-Net** | **0,8251** | 0,7462 | 0,9226 | 0,9720 |
+- A U-Net delimita melhor as bordas e preenche as clareiras com árvores esparsas; o RF tem ruído "sal e pimenta" (p. 5). Um limiar global de NDVI não separa bem desmatado de não desmatado (p. 5).
+
 **Trechos numéricos detectados automaticamente (verificar):**
 - “Moreover, a recent study indicates that 87% of the deforestation alerts in 2019 occurred on private properties, with 61% overlapping with legal restricted areas for forest removal, and only 0.1% were licensed forest suppression (MapBiomas, 2020).” (p. 1, seção Abstract)
 - “It can be seen that the removal of trees usually leads to lower NDVI values |Model|F1 Precision Recall Accuracy| |---|---| |RF<br>FCN|0.5505<br>0.6712<br>0.4665<br>0.9456<br>0.5833<br>0.4729<br>0.7608<br>0.9223| |U-Net|0.8251<br>0.7462<br>0.9226<br>0.9720| Tab” (p. 5, seção Abstract)
 
 ## 9. Limitações e condições de aplicabilidade
 
-Não informado (nenhum trecho de limitação detectado).
+**Evidência (leitura) — Limites e observações:**
+
+- O artigo não traz seção de limitações; a conclusão fala em **mais amostras e outras florestas** como trabalho futuro (p. 6).
+- **Observações minhas:** (a) a divisão é **aleatória**, sem separar por local ou região, e os sítios vêm de uma só janela de ~280 km, então há risco de vazamento espacial e a generalização não foi testada; (b) a "verdade" vem de alertas de outros sistemas (MapBiomas), então o modelo reproduz o que esses sistemas já viram e **não mede desmatamento perdido por eles**; (c) a acurácia de 97 % é pouco informativa com classe rara; o F1 de 0,83 é a métrica que importa; (d) as linhas de base usam **pixel isolado**, sem contexto, enquanto a U-Net vê vizinhança; a comparação não separa a influência do contexto da do aprendizado profundo; (e) não há análise de nuvem, de diferença de data entre os pares nem de falsos positivos por rebrota ou queimada.
+
 
 ## 10. Reprodutibilidade: código, dados, dependências e informações ausentes
+
+- Código e dados não informados; hiperparâmetros básicos descritos.
 
 - **Código/dados:** não informado
 - hiperparâmetros **não detectados** automaticamente: batch (podem existir no texto; verificar).
@@ -109,23 +143,43 @@ Não informado (nenhum trecho de limitação detectado).
 - **Classificação (evidência):** retrospectivo (sem evidência extraída de operação contínua). 
 - menções de termos de monitoramento (contagem, não avaliação): Alertas 4 (p. 1, 3); Revisão humana 3 (p. 1, 2); Sistema operacional 2 (p. 1); Falsos alertas 1 (p. 3)
 
+**Interpretação — O que reaproveitar:**
+
+- **Formulação "validar candidatos"**: um modelo bitemporal que confirma ou descarta locais apontados por um detector grosseiro (reduz custo de inspeção).
+- **Entrada de dois mosaicos NICFI concatenados** (8 canais) numa U-Net pequena como baseline de mudança binária.
+- **Perda Dice** e escolha do ponto de parada pelo F1 de validação.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- O resultado depende de a localização candidata já existir; **não procura áreas novas** sozinho.
+- Comparações com divisão aleatória devem ser refeitas por região antes de se confiar no F1.
+
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 8 ocorrências (p. 1, 2, 3, 5)
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 4 ocorrências (p. 2, 3, 4, 6)
-- utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 4 ocorrências (p. 2, 3, 4, 6)
-- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 6 ocorrências (p. 1, 2)
-- emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 4 ocorrências (p. 1, 3)
 - utiliza método: [[UNet|U-Net]] — 17 ocorrências (p. 2, 3, 4, 5)
 - utiliza método: [[RandomForest|Random Forest]] — 5 ocorrências (p. 2, 3, 4)
+- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 4 ocorrências (p. 1, 3)
+- referência (curado pela leitura): [[DETER|DETER (INPE)]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 4 ocorrências (p. 2, 3, 5)
 - é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 24 ocorrências (p. 3, 5)
 - é avaliado por: [[F1|F1]] — 12 ocorrências (p. 3, 5)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 7 ocorrências (p. 1, 2, 5, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 3 ocorrências (p. 2, 3)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 4 ocorrências (p. 2, 3, 5)
-- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Alertas|Alertas de mudança]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo compartilha o produto NICFI e o alvo de [[Wagner_2023_MappingTropicalForest|Wagner 2023]] — P04 valida alertas de desmatamento com par NICFI e U-Net bitemporal (F1 0,83), enquanto P01 classifica por data.
+
+## Figuras selecionadas
+
+![[Wang_2024_ValidationDeforestationHigh_p4_Figure3.png|520]]
+*Figure 3. Deforestation sites collected in the study area (left), and the overall location within the Amazon Forest region (right). (p. 4; recorte do PDF convertido)*
+
+![[Wang_2024_ValidationDeforestationHigh_p4_Figure4.png|520]]
+*Figure 4. Visualizations of model’s performance in detecting deforestation given a pair of Planet NICFI images taken before and after (p. 4; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

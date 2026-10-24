@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P115_McCallum2023_Crowd-Driven-Deep-Learning-Tracks-
 paginas: 14
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[PRODES|PRODES (INPE)]]", "[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: []
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
+preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # McCallum 2023 — Crowd-Driven Deep Learning Tracks Amazon Deforestation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -116,10 +119,6 @@ tags: [artigo, leitura/automatica]
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 8 ocorrências (p. 3, 6, 9, 10)
 - emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 13 ocorrências (p. 2, 5, 7, 12)
 - emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 2 ocorrências (p. 2, 11)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 17 ocorrências (p. 3, 4, 5, 6, 9)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 5 ocorrências (p. 2, 3, 6)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 4 ocorrências (p. 1, 3, 11)
-- discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 21 ocorrências (p. 1, 2, 12)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

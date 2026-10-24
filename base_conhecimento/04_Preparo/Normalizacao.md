@@ -4,7 +4,7 @@ subtipo: "etapa"
 titulo: "Normalização e escala radiométrica"
 aliases: ["Normalização e escala radiométrica"]
 pasta_tematica: "04_Preparo"
-n_artigos: 22
+n_artigos: 3
 tags: [conceito, etapa]
 ---
 
@@ -42,28 +42,9 @@ Perde calibração absoluta quando escala é simples.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | aplica etapa de preparo | 14 | 6, 7, 8, 9, 14 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | aplica etapa de preparo | 10 | 2, 8, 9, 10, 25 | lido (parcial) |
-| [[Brown_2022_DynamicWorldNear\|Brown 2022]] | aplica etapa de preparo | 9 | 4, 5, 6, 8, 12 | extraído automaticamente (não lido) |
-| [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | aplica etapa de preparo | 9 | 4, 5, 6, 11, 12 | extraído automaticamente (não lido) |
-| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | aplica etapa de preparo | 6 | 3, 4, 5, 6, 8 | extraído automaticamente (não lido) |
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | aplica etapa de preparo | 6 | 3, 4, 6, 7 | extraído automaticamente (não lido) |
-| [[Zhou_2025_SChangerChangeDetection\|Zhou 2025]] | aplica etapa de preparo | 6 | 5, 6, 16, 17 | extraído automaticamente (não lido) |
-| [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | aplica etapa de preparo | 6 | 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | aplica etapa de preparo | 5 | 6, 7, 11 | extraído automaticamente (não lido) |
-| [[Garnot_2021_PanopticSegmentationSatellite\|Garnot 2021]] | aplica etapa de preparo | 5 | 3, 5, 7, 8 | extraído automaticamente (não lido) |
-| [[Robinson_2026_AdvancingEarthObservation\|Robinson 2026]] | aplica etapa de preparo | 5 | 2, 3 | extraído automaticamente (não lido) |
-| [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | aplica etapa de preparo | 5 | 4, 5, 12 | lido (profundo) |
-| [[Chen_2021_RemoteSensingImage\|Chen 2021]] | aplica etapa de preparo | 5 | 5, 6, 12, 14 | extraído automaticamente (não lido) |
-| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | aplica etapa de preparo | 4 | 8, 9 | extraído automaticamente (não lido) |
-| [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | aplica etapa de preparo | 4 | 3, 4 | extraído automaticamente (não lido) |
-| [[Dabaja_2026_PromptableConceptSegmentation\|Dabaja 2026]] | aplica etapa de preparo | 4 | 2, 4, 5, 13 | extraído automaticamente (não lido) |
-| [[Simeoni_2025_DINOv3\|Simeoni 2025]] | aplica etapa de preparo | 4 | 9, 10, 12, 33 | extraído automaticamente (não lido) |
-| [[Li_2024_NewLearningParadigm\|Li 2024]] | aplica etapa de preparo | 3 | 3, 5, 6 | lido (profundo) |
-| [[Wu_2023_FullyConvolutionalChange\|Wu 2023]] | aplica etapa de preparo | 3 | 3, 6, 7 | extraído automaticamente (não lido) |
-| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | aplica etapa de preparo | 3 | 7, 15 | lido (profundo) |
-| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | aplica etapa de preparo | 3 | 7, 11, 16 | lido (profundo) |
-| [[Xiong_2024_NeuralPlasticityInspired\|Xiong 2024]] | aplica etapa de preparo | 3 | 4, 8, 15 | extraído automaticamente (não lido) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 7 | 5, 8, 10, 11, 24 | lido (profundo) |
+| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | aplica etapa de preparo | 5 | 6, 7, 11 | lido (profundo) |
+| [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

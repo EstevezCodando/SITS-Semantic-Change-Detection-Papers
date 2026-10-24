@@ -10,6 +10,7 @@ markdown_fonte: "não informado"
 paginas: não informado
 tipo_documento: "sem texto integral (resumo, documentação ou repositório)"
 status_leitura: "lido (parcial)"
+relevancia_objetivo: "C"
 tarefas: ["[[Mineracao|Mineração]]"]
 sensores: []
 conjuntos_dados: []
@@ -17,7 +18,7 @@ metodos: []
 preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/C]
 ---
 
 # Wang 2024 — Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineation Using Segment Anything Model
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Plugin Geo-SAM para QGIS.
 
 ## 1. Referência bibliográfica e acesso ao original
 

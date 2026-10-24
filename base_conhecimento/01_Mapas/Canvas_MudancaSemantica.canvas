@@ -6,7 +6,7 @@
       "x": 0,
       "y": 0,
       "width": 400,
-      "height": 2370,
+      "height": 2110,
       "label": "Artigos",
       "color": "#3B82F6"
     },
@@ -86,7 +86,7 @@
       "x": 520,
       "y": 0,
       "width": 400,
-      "height": 2370,
+      "height": 2110,
       "label": "Conceitos",
       "color": "#8B5CF6"
     },
@@ -121,9 +121,19 @@
       "file": "06_Validacao/MetricasMudancaSemantica.md"
     },
     {
-      "id": "c_MudancaSemantica",
+      "id": "c_SITS",
       "x": 560,
       "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "05_Metodos/SITS.md"
+    },
+    {
+      "id": "c_MudancaSemantica",
+      "x": 560,
+      "y": 1110,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -133,22 +143,12 @@
     {
       "id": "c_HRSCD",
       "x": 560,
-      "y": 1110,
-      "width": 320,
-      "height": 180,
-      "color": "#8B5CF6",
-      "type": "file",
-      "file": "03_Dados/HRSCD.md"
-    },
-    {
-      "id": "c_SITS",
-      "x": 560,
       "y": 1370,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
       "type": "file",
-      "file": "05_Metodos/SITS.md"
+      "file": "03_Dados/HRSCD.md"
     },
     {
       "id": "c_RedeSiamesa",
@@ -171,22 +171,12 @@
       "file": "03_Dados/SECOND.md"
     },
     {
-      "id": "c_PosClassificacao",
-      "x": 560,
-      "y": 2150,
-      "width": 320,
-      "height": 180,
-      "color": "#8B5CF6",
-      "type": "file",
-      "file": "05_Metodos/PosClassificacao.md"
-    },
-    {
       "id": "g_2",
       "type": "group",
       "x": 1040,
       "y": 0,
       "width": 400,
-      "height": 2370,
+      "height": 2110,
       "label": "Lacunas",
       "color": "#EF4444"
     },
@@ -263,22 +253,13 @@
       "id": "e3",
       "fromNode": "a_P12",
       "fromSide": "right",
-      "toNode": "c_HRSCD",
+      "toNode": "c_SITS",
       "toSide": "left",
-      "label": "emprega",
+      "label": "tarefa",
       "toEnd": "arrow"
     },
     {
       "id": "e4",
-      "fromNode": "a_P12",
-      "fromSide": "right",
-      "toNode": "c_UTAE",
-      "toSide": "left",
-      "label": "método",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e5",
       "fromNode": "a_P12",
       "fromSide": "right",
       "toNode": "c_MudancaSemantica",
@@ -287,16 +268,16 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e6",
+      "id": "e5",
       "fromNode": "a_P12",
       "fromSide": "right",
-      "toNode": "c_SITS",
+      "toNode": "c_UTAE",
       "toSide": "left",
-      "label": "tarefa",
+      "label": "método",
       "toEnd": "arrow"
     },
     {
-      "id": "e7",
+      "id": "e6",
       "fromNode": "a_P12",
       "fromSide": "right",
       "toNode": "c_MetricasMudancaSemantica",
@@ -305,7 +286,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e8",
+      "id": "e7",
       "fromNode": "a_P13",
       "fromSide": "right",
       "toNode": "c_DynamicEarthNet",
@@ -314,7 +295,25 @@
       "toEnd": "arrow"
     },
     {
+      "id": "e8",
+      "fromNode": "a_P13",
+      "fromSide": "right",
+      "toNode": "c_SITS",
+      "toSide": "left",
+      "label": "tarefa",
+      "toEnd": "arrow"
+    },
+    {
       "id": "e9",
+      "fromNode": "a_P13",
+      "fromSide": "right",
+      "toNode": "c_MudancaSemantica",
+      "toSide": "left",
+      "label": "tarefa",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10",
       "fromNode": "a_P13",
       "fromSide": "right",
       "toNode": "c_UTAE",
@@ -323,25 +322,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e10",
-      "fromNode": "a_P13",
-      "fromSide": "right",
-      "toNode": "c_MudancaSemantica",
-      "toSide": "left",
-      "label": "tarefa",
-      "toEnd": "arrow"
-    },
-    {
       "id": "e11",
-      "fromNode": "a_P13",
-      "fromSide": "right",
-      "toNode": "c_SITS",
-      "toSide": "left",
-      "label": "tarefa",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e12",
       "fromNode": "a_P13",
       "fromSide": "right",
       "toNode": "c_MetricasMudancaSemantica",
@@ -350,7 +331,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e13",
+      "id": "e12",
       "fromNode": "a_P18",
       "fromSide": "right",
       "toNode": "c_HRSCD",
@@ -359,16 +340,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e14",
-      "fromNode": "a_P18",
-      "fromSide": "right",
-      "toNode": "c_RedeSiamesa",
-      "toSide": "left",
-      "label": "método",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e15",
+      "id": "e13",
       "fromNode": "a_P18",
       "fromSide": "right",
       "toNode": "c_MudancaSemantica",
@@ -377,7 +349,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e16",
+      "id": "e14",
       "fromNode": "a_P19",
       "fromSide": "right",
       "toNode": "c_HRSCD",
@@ -386,7 +358,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e17",
+      "id": "e15",
       "fromNode": "a_P19",
       "fromSide": "right",
       "toNode": "c_SECOND",
@@ -395,16 +367,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e18",
-      "fromNode": "a_P19",
-      "fromSide": "right",
-      "toNode": "c_RedeSiamesa",
-      "toSide": "left",
-      "label": "método",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e19",
+      "id": "e16",
       "fromNode": "a_P19",
       "fromSide": "right",
       "toNode": "c_MudancaSemantica",
@@ -413,7 +376,16 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e20",
+      "id": "e17",
+      "fromNode": "a_P19",
+      "fromSide": "right",
+      "toNode": "c_RedeSiamesa",
+      "toSide": "left",
+      "label": "método",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e18",
       "fromNode": "a_P19",
       "fromSide": "right",
       "toNode": "c_MetricasMudancaSemantica",
@@ -422,16 +394,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e21",
-      "fromNode": "a_P05",
-      "fromSide": "right",
-      "toNode": "c_SITS",
-      "toSide": "left",
-      "label": "tarefa",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e22",
+      "id": "e19",
       "fromNode": "a_P14",
       "fromSide": "right",
       "toNode": "c_SITS",
@@ -440,7 +403,16 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e23",
+      "id": "e20",
+      "fromNode": "a_P14",
+      "fromSide": "right",
+      "toNode": "c_MudancaSemantica",
+      "toSide": "left",
+      "label": "refere",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e21",
       "fromNode": "c_MetricasMudancaSemantica",
       "fromSide": "right",
       "toNode": "l_L03_MudancaRara",
@@ -449,7 +421,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e24",
+      "id": "e22",
       "fromNode": "c_MetricasMudancaSemantica",
       "fromSide": "right",
       "toNode": "l_L06_MetricasIncomparaveis",
@@ -458,7 +430,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e25",
+      "id": "e23",
       "fromNode": "c_DynamicEarthNet",
       "fromSide": "right",
       "toNode": "l_L10_TaxonomiaTransicoes",
@@ -467,7 +439,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e26",
+      "id": "e24",
       "fromNode": "c_HRSCD",
       "fromSide": "right",
       "toNode": "l_L10_TaxonomiaTransicoes",
@@ -476,7 +448,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e27",
+      "id": "e25",
       "fromNode": "c_SECOND",
       "fromSide": "right",
       "toNode": "l_L10_TaxonomiaTransicoes",
@@ -485,7 +457,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e28",
+      "id": "e26",
       "fromNode": "c_MetricasMudancaSemantica",
       "fromSide": "right",
       "toNode": "l_L10_TaxonomiaTransicoes",

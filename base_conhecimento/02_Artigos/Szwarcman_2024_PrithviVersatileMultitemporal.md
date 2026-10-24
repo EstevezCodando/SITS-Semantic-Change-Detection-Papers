@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P32_Szwarcman2025_Prithvi-EO-2-0-A-Versatile-Multite
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
-tarefas: []
-sensores: ["[[Sentinel2|Sentinel-2]]", "[[Sentinel1|Sentinel-1]]", "[[Landsat|Landsat]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]"]
+sensores: ["[[Sentinel2|Sentinel-2]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: []
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]", "[[UNet|U-Net]]", "[[XGBoost|XGBoost]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]", "[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Szwarcman 2024 — Prithvi-EO-2.0: A Versatile Multitemporal Foundation Model for Earth Observation Applications
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Prithvi-EO-2.0: modelo fundacional multitemporal em HLS de 30 m; sem Planet.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -176,24 +179,15 @@ Apresentar o **Prithvi-EO-2.0**, um **modelo fundacional geoespacial multitempor
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 37 ocorrências (p. 2, 6, 7, 8, 9)
-- utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 14 ocorrências (p. 2, 6, 7, 9, 18)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 8 ocorrências (p. 1, 2, 6, 7, 18)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 288 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[Transformer|Transformers]] — 59 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 32 ocorrências (p. 1, 2, 5, 7, 8)
-- utiliza método: [[UNet|U-Net]] — 30 ocorrências (p. 2, 5, 8, 9, 12)
-- utiliza método: [[XGBoost|XGBoost]] — 7 ocorrências (p. 10, 16)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 7 ocorrências (p. 1, 2, 3, 8, 18)
-- é avaliado por: [[IoU|IoU / mIoU]] — 45 ocorrências (p. 5, 6, 8, 9, 11)
-- é avaliado por: [[F1|F1]] — 18 ocorrências (p. 5, 6, 8, 9, 12)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 14 ocorrências (p. 5, 13)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 70 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 10 ocorrências (p. 2, 5, 6, 8, 9)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 9 ocorrências (p. 1, 2, 5, 8, 10)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 7 ocorrências (p. 3, 7, 9, 10)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 6 ocorrências (p. 10, 16)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 27 ocorrências (p. 5, 6, 8, 9, 11)
+- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 37 ocorrências (p. 2, 6, 7, 8, 9)
+- utiliza dado/sensor: [[Landsat|Landsat]] — 8 ocorrências (p. 1, 2, 6, 7, 18)
+- referência (curado pela leitura): [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo é modelo fundacional afim a [[Shen_2026_FoundationModelDriven|Shen 2026]] — P34 testa SatMAE, ScaleMAE e SeCo como encoders; P32 é um encoder multitemporal em HLS de 30 m (interpretação: candidato a encoder, sem teste em mudança).
 
 ## Figuras selecionadas
 

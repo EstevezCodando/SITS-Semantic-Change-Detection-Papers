@@ -10,14 +10,15 @@ markdown_fonte: "não informado"
 paginas: não informado
 tipo_documento: "artigo completo (HTML aberto)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "B"
 tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
-sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[Sentinel2|Sentinel-2]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
-metodos: []
-preparo: ["[[Textura|Textura (GLCM)]]"]
-validacao: []
+metodos: ["[[RandomForest|Random Forest]]", "[[OBIA|Análise baseada em objetos (OBIA)]]"]
+preparo: ["[[Textura|Textura (GLCM)]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
+validacao: ["[[Kappa|Coeficiente kappa]]"]
 ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Vizzari 2022 — PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Based Land Cover Classification in Google Earth Engine
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — NICFI em classificação de cobertura com RF e objetos; não mede mudança.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -134,10 +137,16 @@ Páginas: não informado (leitura feita sem texto integral convertido; ver a fon
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Sentinel2|Sentinel-2]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Sentinel1|Sentinel-1]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[RandomForest|Random Forest]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[OBIA|Análise baseada em objetos (OBIA)]] — suporte vindo da leitura/título/resumo
 - aplica etapa de preparo: [[Textura|Textura (GLCM)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
+- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Kappa|Coeficiente kappa]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo complementa com classificação estática [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] — P07 classifica cobertura (RF/OBIA) e P05 detecta mudança em PlanetScope; juntos separam classificação estática de mudança temporal.

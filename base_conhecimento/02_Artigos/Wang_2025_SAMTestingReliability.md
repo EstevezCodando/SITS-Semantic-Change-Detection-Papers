@@ -10,6 +10,7 @@ markdown_fonte: "output/pdf/P165_Wang2025_MO-SAM-Testing-the-reliability-and-lim
 paginas: 26
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "C"
 tarefas: ["[[Mineracao|Mineração]]"]
 sensores: []
 conjuntos_dados: []
@@ -17,7 +18,7 @@ metodos: ["[[SAM|Segment Anything (SAM)]]", "[[CNN|Redes convolucionais (CNN)]]"
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Textura|Textura (GLCM)]]"]
 validacao: ["[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]"]
 ferramentas: ["[[QGIS|QGIS]]"]
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/C]
 ---
 
 # Wang 2025 — MO-SAM: Testing the reliability and limits of mine feature delineation using Segment Anything Model to democratize mine observation and research
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — MO-SAM: SAM para feições de mina.
 
 ## 1. Referência bibliográfica e acesso ao original
 

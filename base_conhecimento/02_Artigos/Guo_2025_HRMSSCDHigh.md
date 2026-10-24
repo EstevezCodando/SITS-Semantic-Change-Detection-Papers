@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P141_Guo2025_HRMS-SCD-A-High-Resolution-Multi-Scene-
 paginas: 9
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Edificacoes|Edificações e urbanização]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
+relevancia_objetivo: "D"
+tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Edificacoes|Edificações e urbanização]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[HRSCD|HRSCD]]"]
-metodos: ["[[Transformer|Transformers]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[F1|F1]]"]
+metodos: []
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Guo 2025 — HRMS-SCD:A High-Resolution Multi-Scene Satellite Imagery Dataset for Comprehensive Land-Cover Semantic Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -112,17 +115,9 @@ Não informado (nenhum trecho com métrica e valor detectado).
 - utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 7 ocorrências (p. 1, 2, 3)
 - utiliza dado/sensor: [[Landsat|Landsat]] — 4 ocorrências (p. 1, 2)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 7 ocorrências (p. 1, 2, 3, 5)
-- utiliza método: [[Transformer|Transformers]] — 7 ocorrências (p. 1, 3, 5)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 5 ocorrências (p. 1, 3)
-- é avaliado por: [[IoU|IoU / mIoU]] — 13 ocorrências (p. 5, 6)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 6 ocorrências (p. 5, 6)
-- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 6, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 12 ocorrências (p. 1, 2, 3, 4, 6)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 7 ocorrências (p. 2, 3, 6, 7, 8)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor
 

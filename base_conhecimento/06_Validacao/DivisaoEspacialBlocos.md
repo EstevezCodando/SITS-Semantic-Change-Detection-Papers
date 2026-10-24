@@ -4,7 +4,7 @@ subtipo: "desenho de validação"
 titulo: "Divisão espacial por blocos e áreas"
 aliases: ["Divisão espacial por blocos e áreas"]
 pasta_tematica: "06_Validacao"
-n_artigos: 5
+n_artigos: 8
 tags: [conceito, desenho-de-validacao]
 ---
 
@@ -43,12 +43,16 @@ Exige mais áreas rotuladas.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Lee_2026_RoadChangeDetection\|Lee 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 
 ## Navegação
 
 - Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
 - Lacuna que afeta este conceito: [[L04_DomainShift|Domain shift espacial e temporal degrada mudança e segmentação]]
+- Lacuna que afeta este conceito: [[L13_DivisaoAleatoriaComum|Divisão aleatória ou por pixel é comum e infla as métricas]]

@@ -10,14 +10,15 @@ markdown_fonte: "não informado"
 paginas: não informado
 tipo_documento: "sem texto integral (resumo, documentação ou repositório)"
 status_leitura: "lido (parcial)"
-tarefas: ["[[DegradacaoFlorestal|Degradação e perturbação florestal]]"]
-sensores: []
+relevancia_objetivo: "A"
+tarefas: ["[[DegradacaoFlorestal|Degradação e perturbação florestal]]", "[[Desmatamento|Desmatamento]]"]
+sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: []
-metodos: []
+metodos: ["[[UNet|U-Net]]"]
 preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/A]
 ---
 
 # Dalagnol 2023 — Mapping tropical forest degradation with deep learning and Planet NICFI data
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — NICFI de 4,77 m para degradação florestal (leitura parcial do resumo).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -104,7 +107,11 @@ Páginas: não informado (leitura feita sem texto integral convertido; ver a fon
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
+- referência (curado pela leitura): [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[UNet|U-Net]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - [[Wagner_2023_MappingTropicalForest|Wagner 2023]] tem lacuna complementada por este artigo — P01 declara: (p. 15); P02 mapeia degradação com U-Net em Planet NICFI (leitura parcial).

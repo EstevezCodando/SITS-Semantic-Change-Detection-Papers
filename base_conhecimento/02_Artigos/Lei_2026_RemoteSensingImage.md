@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P49_Lei2026_Remote-sensing-image-change-detection-us
 paginas: 63
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[SAR|Radar (SAR)]]"]
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[TransferLearning|Aprendizado por transferência]]", "[[RedeSiamesa|Redes siamesas]]", "[[UNet|U-Net]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[SegmentacaoObjetos|Segmentação em objetos (SNIC/superpixels)]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[PrecisaoRecall|Precisão e recall]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Lei 2026 — Remote sensing image change detection using deep learning techniques: a comprehensive survey
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -117,16 +120,6 @@ tags: [artigo, leitura/automatica]
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 108 ocorrências (p. 6, 7, 8, 11, 14)
 - utiliza método: [[Transformer|Transformers]] — 93 ocorrências (p. 6, 7, 14, 15, 18)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 70 ocorrências (p. 4, 5, 6, 7, 11)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 18 ocorrências (p. 6, 20, 22, 25, 26)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 13 ocorrências (p. 14, 18, 19, 23, 24)
-- utiliza método: [[UNet|U-Net]] — 10 ocorrências (p. 12, 14, 16, 17, 21)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 16 ocorrências (p. 4, 20, 34, 35, 36)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 11 ocorrências (p. 32, 34, 35, 36)
-- é avaliado por: [[IoU|IoU / mIoU]] — 6 ocorrências (p. 32, 34)
-- é avaliado por: [[F1|F1]] — 5 ocorrências (p. 34, 35, 36)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 128 ocorrências (p. 5, 6, 7, 11, 14)
-- aplica etapa de preparo: [[SegmentacaoObjetos|Segmentação em objetos (SNIC/superpixels)]] — 5 ocorrências (p. 28, 29)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 16 ocorrências (p. 5, 20, 22, 24, 25)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

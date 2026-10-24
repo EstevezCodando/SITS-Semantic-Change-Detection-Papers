@@ -42,13 +42,13 @@ Variabilidade radiométrica entre satélites; quantidade de bandas pode variar e
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza dado/sensor | 34 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | utiliza dado/sensor | 20 | 1, 2, 3, 5, 6 | extraído automaticamente (não lido) |
+| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | utiliza dado/sensor | 34 | 1, 2, 3, 4, 5 | lido (profundo) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 15 | 1, 2, 3, 4, 11 | lido (profundo) |
-| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 13 | 7, 8, 10, 12, 22 | lido (profundo) |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | utiliza dado/sensor | 8 | 1, 2, 3, 5 | extraído automaticamente (não lido) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | utiliza dado/sensor | 4 | 4, 6 | extraído automaticamente (não lido) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | utiliza dado/sensor | 5 | 5, 8, 9, 16 | lido (parcial) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | utiliza dado/sensor | 5 | 4, 6, 8 | lido (parcial) |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | utiliza dado/sensor | 3 | 1, 2 | lido (profundo) |
+| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 
 ## Navegação
 

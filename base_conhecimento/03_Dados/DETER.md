@@ -4,7 +4,7 @@ subtipo: "base de referência"
 titulo: "DETER (INPE)"
 aliases: ["DETER (INPE)"]
 pasta_tematica: "03_Dados"
-n_artigos: 4
+n_artigos: 3
 tags: [conceito, base-de-referencia]
 ---
 
@@ -42,10 +42,9 @@ Detecta áreas maiores; alertas, não taxa oficial.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | emprega conjunto de dados | 108 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | emprega conjunto de dados | 108 | 1, 2, 3, 4, 5 | lido (parcial) |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | emprega conjunto de dados | 67 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | emprega conjunto de dados | 6 | 1, 2, 10 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | emprega conjunto de dados | 5 | 9, 15, 21 | lido (parcial) |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

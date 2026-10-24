@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P13_Vincent2024_Satellite-Image-Time-Series-Semantic
 paginas: 17
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[SITS|Séries temporais de imagens (SITS)]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: []
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]", "[[DynamicEarthNet|DynamicEarthNet]]"]
-metodos: ["[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[UNet|U-Net]]", "[[Transformer|Transformers]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[DivisaoTemporal|Divisão temporal]]", "[[ValidacaoCruzada|Validação cruzada]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]"]
+metodos: ["[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[Transformer|Transformers]]"]
+preparo: []
+validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Vincent 2024 — Satellite Image Time Series Semantic Change Detection: Novel Architecture and Analysis of Domain Shift
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — Séries Planet (DynamicEarthNet e MUDS) com validação contra shift espacial e temporal.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -159,22 +162,14 @@ UTAE e TSViT (mono-temporais, mensal/semanal), A2Net e SCanNet (pares), TSSCD (p
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - emprega conjunto de dados: [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 31 ocorrências (p. 1, 3, 4, 5, 6)
 - emprega conjunto de dados: [[DynamicEarthNet|DynamicEarthNet]] — 25 ocorrências (p. 1, 3, 4, 5, 6)
-- utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 16 ocorrências (p. 2, 3, 6, 7, 8)
-- utiliza método: [[UNet|U-Net]] — 3 ocorrências (p. 2, 6)
-- utiliza método: [[Transformer|Transformers]] — 3 ocorrências (p. 2, 6, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 12 ocorrências (p. 6, 7, 8, 9)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 14 ocorrências (p. 1, 3, 5, 6, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 6 ocorrências (p. 3, 4, 5)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 50 ocorrências (p. 1, 2, 3, 4, 5)
-- adota desenho de validação: [[DivisaoTemporal|Divisão temporal]] — 21 ocorrências (p. 1, 2, 3, 4, 5)
-- adota desenho de validação: [[ValidacaoCruzada|Validação cruzada]] — 3 ocorrências (p. 4, 5)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 4, 5)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 16 ocorrências (p. 2, 3, 6, 7, 8)
+- utiliza método: [[Transformer|Transformers]] — 3 ocorrências (p. 2, 6, 7)
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 50 ocorrências (p. 1, 2, 3, 4, 5)
+- referência (curado pela leitura): [[Desbalanceamento|Desbalanceamento de classes]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo emprega o conjunto de dados e a métrica de [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] — P13 treina e testa em DynamicEarthNet e usa as métricas BC, SC, SCS e mIoU definidas por P12 (p. 6).

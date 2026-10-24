@@ -8,3 +8,4 @@ output/
 .venv-pdf/
 base_conhecimento.zip
 base_conhecimento/.obsidian/workspace*.json
+tmp/

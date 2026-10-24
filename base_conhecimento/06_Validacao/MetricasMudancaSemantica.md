@@ -4,7 +4,7 @@ subtipo: "métrica"
 titulo: "Métricas de mudança semântica (SeK, SCS, SCOT)"
 aliases: ["Métricas de mudança semântica (SeK, SCS, SCOT)"]
 pasta_tematica: "06_Validacao"
-n_artigos: 4
+n_artigos: 7
 tags: [conceito, metrica]
 ---
 
@@ -43,9 +43,12 @@ Valores não comparáveis entre datasets distintos.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

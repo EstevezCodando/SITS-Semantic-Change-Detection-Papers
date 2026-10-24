@@ -1,0 +1,470 @@
+{
+  "nodes": [
+    {
+      "id": "g_0",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "1. Dados e produto Planet",
+      "color": "#06B6D4"
+    },
+    {
+      "id": "T1_P91",
+      "x": 40,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "file",
+      "file": "02_Artigos/Zhang_2023_MonitoringMonthlyTropical.md"
+    },
+    {
+      "id": "T1_P01",
+      "x": 40,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "file",
+      "file": "02_Artigos/Wagner_2023_MappingTropicalForest.md"
+    },
+    {
+      "id": "T1_P09",
+      "x": 40,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "file",
+      "file": "02_Artigos/GonzalezVelez_2026_TropicalDryForest.md"
+    },
+    {
+      "id": "T1_P103",
+      "x": 40,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "file",
+      "file": "02_Artigos/Glazer_2025_TEMPOGlobalTemporal.md"
+    },
+    {
+      "id": "T1_P11",
+      "x": 40,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "file",
+      "file": "02_Artigos/Etten_2021_SpaceNetMultiTemporal.md"
+    },
+    {
+      "id": "g_1",
+      "type": "group",
+      "x": 520,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "2. Preparo e qualidade da observação",
+      "color": "#F97316"
+    },
+    {
+      "id": "T2_P91",
+      "x": 560,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Zhang_2023_MonitoringMonthlyTropical.md"
+    },
+    {
+      "id": "T2_P103",
+      "x": 560,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Glazer_2025_TEMPOGlobalTemporal.md"
+    },
+    {
+      "id": "T2_P01",
+      "x": 560,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Wagner_2023_MappingTropicalForest.md"
+    },
+    {
+      "id": "T2_P100",
+      "x": 560,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Crato_2025_DetectionRuralRoads.md"
+    },
+    {
+      "id": "T2_P102",
+      "x": 560,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Masolele_2024_MappingDiversityLand.md"
+    },
+    {
+      "id": "g_2",
+      "type": "group",
+      "x": 1040,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "3. Rótulos e pré-anotação",
+      "color": "#F97316"
+    },
+    {
+      "id": "T3_P102",
+      "x": 1080,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Masolele_2024_MappingDiversityLand.md"
+    },
+    {
+      "id": "T3_P01",
+      "x": 1080,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Wagner_2023_MappingTropicalForest.md"
+    },
+    {
+      "id": "T3_P03",
+      "x": 1080,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Carter_2024_DetectionForestDisturbance.md"
+    },
+    {
+      "id": "T3_P09",
+      "x": 1080,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/GonzalezVelez_2026_TropicalDryForest.md"
+    },
+    {
+      "id": "T3_P11",
+      "x": 1080,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "file",
+      "file": "02_Artigos/Etten_2021_SpaceNetMultiTemporal.md"
+    },
+    {
+      "id": "g_3",
+      "type": "group",
+      "x": 1560,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "4. Modelos de partida",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "T4_P91",
+      "x": 1600,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Zhang_2023_MonitoringMonthlyTropical.md"
+    },
+    {
+      "id": "T4_P04",
+      "x": 1600,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Wang_2024_ValidationDeforestationHigh.md"
+    },
+    {
+      "id": "T4_P102",
+      "x": 1600,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Masolele_2024_MappingDiversityLand.md"
+    },
+    {
+      "id": "T4_P13",
+      "x": 1600,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Vincent_2024_SatelliteImageTime.md"
+    },
+    {
+      "id": "T4_P34",
+      "x": 1600,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Shen_2026_FoundationModelDriven.md"
+    },
+    {
+      "id": "g_4",
+      "type": "group",
+      "x": 2080,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "5. Pós-processamento temporal",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "T5_P91",
+      "x": 2120,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Zhang_2023_MonitoringMonthlyTropical.md"
+    },
+    {
+      "id": "T5_P11",
+      "x": 2120,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Etten_2021_SpaceNetMultiTemporal.md"
+    },
+    {
+      "id": "T5_P103",
+      "x": 2120,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Glazer_2025_TEMPOGlobalTemporal.md"
+    },
+    {
+      "id": "T5_P120",
+      "x": 2120,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Ygorra_2024_NearRealTime.md"
+    },
+    {
+      "id": "T5_P119",
+      "x": 2120,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "02_Artigos/Reiche_2021_ForestDisturbanceAlerts.md"
+    },
+    {
+      "id": "g_5",
+      "type": "group",
+      "x": 2600,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "6. Validação",
+      "color": "#EAB308"
+    },
+    {
+      "id": "T6_P91",
+      "x": 2640,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "file",
+      "file": "02_Artigos/Zhang_2023_MonitoringMonthlyTropical.md"
+    },
+    {
+      "id": "T6_P03",
+      "x": 2640,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "file",
+      "file": "02_Artigos/Carter_2024_DetectionForestDisturbance.md"
+    },
+    {
+      "id": "T6_P13",
+      "x": 2640,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "file",
+      "file": "02_Artigos/Vincent_2024_SatelliteImageTime.md"
+    },
+    {
+      "id": "T6_P09",
+      "x": 2640,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "file",
+      "file": "02_Artigos/GonzalezVelez_2026_TropicalDryForest.md"
+    },
+    {
+      "id": "T6_P11",
+      "x": 2640,
+      "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "file",
+      "file": "02_Artigos/Etten_2021_SpaceNetMultiTemporal.md"
+    },
+    {
+      "id": "g_6",
+      "type": "group",
+      "x": 3120,
+      "y": 0,
+      "width": 400,
+      "height": 1330,
+      "label": "7. Monitoramento e operação",
+      "color": "#14B8A6"
+    },
+    {
+      "id": "T7_P118",
+      "x": 3160,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "file",
+      "file": "02_Artigos/Reiche_2024_IntegratingSatelliteForest.md"
+    },
+    {
+      "id": "T7_P117",
+      "x": 3160,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "file",
+      "file": "02_Artigos/Doblas_2022_DETEROperationalNear.md"
+    },
+    {
+      "id": "T7_P119",
+      "x": 3160,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "file",
+      "file": "02_Artigos/Reiche_2021_ForestDisturbanceAlerts.md"
+    },
+    {
+      "id": "T7_P155",
+      "x": 3160,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "file",
+      "file": "02_Artigos/Wu_2026_GeoAIPythonPackage.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "g_0",
+      "fromSide": "right",
+      "toNode": "g_1",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e1",
+      "fromNode": "g_1",
+      "fromSide": "right",
+      "toNode": "g_2",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e2",
+      "fromNode": "g_2",
+      "fromSide": "right",
+      "toNode": "g_3",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e3",
+      "fromNode": "g_3",
+      "fromSide": "right",
+      "toNode": "g_4",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e4",
+      "fromNode": "g_4",
+      "fromSide": "right",
+      "toNode": "g_5",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e5",
+      "fromNode": "g_5",
+      "fromSide": "right",
+      "toNode": "g_6",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    }
+  ]
+}

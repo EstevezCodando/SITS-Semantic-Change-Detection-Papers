@@ -8,7 +8,11 @@ tags: [painel]
 
 Base de conhecimento construída em 24/10/2026 a partir de **103 artigos** com texto convertido em Markdown. **Autor da coleta:** Jean Michael Estevez Alvarez.
 
-**Situação de leitura:** 18 lidos em profundidade · 9 em leitura parcial · 76 por extração automática (não lidos por mim) · 82 registros do catálogo sem texto integral.
+**Situação de leitura:** 26 lidos em profundidade · 15 em leitura parcial · 62 por extração automática (não lidos por mim) · 82 registros do catálogo sem texto integral.
+
+## Comece aqui
+
+- [[Trilha_Objetivo_Planet5m]] — o fluxo do objetivo (Planet de ~5 m: construção, supressão de vegetação, vias) ligado aos artigos de maior relevância.
 
 ## Mapas principais
 

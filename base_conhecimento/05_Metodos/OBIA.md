@@ -4,7 +4,7 @@ subtipo: "estratégia"
 titulo: "Análise baseada em objetos (OBIA)"
 aliases: ["Análise baseada em objetos (OBIA)"]
 pasta_tematica: "05_Metodos"
-n_artigos: 3
+n_artigos: 2
 tags: [conceito, estrategia]
 ---
 
@@ -43,8 +43,7 @@ Erros de segmentação propagam-se.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | utiliza método | 16 | 1, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | utiliza método | 14 | 2, 15, 17, 18, 19 | extraído automaticamente (não lido) |
-| [[Osco_2023_SegmentAnythingModel\|Osco 2023]] | utiliza método | 3 | 2, 7 | extraído automaticamente (não lido) |
+| [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

@@ -4,7 +4,7 @@ subtipo: "dado/sensor"
 titulo: "Landsat"
 aliases: ["Landsat"]
 pasta_tematica: "03_Dados"
-n_artigos: 23
+n_artigos: 17
 tags: [conceito, dado]
 ---
 
@@ -43,20 +43,14 @@ Resolução grossa para objetos pequenos.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | utiliza dado/sensor | 52 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | utiliza dado/sensor | 38 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | utiliza dado/sensor | 32 | 2, 8, 9, 10, 12 | lido (parcial) |
-| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | utiliza dado/sensor | 27 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | utiliza dado/sensor | 25 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | utiliza dado/sensor | 15 | 3, 4, 6, 9, 10 | extraído automaticamente (não lido) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | utiliza dado/sensor | 25 | 2, 3, 4, 5, 6 | lido (parcial) |
 | [[Zhang_2025_RecurrentSemanticChange\|Zhang 2025]] | utiliza dado/sensor | 13 | 6, 7, 8, 10, 11 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | utiliza dado/sensor | 13 | 11, 17, 18, 19, 21 | lido (parcial) |
 | [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | utiliza dado/sensor | 13 | 1, 2, 3, 4 | extraído automaticamente (não lido) |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | utiliza dado/sensor | 11 | 2, 8, 9, 12, 13 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza dado/sensor | 8 | 5, 7, 8, 11, 13 | lido (parcial) |
 | [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | utiliza dado/sensor | 8 | 1, 2, 6, 7, 18 | lido (parcial) |
 | [[Simoes_2021_SatelliteImageTime\|Simoes 2021]] | utiliza dado/sensor | 8 | 2, 7, 13, 14 | extraído automaticamente (não lido) |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | utiliza dado/sensor | 8 | 1, 3, 4, 6, 8 | extraído automaticamente (não lido) |
-| [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | utiliza dado/sensor | 7 | 3, 4, 5, 11, 15 | lido (profundo) |
 | [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | utiliza dado/sensor | 5 | 1, 5 | extraído automaticamente (não lido) |
 | [[Li_2024_NewLearningParadigm\|Li 2024]] | utiliza dado/sensor | 5 | 7, 9 | lido (profundo) |
 | [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | utiliza dado/sensor | 4 | 1, 2, 4, 6 | extraído automaticamente (não lido) |
@@ -64,7 +58,7 @@ Resolução grossa para objetos pequenos.
 | [[Ferreira_2022_BuildingEarthObservation\|Ferreira 2022]] | utiliza dado/sensor | 4 | 1, 2 | extraído automaticamente (não lido) |
 | [[Congedo_2021_SemiAutomaticClassification\|Congedo 2021]] | utiliza dado/sensor | 3 | 1, 2, 3 | extraído automaticamente (não lido) |
 | [[Daudt_2018_FullyConvolutionalSiamese\|Daudt 2018]] | utiliza dado/sensor | 3 | 1, 4 | extraído automaticamente (não lido) |
-| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | utiliza dado/sensor | 3 | 2, 3, 6 | lido (profundo) |
+| [[Shen_2026_FoundationModelDriven\|Shen 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

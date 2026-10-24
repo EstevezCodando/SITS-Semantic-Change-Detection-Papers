@@ -4,7 +4,7 @@ subtipo: "métrica"
 titulo: "Coeficiente kappa"
 aliases: ["Coeficiente kappa"]
 pasta_tematica: "06_Validacao"
-n_artigos: 8
+n_artigos: 3
 tags: [conceito, metrica]
 ---
 
@@ -42,14 +42,9 @@ Criticado; ainda dominado pela não-mudança.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | é avaliado por | 37 | 6, 7, 8, 9, 10 | extraído automaticamente (não lido) |
-| [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | é avaliado por | 11 | 16, 17, 21, 27 | lido (parcial) |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | é avaliado por | 10 | 6, 9, 11, 12, 13 | lido (profundo) |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | é avaliado por | 8 | 1, 7 | lido (profundo) |
-| [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | é avaliado por | 8 | 1, 6, 7 | extraído automaticamente (não lido) |
-| [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | é avaliado por | 8 | 1, 2, 6 | lido (profundo) |
-| [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | é avaliado por | 7 | 7, 8, 9, 11 | extraído automaticamente (não lido) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | é avaliado por | 5 | 7, 8, 9 | extraído automaticamente (não lido) |
+| [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

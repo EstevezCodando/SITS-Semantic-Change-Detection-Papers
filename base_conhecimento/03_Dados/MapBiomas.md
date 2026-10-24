@@ -4,7 +4,7 @@ subtipo: "base de referência"
 titulo: "MapBiomas"
 aliases: ["MapBiomas"]
 pasta_tematica: "03_Dados"
-n_artigos: 4
+n_artigos: 3
 tags: [conceito, base-de-referencia]
 ---
 
@@ -44,8 +44,7 @@ Resolução de 30 m; erros próprios.
 |---|---|---:|---|---|
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | emprega conjunto de dados | 6 | 2, 9, 14, 15 | extraído automaticamente (não lido) |
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | emprega conjunto de dados | 5 | 2, 11, 12 | extraído automaticamente (não lido) |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | emprega conjunto de dados | 4 | 1, 3 | extraído automaticamente (não lido) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | emprega conjunto de dados | 3 | 3, 4 | extraído automaticamente (não lido) |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | emprega conjunto de dados | 4 | 1, 3 | lido (profundo) |
 
 ## Navegação
 

@@ -1,12 +1,47 @@
 {
   "collapse-filter": false,
-  "search": "-path:\"90_Anexos\" -path:\"99_Templates\" -file:README",
+  "search": "-path:\"00_Painel\" -path:\"90_Anexos\" -path:\"99_Templates\" -file:README -file:\"Sem t\u00edtulo\" -file:Matriz_Comparativa -file:Estudos_Retrospectivos_vs_Operacionais",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
+    {
+      "query": "tag:#relevancia/A",
+      "color": {
+        "a": 1,
+        "rgb": 1982639
+      }
+    },
+    {
+      "query": "tag:#relevancia/B",
+      "color": {
+        "a": 1,
+        "rgb": 3900150
+      }
+    },
+    {
+      "query": "tag:#relevancia/C",
+      "color": {
+        "a": 1,
+        "rgb": 9684477
+      }
+    },
+    {
+      "query": "tag:#relevancia/D",
+      "color": {
+        "a": 1,
+        "rgb": 13358561
+      }
+    },
+    {
+      "query": "path:\"01_Mapas\"",
+      "color": {
+        "a": 1,
+        "rgb": 4674921
+      }
+    },
     {
       "query": "path:\"02_Artigos\"",
       "color": {
@@ -65,15 +100,15 @@
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": -0.8,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 0.5,
   "collapse-forces": false,
-  "centerStrength": 0.35,
-  "repelStrength": 12,
-  "linkStrength": 1,
-  "linkDistance": 220,
-  "scale": 0.25438094278962914,
-  "close": true
+  "centerStrength": 0.3,
+  "repelStrength": 16,
+  "linkStrength": 0.8,
+  "linkDistance": 260,
+  "scale": 0.5,
+  "close": false
 }

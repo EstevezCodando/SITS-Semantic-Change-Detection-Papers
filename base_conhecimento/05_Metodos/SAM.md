@@ -4,7 +4,7 @@ subtipo: "modelo fundacional"
 titulo: "Segment Anything (SAM)"
 aliases: ["Segment Anything (SAM)"]
 pasta_tematica: "05_Metodos"
-n_artigos: 13
+n_artigos: 11
 tags: [conceito, modelo-fundacional]
 ---
 
@@ -53,8 +53,6 @@ Treinado em imagens de solo; sem taxonomia; desempenho cai com baixo contraste.
 | [[Zhang_2025_UniChangeUnifyingChange\|Zhang 2025]] | utiliza método | 13 | 2, 3, 5, 7, 8 | extraído automaticamente (não lido) |
 | [[Wu_2023_SamgeoPythonPackage\|Wu 2023]] | utiliza método | 10 | 1, 2 | extraído automaticamente (não lido) |
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | utiliza método | 10 | 1, 2, 3, 6, 7 | extraído automaticamente (não lido) |
-| [[Simeoni_2025_DINOv3\|Simeoni 2025]] | utiliza método | 9 | 7, 17, 19, 20, 27 | extraído automaticamente (não lido) |
-| [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | utiliza método | 5 | 7, 15, 16, 21 | extraído automaticamente (não lido) |
 
 ## Navegação
 

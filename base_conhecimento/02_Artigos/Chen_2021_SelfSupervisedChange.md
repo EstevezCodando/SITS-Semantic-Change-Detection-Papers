@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P148_Chen2021_Self-Supervised-Change-Detection-in-Mu
 paginas: 13
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]", "[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[OSCD|OSCD]]"]
-metodos: ["[[RedeSiamesa|Redes siamesas]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[CNN|Redes convolucionais (CNN)]]", "[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[Kappa|Coeficiente kappa]]"]
+metodos: ["[[RedeSiamesa|Redes siamesas]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Chen 2021 — Self-Supervised Change Detection in Multiview Remote Sensing Images
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -117,16 +120,6 @@ Não informado (nenhum trecho de limitação detectado).
 - emprega conjunto de dados: [[OSCD|OSCD]] — 45 ocorrências (p. 6, 7, 8, 9, 10)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 30 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 19 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 6 ocorrências (p. 1, 2, 6, 13)
-- utiliza método: [[UNet|U-Net]] — 3 ocorrências (p. 6, 9, 13)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 16 ocorrências (p. 7, 8, 9, 10, 11)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 11 ocorrências (p. 7, 8, 9, 11)
-- é avaliado por: [[F1|F1]] — 7 ocorrências (p. 7, 8, 9, 11)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 7 ocorrências (p. 7, 8, 9, 11)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 21 ocorrências (p. 1, 2, 3, 5, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 14 ocorrências (p. 1, 6, 7, 8)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 6 ocorrências (p. 3, 4, 5)
-- discute aspecto de monitoramento: [[FalsosAlertas|Falsos alertas]] — 11 ocorrências (p. 7, 8, 9, 10, 11)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

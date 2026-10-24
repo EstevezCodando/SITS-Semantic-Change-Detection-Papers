@@ -21,7 +21,7 @@ Este vault **não substitui** o anterior (`../vault/`), que permanece intacto.
 Veja `00_Painel/Guia_Grafo.md` (cores por pasta, filtros, grafo local de profundidade 1–2 e forças iniciais). Canvases: cartões de 320×180, intervalos de 120 (horizontal) e 80 (vertical), cores da mesma paleta do grafo.
 
 ## Verificação
-`00_Painel/Verificacao.md`: 245 notas, 4513 wikilinks, 0 links quebrados, 0 nomes duplicados, 0 órfãs. Canvases validados geometricamente; **inspeção visual pendente**.
+`00_Painel/Verificacao.md`: 235 notas, 3190 wikilinks, 0 links quebrados, 0 nomes duplicados, 0 órfãs. Canvases validados geometricamente; **inspeção visual pendente**.
 
 ## Regenerar
 `python -I scripts/kb_extract.py .` e `python -I scripts/kb_build.py .` (a pasta `base_conhecimento/` é recriada; copie edições manuais antes).

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P122_Cortinhas2024_Uncontrolled-Illegal-Mining-and-G
 paginas: 15
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Mineracao|Mineração]]"]
 sensores: ["[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[MapBiomas|MapBiomas]]"]
 metodos: ["[[UNet|U-Net]]"]
-preparo: ["[[MosaicosCompostos|Mosaicos e compostos temporais]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[AmostragemEstratificada|Amostragem estratificada]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+preparo: []
+validacao: []
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Cortinhas 2024 — Uncontrolled Illegal Mining and Garimpo in the Brazilian Amazon
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -112,13 +115,6 @@ Resumo: não localizado no texto convertido.
 - utiliza dado/sensor: [[Landsat|Landsat]] — 11 ocorrências (p. 2, 8, 9, 12, 13)
 - emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 6 ocorrências (p. 2, 9, 14, 15)
 - utiliza método: [[UNet|U-Net]] — 9 ocorrências (p. 9, 10, 12, 14)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 14 ocorrências (p. 5, 6, 7, 9, 12)
-- é avaliado por: [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 6 ocorrências (p. 4, 6, 12)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 8 ocorrências (p. 9, 10, 15)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 7 ocorrências (p. 8, 9, 10)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 4 ocorrências (p. 9, 12)
-- adota desenho de validação: [[AmostragemEstratificada|Amostragem estratificada]] — 4 ocorrências (p. 4, 12)
-- discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 6 ocorrências (p. 2, 4, 5, 7, 8)
 - trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

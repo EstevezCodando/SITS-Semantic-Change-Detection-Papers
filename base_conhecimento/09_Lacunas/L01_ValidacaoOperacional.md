@@ -21,8 +21,6 @@ Os estudos lidos são retrospectivos. Nenhum dos artigos aprofundados reporta la
 ## O que isto afeta (método, dado ou resultado)
 
 - afeta operação: [[Alertas|Alertas de mudança]]
-- afeta operação: [[FalsosAlertas|Falsos alertas]]
-- afeta operação: [[SistemaOperacional|Sistemas operacionais]]
 
 ## Oportunidade (interpretação)
 

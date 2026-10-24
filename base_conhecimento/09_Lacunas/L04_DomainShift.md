@@ -20,7 +20,6 @@ O desempenho cai quando se muda de área e, para a detecção de mudança, quand
 
 - afeta desenho de validação: [[Generalizacao|Generalização e domain shift]]
 - afeta desenho de validação: [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]]
-- afeta desenho de validação: [[DivisaoTemporal|Divisão temporal]]
 
 ## Oportunidade (interpretação)
 

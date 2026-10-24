@@ -267,3 +267,8 @@ LACUNAS = [
   ['«C:MetricasMudancaSemantica»', '«C:DynamicEarthNet»', '«C:SECOND»', '«C:HRSCD»'],
   'Fixar uma taxonomia enxuta e validar com amostras locais.'),
 ]
+
+
+import os as _os
+exec(compile(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'kb_content2.py'), encoding='utf-8').read(), 'kb_content2.py', 'exec'))
+exec(compile(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'kb_content3.py'), encoding='utf-8').read(), 'kb_content3.py', 'exec'))

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P45_Brown2022_Dynamic-World-Near-real-time-global-10
 paginas: 17
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[MapBiomas|MapBiomas]]"]
 metodos: []
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[AmostragemEstratificada|Amostragem estratificada]]", "[[PrecisaoRecall|Precisão e recall]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+preparo: []
+validacao: []
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Brown 2022 — Dynamic World, Near real-time global 10 m land use land cover mapping
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -111,17 +114,6 @@ Não informado (nenhum trecho de limitação detectado).
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 55 ocorrências (p. 1, 2, 3, 4, 5)
 - emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 5 ocorrências (p. 2, 11, 12)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 11 ocorrências (p. 9, 10, 11, 15)
-- é avaliado por: [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 3 ocorrências (p. 2, 15)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 17 ocorrências (p. 2, 3, 4, 6, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 72 ocorrências (p. 2, 3, 4, 5, 6)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 53 ocorrências (p. 2, 3, 4, 8, 9)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 11 ocorrências (p. 3, 4, 6, 8, 9)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 9 ocorrências (p. 4, 5, 6, 8, 12)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 7 ocorrências (p. 1, 8, 12, 13, 14)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 2, 9)
-- adota desenho de validação: [[AmostragemEstratificada|Amostragem estratificada]] — 3 ocorrências (p. 2, 14, 15)
-- discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 34 ocorrências (p. 1, 2, 6, 7, 8)
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

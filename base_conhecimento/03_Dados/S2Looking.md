@@ -4,7 +4,7 @@ subtipo: "conjunto de dados"
 titulo: "S2Looking"
 aliases: ["S2Looking"]
 pasta_tematica: "03_Dados"
-n_artigos: 9
+n_artigos: 8
 tags: [conceito, conjunto-de-dados]
 ---
 
@@ -50,7 +50,6 @@ Diferenças de geometria entre datas.
 | [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 6 | 6, 7, 8 | lido (profundo) |
 | [[Zhou_2025_SChangerChangeDetection\|Zhou 2025]] | emprega conjunto de dados | 5 | 1, 8, 9, 10 | extraído automaticamente (não lido) |
 | [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | emprega conjunto de dados | 5 | 5, 6, 7, 8 | extraído automaticamente (não lido) |
-| [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | emprega conjunto de dados | 2 | 2, 5 | extraído automaticamente (não lido) |
 
 ## Navegação
 

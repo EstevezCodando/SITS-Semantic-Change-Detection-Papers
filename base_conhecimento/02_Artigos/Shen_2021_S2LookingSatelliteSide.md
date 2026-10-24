@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P130_Shen2021_S2Looking-A-Satellite-Side-Looking-Dat
 paginas: 23
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Edificacoes|Edificações e urbanização]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
-conjuntos_dados: ["[[S2Looking|S2Looking]]", "[[LEVIRCD|LEVIR-CD]]", "[[OSCD|OSCD]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[RedeSiamesa|Redes siamesas]]", "[[Transformer|Transformers]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]"]
+conjuntos_dados: ["[[S2Looking|S2Looking]]", "[[LEVIRCD|LEVIR-CD]]", "[[OSCD|OSCD]]"]
+metodos: ["[[RedeSiamesa|Redes siamesas]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Shen 2021 — S2Looking: A Satellite Side-Looking Dataset for Building Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -125,15 +128,7 @@ tags: [artigo, leitura/automatica]
 - emprega conjunto de dados: [[S2Looking|S2Looking]] — 96 ocorrências (p. 1, 3, 4, 6, 7)
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 47 ocorrências (p. 1, 2, 3, 6, 7)
 - emprega conjunto de dados: [[OSCD|OSCD]] — 4 ocorrências (p. 2, 6)
-- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 3 ocorrências (p. 2, 6)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 12 ocorrências (p. 2, 5, 18, 19)
-- utiliza método: [[Transformer|Transformers]] — 6 ocorrências (p. 5, 18, 19)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 5, 18)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 24 ocorrências (p. 11, 15, 16, 17, 18)
-- é avaliado por: [[F1|F1]] — 17 ocorrências (p. 13, 15, 16, 17, 18)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 34 ocorrências (p. 1, 3, 4, 6, 9)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 9 ocorrências (p. 6, 7, 11, 13, 14)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 7 ocorrências (p. 14, 18)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P79_Reed2023_Scale-MAE-A-Scale-Aware-Masked-Autoenco
 paginas: 16
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Mineracao|Mineração]]"]
 sensores: []
 conjuntos_dados: []
-metodos: ["[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]", "[[SuperResolucao|Super-resolução]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[IoU|IoU / mIoU]]"]
+metodos: ["[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Reed 2022 — Scale-MAE: A Scale-Aware Masked Autoencoder for Multiscale Geospatial Representation Learning
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -111,13 +114,6 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[Transformer|Transformers]] — 37 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 14 ocorrências (p. 1, 2, 6, 7)
-- utiliza método: [[SuperResolucao|Super-resolução]] — 7 ocorrências (p. 3, 4)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 5 ocorrências (p. 2, 3)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 3, 9)
-- é avaliado por: [[IoU|IoU / mIoU]] — 11 ocorrências (p. 1, 2, 7, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 21 ocorrências (p. 2, 3, 4, 5, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 6 ocorrências (p. 1, 2, 4, 6)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 3 ocorrências (p. 2, 4, 7)
 - trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

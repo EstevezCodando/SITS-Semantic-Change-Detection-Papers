@@ -42,12 +42,12 @@ Falsos alertas custam revisão.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | discute aspecto de monitoramento | 230 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | discute aspecto de monitoramento | 78 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | discute aspecto de monitoramento | 21 | 1, 2, 12 | extraído automaticamente (não lido) |
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | discute aspecto de monitoramento | 12 | 2, 3, 8, 10, 12 | extraído automaticamente (não lido) |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | discute aspecto de monitoramento | 10 | 3, 18, 19, 26, 28 | extraído automaticamente (não lido) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | discute aspecto de monitoramento | 6 | 1, 2, 5 | extraído automaticamente (não lido) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | discute aspecto de monitoramento | 230 | 1, 2, 3, 4, 5 | lido (parcial) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | discute aspecto de monitoramento | 78 | 1, 2, 3, 4, 5 | lido (parcial) |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | discute aspecto de monitoramento | 12 | 2, 3, 8, 10, 12 | lido (parcial) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | discute aspecto de monitoramento | 10 | 3, 18, 19, 26, 28 | lido (profundo) |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | discute aspecto de monitoramento | 6 | 1, 2, 5 | lido (parcial) |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

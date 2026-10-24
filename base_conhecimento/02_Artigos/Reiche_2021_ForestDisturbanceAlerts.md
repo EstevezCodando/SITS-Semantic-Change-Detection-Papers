@@ -9,22 +9,25 @@ arquivo_fonte: "coleta/P119_Reiche2021_Forest-disturbance-alerts-for-the-Congo-B
 markdown_fonte: "output/pdf/P119_Reiche2021_Forest-disturbance-alerts-for-the-Congo-Basin-using-Sentinel/document.md"
 paginas: 13
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[DegradacaoFlorestal|Degradação e perturbação florestal]]", "[[Edificacoes|Edificações e urbanização]]"]
-sensores: ["[[Sentinel1|Sentinel-1]]", "[[Landsat|Landsat]]", "[[Sentinel2|Sentinel-2]]"]
+status_leitura: "lido (parcial)"
+relevancia_objetivo: "B"
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]", "[[SAR|Radar (SAR)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: []
-preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]"]
+preparo: []
 validacao: []
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+ferramentas: []
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Reiche 2021 — Forest disturbance alerts for the Congo Basin using Sentinel-1
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Alerta Sentinel-1 com confirmação bayesiana; validação com PlanetScope mensal.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -35,6 +38,10 @@ tags: [artigo, leitura/automatica]
 - **Tipo de documento:** artigo completo (texto integral convertido).
 
 ## 2. Problema investigado e contribuição principal
+
+**Evidência (leitura):**
+
+Gerar **alertas de perturbação florestal** para a bacia do Congo com **Sentinel-1 (radar, 10 m, a cada 6–12 dias)**, que penetra nuvem, de **jan/2019 a jul/2020** (o sistema RADD) (p. 1–3). Detecta perturbação genérica (corte raso ou parcial), sem separar causa humana de natural, com **unidade mínima de mapeamento de 0,2 ha (20 pixels)** (p. 4).
 
 **Resumo detectado automaticamente (p. 2):** A humid tropical forest disturbance alert using Sentinel-1 radar data is presented for the Congo Basin. Radar satellite signals can penetrate through clouds, allowing Sentinel-1 to provide gap-free observations for the tropics consistently every 6–12 days at 10 m spatial scale. In the densely cloud covered Congo Basin, this represents a major advantage for the rapid detection of small-scale forest disturbances such as subsistence agriculture and selective logging. Alerts were detected with latest available Sentinel-1 images and results are presented from January 2019 to July 2020. We mapped 4 million disturbance events during this period, totalling 1.4 million ha with nearly 80% of events smaller than 0.5 ha. Monthly distribution of alert totals varied widely across the Congo Basin countries and can be linked to regional differences in wet and dry season cycles, with more forest disturba…
 
@@ -49,6 +56,12 @@ tags: [artigo, leitura/automatica]
 - “With the European Sentinel-1A and 1B C-band radar satellites launched in 2014 and 2016 (Torres et al 2012), global temporally dense and high resolution radar data at 10 m spatial scale are freely available for the first time.” (p. 3, seção 16 million ha of forest cleared between 2000 and)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Sentinel-1 GRD VV e VH, órbitas ascendente e descendente, ~5.300 imagens por ano; 72 % da área coberta a cada 12 dias e 21 % a cada 6 (p. 4).
+- Mapa de referência da floresta úmida de 2018 (Landsat, perda do Hansen para excluir eventos até 2018) (p. 5, 6).
+- **Validação com PlanetScope mensal de 3 m** (Planet ambassador/NICFI) e Sentinel-2 (p. 6).
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **Sentinel-1**: 44 ocorrências (p. 1, 2, 3, 4, 5)
@@ -75,13 +88,29 @@ tags: [artigo, leitura/automatica]
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método:**
+
+- Estatísticas históricas de retroespalhamento (2017–2018) de floresta estável; **modelos de mistura gaussiana por pixel** viram probabilidade de floresta e não floresta; **alerta com um só novo dado** (probabilidade de não floresta > 0,75); **atualização bayesiana** com observações seguintes: alerta de baixa confiança com probabilidade > 0,85 e **confirmado com alta confiança > 0,975 em até 90 dias** (p. 5, 6).
+- Normalização para mitigar efeito da estação seca, correção radiométrica de relevo, filtro de speckle adaptativo e agrupamento com conectividade 8 (p. 5, 6).
+
+**Evidência (leitura) — Validação:**
+
+- Amostragem probabilística (Stehman) em 3 estratos, **1.100 pontos**: 500 em perturbação, 300 sem perturbação perto (buffer de 20 pixels) e 300 sem perturbação longe; unidade de 10 × 10 m; inspeção visual em PlanetScope mensal e Sentinel-2, com limitação de nuvem (muitas vezes só trimestral ou semestral) (p. 6).
+- Pixels de borda de eventos grandes e eventos anteriores a 2019 **não contam como falso positivo** (o objetivo do alerta é detectar eventos novos, não estimar área) (p. 6).
+
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 14 menções vs 0 de pares)
 
 ## 7. Validação: divisão espacial e temporal, independência, desbalanceamento, vazamento e testes externos
 
-Não informado (nada detectado automaticamente).
+
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
+
+**Evidência (leitura) — Resultados:**
+
+- **4,07 milhões de eventos**, 1,43 milhão de ha; **79,6 % dos eventos têm 0,2 a < 0,5 ha** (32,8 % da área) (p. 7–8).
+- Acurácia do usuário **97,6 ± 4,8 %** e do produtor **95,0 ± 25,8 %** para ≥ 0,2 ha; produtor **83,5 ± 37,5 %** quando se contam eventos < 0,2 ha (tabela 2, p. 8).
+- A confirmação ocorre em poucas semanas; mais eventos na estação seca (p. 1, 8).
 
 **Trechos numéricos detectados automaticamente (verificar):**
 - “We mapped 4 million disturbance events during this period, totalling 1.4 million ha with nearly 80% of events smaller than 0.5 ha.” (p. 2, seção Abstract)
@@ -90,6 +119,11 @@ Não informado (nada detectado automaticamente).
 - “Disturbance events with a mapped size between 0.5 and <1 ha accounted for 12.8% (25.2% of the total mapped area), medium-scale events between” (p. 9, seção 5.1. Forest disturbance alerts)
 
 ## 9. Limitações e condições de aplicabilidade
+
+**Evidência (leitura) — Limites e observações:**
+
+- O alerta não cobre eventos < 0,2 ha, então as taxas reais seriam maiores (p. 1).
+- **Observações minhas:** (a) o erro-padrão do produtor é grande (± 25,8 e ± 37,5), então a taxa de omissão é incerta; (b) a referência visual também depende de dados claros que muitas vezes só existem em passo trimestral, o que atrasa a data do evento na validação; (c) ao não penalizar os pixels de borda, a acurácia do usuário fica **otimista por construção**; (d) o produto é de **radar C-band**, com falhas conhecidas em fogo e restos de corte (ver P118); (e) o texto lido não discute desempenho em 3–5 m óptico.
 
 **Trechos detectados automaticamente (verificar contexto):**
 - “The primary limitations of the presented alerts are twofold.” (p. 11, seção 6. Conclusions)
@@ -102,24 +136,51 @@ Não informado (nada detectado automaticamente).
 
 ## 11. Aplicabilidade ao monitoramento contínuo
 
-- **Classificação (evidência):** candidato a sistema operacional (verificar no texto). menções: operacional 5, alertas 78, quase tempo real 10
+- **Classificação (evidência):** sistema operacional (alertas). Alerta com um só dado novo e confirmação bayesiana em até 90 dias; produto público.
 - menções de termos de monitoramento (contagem, não avaliação): Alertas 78 (p. 1, 2, 3, 4, 5); Persistência / confirmação 32 (p. 2, 3, 5, 7, 8); Quase tempo real 10 (p. 2, 3, 6, 8, 10); Latência / frequência 7 (p. 5, 10, 11); Sistema operacional 5 (p. 3, 4, 11)
+
+**Interpretação — O que reaproveitar:**
+
+- **Desenho de alerta com baixa e alta confiança e confirmação em até 90 dias**, que conecta latência e precisão.
+- **Validação de alertas com amostragem probabilística e referência PlanetScope mensal**, com estratos de perto e longe de perturbação para omissões.
+- **Regra de não penalizar borda e eventos anteriores** (e explicitá-la).
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Não é método para imagem óptica Planet; serve de **referência de validação e de lógica de confirmação**.
 
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 44 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 15 ocorrências (p. 3, 4, 6, 9, 10)
-- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 6 ocorrências (p. 6, 7, 9, 10, 11)
-- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 26 ocorrências (p. 2, 3, 4, 6, 9)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 6 ocorrências (p. 3, 4, 5)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 9 ocorrências (p. 2, 3, 6, 10)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 4 ocorrências (p. 6, 7, 9, 10)
+- utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 5 ocorrências (p. 4, 6, 8)
+- referência (curado pela leitura): [[SAR|Radar (SAR)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 78 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 32 ocorrências (p. 2, 3, 5, 7, 8)
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 10 ocorrências (p. 2, 3, 6, 8, 10)
-- trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[ReferenciaVisual|Referência por interpretação visual]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 26 ocorrências (p. 2, 3, 4, 6, 9)
+
+**Comparações substantivas com outros artigos:**
+- [[Zhang_2023_MonitoringMonthlyTropical|Zhang 2023]] compara-se com o alerta de este artigo — P91 compara seu mapa NICFI mensal com RADD (P119), GLAD e GFC; o RADD suaviza manchas pequenas (< 0,2 ha), que o NICFI recupera (p. 18).
+- [[Reiche_2024_IntegratingSatelliteForest|Reiche 2024]] integra o alerta de este artigo — P118 combina RADD (P119), GLAD-S2 e GLAD-Landsat; o produtor médio chega a 97%.
+- [[Ygorra_2024_NearRealTime|Ygorra 2024]] adota o limite de confirmação de este artigo — P120 define quase tempo real como até 90 dias, o limite de confirmação do RADD (P119).
+- [[Doblas_2022_DETEROperationalNear|Doblas 2022]] é sistema paralelo ao este artigo — DETER-R (INPE) e RADD (Wageningen) são alertas por radar Sentinel-1; ambos usam Planet na validação.
+
+## Figuras selecionadas
+
+![[Reiche_2021_ForestDisturbanceAlerts_p5_Figure3.png|520]]
+*Figure 3 depicts the flowchart of the presented (p. 5; recorte do PDF convertido)*
+
+![[Reiche_2021_ForestDisturbanceAlerts_p10_Figure8.png|520]]
+*Figure 8. Visual comparison between our Sentinel-1-based alerts for 2019 with the Landsat-based GLAD alerts (Hansen et al (p. 10; recorte do PDF convertido)*
+
+![[Reiche_2021_ForestDisturbanceAlerts_p4_Figure1.png|520]]
+*Figure 1. Logging road expansion (January, February, March) followed by selective logging (September and October) and rapid (p. 4; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

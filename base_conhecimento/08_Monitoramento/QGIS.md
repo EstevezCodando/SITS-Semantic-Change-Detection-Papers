@@ -4,7 +4,7 @@ subtipo: "ferramenta"
 titulo: "QGIS"
 aliases: ["QGIS"]
 pasta_tematica: "08_Monitoramento"
-n_artigos: 9
+n_artigos: 5
 tags: [conceito, ferramenta]
 ---
 
@@ -42,15 +42,11 @@ Sem painel nativo de mudança temporal.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Cubillas_2024_LandClassificationPlugin\|Cubillas 2024]] | usa ferramenta | 27 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Sanca_2023_ENDENDDEEP\|Sanca 2023]] | usa ferramenta | 17 | 1, 2, 3, 5, 6 | extraído automaticamente (não lido) |
-| [[Congedo_2021_SemiAutomaticClassification\|Congedo 2021]] | usa ferramenta | 12 | 1, 2, 3 | extraído automaticamente (não lido) |
 | [[Febrita_2025_EvaluatingDrivenAutomated\|Febrita 2025]] | usa ferramenta | 11 | 1, 2, 9 | lido (profundo) |
 | [[Wang_2025_SAMTestingReliability\|Wang 2025]] | usa ferramenta | 11 | 1, 2, 3, 5, 6 | lido (profundo) |
 | [[Tresson_2026_IAMAPUnlockingDeep\|Tresson 2026]] | usa ferramenta | 9 | 1, 2, 3, 4 | lido (profundo) |
-| [[Kumari_2025_SimulationLandLand\|Kumari 2025]] | usa ferramenta | 7 | 1, 2, 4 | extraído automaticamente (não lido) |
-| [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | usa ferramenta | 6 | 14, 15, 16 | lido (parcial) |
-| [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | usa ferramenta | 4 | 1, 3 | extraído automaticamente (não lido) |
+| [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 
 ## Navegação
 

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P28_Chen2024_ChangeMamba-Remote-Sensing-Change-Detec
 paginas: 19
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
-sensores: ["[[ImagensAereas|Imagens aéreas]]"]
-conjuntos_dados: ["[[xBD|xBD]]", "[[HRSCD|HRSCD]]", "[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]", "[[UNet|U-Net]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
+sensores: []
+conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[SECOND|SECOND]]"]
+metodos: ["[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Chen 2024 — ChangeMamba: Remote Sensing Change Detection With Spatiotemporal State Space Model
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — ChangeMamba para mudança binária, semântica e dano; encoder transferível, não testado em 3–5 m.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -161,26 +164,20 @@ Verificar se a arquitetura **Mamba** (modelo de espaço de estados com varredura
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 5 ocorrências (p. 9, 18)
-- emprega conjunto de dados: [[xBD|xBD]] — 11 ocorrências (p. 3, 9, 10, 12, 13)
-- emprega conjunto de dados: [[HRSCD|HRSCD]] — 9 ocorrências (p. 10, 13)
-- emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 6 ocorrências (p. 9, 11, 17, 18)
-- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 6 ocorrências (p. 9, 11, 12)
 - utiliza método: [[Transformer|Transformers]] — 73 ocorrências (p. 1, 2, 3, 4, 6)
 - utiliza método: [[Mamba|Mamba / modelos de espaço de estados]] — 49 ocorrências (p. 1, 2, 4, 5, 6)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 32 ocorrências (p. 1, 2, 3, 4, 10)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 20 ocorrências (p. 2, 3, 5, 10, 14)
-- utiliza método: [[UNet|U-Net]] — 12 ocorrências (p. 3, 10, 14, 15, 17)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 4 ocorrências (p. 2, 18, 19)
-- é avaliado por: [[F1|F1]] — 25 ocorrências (p. 10, 11, 12, 13, 16)
-- é avaliado por: [[IoU|IoU / mIoU]] — 12 ocorrências (p. 10, 11, 12, 13, 16)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 12 ocorrências (p. 10, 11, 12, 13, 16)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 3 ocorrências (p. 5, 10)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 6 ocorrências (p. 1, 2, 3, 9, 19)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 4 ocorrências (p. 3, 9, 12)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 3 ocorrências (p. 7, 15)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 8 ocorrências (p. 9, 11, 12, 13, 14)
+- referência (curado pela leitura): [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+- emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 6 ocorrências (p. 9, 11, 17, 18)
+- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 6 ocorrências (p. 9, 11, 12)
+- emprega conjunto de dados: [[SECOND|SECOND]] — 5 ocorrências (p. 9, 12, 13, 14)
+- referência (curado pela leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- [[Shen_2026_FoundationModelDriven|Shen 2026]] usa a mesma família de encoder de este artigo — P34 integra o VMamba-B ao seu decodificador (SeK 25,31 no SECOND), a mesma família Mamba de P28 (SeK 22,92 no SECOND).
+- este artigo adota a métrica de [[Yang_2021_AsymmetricSiameseNetworks|Yang 2021]] — P28 relata SeK no SECOND, métrica proposta por P19.
 
 ## Figuras selecionadas
 

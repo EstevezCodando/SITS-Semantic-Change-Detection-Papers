@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P70_Simoes2021_Satellite-Image-Time-Series-Analysis-
 paginas: 23
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]"]
 sensores: ["[[Landsat|Landsat]]", "[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[BrazilDataCube|Brazil Data Cube]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[RandomForest|Random Forest]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[AcuraciaGlobal|Acurácia global (OA)]]"]
-ferramentas: ["[[TensorFlow|TensorFlow / Keras]]"]
-tags: [artigo, leitura/automatica]
+metodos: []
+preparo: []
+validacao: []
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Simoes 2021 — Satellite Image Time Series Analysis for Big Earth Observation Data
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -117,12 +120,6 @@ tags: [artigo, leitura/automatica]
 - utiliza dado/sensor: [[Landsat|Landsat]] — 8 ocorrências (p. 2, 7, 13, 14)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 7 ocorrências (p. 2, 4, 7)
 - emprega conjunto de dados: [[BrazilDataCube|Brazil Data Cube]] — 3 ocorrências (p. 4, 7, 13)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 6 ocorrências (p. 6, 9, 14, 17)
-- utiliza método: [[RandomForest|Random Forest]] — 4 ocorrências (p. 6, 9, 17)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 3 ocorrências (p. 12, 16)
-- usa ferramenta: [[TensorFlow|TensorFlow / Keras]] — 5 ocorrências (p. 10, 13, 18)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 15 ocorrências (p. 3, 4, 7, 13, 14)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 3 ocorrências (p. 13, 14)
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Desmatamento"
 aliases: ["Desmatamento"]
 pasta_tematica: "05_Metodos"
-n_artigos: 11
+n_artigos: 16
 tags: [conceito, tarefa]
 ---
 
@@ -43,16 +43,22 @@ Fogo e degradação podem ser contados como perda em produtos de referência.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 
+- Lacuna que afeta este conceito: [[L12_SupressaoSemComparacao|Supressão de vegetação em NICFI mensal: os métodos não foram comparados nos mesmos dados]]

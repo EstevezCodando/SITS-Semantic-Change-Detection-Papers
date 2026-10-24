@@ -78,6 +78,9 @@ def canvases():
     ops = [p for p in PIDS if p in kb and monitor_class(p)[0].startswith('candidato')][:3]
     out['Canvas_Validacao_Monitoramento'] = themed_canvas(['P13', 'P12', 'P10', 'P18', 'P19', 'P05', 'P46'] + ops, ['Generalizacao', 'DivisaoEspacialBlocos', 'Desbalanceamento', 'EstimativaArea', 'MetricasMudancaSemantica', 'Alertas', 'RevisaoHumana', 'QuaseTempoReal'],
                                                       ['L01_ValidacaoOperacional', 'L03_MudancaRara', 'L04_DomainShift', 'L06_MetricasIncomparaveis'], 'Validação')
+    stage_color = {'T1': 'Dados', 'T2': 'Preparo', 'T3': 'Preparo', 'T4': 'Métodos', 'T5': 'Métodos', 'T6': 'Validação', 'T7': 'Monitoramento'}
+    tcols = [(f'{t[0][1:]}. {t[1]}', C.PAL[stage_color[t[0]]], [dict(id=f'{t[0]}_{p}', file=f'02_Artigos/{NAMES[p]}.md') for p, _ in t[3][:5] if p in NAMES]) for t in K.TRILHA]
+    out['Canvas_Trilha_Objetivo'] = C.themed(tcols, [(f'g_{i}', f'g_{i + 1}', 'alimenta') for i in range(len(tcols) - 1)])
     issues = {}
     for k, cv in out.items():
         issues[k] = C.validate(cv, KB)
@@ -88,22 +91,35 @@ CANVAS_ISSUES, CANVASES = canvases()
 
 # ============================================================ configuracao do Obsidian (grafo)
 def rgb(h): return int(h.lstrip('#'), 16)
-groups = [('path:"02_Artigos"', C.PAL['Artigos']), ('path:"03_Dados"', C.PAL['Dados']), ('path:"04_Preparo"', C.PAL['Preparo']), ('path:"05_Metodos"', C.PAL['Métodos']), ('path:"06_Validacao"', C.PAL['Validação']),
+TIER_COLOR = {'A': '#1E40AF', 'B': '#3B82F6', 'C': '#93C5FD', 'D': '#CBD5E1'}
+# o primeiro grupo que casa define a cor: as faixas de relevancia vem antes da pasta de artigos
+groups = [('tag:#relevancia/A', TIER_COLOR['A']), ('tag:#relevancia/B', TIER_COLOR['B']), ('tag:#relevancia/C', TIER_COLOR['C']), ('tag:#relevancia/D', TIER_COLOR['D']), ('path:"01_Mapas"', '#475569'),
+          ('path:"02_Artigos"', C.PAL['Artigos']), ('path:"03_Dados"', C.PAL['Dados']), ('path:"04_Preparo"', C.PAL['Preparo']), ('path:"05_Metodos"', C.PAL['Métodos']), ('path:"06_Validacao"', C.PAL['Validação']),
           ('path:"07_Resultados"', C.PAL['Resultados']), ('path:"08_Monitoramento"', C.PAL['Monitoramento']), ('path:"09_Lacunas"', C.PAL['Lacunas'])]
 os.makedirs(f'{KB}/.obsidian', exist_ok=True)
-json.dump({'collapse-filter': False, 'search': '-path:"90_Anexos" -path:"99_Templates" -file:README', 'showTags': False, 'showAttachments': False, 'hideUnresolved': True, 'showOrphans': True,
-           'collapse-color-groups': False, 'colorGroups': [{'query': q, 'color': {'a': 1, 'rgb': rgb(c)}} for q, c in groups], 'collapse-display': False, 'showArrow': True, 'textFadeMultiplier': -0.8,
-           'nodeSizeMultiplier': 1, 'lineSizeMultiplier': 1, 'collapse-forces': False, 'centerStrength': 0.35, 'repelStrength': 12, 'linkStrength': 1, 'linkDistance': 220, 'scale': 0.5, 'close': False},
+GRAPH_SEARCH = '-path:"00_Painel" -path:"90_Anexos" -path:"99_Templates" -file:README -file:"Sem título" -file:Matriz_Comparativa -file:Estudos_Retrospectivos_vs_Operacionais'
+json.dump({'collapse-filter': False, 'search': GRAPH_SEARCH, 'showTags': False, 'showAttachments': False, 'hideUnresolved': True, 'showOrphans': False,
+           'collapse-color-groups': False, 'colorGroups': [{'query': q, 'color': {'a': 1, 'rgb': rgb(c)}} for q, c in groups], 'collapse-display': False, 'showArrow': False, 'textFadeMultiplier': -0.8,
+           'nodeSizeMultiplier': 1.2, 'lineSizeMultiplier': 0.5, 'collapse-forces': False, 'centerStrength': 0.3, 'repelStrength': 16, 'linkStrength': 0.8, 'linkDistance': 260, 'scale': 0.5, 'close': False},
           open(f'{KB}/.obsidian/graph.json', 'w', encoding='utf-8'), indent=2)
 json.dump({'useMarkdownLinks': False, 'newLinkFormat': 'shortest', 'alwaysUpdateLinks': True, 'attachmentFolderPath': '90_Anexos/figuras', 'showFrontmatter': True}, open(f'{KB}/.obsidian/app.json', 'w', encoding='utf-8'), indent=2)
 json.dump(['file-explorer', 'global-search', 'graph', 'backlink', 'outgoing-link', 'tag-pane', 'properties', 'canvas', 'outline', 'templates', 'page-preview'], open(f'{KB}/.obsidian/core-plugins.json', 'w', encoding='utf-8'))
 json.dump({'folder': '99_Templates'}, open(f'{KB}/.obsidian/templates.json', 'w', encoding='utf-8'))
+for _f, _t in _keep.items(): open(f'{KB}/.obsidian/{_f}', 'w', encoding='utf-8').write(_t)
 
 write('00_Painel/Guia_Grafo.md', '---\ntipo: painel\ntitulo: "Guia do grafo"\ntags: [painel, grafo]\n---\n\n# Guia do grafo\n\n'
       'O arquivo `.obsidian/graph.json` já traz os filtros e as cores abaixo. O Obsidian reescreve esse arquivo quando você mexe nos controles, e a interface pode variar conforme a versão instalada: se algum controle não existir na sua versão, aplique os valores manualmente em *Grafo → Configurações*.\n\n'
-      '## Cores por pasta (grupos)\n\n| Pasta | Cor | Consulta do grupo |\n|---|---|---|\n| 02_Artigos | azul `#3B82F6` | `path:"02_Artigos"` |\n| 03_Dados | ciano `#06B6D4` | `path:"03_Dados"` |\n| 04_Preparo | laranja `#F97316` | `path:"04_Preparo"` |\n'
+      '## Como o grafo foi organizado\n\n- **Artigos por relevância para o objetivo** (Planet de ~5 m): quatro tons de azul, do mais escuro (A, dado Planet de 3–5 m e alvo próximo, lido) ao mais claro (D, não lido). A definição está em [[Trilha_Objetivo_Planet5m]].\n'
+      '- **Conceitos de preparo, validação e métrica só se ligam a artigos lidos.** Artigos não lidos ligam apenas a sensor, dado, tarefa e poucos métodos, para que conceitos genéricos (rotulagem, F1, IoU) não virem nós ligados a tudo.\n'
+      '- **Painéis, anexos e templates ficam ocultos** (campo de busca do grafo). Os mapas (`01_Mapas`) ficam em cinza-escuro e funcionam como centros de cada etapa.\n'
+      '- Relações entre artigos (usa o dado de, valida com, compara-se com) são links com explicação na seção 12 de cada nota.\n\n'
+      '## Quatro visões úteis\n\n| Pergunta | Como ver |\n|---|---|\n| Quais artigos importam para o objetivo e como se relacionam? | Campo de busca do grafo: `tag:#relevancia/A OR tag:#relevancia/B` (só artigos, ligados pelas relações) |\n'
+      '| O que sustenta cada etapa do fluxo? | Abra [[Trilha_Objetivo_Planet5m]] → Grafo local, profundidade 2 |\n| Quem usa um conceito ou dado? | Abra a nota do conceito → Grafo local, profundidade 1 |\n| Quais são as lacunas? | Campo de busca: `path:"09_Lacunas" OR tag:#relevancia/A` |\n\n'
+      '## Cores (grupos)\n\n'
+      'O Obsidian aplica a cor do **primeiro grupo da lista** que casa com o nó; se as cores aparecerem trocadas na sua versão, arraste os grupos de relevância para o topo.\n\n'
+      '| Grupo | Cor | Consulta |\n|---|---|---|\n| Artigo relevância A | azul-escuro `#1E40AF` | `tag:#relevancia/A` |\n| Artigo relevância B | azul `#3B82F6` | `tag:#relevancia/B` |\n| Artigo relevância C | azul-claro `#93C5FD` | `tag:#relevancia/C` |\n| Artigo não lido (D) | cinza-azulado `#CBD5E1` | `tag:#relevancia/D` |\n| Mapas | cinza-escuro `#475569` | `path:"01_Mapas"` |\n| 03_Dados | ciano `#06B6D4` | `path:"03_Dados"` |\n| 04_Preparo | laranja `#F97316` | `path:"04_Preparo"` |\n'
       '| 05_Metodos | roxo `#8B5CF6` | `path:"05_Metodos"` |\n| 06_Validacao | amarelo `#EAB308` | `path:"06_Validacao"` |\n| 07_Resultados | verde `#22C55E` | `path:"07_Resultados"` |\n| 08_Monitoramento | turquesa `#14B8A6` | `path:"08_Monitoramento"` |\n| 09_Lacunas | vermelho `#EF4444` | `path:"09_Lacunas"` |\n\n'
-      'Ciano e turquesa são próximos por pedido de paleta; se confundirem, aumente a saturação de um deles.\n\n## Filtros\n\n- Campo de busca do grafo: `-path:"90_Anexos" -path:"99_Templates" -file:README` (esconde anexos, templates e README).\n- Desmarque “Anexos” e “Tags”; mantenha “Existentes apenas” ligado para ocultar links não resolvidos.\n- Para investigar, abra **Grafo local** (ícone no painel da nota) com **profundidade 1** (vizinhos diretos) ou **2** (vizinhos dos vizinhos). Em um conceito, a profundidade 1 mostra os artigos que o utilizam.\n\n'
+      'Ciano e turquesa são próximos por pedido de paleta; se confundirem, aumente a saturação de um deles.\n\n## Filtros\n\n- Campo de busca do grafo: `-path:"00_Painel" -path:"90_Anexos" -path:"99_Templates" -file:README -file:"Sem título" -file:Matriz_Comparativa -file:Estudos_Retrospectivos_vs_Operacionais` (esconde painéis, anexos, templates, README e as duas tabelas que listam quase todos os artigos e virariam centros artificiais).\n- Desmarque “Anexos” e “Tags”; mantenha “Existentes apenas” ligado para ocultar links não resolvidos.\n- Para investigar, abra **Grafo local** (ícone no painel da nota) com **profundidade 1** (vizinhos diretos) ou **2** (vizinhos dos vizinhos). Em um conceito, a profundidade 1 mostra os artigos que o utilizam.\n\n'
       '## Forças (ponto de partida, não valores fixos)\n\n| Controle | Valor inicial | Como ajustar |\n|---|---|---|\n| Força central | 0,35 | aumente se os nós se espalham demais; diminua se tudo se aglomera |\n| Repulsão | 12 | suba (14–18) com mais de ~300 notas; desça (8–10) com poucas |\n| Força dos links | 1 | reduza (0,6–0,8) se os mapas puxam clusters demais |\n| Distância dos links | 220 | aumente (300+) com muitos nós para reduzir sobreposição |\n| Tamanho dos nós | 1 | opcional |\n\n'
       'O grafo de forças é dinâmico: as posições mudam a cada abertura e **não há garantia** de distância exata nem de ausência de sobreposição. Para uma disposição fixa use os Canvas (`01_Mapas/*.canvas`).\n\n[[00_Inicio|← Painel]]\n')
 

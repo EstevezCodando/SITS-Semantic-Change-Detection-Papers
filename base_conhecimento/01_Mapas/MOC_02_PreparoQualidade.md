@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Preparação e qualidade das imagens"
-n_conceitos: 9
+n_conceitos: 4
 tags: [mapa]
 ---
 
@@ -18,17 +18,10 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Etapa**
-- [[MascaraNuvem|Máscara de nuvem e sombra]] — 15 artigos
-- [[Corregistro|Corregistro e georreferenciamento]] — 3 artigos
-- [[CorrecaoAtmosferica|Correção atmosférica e reflectância]] — 4 artigos
-- [[Reamostragem|Reamostragem]] — 3 artigos
-- [[MosaicosCompostos|Mosaicos e compostos temporais]] — 13 artigos
-- [[Normalizacao|Normalização e escala radiométrica]] — 22 artigos
-- [[PatchesTiles|Recorte em patches/tiles]] — 57 artigos
-- [[AumentoDados|Aumento de dados]] — 16 artigos
-
-**Ferramenta**
-- [[GDAL|GDAL / rasterio]] — 3 artigos
+- [[MascaraNuvem|Máscara de nuvem e sombra]] — 4 artigos
+- [[Normalizacao|Normalização e escala radiométrica]] — 3 artigos
+- [[PatchesTiles|Recorte em patches/tiles]] — 7 artigos
+- [[AumentoDados|Aumento de dados]] — 3 artigos
 
 ## Lacunas relacionadas
 

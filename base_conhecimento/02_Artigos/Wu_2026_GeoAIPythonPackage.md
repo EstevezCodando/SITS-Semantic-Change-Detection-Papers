@@ -10,6 +10,7 @@ markdown_fonte: "output/pdf/P155_Wu2026_GeoAI-A-Python-package-for-integrating-a
 paginas: 3
 tipo_documento: "artigo curto (≤4 páginas; verificar)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "C"
 tarefas: []
 sensores: []
 conjuntos_dados: []
@@ -17,7 +18,7 @@ metodos: []
 preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/C]
 ---
 
 # Wu 2026 — GeoAI: A Python package for integrating artificial intelligence with geospatial data analysis and visualization
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Pacote e plugin GeoAI para QGIS; sem avaliação quantitativa.
 
 ## 1. Referência bibliográfica e acesso ao original
 

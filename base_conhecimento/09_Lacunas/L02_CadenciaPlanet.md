@@ -21,7 +21,6 @@ O NICFI foi semestral até ago/2020. Estudos como [[Vizzari_2022_PlanetScopeSent
 ## O que isto afeta (método, dado ou resultado)
 
 - afeta dado/produto: [[PlanetNICFI|Planet NICFI (basemaps)]]
-- afeta etapa: [[MosaicosCompostos|Mosaicos e compostos temporais]]
 
 ## Oportunidade (interpretação)
 

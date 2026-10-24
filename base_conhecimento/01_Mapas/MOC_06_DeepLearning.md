@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Deep Learning (arquiteturas e estratégias)"
-n_conceitos: 15
+n_conceitos: 13
 tags: [mapa]
 ---
 
@@ -17,31 +17,27 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Arquitetura/família**
-- [[CNN|Redes convolucionais (CNN)]] — 41 artigos
+- [[CNN|Redes convolucionais (CNN)]] — 22 artigos
 
 **Arquitetura**
-- [[UNet|U-Net]] — 33 artigos
-- [[RedeSiamesa|Redes siamesas]] — 21 artigos
-- [[Transformer|Transformers]] — 34 artigos
+- [[UNet|U-Net]] — 21 artigos
+- [[RedeSiamesa|Redes siamesas]] — 12 artigos
+- [[Transformer|Transformers]] — 26 artigos
 - [[Mamba|Mamba / modelos de espaço de estados]] — 2 artigos
 - [[UTAE|U-TAE (U-Net com atenção temporal)]] — 3 artigos
-- [[LSTM|Redes recorrentes (LSTM)]] — 11 artigos
+- [[LSTM|Redes recorrentes (LSTM)]] — 5 artigos
 
 **Família de modelos**
-- [[ModeloFundacional|Modelos fundacionais]] — 18 artigos
+- [[ModeloFundacional|Modelos fundacionais]] — 16 artigos
 
 **Modelo fundacional**
-- [[SAM|Segment Anything (SAM)]] — 13 artigos
+- [[SAM|Segment Anything (SAM)]] — 11 artigos
 
 **Estratégia**
-- [[TransferLearning|Aprendizado por transferência]] — 25 artigos
-- [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 20 artigos
+- [[TransferLearning|Aprendizado por transferência]] — 14 artigos
+- [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 10 artigos
 - [[SupervisaoFraca|Supervisão fraca]] — 3 artigos
-- [[SuperResolucao|Super-resolução]] — 4 artigos
-
-**Ferramenta**
-- [[PyTorch|PyTorch]] — 3 artigos
-- [[TensorFlow|TensorFlow / Keras]] — 2 artigos
+- [[SuperResolucao|Super-resolução]] — 2 artigos
 
 ## Lacunas relacionadas
 

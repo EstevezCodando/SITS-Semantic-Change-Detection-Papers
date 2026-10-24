@@ -9,22 +9,25 @@ arquivo_fonte: "coleta/P120_Ygorra2024_A-near-real-time-tropical-deforestation-m
 markdown_fonte: "output/pdf/P120_Ygorra2024_A-near-real-time-tropical-deforestation-monitoring-algorithm/document.md"
 paginas: 12
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Desmatamento|Desmatamento]]"]
-sensores: ["[[Sentinel1|Sentinel-1]]", "[[SAR|Radar (SAR)]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
-conjuntos_dados: ["[[DETER|DETER (INPE)]]", "[[GlobalForestChange|Global Forest Change (Hansen)]]"]
+status_leitura: "lido (parcial)"
+relevancia_objetivo: "B"
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[SAR|Radar (SAR)]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+conjuntos_dados: []
 metodos: []
-preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]", "[[Kappa|Coeficiente kappa]]"]
+preparo: []
+validacao: ["[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Ygorra 2024 — A near-real-time tropical deforestation monitoring algorithm based on the CuSum change detection method
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — CuSum em quase tempo real com Sentinel-1; calibração de limiares e latência.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -36,7 +39,9 @@ tags: [artigo, leitura/automatica]
 
 ## 2. Problema investigado e contribuição principal
 
-Resumo: não localizado no texto convertido.
+**Evidência (leitura):**
+
+Versão de **quase tempo real do CuSum** (soma cumulativa) para detectar desmatamento em séries de **Sentinel-1** com unidade mínima de mapeamento de **0,03 ha (3 pixels de 10 m)**, calibrada na Amazônia (Pará, 97,2 km²), e comparada com a versão offline ReCuSum (p. 1–2). "Quase tempo real" é definido como atraso máximo de 90 dias, o limite de confirmação do RADD (p. 2).
 
 - “Here, we present the development of a NRT version of CuSum with a MMU of 0.03 ha.” (p. 1, seção Início)
 - “However, the CuSum may not fit the purpose of rapid alerts of deforestation as it was not developed yet as an NRT monitoring system.” (p. 2, seção 6.13 Mha in 2016, according to the Global Forest Review publ)
@@ -50,6 +55,10 @@ Resumo: não localizado no texto convertido.
 - “The Sentinel-1 mission is composed of two satellites (S1A and S1B), launched in 2014 and 2016, respectively.” (p. 3, seção 3.2.1 Sentinel-1)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Sentinel-1 em VV e VH; área de estudo do Pará com grandes cortes rasos e perturbações menores; **referência por inspeção visual de mudanças entre 01/08/2017 e 01/07/2019** (p. 3), com apoio de **mosaico mensal PlanetScope do NICFI** e Sentinel-2 (seção 3.2.2, p. 5).
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **Sentinel-1**: 14 ocorrências (p. 1, 2, 3, 4, 5)
@@ -75,6 +84,11 @@ Resumo: não localizado no texto convertido.
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método:**
+
+- CuSum com limiares cruzados (cross-Tc: **Low Tc** e **High Tc**) sobre polarizações VV, VH e **VV ∩ VH**; parâmetros otimizados por **F1** em varredura: nº de imagens antes e depois da data monitorada (p. 7–8).
+- Melhor configuração: **High Tc = 100 %, Low Tc = 92 %, 11 imagens antes e 3 depois** (atraso de ~36 dias com Sentinel-1) (p. 8, 10).
+
 - **Estratégia temporal (detecção automática, verificar):** série temporal (auto: 43 menções vs 5 de pares)
 
 ## 7. Validação: divisão espacial e temporal, independência, desbalanceamento, vazamento e testes externos
@@ -87,6 +101,12 @@ Resumo: não localizado no texto convertido.
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
 
+**Evidência (leitura) — Resultados:**
+
+- **CuSum NRT:** precisão 68 %, recall 72 %, acurácia 93 %, **F1 0,71**, kappa 0,67; **ReCuSum:** precisão 81 %, recall 68 %, acurácia 95 %, F1 0,74, kappa 0,72 (tabela 3, p. 9).
+- NRT detecta mais mudança real (737 vs 701 ha) e tem menos falso negativo (284 vs 320 ha), mas **mais falso positivo (335 vs 156 ha)**, sobretudo nas bordas de áreas perturbadas e por eventos no fim do período (p. 8–9).
+- Mais de 3 imagens depois reduzem o F1 (rebrota) (p. 10).
+
 **Trechos numéricos detectados automaticamente (verificar):**
 - “This method is particularly customizable and has a very small Minimum Mapping Unit (MMU) of 0.03 ha.” (p. 2, seção 6.13 Mha in 2016, according to the Global Forest R)
 - “The higher F1-score value of 0.71 was obtained for the VV ∩ VH configuration.” (p. 8, seção 5.1.1 Low T c and high T c combination analysis)
@@ -94,6 +114,11 @@ Resumo: não localizado no texto convertido.
 - “The highest F1-score of each Low T c value is obtained using a High T c value of 100%.” (p. 8, seção 5.1.1 Low T c and high T c combination analysis)
 
 ## 9. Limitações e condições de aplicabilidade
+
+**Evidência (leitura) — Limites e observações:**
+
+- Os autores avisam que os parâmetros foram calibrados em uma área pequena e **não valem para todas as florestas**; sazonalidade não foi corrigida e não houve comparação com RADD, GLAD, DETER ou JJ-FAST por falta de área de validação maior (p. 10).
+- **Observações minhas:** (a) uma única janela de ~97 km² e um período; os parâmetros são ajustados e avaliados **na mesma área**, o que **inflaciona o F1**; (b) a referência vem da própria equipe, sem análise de concordância entre intérpretes; (c) o trabalho é de radar C-band; serve como referência de lógica (limiar duplo, confirmação com N imagens depois), não de método óptico.
 
 **Trechos detectados automaticamente (verificar contexto):**
 - “They are based on the use of optical images which suffer from drawbacks caused by the cloud cover over the Brazilian Amazon regions (Weisse et al., 2019).” (p. 2, seção 6.13 Mha in 2016, according to the Global Forest Review publ)
@@ -109,27 +134,44 @@ Resumo: não localizado no texto convertido.
 
 ## 11. Aplicabilidade ao monitoramento contínuo
 
-- **Classificação (evidência):** candidato a sistema operacional (verificar no texto). menções: operacional 5, alertas 6, quase tempo real 84
+- **Classificação (evidência):** protótipo de quase tempo real. Define quase tempo real como até 90 dias e obtém ~36 dias de atraso; calibrado em uma só área.
 - menções de termos de monitoramento (contagem, não avaliação): Quase tempo real 84 (p. 1, 2, 3, 4, 5); Alertas 6 (p. 1, 2, 5); Sistema operacional 5 (p. 1, 2, 4, 6, 10); Falsos alertas 3 (p. 5, 8, 10); Revisão humana 1 (p. 6)
+
+**Interpretação — O que reaproveitar:**
+
+- **Limiar duplo (alto e baixo) com recombinação espacial** para fechar polígonos de mudança.
+- **Varredura de F1 sobre nº de datas antes e depois** como forma de calibrar a persistência exigida (o análogo da regra "≥ 3 meses" de P91).
+- **Definição operacional de quase tempo real** por atraso máximo aceitável.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Parâmetros ajustados numa só área; refazer em outra região antes de qualquer uso.
 
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 14 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza dado/sensor: [[SAR|Radar (SAR)]] — 13 ocorrências (p. 1, 2, 3, 5, 6)
-- utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 4 ocorrências (p. 4, 6)
-- emprega conjunto de dados: [[DETER|DETER (INPE)]] — 6 ocorrências (p. 1, 2, 10)
-- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 3 ocorrências (p. 1, 2)
-- é avaliado por: [[F1|F1]] — 32 ocorrências (p. 1, 2, 6, 7, 8)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 16 ocorrências (p. 1, 2, 7, 8, 9)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 5 ocorrências (p. 7, 8, 9)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 6 ocorrências (p. 2, 4, 6, 10)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 3 ocorrências (p. 4, 6)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 3 ocorrências (p. 2, 6, 7)
+- referência (curado pela leitura): [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 84 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 6 ocorrências (p. 1, 2, 5)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[PersistenciaConfirmacao|Persistência e confirmação]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[ReferenciaVisual|Referência por interpretação visual]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
+- é avaliado por: [[F1|F1]] — 32 ocorrências (p. 1, 2, 6, 7, 8)
+
+**Comparações substantivas com outros artigos:**
+- este artigo adota o limite de confirmação de [[Reiche_2021_ForestDisturbanceAlerts|Reiche 2021]] — P120 define quase tempo real como até 90 dias, o limite de confirmação do RADD (P119).
+
+## Figuras selecionadas
+
+![[Ygorra_2024_NearRealTime_p3_FIGURE1.png|520]]
+*FIGURE 1 (p. 3; recorte do PDF convertido)*
+
+![[Ygorra_2024_NearRealTime_p4_FIGURE2.png|520]]
+*FIGURE 2 (p. 4; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

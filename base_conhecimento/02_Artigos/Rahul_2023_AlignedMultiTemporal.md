@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P106_Rahul2023_An-Aligned-Multi-Temporal-Multi-Resol
 paginas: 9
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[Landsat|Landsat]]", "[[PlanetProdutos|Produtos Planet (visão geral)]]", "[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: []
-metodos: ["[[SuperResolucao|Super-resolução]]"]
-preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Rotulagem|Rotulagem e anotação]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[PrecisaoRecall|Precisão e recall]]"]
+metodos: []
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Rahul 2023 — An Aligned Multi-Temporal Multi-Resolution Satellite Image Dataset for Change Detection Research
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -106,11 +109,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza dado/sensor: [[Landsat|Landsat]] — 52 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 39 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 18 ocorrências (p. 1, 3, 4, 7, 8)
-- utiliza método: [[SuperResolucao|Super-resolução]] — 5 ocorrências (p. 2, 5)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 5 ocorrências (p. 2, 5, 8)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 6 ocorrências (p. 1, 3, 4, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 2, 3, 8)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 4 ocorrências (p. 2, 3, 4, 8)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

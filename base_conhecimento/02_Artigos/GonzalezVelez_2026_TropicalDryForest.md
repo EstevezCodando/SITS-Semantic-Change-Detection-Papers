@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P09_Gonzalez-Velez2026_Tropical-dry-forest-land-use-
 paginas: 27
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
-sensores: ["[[SAR|Radar (SAR)]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]", "[[Sentinel2|Sentinel-2]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]", "[[Desmatamento|Desmatamento]]"]
+sensores: ["[[Sentinel2|Sentinel-2]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
-metodos: ["[[UNet|U-Net]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/profunda]
+metodos: ["[[UNet|U-Net]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
+validacao: ["[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+ferramentas: []
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # GonzalezVelez 2026 — Tropical dry forest land use/land cover change detection using semi-supervised deep learning algorithms and remote sensing
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — NICFI de 5 m com Sentinel-1 em floresta seca; Y-Net semissupervisionada; divisão por tiles, mas sem validação independente da mudança.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -182,25 +185,23 @@ Detectar mudança de **uso e cobertura (LULC) em floresta tropical seca** no val
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 42 ocorrências (p. 1, 2, 3, 5, 7)
-- utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 13 ocorrências (p. 7, 8, 10, 12, 22)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 12 ocorrências (p. 7, 8, 10, 12, 18)
+- utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 10 ocorrências (p. 7, 8, 10, 11)
+- utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 7 ocorrências (p. 7, 8, 10, 12, 18)
+- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 47 ocorrências (p. 1, 5, 7, 10, 12)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 28 ocorrências (p. 1, 2, 3, 5, 7)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 5, 22, 23)
+- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 62 ocorrências (p. 1, 2, 3, 8, 10)
+- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 13 ocorrências (p. 2, 8, 10, 12, 15)
+- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 9 ocorrências (p. 10, 11, 13)
+- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 7 ocorrências (p. 5, 8, 10, 11, 24)
+- referência (curado pela leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 - é avaliado por: [[IoU|IoU / mIoU]] — 53 ocorrências (p. 1, 10, 11, 12, 13)
 - é avaliado por: [[F1|F1]] — 17 ocorrências (p. 11, 13, 14, 15, 18)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 12 ocorrências (p. 1, 10, 11, 13, 14)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 8 ocorrências (p. 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 62 ocorrências (p. 1, 2, 3, 8, 10)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 21 ocorrências (p. 7, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 13 ocorrências (p. 2, 8, 10, 12, 15)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 10 ocorrências (p. 2, 7, 24, 25)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 9 ocorrências (p. 10, 11, 13)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 7 ocorrências (p. 10, 11)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 7 ocorrências (p. 2, 9, 12, 15, 23)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- [[Simsek_2025_DeterminationLandLand|Simsek 2025]] compartilha o problema de fontes diferentes com este artigo — P06 compara o mapa de 2023 com o cadastro de 2015, e P09 compara o mapa de 2019 com o de 2017 de outra fonte; ambos herdam diferenças de fonte.
 
 ## Figuras selecionadas
 

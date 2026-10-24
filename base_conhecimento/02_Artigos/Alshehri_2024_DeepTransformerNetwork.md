@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P110_Alshehri2024_Deep-Transformer-Based-Network-Def
 paginas: 5
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[PRODES|PRODES (INPE)]]"]
-metodos: ["[[Transformer|Transformers]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+metodos: ["[[Transformer|Transformers]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Alshehri 2024 — Deep Transformer-Based Network Deforestation Detection in the Brazilian Amazon Using Sentinel-2 Imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -119,16 +122,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza dado/sensor: [[Landsat|Landsat]] — 5 ocorrências (p. 1, 5)
 - emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 5 ocorrências (p. 2, 5)
 - utiliza método: [[Transformer|Transformers]] — 25 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 6 ocorrências (p. 2, 5)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 3 ocorrências (p. 2, 4, 5)
-- é avaliado por: [[IoU|IoU / mIoU]] — 13 ocorrências (p. 1, 4, 5)
-- é avaliado por: [[F1|F1]] — 8 ocorrências (p. 1, 4, 5)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 8 ocorrências (p. 4, 5)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 6 ocorrências (p. 1, 4, 5)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 26 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 9 ocorrências (p. 2, 4, 5)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 3 ocorrências (p. 3, 4)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 3 ocorrências (p. 1, 3, 4)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

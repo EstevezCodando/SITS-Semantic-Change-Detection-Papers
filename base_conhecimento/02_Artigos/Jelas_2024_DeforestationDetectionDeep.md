@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P113_Jelas2024_Deforestation-detection-using-deep-le
 paginas: 24
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
+relevancia_objetivo: "C"
 tarefas: ["[[Desmatamento|Desmatamento]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: ["[[UAV|UAV / drones]]", "[[Landsat|Landsat]]", "[[Sentinel2|Sentinel-2]]"]
-conjuntos_dados: ["[[PRODES|PRODES (INPE)]]", "[[DETER|DETER (INPE)]]"]
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RandomForest|Random Forest]]", "[[SVM|SVM]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
-ferramentas: ["[[QGIS|QGIS]]", "[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/parcial]
+conjuntos_dados: []
+metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
+preparo: []
+validacao: []
+ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
+tags: [artigo, leitura/parcial, relevancia/C]
 ---
 
 # Jelas 2024 — Deforestation detection using deep learning-based semantic segmentation techniques: a systematic review
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Revisão sistemática de segmentação de desmatamento (leitura parcial).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -165,28 +168,14 @@ Revisão sistemática (PRISMA) do uso de **segmentação semântica com aprendiz
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
+- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[UNet|U-Net]] — 94 ocorrências (p. 1, 6, 7, 8, 9)
+- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 46 ocorrências (p. 2, 3, 6, 7, 8)
 - utiliza dado/sensor: [[UAV|UAV / drones]] — 41 ocorrências (p. 2, 6, 7, 8, 12)
 - utiliza dado/sensor: [[Landsat|Landsat]] — 32 ocorrências (p. 2, 8, 9, 10, 12)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 30 ocorrências (p. 7, 8, 9, 12, 14)
-- emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 8 ocorrências (p. 9, 15, 17, 21)
-- emprega conjunto de dados: [[DETER|DETER (INPE)]] — 5 ocorrências (p. 9, 15, 21)
-- utiliza método: [[UNet|U-Net]] — 94 ocorrências (p. 1, 6, 7, 8, 9)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 46 ocorrências (p. 2, 3, 6, 7, 8)
-- utiliza método: [[RandomForest|Random Forest]] — 4 ocorrências (p. 2, 10, 17, 19)
-- utiliza método: [[SVM|SVM]] — 3 ocorrências (p. 2, 12)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 40 ocorrências (p. 3, 9, 10, 11, 19)
-- é avaliado por: [[F1|F1]] — 34 ocorrências (p. 3, 7, 9, 10, 11)
-- é avaliado por: [[IoU|IoU / mIoU]] — 13 ocorrências (p. 8, 10, 12, 17, 19)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 10 ocorrências (p. 2, 7, 10, 11, 19)
-- usa ferramenta: [[QGIS|QGIS]] — 6 ocorrências (p. 14, 15, 16)
 - usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 6 ocorrências (p. 15, 20, 21)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 43 ocorrências (p. 2, 7, 9, 13, 16)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 21 ocorrências (p. 2, 7, 8, 9, 11)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 19 ocorrências (p. 8, 11, 13, 16, 17)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 11 ocorrências (p. 7, 8, 13, 16, 17)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 7 ocorrências (p. 13, 16, 17)
-- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 
 ## Figuras selecionadas
 

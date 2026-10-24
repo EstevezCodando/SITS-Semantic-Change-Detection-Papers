@@ -11,6 +11,10 @@ cat, kb, LP, SYN = load()
 pages = Pages(kb)
 PIDS = sorted(set(kb) | set(LP), key=lambda x: int(x[1:]))
 NAMES = make_names(PIDS, cat)
+_keep = {}   # arquivos de aparencia que o Obsidian gravou: preservados entre reconstrucoes
+for _f in ('appearance.json',):
+    _p = f'{KB}/.obsidian/{_f}'
+    if os.path.exists(_p): _keep[_f] = open(_p, encoding='utf-8').read()
 if os.path.isdir(KB): shutil.rmtree(KB)
 FOLDERS = ['00_Painel', '01_Mapas', '02_Artigos', '03_Dados', '04_Preparo', '05_Metodos', '06_Validacao', '07_Resultados', '08_Monitoramento', '09_Lacunas', '90_Anexos', '99_Templates']
 for f in FOLDERS: os.makedirs(f'{KB}/{f}', exist_ok=True)
@@ -81,19 +85,38 @@ for fid, c in concepts.items():
 for extra_pid, fid in [('P01', 'PlanetNICFI'), ('P07', 'PlanetNICFI'), ('P07', 'GoogleEarthEngine'), ('P07', 'Textura')]:
     if fid in concepts and extra_pid in PIDS and not any(x[0] == fid for x in paper_concepts[extra_pid]):
         paper_concepts[extra_pid].append((fid, VERB.get(concepts[fid]['cat'], 'referencia'), 0, [], None))
+# links curados pela leitura substituem a deteccao automatica nos artigos lidos (mantem as paginas da extracao quando o conceito coincide)
+for pid, fl in K.LINKS_MANUAL.items():
+    if pid not in PIDS: continue
+    old = {t[0]: t for t in paper_concepts[pid]}
+    new = []
+    for fid in fl:
+        if fid not in concepts: continue
+        new.append(old.get(fid) or (fid, 'referência (curado pela leitura)', 0, [], None))
+    new += [t for t in paper_concepts[pid] if concepts[t[0]]['cat'] == 'manual' and t[0] not in {x[0] for x in new}]
+    paper_concepts[pid] = new
 for pid, lst in paper_concepts.items():
     for fid, verb, n, pg, first in lst:
         concepts[fid]['sup'].append((pid, verb, n, pg, first))
 ACTIVE = {fid for fid, c in concepts.items() if len(c['sup']) >= 2}
 # limita links por artigo (evita conectar tudo a tudo): mantem os mais frequentes por categoria
 CAP = {'sensor': 3, 'dataset': 4, 'metodo': 6, 'metrica': 4, 'ferramenta': 3, 'preparo': 5, 'validacao': 4, 'monitoramento': 3, 'tarefa': 4, 'manual': 4}
+# artigos nao lidos (so extracao automatica) ligam apenas a sensor, dado, tarefa e poucos metodos: evita que conceitos genericos (rotulagem, F1, IoU...) virem
+# nos centrais ligados a tudo. Conceitos de preparo, validacao e metrica so se conectam a artigos que alguem leu.
+CAP_AUTO = {'sensor': 3, 'dataset': 3, 'metodo': 3, 'tarefa': 3, 'manual': 3}
+MIN_AUTO_METODO = 8   # ocorrencias minimas para o metodo de um artigo nao lido virar link
 for pid in list(paper_concepts):
     byc = collections.defaultdict(list)
+    lido = pid in LP
     for t in paper_concepts[pid]:
-        if t[0] in ACTIVE: byc[concepts[t[0]]['cat']].append(t)
+        if t[0] not in ACTIVE or (pid, t[0]) in K.EXCLUDE_LINKS: continue
+        if not lido and concepts[t[0]]['cat'] == 'metodo' and t[2] < MIN_AUTO_METODO: continue
+        byc[concepts[t[0]]['cat']].append(t)
     keep = []
     for cat_, lst in byc.items():
-        keep += sorted(lst, key=lambda x: -x[2])[:CAP.get(cat_, 4)]
+        cap = (CAP if lido else CAP_AUTO).get(cat_, 0 if not lido else 4)
+        if pid in K.LINKS_MANUAL: cap = 99
+        keep += sorted(lst, key=lambda x: -x[2])[:cap]
     paper_concepts[pid] = keep
 for fid in concepts: concepts[fid]['sup'] = []
 for pid, lst in paper_concepts.items():
@@ -207,6 +230,8 @@ for pid in PIDS:
         STATUS[pid] = 'lido (profundo)' if LP[pid][0].get('leitura', '').startswith('profunda') else 'lido (parcial)'
     else:
         STATUS[pid] = 'extraído automaticamente (não lido)'
+TIER = {pid: K.RELEV.get(pid, ('D', ''))[0] for pid in PIDS}
+TIER_WHY = {pid: (K.RELEV[pid][1] if pid in K.RELEV else 'não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].') for pid in PIDS}
 
 # ------------------------------------------------------------------ estrategia temporal e demais campos automaticos
 BI = re.compile(r'bi-?temporal|image pairs?|pairs of images|before and after|two (dates|images|time)', re.I)
@@ -305,13 +330,15 @@ def article(pid):
     fm = ['---', 'tipo: artigo', f'id_origem: {pid}', f'titulo: {yq(r["title"])}', f'ano: {year_of(r)}', f'autores: {ylist(authors) if authors else "[]"}',
           f'doi: {yq(r.get("doi") or "não informado")}', f'arquivo_fonte: {yq("coleta/" + r["pdf_file"]) if r.get("pdf_file") else yq("não informado" if pid != "P07" else "HTML MDPI (sem PDF em coleta/)")}',
           f'markdown_fonte: {yq("output/pdf/" + v["dir"] + "/document.md") if v else yq("não informado")}', f'paginas: {npg if npg else "não informado"}', f'tipo_documento: {yq(tipo_doc)}',
-          f'status_leitura: {yq(STATUS[pid])}', f'tarefas: {yl(["tarefa"])}', f'sensores: {yl(["sensor"])}', f'conjuntos_dados: {yl(["dataset"])}', f'metodos: {yl(["metodo"])}',
+          f'status_leitura: {yq(STATUS[pid])}', f'relevancia_objetivo: {yq(TIER[pid])}', f'tarefas: {yl(["tarefa"])}', f'sensores: {yl(["sensor"])}', f'conjuntos_dados: {yl(["dataset"])}', f'metodos: {yl(["metodo"])}',
           f'preparo: {yl(["preparo"])}', f'validacao: {yl(["validacao", "metrica"])}', f'ferramentas: {yl(["ferramenta"])}',
-          f'tags: [artigo, leitura/{"profunda" if STATUS[pid].startswith("lido (p") and "profundo" in STATUS[pid] else "parcial" if "parcial" in STATUS[pid] else "automatica"}]', '---', '']
+          f'tags: [artigo, leitura/{"profunda" if STATUS[pid].startswith("lido (p") and "profundo" in STATUS[pid] else "parcial" if "parcial" in STATUS[pid] else "automatica"}, relevancia/{TIER[pid]}]', '---', '']
     body = [f'# {label(pid)} — {r["title"]}', '',
             '> **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. '
             'Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.', '']
     body.append(f'**Situação da leitura:** {STATUS[pid]}. ' + ('Fichas de leitura profunda usadas como evidência.' if pid in LP else 'Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.'))
+    body.append('')
+    body.append(f'**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **{TIER[pid]}** — {TIER_WHY[pid]}')
     body.append('')
     # 1 referencia
     body += ['## 1. Referência bibliográfica e acesso ao original', '',

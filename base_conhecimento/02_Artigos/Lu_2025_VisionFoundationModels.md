@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P151_Lu2025_Vision-Foundation-Models-in-Remote-Sensi
 paginas: 26
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[OSCD|OSCD]]"]
-metodos: ["[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[CNN|Redes convolucionais (CNN)]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Textura|Textura (GLCM)]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[F1|F1]]", "[[mAP|mAP]]", "[[PrecisaoRecall|Precisão e recall]]", "[[IoU|IoU / mIoU]]"]
+metodos: ["[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Lu 2025 — Vision Foundation Models in Remote Sensing: A survey
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -122,16 +125,6 @@ Não informado (nenhum trecho com métrica e valor detectado).
 - utiliza método: [[Transformer|Transformers]] — 93 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 90 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 31 ocorrências (p. 1, 3, 4, 5, 6)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 19 ocorrências (p. 2, 3, 4, 5, 9)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 6 ocorrências (p. 3, 18, 22, 23, 25)
-- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 14, 15, 17)
-- é avaliado por: [[mAP|mAP]] — 13 ocorrências (p. 14, 15, 16, 17)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 10 ocorrências (p. 11, 15, 17, 18)
-- é avaliado por: [[IoU|IoU / mIoU]] — 7 ocorrências (p. 15, 16)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 26 ocorrências (p. 1, 3, 5, 6, 7)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 14 ocorrências (p. 3, 7, 12, 17, 20)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 4 ocorrências (p. 6, 11, 17, 20)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 6 ocorrências (p. 1, 5, 7, 12, 14)
 
 ## Anotações do leitor
 

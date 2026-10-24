@@ -42,10 +42,10 @@ Atrasa a data do alerta.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | discute aspecto de monitoramento | 32 | 2, 3, 5, 7, 8 | extraído automaticamente (não lido) |
-| [[Carion_2025_SAMSegmentAnything\|Carion 2025]] | discute aspecto de monitoramento | 13 | 23, 44 | extraído automaticamente (não lido) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | discute aspecto de monitoramento | 8 | 4, 5, 6, 7, 8 | extraído automaticamente (não lido) |
-| [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | discute aspecto de monitoramento | 6 | 2, 4, 5, 7, 8 | extraído automaticamente (não lido) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | discute aspecto de monitoramento | 32 | 2, 3, 5, 7, 8 | lido (parcial) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | discute aspecto de monitoramento | 8 | 4, 5, 6, 7, 8 | lido (parcial) |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

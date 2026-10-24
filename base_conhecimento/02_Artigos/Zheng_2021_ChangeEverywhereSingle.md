@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P27_Zheng2021_Change-Is-Everywhere-Single-Temporal-S
 paginas: 10
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: []
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]"]
-metodos: ["[[PosClassificacao|Pós-classificação]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+metodos: []
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Zheng 2021 — Change Is Everywhere: Single-Temporal Supervised Object Change Detection in Remote Sensing Imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -105,10 +108,6 @@ Não informado (nenhum trecho de limitação detectado).
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 16 ocorrências (p. 5, 6, 7, 8)
-- utiliza método: [[PosClassificacao|Pós-classificação]] — 3 ocorrências (p. 2, 6)
-- é avaliado por: [[IoU|IoU / mIoU]] — 30 ocorrências (p. 6, 7, 8)
-- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 30 ocorrências (p. 1, 2, 3, 4, 5)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 

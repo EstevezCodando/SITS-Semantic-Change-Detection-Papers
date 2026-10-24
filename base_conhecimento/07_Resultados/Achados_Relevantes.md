@@ -12,7 +12,7 @@ tags: [resultado]
 
 **Evidência:** [[Vincent_2024_SatelliteImageTime|Vincent 2024]] (p. 9): queda média de mIoU de 31,9% (DynamicEarthNet) e 10,5% (MUDS); o shift temporal afeta principalmente a detecção de mudança.
 
-**Conceitos:** [[Generalizacao|Generalização e domain shift]], [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]], [[DivisaoTemporal|Divisão temporal]]
+**Conceitos:** [[Generalizacao|Generalização e domain shift]], [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]]
 
 ## 2. A mudança é rara
 
@@ -36,7 +36,7 @@ tags: [resultado]
 
 **Evidência:** [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] (p. 8) (mudança direta), com a ressalva de uma só mina e oito datas.
 
-**Conceitos:** [[PosClassificacao|Pós-classificação]], [[UNet|U-Net]]
+**Conceitos:** [[UNet|U-Net]]
 
 ## 6. NDVI não ajudou como entrada extra
 

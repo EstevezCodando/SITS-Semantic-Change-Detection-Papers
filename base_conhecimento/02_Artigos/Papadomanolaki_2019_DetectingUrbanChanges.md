@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P146_Papadomanolaki2019_Detecting-Urban-Changes-with
 paginas: 5
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Edificacoes|Edificações e urbanização]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[OSCD|OSCD]]"]
 metodos: ["[[LSTM|Redes recorrentes (LSTM)]]", "[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Papadomanolaki 2019 — Detecting Urban Changes with Recurrent Neural Networks from Multitemporal Sentinel-2 Data
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -109,10 +112,6 @@ Não informado (nenhum trecho de limitação detectado).
 - emprega conjunto de dados: [[OSCD|OSCD]] — 11 ocorrências (p. 1, 2, 3, 4)
 - utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 21 ocorrências (p. 1, 2, 3, 4)
 - utiliza método: [[UNet|U-Net]] — 11 ocorrências (p. 1, 2, 3, 4)
-- é avaliado por: [[F1|F1]] — 6 ocorrências (p. 1, 3, 4)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 3 ocorrências (p. 1, 3)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 8 ocorrências (p. 2, 3)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 3 ocorrências (p. 2, 3)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 

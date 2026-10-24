@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P139_Benidir2025_The-Change-You-Want-To-Detect-Seman
 paginas: 20
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: []
 conjuntos_dados: ["[[S2Looking|S2Looking]]", "[[SECOND|SECOND]]"]
 metodos: ["[[TransferLearning|Aprendizado por transferência]]", "[[UNet|U-Net]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Benidir 2025 — The Change You Want To Detect: Semantic Change Detection In Earth Observation With Hybrid Data Generation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -115,10 +118,6 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 - emprega conjunto de dados: [[SECOND|SECOND]] — 2 ocorrências (p. 6, 7)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 28 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[UNet|U-Net]] — 16 ocorrências (p. 3, 5, 6, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 14 ocorrências (p. 5, 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 7 ocorrências (p. 1, 2, 3, 4)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 5 ocorrências (p. 1, 2, 3, 6)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 4 ocorrências (p. 2, 8)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo

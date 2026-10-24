@@ -4,7 +4,7 @@ subtipo: "estratégia"
 titulo: "Super-resolução"
 aliases: ["Super-resolução"]
 pasta_tematica: "05_Metodos"
-n_artigos: 4
+n_artigos: 2
 tags: [conceito, estrategia]
 ---
 
@@ -44,8 +44,6 @@ Não cria evidência de um objeto não resolvido pelo sensor.
 |---|---|---:|---|---|
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | utiliza método | 63 | 1, 2, 3, 4, 8 | extraído automaticamente (não lido) |
 | [[He_2022_TrackingUrbanizationDeveloping\|He 2022]] | utiliza método | 26 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Reed_2022_ScaleMAEScale\|Reed 2022]] | utiliza método | 7 | 3, 4 | extraído automaticamente (não lido) |
-| [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | utiliza método | 5 | 2, 5 | extraído automaticamente (não lido) |
 
 ## Navegação
 

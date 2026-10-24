@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Engenharia de atributos"
-n_conceitos: 5
+n_conceitos: 4
 tags: [mapa]
 ---
 
@@ -17,13 +17,12 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Etapa**
-- [[Textura|Textura (GLCM)]] — 9 artigos
-- [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 10 artigos
-- [[SegmentacaoObjetos|Segmentação em objetos (SNIC/superpixels)]] — 3 artigos
-- [[Normalizacao|Normalização e escala radiométrica]] — 22 artigos
+- [[Textura|Textura (GLCM)]] — 2 artigos
+- [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 6 artigos
+- [[Normalizacao|Normalização e escala radiométrica]] — 3 artigos
 
 **Estratégia**
-- [[OBIA|Análise baseada em objetos (OBIA)]] — 3 artigos
+- [[OBIA|Análise baseada em objetos (OBIA)]] — 2 artigos
 
 ## Lacunas relacionadas
 

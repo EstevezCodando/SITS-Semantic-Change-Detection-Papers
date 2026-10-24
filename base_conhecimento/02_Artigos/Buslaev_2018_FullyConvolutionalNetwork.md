@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P38_Buslaev2018_Fully-Convolutional-Network-for-Auto
 paginas: 4
 tipo_documento: "artigo curto (≤4 páginas; verificar)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Vias|Vias e estradas]]"]
 sensores: []
 conjuntos_dados: []
 metodos: ["[[UNet|U-Net]]"]
-preparo: ["[[AumentoDados|Aumento de dados]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[IoU|IoU / mIoU]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Buslaev 2018 — Fully Convolutional Network for Automatic Road Extraction From Satellite Imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -99,9 +102,6 @@ Não informado (nenhum trecho de limitação detectado).
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[UNet|U-Net]] — 12 ocorrências (p. 1, 2, 3)
-- é avaliado por: [[IoU|IoU / mIoU]] — 3 ocorrências (p. 2, 3)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 5 ocorrências (p. 3, 4)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 4 ocorrências (p. 2, 3, 4)
 - trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

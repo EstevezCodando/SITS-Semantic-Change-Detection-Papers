@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P65_Faulkenberry2026_DINO-Soars-DINOv3-for-Open-Voca
 paginas: 15
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: []
 conjuntos_dados: []
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[TransferLearning|Aprendizado por transferência]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Textura|Textura (GLCM)]]"]
-validacao: ["[[IoU|IoU / mIoU]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[TransferLearning|Aprendizado por transferência]]", "[[Transformer|Transformers]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Faulkenberry 2026 — DINO Soars: DINOv3 for Open-Vocabulary Semantic Segmentation of Remote Sensing Imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -105,11 +108,6 @@ Não informado (nenhum trecho com métrica e valor detectado).
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 61 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 25 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[Transformer|Transformers]] — 11 ocorrências (p. 3, 4, 6)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 3 ocorrências (p. 3, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 8 ocorrências (p. 6, 7, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 9 ocorrências (p. 3, 4, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 1, 3, 5, 7)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 4 ocorrências (p. 5, 7, 8)
 - trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

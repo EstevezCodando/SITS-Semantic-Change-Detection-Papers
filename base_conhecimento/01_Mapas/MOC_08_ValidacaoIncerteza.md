@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Validação e incerteza"
-n_conceitos: 15
+n_conceitos: 13
 tags: [mapa]
 ---
 
@@ -18,25 +18,23 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Desenho de validação**
-- [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 24 artigos
-- [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — 5 artigos
-- [[DivisaoTemporal|Divisão temporal]] — 2 artigos
-- [[Generalizacao|Generalização e domain shift]] — 25 artigos
-- [[AmostragemEstratificada|Amostragem estratificada]] — 3 artigos
-- [[AmostraIndependente|Amostra independente]] — 2 artigos
-- [[ValidacaoCruzada|Validação cruzada]] — 3 artigos
-- [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 6 artigos
+- [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — 8 artigos
+- [[Generalizacao|Generalização e domain shift]] — 3 artigos
+- [[AmostragemEstratificada|Amostragem estratificada]] — 7 artigos
+- [[AmostraIndependente|Amostra independente]] — 3 artigos
+- [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 3 artigos
+- [[ReferenciaVisual|Referência por interpretação visual]] — 4 artigos
 
 **Problema de validação**
-- [[Desbalanceamento|Desbalanceamento de classes]] — 13 artigos
+- [[Desbalanceamento|Desbalanceamento de classes]] — 10 artigos
 
 **Métrica**
-- [[F1|F1]] — 43 artigos
-- [[IoU|IoU / mIoU]] — 42 artigos
-- [[PrecisaoRecall|Precisão e recall]] — 41 artigos
-- [[AcuraciaGlobal|Acurácia global (OA)]] — 28 artigos
-- [[Kappa|Coeficiente kappa]] — 8 artigos
-- [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — 4 artigos
+- [[F1|F1]] — 14 artigos
+- [[IoU|IoU / mIoU]] — 7 artigos
+- [[PrecisaoRecall|Precisão e recall]] — 3 artigos
+- [[AcuraciaGlobal|Acurácia global (OA)]] — 3 artigos
+- [[Kappa|Coeficiente kappa]] — 3 artigos
+- [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — 7 artigos
 
 ## Lacunas relacionadas
 

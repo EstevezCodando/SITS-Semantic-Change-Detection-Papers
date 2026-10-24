@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P133_Ding2024_Adapting-Segment-Anything-Model-for-Ch
 paginas: 11
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: []
 conjuntos_dados: ["[[WHUCD|WHU-CD]]", "[[S2Looking|S2Looking]]"]
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[Transformer|Transformers]]", "[[RedeSiamesa|Redes siamesas]]", "[[ModeloFundacional|Modelos fundacionais]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[AumentoDados|Aumento de dados]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[F1|F1]]"]
+metodos: ["[[SAM|Segment Anything (SAM)]]", "[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Ding 2024 — Adapting Segment Anything Model for Change Detection in VHR Remote Sensing Images
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -118,17 +121,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 109 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 22 ocorrências (p. 1, 2, 3, 5, 6)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 16 ocorrências (p. 1, 2, 8, 9, 10)
-- utiliza método: [[Transformer|Transformers]] — 14 ocorrências (p. 1, 2, 5, 7, 10)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 13 ocorrências (p. 1, 2, 3, 5, 6)
-- utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 7 ocorrências (p. 1, 2, 3)
-- é avaliado por: [[IoU|IoU / mIoU]] — 18 ocorrências (p. 5, 6, 7, 8, 9)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 13 ocorrências (p. 5, 6, 7, 8, 9)
-- é avaliado por: [[F1|F1]] — 5 ocorrências (p. 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 10 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 5 ocorrências (p. 2, 4, 8)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 4 ocorrências (p. 3, 4)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 3 ocorrências (p. 5, 10)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 7 ocorrências (p. 1, 2, 3, 8, 9)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

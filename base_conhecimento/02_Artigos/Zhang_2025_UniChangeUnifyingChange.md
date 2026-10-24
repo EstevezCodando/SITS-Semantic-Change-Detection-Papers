@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P145_Zhang2025_UniChange-Unifying-Change-Detection-w
 paginas: 15
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: []
-conjuntos_dados: ["[[WHUCD|WHU-CD]]", "[[S2Looking|S2Looking]]", "[[LEVIRCD|LEVIR-CD]]", "[[HRSCD|HRSCD]]"]
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+conjuntos_dados: ["[[WHUCD|WHU-CD]]", "[[S2Looking|S2Looking]]", "[[LEVIRCD|LEVIR-CD]]"]
+metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Zhang 2025 — UniChange: Unifying Change Detection with Multimodal Large Language Model
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -113,14 +116,8 @@ Não informado (nenhum trecho com métrica e valor detectado).
 - emprega conjunto de dados: [[WHUCD|WHU-CD]] — 19 ocorrências (p. 1, 6, 7, 8, 9)
 - emprega conjunto de dados: [[S2Looking|S2Looking]] — 16 ocorrências (p. 1, 6, 7, 8, 9)
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 12 ocorrências (p. 1, 6, 7, 8, 9)
-- emprega conjunto de dados: [[HRSCD|HRSCD]] — 3 ocorrências (p. 2, 3, 7)
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 13 ocorrências (p. 2, 3, 5, 7, 8)
 - utiliza método: [[Transformer|Transformers]] — 8 ocorrências (p. 2, 3, 5, 7, 8)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 7 ocorrências (p. 4, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 41 ocorrências (p. 1, 6, 7, 8)
-- é avaliado por: [[F1|F1]] — 26 ocorrências (p. 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 6 ocorrências (p. 1, 2, 5, 7)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 5 ocorrências (p. 1, 2, 3, 6)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 

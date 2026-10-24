@@ -4,7 +4,7 @@ subtipo: "conjunto de dados"
 titulo: "WHU-CD"
 aliases: ["WHU-CD"]
 pasta_tematica: "03_Dados"
-n_artigos: 11
+n_artigos: 10
 tags: [conceito, conjunto-de-dados]
 ---
 
@@ -52,7 +52,6 @@ Alta resolução.
 | [[Li_2024_NewLearningParadigm\|Li 2024]] | emprega conjunto de dados | 5 | 6, 7, 9, 11 | lido (profundo) |
 | [[Bou_2026_RemoteSensingChange\|Bou 2026]] | emprega conjunto de dados | 4 | 4, 5, 7 | extraído automaticamente (não lido) |
 | [[Lei_2026_RemoteSensingImage\|Lei 2026]] | emprega conjunto de dados | 4 | 10, 32, 34 | extraído automaticamente (não lido) |
-| [[Shen_2021_S2LookingSatelliteSide\|Shen 2021]] | emprega conjunto de dados | 3 | 2, 6 | extraído automaticamente (não lido) |
 
 ## Navegação
 

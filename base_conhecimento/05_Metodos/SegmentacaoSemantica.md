@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Segmentação semântica"
 aliases: ["Segmentação semântica"]
 pasta_tematica: "05_Metodos"
-n_artigos: 8
+n_artigos: 6
 tags: [conceito, tarefa]
 ---
 
@@ -44,9 +44,7 @@ Uma imagem isolada não é evidência de detecção temporal.
 |---|---|---:|---|---|
 | [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
-| [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[He_2024_TimeSeriesLand\|He 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
+| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 | [[Zheng_2021_ChangeEverywhereSingle\|Zheng 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Faulkenberry_2026_DINOSoarsDINOv3\|Faulkenberry 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |

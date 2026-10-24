@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Machine Learning (algoritmos sobre atributos)"
-n_conceitos: 6
+n_conceitos: 5
 tags: [mapa]
 ---
 
@@ -17,16 +17,15 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Algoritmo**
-- [[RandomForest|Random Forest]] — 6 artigos
-- [[XGBoost|XGBoost]] — 4 artigos
-- [[SVM|SVM]] — 5 artigos
+- [[RandomForest|Random Forest]] — 3 artigos
+- [[XGBoost|XGBoost]] — 2 artigos
 
 **Estratégia**
-- [[OBIA|Análise baseada em objetos (OBIA)]] — 3 artigos
-- [[TransferLearning|Aprendizado por transferência]] — 25 artigos
+- [[OBIA|Análise baseada em objetos (OBIA)]] — 2 artigos
+- [[TransferLearning|Aprendizado por transferência]] — 14 artigos
 
 **Ferramenta**
-- [[GoogleEarthEngine|Google Earth Engine]] — 10 artigos
+- [[GoogleEarthEngine|Google Earth Engine]] — 4 artigos
 
 ## Lacunas relacionadas
 

@@ -4,7 +4,7 @@ subtipo: "desenho de validação"
 titulo: "Amostragem estratificada"
 aliases: ["Amostragem estratificada"]
 pasta_tematica: "06_Validacao"
-n_artigos: 3
+n_artigos: 7
 tags: [conceito, desenho-de-validacao]
 ---
 
@@ -16,37 +16,42 @@ tags: [conceito, desenho-de-validacao]
 
 ## Definição
 
-Amostrar por estratos do mapa.
+Amostrar pontos por estratos do mapa (por exemplo, perturbação por mês, floresta estável e outras coberturas) e estimar área e acurácia com ponderação.
 
 ## Finalidade
 
-Estimar áreas e acurácia.
+Estimar área e acurácia com intervalo de confiança quando a classe de interesse é rara.
 
 ## Entradas
 
-Mapa estratificado.
+Mapa estratificado e pontos de referência.
 
 ## Saídas
 
-Amostra.
+Matriz de erro ponderada, áreas e intervalos.
 
 ## Pressupostos
 
-Estratos definidos.
+Referência correta nos pontos.
 
 ## Limitações
 
-Mudança rara exige super-amostragem.
+Intervalos largos quando poucos pontos caem na classe rara (produtor de 61,5 ± 46,4% em P91).
 
 ## Evidência nos artigos lidos
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | adota desenho de validação | 9 | 5, 7, 14, 15, 20 | extraído automaticamente (não lido) |
-| [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | adota desenho de validação | 4 | 4, 12 | extraído automaticamente (não lido) |
-| [[Brown_2022_DynamicWorldNear\|Brown 2022]] | adota desenho de validação | 3 | 2, 14, 15 | extraído automaticamente (não lido) |
+| [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Olofsson_2014_GoodPracticesEstimating\|Olofsson 2014]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | referencia (suporte manual da leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 
 - Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
 - Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
+- Lacuna que afeta este conceito: [[L14_ReferenciaVisualFragil|Referência visual tem discordância e depende de dados sem nuvem]]

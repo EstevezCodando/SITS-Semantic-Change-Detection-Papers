@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Monitoramento contínuo e operação"
-n_conceitos: 7
+n_conceitos: 6
 tags: [mapa]
 ---
 
@@ -17,17 +17,18 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Operação**
-- [[QuaseTempoReal|Quase tempo real e latência]] — 9 artigos
+- [[QuaseTempoReal|Quase tempo real e latência]] — 4 artigos
 - [[Alertas|Alertas de mudança]] — 6 artigos
 - [[PersistenciaConfirmacao|Persistência e confirmação]] — 4 artigos
-- [[FalsosAlertas|Falsos alertas]] — 2 artigos
-- [[SistemaOperacional|Sistemas operacionais]] — 3 artigos
 
 **Ferramenta**
-- [[QGIS|QGIS]] — 9 artigos
+- [[QGIS|QGIS]] — 5 artigos
 
 **Base de referência**
-- [[DETER|DETER (INPE)]] — 4 artigos
+- [[DETER|DETER (INPE)]] — 3 artigos
+
+**Método**
+- [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — 6 artigos
 
 ## Lacunas relacionadas
 

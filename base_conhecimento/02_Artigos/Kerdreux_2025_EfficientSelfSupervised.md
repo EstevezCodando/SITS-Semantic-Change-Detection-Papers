@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P76_Kerdreux2025_Efficient-Self-Supervised-Learning-
 paginas: 11
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
-metodos: ["[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Textura|Textura (GLCM)]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]"]
+metodos: ["[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Kerdreux 2025 — Efficient Self-Supervised Learning for Earth Observation via Dynamic Dataset Curation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -122,11 +125,6 @@ tags: [artigo, leitura/automatica]
 - utiliza método: [[Transformer|Transformers]] — 32 ocorrências (p. 4, 5, 6, 7, 8)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 19 ocorrências (p. 1, 2, 4, 5, 6)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 17 ocorrências (p. 2, 3, 4, 6, 7)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 12 ocorrências (p. 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 5, 7)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 4 ocorrências (p. 3, 7, 8)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 3 ocorrências (p. 5, 6, 8)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 5 ocorrências (p. 1, 2, 7)
 
 ## Anotações do leitor
 

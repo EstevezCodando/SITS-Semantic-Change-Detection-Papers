@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P18_Daudt2018_Multitask-Learning-for-Large-scale-Sem
 paginas: 16
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
-conjuntos_dados: ["[[HRSCD|HRSCD]]", "[[OSCD|OSCD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[TransferLearning|Aprendizado por transferência]]", "[[RedeSiamesa|Redes siamesas]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Kappa|Coeficiente kappa]]", "[[PrecisaoRecall|Precisão e recall]]"]
+conjuntos_dados: ["[[HRSCD|HRSCD]]"]
+metodos: ["[[CNN|Redes convolucionais (CNN)]]"]
+preparo: []
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[Kappa|Coeficiente kappa]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Daudt 2019 — Multitask Learning for Large-scale Semantic Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — HRSCD: estratégias de mudança semântica (aéreo bitemporal).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -166,21 +169,12 @@ Como obter, numa mesma rede, **onde** houve mudança e **de qual classe para qua
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 5 ocorrências (p. 4, 13)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 16 ocorrências (p. 3, 4, 5, 7, 10)
-- emprega conjunto de dados: [[OSCD|OSCD]] — 6 ocorrências (p. 4, 5, 7, 10, 11)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 20 ocorrências (p. 1, 3, 4, 7, 10)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 5 ocorrências (p. 4, 12, 13)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 4 ocorrências (p. 3, 12)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 3 ocorrências (p. 4, 9)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 10 ocorrências (p. 6, 9, 11, 12, 13)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 3 ocorrências (p. 9, 11)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 14 ocorrências (p. 2, 3, 5, 6, 7)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 10 ocorrências (p. 6, 8, 10, 11)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 10, 13)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 20 ocorrências (p. 1, 3, 4, 7, 10)
+- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 5 ocorrências (p. 4, 13)
+- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 10 ocorrências (p. 6, 8, 10, 11)
+- é avaliado por: [[Kappa|Coeficiente kappa]] — 10 ocorrências (p. 6, 9, 11, 12, 13)
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**

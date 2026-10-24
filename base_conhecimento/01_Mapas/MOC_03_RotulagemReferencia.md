@@ -1,7 +1,7 @@
 ---
 tipo: mapa
 titulo: "Rotulagem e referência"
-n_conceitos: 9
+n_conceitos: 10
 tags: [mapa]
 ---
 
@@ -17,23 +17,24 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Etapa**
-- [[Rotulagem|Rotulagem e anotação]] — 68 artigos
+- [[Rotulagem|Rotulagem e anotação]] — 8 artigos
 - [[RotulagemTemporal|Rotulagem temporalmente consistente]] — 2 artigos
 - [[PreAnotacaoSAM|Pré-anotação assistida (SAM e plugins QGIS)]] — 4 artigos
+- [[AprendizadoAtivo|Aprendizado ativo para rotulagem]] — 2 artigos
 
 **Modelo fundacional**
-- [[SAM|Segment Anything (SAM)]] — 13 artigos
+- [[SAM|Segment Anything (SAM)]] — 11 artigos
 
 **Ferramenta**
-- [[QGIS|QGIS]] — 9 artigos
+- [[QGIS|QGIS]] — 5 artigos
 
 **Desenho de validação**
-- [[AmostraIndependente|Amostra independente]] — 2 artigos
-- [[AmostragemEstratificada|Amostragem estratificada]] — 3 artigos
+- [[AmostraIndependente|Amostra independente]] — 3 artigos
+- [[AmostragemEstratificada|Amostragem estratificada]] — 7 artigos
 
 **Estratégia**
 - [[SupervisaoFraca|Supervisão fraca]] — 3 artigos
-- [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 20 artigos
+- [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 10 artigos
 
 ## Lacunas relacionadas
 

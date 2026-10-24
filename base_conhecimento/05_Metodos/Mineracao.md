@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Mineração"
 aliases: ["Mineração"]
 pasta_tematica: "05_Metodos"
-n_artigos: 5
+n_artigos: 6
 tags: [conceito, tarefa]
 ---
 
@@ -43,6 +43,7 @@ Confusão com solo exposto e sombra.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Wang_2024_GeoSamTesting\|Wang 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Wang_2025_SAMTestingReliability\|Wang 2025]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |

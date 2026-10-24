@@ -70,6 +70,8 @@ MOCS = [
    'Ferramentas de QGIS/GeoAI servem à revisão e à pré-anotação, mas **não** oferecem detecção temporal de mudanças nos painéis descritos: «P155|Seamless QGIS integration via a dedicated GeoAI plugin».'],
   ['L01_ValidacaoOperacional', 'L08_FerramentasSemAvaliacao', 'L09_ReprodutibilidadeCodigo']),
 ]
+_EXTRA = {'MOC_03_RotulagemReferencia': ['AprendizadoAtivo'], 'MOC_07_MudancaSeries': ['PosProcessamentoTemporal'], 'MOC_08_ValidacaoIncerteza': ['AmostragemEstratificada', 'ReferenciaVisual'], 'MOC_10_MonitoramentoOperacao': ['PosProcessamentoTemporal']}
+for _m in MOCS: _m[2].extend(x for x in _EXTRA.get(_m[0], []) if x not in _m[2])
 MOC_OF = collections.defaultdict(list)
 for mid, mt, cons, prose, lacs in MOCS:
     for f in cons: MOC_OF[f].append((mid, mt))
@@ -303,6 +305,7 @@ def painel(rows_inv, sem_texto, dup):
     b = ['# Painel — mudanças da cobertura terrestre com séries Planet', '',
          f'Base de conhecimento construída em {TODAY} a partir de **{len(PIDS)} artigos** com texto convertido em Markdown. **Autor da coleta:** Jean Michael Estevez Alvarez.', '',
          f'**Situação de leitura:** {n_prof} lidos em profundidade · {n_par} em leitura parcial · {n_aut} por extração automática (não lidos por mim) · {len(sem_texto)} registros do catálogo sem texto integral.', '',
+         '## Comece aqui', '', '- [[Trilha_Objetivo_Planet5m]] — o fluxo do objetivo (Planet de ~5 m: construção, supressão de vegetação, vias) ligado aos artigos de maior relevância.', '',
          '## Mapas principais', ''] + [f'- [[{m[0]}|{m[1]}]]' for m in MOCS] + ['',
          '## Comparação, lacunas e operação', '', '- [[Matriz_Comparativa]] · [[Achados_Relevantes]] · [[Estudos_Retrospectivos_vs_Operacionais]]', '- [[00_Sintese_Lacunas]]', '',
          '## Navegação e verificação', '', '- [[Guia_Navegacao]] · [[Guia_Grafo]] · [[Pendencias_Leitura]] · [[Verificacao]]', '- Anexos: [[Inventario_Arquivos]] · [[Duplicatas_e_Versoes]] · [[Conversao_Markdown]] · [[Indice_Figuras]] · [[Documento_Original_Revisao]]', '',
@@ -322,6 +325,14 @@ def painel(rows_inv, sem_texto, dup):
     cnt = {x: len(paper_concepts[x]) for x in PIDS if STATUS[x].startswith('extra')}
     p += ['', '## Extração automática (não lidos) — ordenados por número de conceitos ligados', '']
     p += [f'- {plink(x)} — {cnt[x]} conceitos' for x in sorted(cnt, key=lambda y: -cnt[y])]
+    rk = f'{DATA}/ranking_relevancia.json'
+    if os.path.exists(rk):
+        R = json.load(open(rk, encoding='utf-8'))
+        nr = [r for r in R if r['id'] in NAMES and STATUS[r['id']].startswith('extra')][:25]
+        p += ['', '## Próximos a ler: ranking de relevância automática (não lidos)', '',
+              'Pontuação por contagem de termos no texto convertido (Planet/NICFI, resolução de 3–5 m, mudança, desmatamento, edificações e vias, séries, métodos e métricas; peso maior no início do artigo). **É triagem, não avaliação**: um artigo de pontuação alta pode ser irrelevante.', '',
+              '| Artigo | Pontuação | Menções a Planet | Menções a mudança | Menções a desmatamento |', '|---|---:|---:|---:|---:|']
+        p += [f'| {plink(r["id"])} | {r["score"]} | {r["planet"]} | {r["mud"]} | {r["alvo"]} |' for r in nr]
     p += ['', f'## Sem texto integral ({len(sem_texto)})', '', 'Veja [[Inventario_Arquivos]]. Obter o PDF aberto ou texto alternativo antes de qualquer nota.', '', '[[00_Inicio|← Painel]]']
     write('00_Painel/Pendencias_Leitura.md', '\n'.join(p) + '\n')
 
@@ -336,6 +347,30 @@ def templates():
     write('99_Templates/Template_Resultado.md', '---\ntipo: resultado\ntitulo: ""\ntags: [resultado]\n---\n\n# Título\n\n> Valores valem dentro do estudo citado; não comparar entre bases diferentes.\n\n## Achado\n\n**Evidência:** `[[Artigo]]` (p. )\n')
 
 
+# ============================================================ trilha para o objetivo
+def trilha():
+    cnt = collections.Counter(TIER[p] for p in PIDS)
+    b = ['---', 'tipo: mapa', 'titulo: "Trilha para o objetivo"', 'tags: [mapa, trilha]', '---', '',
+         '# Trilha para o objetivo: detectar mudanças de cobertura com Planet de ~5 m', '',
+         '> **Objetivo:** identificar de forma automática mudanças na cobertura do solo com imagens ópticas Planet de ~5 m (início de construções, supressão da vegetação, vias). '
+         'Esta página liga cada etapa do fluxo aos artigos que a sustentam. **Os valores são os relatados por cada estudo e não são comparáveis entre bases diferentes.** A última seção é proposta (interpretação), não resultado.', '',
+         '## Relevância dos artigos', '',
+         f'Campo `relevancia_objetivo` de cada nota: **A** ({cnt["A"]}) dado Planet de 3–5 m e alvo próximo, texto lido; **B** ({cnt["B"]}) método, validação ou alerta transferível, texto lido; **C** ({cnt["C"]}) contexto, revisão ou ferramenta; **D** ({cnt["D"]}) não lido, ver [[Pendencias_Leitura]].', '',
+         '## Resultados mais próximos do objetivo', '', '| Artigo | Dado | Alvo | Métrica relatada | Força da validação (minha leitura) |', '|---|---|---|---|---|']
+    for pid, dado, alvo, met, forca in K.TRILHA_TABELA:
+        b.append(f'| {plink(pid)} | {dado} | {alvo} | {met} | {forca} |')
+    b += ['', 'A coluna final é interpretação desta base: resume o desenho de validação lido em cada ficha (divisão, referência independente e amostragem).', '']
+    for tid, titulo, perg, arts, cons, lacs in K.TRILHA:
+        b += [f'## {tid[1:]}. {titulo}', '', f'*{perg}*', '']
+        for pid, txt in arts:
+            if pid in NAMES: b.append(f'- {plink(pid)} (relevância {TIER[pid]}) — {txt}')
+        b += ['', '**Conceitos:** ' + ', '.join(clink(c) for c in cons if c in ACTIVE), '', '**Lacunas:** ' + ', '.join(f'[[{l}|{[x[1] for x in K.LACUNAS if x[0] == l][0]}]]' for l in lacs), '']
+    b += ['## Proposta de arquitetura inicial (interpretação)', '', 'Não é conclusão experimental: é um ponto de partida montado a partir do que as fichas mostram.', '']
+    b += [f'{i}. {resolve(t, "trilha")}' for i, t in enumerate(K.PROPOSTA, 1)]
+    b += ['', 'Canvas desta trilha: `Canvas_Trilha_Objetivo.canvas` (pasta `01_Mapas`).', '', '[[00_Inicio|← Painel]]']
+    write('01_Mapas/Trilha_Objetivo_Planet5m.md', '\n'.join(b) + '\n')
+
+
 # ============================================================ execucao
 for fid in sorted(ACTIVE): concept_note(fid)
 for m in MOCS: moc_note(*m)
@@ -343,6 +378,7 @@ lacunas()
 rows = matriz()
 monitoramento()
 resultados()
+trilha()
 dup, rows_inv, sem_texto = anexos()
 templates()
 painel(rows_inv, sem_texto, dup)

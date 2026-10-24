@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P10_Etten2021_The-Multi-Temporal-Urban-Development-S
 paginas: 10
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[Edificacoes|Edificações e urbanização]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[Edificacoes|Edificações e urbanização]]", "[[SITS|Séries temporais de imagens (SITS)]]"]
 sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]"]
-metodos: []
+metodos: ["[[UNet|U-Net]]"]
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]"]
 validacao: ["[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Etten 2021 — The Multi-Temporal Urban Development SpaceNet Dataset
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — MUDS/SpaceNet 7: mosaicos Planet mensais de ~4 m com rótulos de edificação ao longo de 24 meses.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -160,18 +163,20 @@ Dataset e tarefa de **rastreamento de edificações em séries mensais Planet**:
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 3 ocorrências (p. 2, 5)
 - emprega conjunto de dados: [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
-- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 37 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 3 ocorrências (p. 2, 5)
-- trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[UNet|U-Net]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[RotulagemTemporal|Rotulagem temporalmente consistente]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
-- referencia (suporte manual da leitura): [[RotulagemTemporal|Rotulagem temporalmente consistente]] — suporte vindo da leitura/título/resumo
+- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 37 ocorrências (p. 1, 2, 3, 4, 5)
+- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 3 ocorrências (p. 2, 5)
+- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 6, 7, 8)
 
 **Comparações substantivas com outros artigos:**
 - [[Vincent_2024_SatelliteImageTime|Vincent 2024]] emprega o conjunto de dados de este artigo — P13 usa o MUDS de P10 como segundo benchmark e gera mapas binários a partir dos polígonos (p. 6).
 - [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] compara-se, na descrição do dataset, com este artigo — P12 cita o MUDS como o dataset temporal mais próximo: (p. 2).
+- [[Etten_2021_SpaceNetMultiTemporal|Etten 2021]] descreve o desafio construído sobre o conjunto de este artigo — P11 relata o desafio SpaceNet 7 sobre o MUDS de P10; o escore de mudança do campeão foi 0,20 (tabela 2, p. 9).
 
 ## Figuras selecionadas
 

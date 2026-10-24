@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P64_Simeoni2025_DINOv3/document.md"
 paginas: 67
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: []
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[SupervisaoFraca|Supervisão fraca]]", "[[TransferLearning|Aprendizado por transferência]]", "[[SAM|Segment Anything (SAM)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]", "[[mAP|mAP]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Simeoni 2025 — DINOv3
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -121,18 +124,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 283 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[Transformer|Transformers]] — 122 ocorrências (p. 2, 3, 4, 5, 6)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 22 ocorrências (p. 1, 2, 6, 7, 8)
-- utiliza método: [[SupervisaoFraca|Supervisão fraca]] — 17 ocorrências (p. 1, 2, 6, 7, 9)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 16 ocorrências (p. 1, 5, 6, 7, 17)
-- utiliza método: [[SAM|Segment Anything (SAM)]] — 9 ocorrências (p. 7, 17, 19, 20, 27)
-- é avaliado por: [[IoU|IoU / mIoU]] — 23 ocorrências (p. 5, 9, 11, 13, 14)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 9 ocorrências (p. 20, 25, 32)
-- é avaliado por: [[mAP|mAP]] — 5 ocorrências (p. 5, 25, 26, 36)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 100 ocorrências (p. 2, 4, 5, 6, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 21 ocorrências (p. 1, 2, 3, 5, 6)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 4 ocorrências (p. 9, 10, 12, 33)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 3 ocorrências (p. 22, 23, 26)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 9 ocorrências (p. 23, 26, 33, 34)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 3 ocorrências (p. 1, 25, 35)
 
 ## Anotações do leitor
 

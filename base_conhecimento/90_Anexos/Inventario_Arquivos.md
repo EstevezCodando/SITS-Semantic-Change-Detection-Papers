@@ -9,7 +9,7 @@ tags: [anexo, inventario]
 Catalogado em 24/10/2026. **103** documentos com nota principal; **82** registros do catálogo sem texto integral (listados no CSV). Os originais (PDF) ficam em `coleta/` e a conversão em `output/pdf/`; **nada foi movido ou alterado**.
 
 - Documentos convertidos: 97 (1.639 páginas no lote); falhas de conversão: 0 (relatório `output/pdf/report.json`).
-- Lidos em profundidade: 18; leitura parcial: 9; extração automática: 76.
+- Lidos em profundidade: 26; leitura parcial: 15; extração automática: 62.
 - Tipos de documento: artigo completo, artigo curto (≤4 páginas, a verificar) e documentação de software. Nenhum PDF ilegível: todas as páginas tinham texto extraível; páginas com <40 caracteres são sinalizadas para OCR quando existirem.
 
 | Nota | Título | Ano | DOI | Páginas | Status | Observações |
@@ -17,18 +17,18 @@ Catalogado em 24/10/2026. **103** documentos com nota principal; **82** registro
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | Mapping Tropical Forest Cover and Deforestation with Planet NICFI Sate | 2023 | 10.3390/rs15020521 | 20 | lido (profundo) | 2 avisos de conversão |
 | [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | Mapping tropical forest degradation with deep learning and Planet NICF | 2023 | 10.1016/j.rse.2023.113798 | — | lido (parcial) | sem texto convertido (leitura por resumo, documentação ou HTML) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | Detection of forest disturbance across California using deep-learning  | 2024 | 10.3389/frsen.2024.1409400 | 15 | lido (profundo) | — |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | AI-based Validation of Deforestation Using High-Resolution Satellite I | 2024 | 10.5194/isprs-archives-XLVIII-3-2024-583-2024 | 6 | extraído automaticamente (não lido) | — |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | AI-based Validation of Deforestation Using High-Resolution Satellite I | 2024 | 10.5194/isprs-archives-XLVIII-3-2024-583-2024 | 6 | lido (profundo) | — |
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 10.1109/tla.2022.9878176 | 10 | lido (profundo) | — |
-| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | Determination of land use and land cover change using multi-temporal P | 2025 | 10.1007/s10333-025-01024-9 | 19 | extraído automaticamente (não lido) | 1 avisos de conversão |
+| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | Determination of land use and land cover change using multi-temporal P | 2025 | 10.1007/s10333-025-01024-9 | 19 | lido (profundo) | 1 avisos de conversão |
 | [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Ba | 2022 | 10.3390/rs14112628 | — | lido (profundo) | sem texto convertido (leitura por resumo, documentação ou HTML) |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | Tropical dry forest land use/land cover change detection using semi-su | 2026 | 10.1007/s10661-025-14897-4 | 27 | lido (profundo) | — |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | The Multi-Temporal Urban Development SpaceNet Dataset | 2021 | 10.48550/arXiv.2102.04420 | 10 | lido (profundo) | 1 avisos de conversão |
-| [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | The SpaceNet Multi-Temporal Urban Development Challenge | 2021 | 10.48550/arXiv.2102.11958 | 15 | extraído automaticamente (não lido) | 1 avisos de conversão |
+| [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | The SpaceNet Multi-Temporal Urban Development Challenge | 2021 | 10.48550/arXiv.2102.11958 | 15 | lido (profundo) | 1 avisos de conversão |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C | 2022 | 10.48550/arXiv.2203.12560 | 18 | lido (profundo) | — |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | Satellite Image Time Series Semantic Change Detection: Novel Architect | 2024 | 10.48550/arXiv.2407.07616 | 17 | lido (profundo) | — |
 | [[He_2024_TimeSeriesLand\|He 2024]] | Time-series land cover change detection using deep learning-based temp | 2024 | 10.1016/j.rse.2024.114101 | — | lido (parcial) | sem texto convertido (leitura por resumo, documentação ou HTML) |
 | [[Garnot_2021_PanopticSegmentationSatellite\|Garnot 2021]] | Panoptic Segmentation of Satellite Image Time Series With Convolutiona | 2021 | 10.1109/iccv48922.2021.00483 | 17 | extraído automaticamente (não lido) | 1 avisos de conversão |
-| [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | Urban Change Forecasting from Satellite Images | 2023 | 10.1007/s41064-023-00258-8 | 10 | extraído automaticamente (não lido) | — |
+| [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | Urban Change Forecasting from Satellite Images | 2023 | 10.1007/s41064-023-00258-8 | 10 | lido (profundo) | — |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | Multitask Learning for Large-scale Semantic Change Detection | 2019 | 10.48550/arXiv.1810.08452 | 16 | lido (profundo) | — |
 | [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | Asymmetric Siamese Networks for Semantic Change Detection in Aerial Im | 2021 | 10.48550/arXiv.2010.05687 | 14 | lido (profundo) | — |
 | [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | Bi-Temporal Semantic Reasoning for the Semantic Change Detection in HR | 2022 | 10.1109/tgrs.2022.3154390 | 14 | extraído automaticamente (não lido) | — |
@@ -48,7 +48,7 @@ Catalogado em 24/10/2026. **103** documentos com nota principal; **82** registro
 | [[Bastani_2018_RoadTracerAutomaticExtraction\|Bastani 2018]] | RoadTracer: Automatic Extraction of Road Networks From Aerial Images | 2018 | 10.1109/cvpr.2018.00496 | 9 | extraído automaticamente (não lido) | — |
 | [[Buslaev_2018_FullyConvolutionalNetwork\|Buslaev 2018]] | Fully Convolutional Network for Automatic Road Extraction From Satelli | 2018 | 10.1109/cvprw.2018.00035 | 4 | extraído automaticamente (não lido) | — |
 | [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | MapFormer: Boosting Change Detection by Using Pre-change Information | 2023 | 10.48550/arXiv.2303.17859 | 10 | extraído automaticamente (não lido) | — |
-| [[Lee_2026_RoadChangeDetection\|Lee 2026]] | Road Change Detection Using Maps and Aerial Imagery for Digital Map Up | 2026 | 10.7780/kjrs.2026.42.2.5 | 18 | extraído automaticamente (não lido) | 1 avisos de conversão |
+| [[Lee_2026_RoadChangeDetection\|Lee 2026]] | Road Change Detection Using Maps and Aerial Imagery for Digital Map Up | 2026 | 10.7780/kjrs.2026.42.2.5 | 18 | lido (parcial) | 1 avisos de conversão |
 | [[Brown_2022_DynamicWorldNear\|Brown 2022]] | Dynamic World, Near real-time global 10 m land use land cover mapping | 2022 | 10.1038/s41597-022-01307-4 | 17 | extraído automaticamente (não lido) | — |
 | [[Olofsson_2014_GoodPracticesEstimating\|Olofsson 2014]] | Good practices for estimating area and assessing accuracy of land chan | 2014 | 10.1016/j.rse.2014.02.015 | — | lido (parcial) | sem texto convertido (leitura por resumo, documentação ou HTML) |
 | [[Lei_2026_RemoteSensingImage\|Lei 2026]] | Remote sensing image change detection using deep learning techniques:  | 2026 | 10.1007/s10462-026-11501-0 | 63 | extraído automaticamente (não lido) | 5 avisos de conversão |
@@ -68,10 +68,10 @@ Catalogado em 24/10/2026. **103** documentos com nota principal; **82** registro
 | [[Reed_2022_ScaleMAEScale\|Reed 2022]] | Scale-MAE: A Scale-Aware Masked Autoencoder for Multiscale Geospatial  | 2022 | 10.48550/arXiv.2212.14532 | 16 | extraído automaticamente (não lido) | — |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | CubeSats deliver new insights into agricultural water use at daily and | 2021 | 10.1038/s41598-021-91646-w | 12 | extraído automaticamente (não lido) | — |
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | Using Super-Resolution Algorithms for Small Satellite Imagery: A Syste | 2022 | 10.1109/jstars.2022.3167646 | 21 | extraído automaticamente (não lido) | — |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | Monitoring monthly tropical humid forest disturbances with Planet NICF | 2023 | 10.1016/j.agrformet.2023.109676 | 30 | extraído automaticamente (não lido) | — |
-| [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | Detection of rural roads from planet images using convolutional neural | 2025 | 10.1590/s1982-21702025000100004 | 15 | extraído automaticamente (não lido) | — |
-| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | Mapping the diversity of land uses following deforestation across Afri | 2024 | 10.1038/s41598-024-52138-9 | 16 | extraído automaticamente (não lido) | — |
-| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | TEMPO: Global Temporal Building Density and Height Estimation from Sat | 2025 | 10.48550/arXiv.2511.12104 | 17 | extraído automaticamente (não lido) | — |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | Monitoring monthly tropical humid forest disturbances with Planet NICF | 2023 | 10.1016/j.agrformet.2023.109676 | 30 | lido (profundo) | — |
+| [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | Detection of rural roads from planet images using convolutional neural | 2025 | 10.1590/s1982-21702025000100004 | 15 | lido (profundo) | — |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | Mapping the diversity of land uses following deforestation across Afri | 2024 | 10.1038/s41598-024-52138-9 | 16 | lido (profundo) | — |
+| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | TEMPO: Global Temporal Building Density and Height Estimation from Sat | 2025 | 10.48550/arXiv.2511.12104 | 17 | lido (profundo) | — |
 | [[McVicar_2023_SmartflowEnablingScalable\|McVicar 2023]] | Smartflow: Enabling Scalable Spatiotemporal Geospatial Research | 2023 | 10.48550/arXiv.2506.03022 | 4 | extraído automaticamente (não lido) | — |
 | [[He_2022_TrackingUrbanizationDeveloping\|He 2022]] | Tracking Urbanization in Developing Regions with Remote Sensing Spatia | 2022 | 10.48550/arXiv.2204.01736 | 7 | extraído automaticamente (não lido) | — |
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | An Aligned Multi-Temporal Multi-Resolution Satellite Image Dataset for | 2023 | 10.48550/arXiv.2302.12301 | 9 | extraído automaticamente (não lido) | — |
@@ -80,13 +80,13 @@ Catalogado em 24/10/2026. **103** documentos com nota principal; **82** registro
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | Deforestation detection using deep learning-based semantic segmentatio | 2024 | 10.3389/ffgc.2024.1300060 | 24 | lido (parcial) | 6 avisos de conversão |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | Crowd-Driven Deep Learning Tracks Amazon Deforestation | 2023 | 10.3390/rs15215204 | 14 | extraído automaticamente (não lido) | — |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | DETER-RT: The new INPE-TropiSCO deforestation monitoring system in the | 2024 | 10.5194/isprs-archives-xlviii-3-2024-127-2024 | 7 | extraído automaticamente (não lido) | — |
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | DETER-R: An Operational Near-Real Time Tropical Forest Disturbance War | 2022 | 10.3390/rs14153658 | 21 | extraído automaticamente (não lido) | 2 avisos de conversão |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | Integrating satellite-based forest disturbance alerts improves detecti | 2024 | 10.1088/1748-9326/ad2d82 | 23 | extraído automaticamente (não lido) | 5 avisos de conversão |
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | Forest disturbance alerts for the Congo Basin using Sentinel-1 | 2021 | 10.1088/1748-9326/abd0a8 | 13 | extraído automaticamente (não lido) | — |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | A near-real-time tropical deforestation monitoring algorithm based on  | 2024 | 10.3389/frsen.2024.1416550 | 12 | extraído automaticamente (não lido) | — |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | DETER-R: An Operational Near-Real Time Tropical Forest Disturbance War | 2022 | 10.3390/rs14153658 | 21 | lido (parcial) | 2 avisos de conversão |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | Integrating satellite-based forest disturbance alerts improves detecti | 2024 | 10.1088/1748-9326/ad2d82 | 23 | lido (parcial) | 5 avisos de conversão |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | Forest disturbance alerts for the Congo Basin using Sentinel-1 | 2021 | 10.1088/1748-9326/abd0a8 | 13 | lido (parcial) | — |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | A near-real-time tropical deforestation monitoring algorithm based on  | 2024 | 10.3389/frsen.2024.1416550 | 12 | lido (parcial) | — |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | Uncontrolled Illegal Mining and Garimpo in the Brazilian Amazon | 2024 | 10.1038/s41467-024-54220-2 | 15 | extraído automaticamente (não lido) | — |
 | [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | Deep Learning-Based Change Detection in Remote Sensing Images: A Revie | 2022 | 10.3390/rs14040871 | 40 | lido (parcial) | — |
-| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | Deep Learning for Satellite Image Time-Series Analysis: A review | 2024 | 10.1109/mgrs.2024.3393010 | 38 | extraído automaticamente (não lido) | — |
+| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | Deep Learning for Satellite Image Time-Series Analysis: A review | 2024 | 10.1109/mgrs.2024.3393010 | 38 | lido (parcial) | — |
 | [[Shen_2021_S2LookingSatelliteSide\|Shen 2021]] | S2Looking: A Satellite Side-Looking Dataset for Building Change Detect | 2021 | 10.3390/rs13245094 | 23 | extraído automaticamente (não lido) | 1 avisos de conversão |
 | [[Zhou_2025_SChangerChangeDetection\|Zhou 2025]] | SChanger: Change Detection From a Semantic Change and Spatial Consiste | 2025 | 10.1109/jstars.2025.3555849 | 18 | extraído automaticamente (não lido) | — |
 | [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | Adapting Segment Anything Model for Change Detection in VHR Remote Sen | 2024 | 10.1109/tgrs.2024.3368168 | 11 | extraído automaticamente (não lido) | — |

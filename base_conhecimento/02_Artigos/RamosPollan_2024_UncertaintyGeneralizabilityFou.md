@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P154_Ramos-Pollan2024_Uncertainty-and-Generalizabili
 paginas: 9
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
 metodos: ["[[Transformer|Transformers]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
+preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # RamosPollan 2024 — Uncertainty and Generalizability in Foundation Models for Earth Observation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -99,8 +102,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 6 ocorrências (p. 1, 2, 4, 6)
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 5 ocorrências (p. 1, 2, 4, 6)
 - utiliza método: [[Transformer|Transformers]] — 10 ocorrências (p. 2, 4)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 23 ocorrências (p. 1, 2, 3, 4, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 18 ocorrências (p. 1, 2, 3, 6, 7)
 
 ## Anotações do leitor
 

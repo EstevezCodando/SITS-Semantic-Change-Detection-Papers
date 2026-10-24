@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P15_Garnot2021_Panoptic-Segmentation-of-Satellite-Im
 paginas: 17
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]"]
 sensores: []
 conjuntos_dados: []
-metodos: ["[[LSTM|Redes recorrentes (LSTM)]]", "[[UNet|U-Net]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+metodos: ["[[LSTM|Redes recorrentes (LSTM)]]", "[[UNet|U-Net]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Garnot 2021 — Panoptic Segmentation of Satellite Image Time Series With Convolutional Temporal Attention Networks
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -110,13 +113,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 20 ocorrências (p. 2, 3, 7, 8)
 - utiliza método: [[UNet|U-Net]] — 12 ocorrências (p. 2, 3, 4, 7, 8)
 - utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 9 ocorrências (p. 2, 6, 7, 8)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 3 ocorrências (p. 6, 8)
-- é avaliado por: [[IoU|IoU / mIoU]] — 5 ocorrências (p. 7, 8)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 3 ocorrências (p. 7, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 20 ocorrências (p. 1, 5, 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 10 ocorrências (p. 1, 2, 4, 6, 7)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 5 ocorrências (p. 1, 6, 8)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 5 ocorrências (p. 3, 5, 7, 8)
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

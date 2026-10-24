@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P25_Chen2021_Remote-Sensing-Image-Change-Detection-W
 paginas: 14
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[Transformer|Transformers]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]", "[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+metodos: ["[[Transformer|Transformers]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Chen 2021 — Remote Sensing Image Change Detection With Transformers
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -117,14 +120,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[Transformer|Transformers]] — 83 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 35 ocorrências (p. 1, 2, 3, 4, 6)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 21 ocorrências (p. 2, 4, 5, 7, 12)
-- utiliza método: [[UNet|U-Net]] — 5 ocorrências (p. 1, 2, 7, 12, 14)
-- é avaliado por: [[F1|F1]] — 33 ocorrências (p. 7, 9, 10, 11, 12)
-- é avaliado por: [[IoU|IoU / mIoU]] — 17 ocorrências (p. 7, 9, 10, 11)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 10 ocorrências (p. 7, 11, 12)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 6 ocorrências (p. 7, 9)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 12 ocorrências (p. 3, 4, 6, 13, 14)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 5 ocorrências (p. 5, 6, 12, 14)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 17 ocorrências (p. 6, 7, 8, 9, 11)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

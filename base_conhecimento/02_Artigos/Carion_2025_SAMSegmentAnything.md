@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P62_Carion2025_SAM-3-Segment-Anything-with-Concepts/
 paginas: 78
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[TransferLearning|Aprendizado por transferência]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[ModeloFundacional|Modelos fundacionais]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[mAP|mAP]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[SAM|Segment Anything (SAM)]]", "[[TransferLearning|Aprendizado por transferência]]", "[[Transformer|Transformers]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Carion 2025 — SAM 3: Segment Anything with Concepts
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -119,17 +122,6 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 468 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 30 ocorrências (p. 2, 5, 6, 8, 10)
 - utiliza método: [[Transformer|Transformers]] — 19 ocorrências (p. 2, 3, 4, 5, 19)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 8 ocorrências (p. 2, 10, 16, 24, 29)
-- utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 5 ocorrências (p. 14, 28)
-- é avaliado por: [[IoU|IoU / mIoU]] — 36 ocorrências (p. 5, 8, 9, 22, 23)
-- é avaliado por: [[F1|F1]] — 16 ocorrências (p. 7, 36, 37, 38, 48)
-- é avaliado por: [[mAP|mAP]] — 14 ocorrências (p. 8, 9, 51, 65, 68)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 9 ocorrências (p. 7, 24, 28, 30, 33)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 322 ocorrências (p. 1, 2, 3, 5, 6)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 3 ocorrências (p. 14, 31)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 8 ocorrências (p. 10, 29, 36, 39, 54)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 8 ocorrências (p. 3, 14, 18, 19, 30)
-- discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 13 ocorrências (p. 23, 44)
 
 ## Anotações do leitor
 

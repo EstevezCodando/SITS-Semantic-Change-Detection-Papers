@@ -4,7 +4,7 @@ subtipo: "base de referência"
 titulo: "Global Forest Change (Hansen)"
 aliases: ["Global Forest Change (Hansen)"]
 pasta_tematica: "03_Dados"
-n_artigos: 8
+n_artigos: 6
 tags: [conceito, base-de-referencia]
 ---
 
@@ -42,14 +42,12 @@ Inclui fogo e degradação como perda; resolução de 30 m.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | emprega conjunto de dados | 26 | 2, 3, 4, 6, 9 | extraído automaticamente (não lido) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | emprega conjunto de dados | 18 | 2, 3, 4, 5, 6 | extraído automaticamente (não lido) |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | emprega conjunto de dados | 11 | 2, 5, 6, 10, 14 | extraído automaticamente (não lido) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | emprega conjunto de dados | 26 | 2, 3, 4, 6, 9 | lido (parcial) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | emprega conjunto de dados | 11 | 2, 5, 6, 10, 14 | lido (profundo) |
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | emprega conjunto de dados | 6 | 3, 5, 15, 16 | lido (profundo) |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | emprega conjunto de dados | 6 | 1, 2 | extraído automaticamente (não lido) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | emprega conjunto de dados | 3 | 2, 6 | lido (profundo) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | emprega conjunto de dados | 3 | 1, 2 | extraído automaticamente (não lido) |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | emprega conjunto de dados | 2 | 2, 11 | extraído automaticamente (não lido) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

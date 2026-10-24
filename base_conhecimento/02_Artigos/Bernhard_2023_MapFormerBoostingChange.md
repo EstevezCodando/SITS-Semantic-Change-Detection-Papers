@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P39_Bernhard2023_MapFormer-Boosting-Change-Detection
 paginas: 10
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Edificacoes|Edificações e urbanização]]"]
 sensores: []
-conjuntos_dados: ["[[DynamicEarthNet|DynamicEarthNet]]", "[[HRSCD|HRSCD]]", "[[LEVIRCD|LEVIR-CD]]", "[[S2Looking|S2Looking]]"]
+conjuntos_dados: ["[[DynamicEarthNet|DynamicEarthNet]]", "[[HRSCD|HRSCD]]", "[[LEVIRCD|LEVIR-CD]]"]
 metodos: ["[[Transformer|Transformers]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Bernhard 2023 — MapFormer: Boosting Change Detection by Using Pre-change Information
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -105,11 +108,7 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 - emprega conjunto de dados: [[DynamicEarthNet|DynamicEarthNet]] — 12 ocorrências (p. 1, 2, 5, 6, 7)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 10 ocorrências (p. 1, 2, 5, 6, 7)
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 2 ocorrências (p. 2, 5)
-- emprega conjunto de dados: [[S2Looking|S2Looking]] — 2 ocorrências (p. 2, 5)
 - utiliza método: [[Transformer|Transformers]] — 8 ocorrências (p. 2, 5, 6, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 20 ocorrências (p. 1, 3, 6, 7)
-- é avaliado por: [[F1|F1]] — 4 ocorrências (p. 6, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 1, 5, 7, 8)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 

@@ -4,7 +4,7 @@ subtipo: "família de modelos"
 titulo: "Modelos fundacionais"
 aliases: ["Modelos fundacionais"]
 pasta_tematica: "05_Metodos"
-n_artigos: 18
+n_artigos: 16
 tags: [conceito, familia-de-modelos]
 ---
 
@@ -56,10 +56,8 @@ Nem sempre superam baselines supervisionados; bandas Planet nem sempre compatív
 | [[Zheng_2024_SegmentAnyChange\|Zheng 2024]] | utiliza método | 15 | 1, 2, 3, 6, 7 | extraído automaticamente (não lido) |
 | [[Dabaja_2026_PromptableConceptSegmentation\|Dabaja 2026]] | utiliza método | 12 | 1, 2, 4, 13, 14 | extraído automaticamente (não lido) |
 | [[Yongshuo_2025_SemanticRemoteSensing\|Yongshuo 2025]] | utiliza método | 9 | 1, 2, 4, 5 | extraído automaticamente (não lido) |
-| [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | utiliza método | 7 | 1, 2, 3 | extraído automaticamente (não lido) |
-| [[Carion_2025_SAMSegmentAnything\|Carion 2025]] | utiliza método | 5 | 14, 28 | extraído automaticamente (não lido) |
 | [[Tresson_2026_IAMAPUnlockingDeep\|Tresson 2026]] | utiliza método | 3 | 1, 2 | lido (profundo) |
-| [[Brown_2025_AlphaEarthFoundationsEmbedding\|Brown 2025]] | utiliza método | 3 | 3, 6, 10 | extraído automaticamente (não lido) |
+| [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

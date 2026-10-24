@@ -4,7 +4,7 @@ subtipo: "etapa"
 titulo: "Índices espectrais (NDVI etc.)"
 aliases: ["Índices espectrais (NDVI etc.)"]
 pasta_tematica: "04_Preparo"
-n_artigos: 10
+n_artigos: 6
 tags: [conceito, etapa]
 ---
 
@@ -42,16 +42,12 @@ Não calculável a partir de RGB visual; não ajudou em um estudo lido.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | aplica etapa de preparo | 21 | 5, 7, 9, 16, 17 | extraído automaticamente (não lido) |
-| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | aplica etapa de preparo | 20 | 2, 3, 6, 7, 9 | extraído automaticamente (não lido) |
-| [[Boutayeb_2024_ComprehensiveGeoAIReview\|Boutayeb 2024]] | aplica etapa de preparo | 14 | 18, 22, 24, 25, 28 | lido (parcial) |
-| [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | aplica etapa de preparo | 12 | 2, 3, 4, 6, 7 | extraído automaticamente (não lido) |
+| [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | aplica etapa de preparo | 20 | 2, 3, 6, 7, 9 | lido (profundo) |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | aplica etapa de preparo | 9 | 10, 11, 13 | lido (profundo) |
-| [[Robinson_2026_AdvancingEarthObservation\|Robinson 2026]] | aplica etapa de preparo | 8 | 2, 3 | extraído automaticamente (não lido) |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | aplica etapa de preparo | 7 | 7, 26, 29, 30 | extraído automaticamente (não lido) |
-| [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | aplica etapa de preparo | 6 | 10, 16 | lido (parcial) |
-| [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | aplica etapa de preparo | 3 | 3, 4 | extraído automaticamente (não lido) |
-| [[Simoes_2021_SatelliteImageTime\|Simoes 2021]] | aplica etapa de preparo | 3 | 13, 14 | extraído automaticamente (não lido) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | aplica etapa de preparo | 7 | 7, 26, 29, 30 | lido (profundo) |
+| [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

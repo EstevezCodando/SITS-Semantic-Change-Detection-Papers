@@ -10,14 +10,15 @@ markdown_fonte: "não informado"
 paginas: não informado
 tipo_documento: "sem texto integral (resumo, documentação ou repositório)"
 status_leitura: "lido (parcial)"
+relevancia_objetivo: "B"
 tarefas: []
 sensores: []
 conjuntos_dados: []
 metodos: []
 preparo: []
-validacao: []
+validacao: ["[[AmostraIndependente|Amostra independente]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Olofsson 2014 — Good practices for estimating area and assessing accuracy of land change
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Estimativa de área e acurácia com amostragem probabilística (leitura parcial).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -105,6 +108,10 @@ Páginas: não informado (leitura feita sem texto integral convertido; ver a fon
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
+- referência (curado pela leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[EstimativaArea|Estimativa de área com intervalo de confiança]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AcuraciaGlobal|Acurácia global (OA)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AmostraIndependente|Amostra independente]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] aplica o protocolo de avaliação de este artigo — P05 valida os mapas de mudança pelo método de Olofsson: (p. 4).

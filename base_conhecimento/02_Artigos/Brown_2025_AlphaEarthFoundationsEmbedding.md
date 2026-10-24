@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P66_Brown2025_AlphaEarth-Foundations-An-embedding-fi
 paginas: 63
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
-metodos: ["[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]", "[[Reamostragem|Reamostragem]]"]
-validacao: ["[[ValidacaoCruzada|Validação cruzada]]", "[[PrecisaoRecall|Precisão e recall]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
+metodos: []
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Brown 2025 — AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -100,15 +103,7 @@ Não informado (nenhum trecho de limitação detectado).
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza método: [[Transformer|Transformers]] — 4 ocorrências (p. 4, 6, 9)
-- utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 3 ocorrências (p. 3, 6, 10)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 7 ocorrências (p. 1, 3, 4, 5, 6)
-- é avaliado por: [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 4 ocorrências (p. 3, 8, 9, 10)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 10 ocorrências (p. 6, 7, 11)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 8 ocorrências (p. 1, 4, 6, 11)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 5 ocorrências (p. 3, 6, 9)
-- aplica etapa de preparo: [[Reamostragem|Reamostragem]] — 4 ocorrências (p. 4, 6)
-- adota desenho de validação: [[ValidacaoCruzada|Validação cruzada]] — 3 ocorrências (p. 3, 8, 10)
+- Nenhuma relação com suporte suficiente foi criada para este artigo (evita ligações por coincidência de palavras).
 
 ## Anotações do leitor
 

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P175_Sanca2023_AN-END-TO-END-DEEP-LEARNING-WORKFLOW-
 paginas: 7
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Edificacoes|Edificações e urbanização]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: []
 metodos: ["[[Transformer|Transformers]]", "[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]"]
-ferramentas: ["[[QGIS|QGIS]]", "[[GDAL|GDAL / rasterio]]", "[[PyTorch|PyTorch]]"]
-tags: [artigo, leitura/automatica]
+preparo: []
+validacao: []
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Sanca 2023 — AN END-TO-END DEEP LEARNING WORKFLOW FOR BUILDING SEGMENTATION, BOUNDARY REGULARIZATION AND VECTORIZATION OF BUILDING FOOTPRINTS
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -113,13 +116,6 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 - utiliza método: [[Transformer|Transformers]] — 20 ocorrências (p. 1, 2, 3, 5)
 - utiliza método: [[UNet|U-Net]] — 18 ocorrências (p. 1, 2, 3, 5)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 17 ocorrências (p. 1, 2, 3)
-- é avaliado por: [[IoU|IoU / mIoU]] — 15 ocorrências (p. 4, 5, 7)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 4 ocorrências (p. 1, 2, 4)
-- usa ferramenta: [[QGIS|QGIS]] — 17 ocorrências (p. 1, 2, 3, 5, 6)
-- usa ferramenta: [[GDAL|GDAL / rasterio]] — 7 ocorrências (p. 1, 3, 4)
-- usa ferramenta: [[PyTorch|PyTorch]] — 6 ocorrências (p. 1, 3, 4)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 8 ocorrências (p. 1, 2, 3, 4, 5)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 10 ocorrências (p. 2, 3)
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

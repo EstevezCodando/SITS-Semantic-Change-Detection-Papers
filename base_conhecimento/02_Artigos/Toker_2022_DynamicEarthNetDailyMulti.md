@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P12_Toker2022_DynamicEarthNet-Daily-Multi-Spectral-S
 paginas: 18
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[SITS|Séries temporais de imagens (SITS)]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
-sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]", "[[Sentinel2|Sentinel-2]]"]
-conjuntos_dados: ["[[DynamicEarthNet|DynamicEarthNet]]", "[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]", "[[HRSCD|HRSCD]]"]
-metodos: ["[[UNet|U-Net]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Desbalanceamento|Desbalanceamento de classes]]", "[[IoU|IoU / mIoU]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
+sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
+conjuntos_dados: ["[[DynamicEarthNet|DynamicEarthNet]]"]
+metodos: ["[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[LSTM|Redes recorrentes (LSTM)]]"]
+preparo: []
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Toker 2022 — DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic Change Segmentation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — Planet Fusion diário de 3 m com rótulos mensais de mudança semântica (DynamicEarthNet).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -158,26 +161,16 @@ Benchmark de **segmentação semântica de mudança** em séries diárias Planet
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 5 ocorrências (p. 1, 3, 4)
-- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 3 ocorrências (p. 2, 4)
 - emprega conjunto de dados: [[DynamicEarthNet|DynamicEarthNet]] — 17 ocorrências (p. 1, 2, 3, 4, 5)
-- emprega conjunto de dados: [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 3 ocorrências (p. 2, 3, 8)
-- emprega conjunto de dados: [[HRSCD|HRSCD]] — 3 ocorrências (p. 2, 3)
-- utiliza método: [[UNet|U-Net]] — 9 ocorrências (p. 6, 7)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 9 ocorrências (p. 1, 6, 7, 8)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 5 ocorrências (p. 6, 7)
-- utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 5 ocorrências (p. 6, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 15 ocorrências (p. 5, 6, 7, 8)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 39 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 4 ocorrências (p. 2, 4, 6)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 13 ocorrências (p. 4, 5, 6, 7, 8)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 3 ocorrências (p. 3, 4, 5)
-- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 9 ocorrências (p. 1, 6, 7, 8)
+- utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 5 ocorrências (p. 6, 7)
+- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 5 ocorrências (p. 6, 7)
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
-- referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[RotulagemTemporal|Rotulagem temporalmente consistente]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 3 ocorrências (p. 3, 4, 5)
 
 **Comparações substantivas com outros artigos:**
 - [[Vincent_2024_SatelliteImageTime|Vincent 2024]] emprega o conjunto de dados e a métrica de este artigo — P13 treina e testa em DynamicEarthNet e usa as métricas BC, SC, SCS e mIoU definidas por P12 (p. 6).

@@ -4,7 +4,7 @@ subtipo: "desenho de validação"
 titulo: "Amostra independente"
 aliases: ["Amostra independente"]
 pasta_tematica: "06_Validacao"
-n_artigos: 2
+n_artigos: 3
 tags: [conceito, desenho-de-validacao]
 ---
 
@@ -42,10 +42,12 @@ Cara de produzir.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | adota desenho de validação | 6 | 2, 8, 9, 10 | extraído automaticamente (não lido) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | adota desenho de validação | 3 | 1, 6, 13 | lido (profundo) |
+| [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Olofsson_2014_GoodPracticesEstimating\|Olofsson 2014]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 
 ## Navegação
 
 - Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
 - Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
+- Lacuna que afeta este conceito: [[L14_ReferenciaVisualFragil|Referência visual tem discordância e depende de dados sem nuvem]]

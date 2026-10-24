@@ -10,14 +10,15 @@ markdown_fonte: "não informado"
 paginas: não informado
 tipo_documento: "sem texto integral (resumo, documentação ou repositório)"
 status_leitura: "lido (parcial)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[SITS|Séries temporais de imagens (SITS)]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
-sensores: []
+relevancia_objetivo: "B"
+tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
+sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: []
 metodos: []
 preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # He 2024 — Time-series land cover change detection using deep learning-based temporal semantic segmentation
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — TSSCD para segmentação temporal (leitura parcial).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -103,10 +106,9 @@ Páginas: não informado (leitura feita sem texto integral convertido; ver a fon
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Sentinel2|Sentinel-2]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - [[Vincent_2024_SatelliteImageTime|Vincent 2024]] compara-se com o baseline este artigo — TSSCD (P14) é o baseline pixel a pixel de P13 (p. 7); obtém SCS 12,0 e 11,7 na Tabela 1 de P13.

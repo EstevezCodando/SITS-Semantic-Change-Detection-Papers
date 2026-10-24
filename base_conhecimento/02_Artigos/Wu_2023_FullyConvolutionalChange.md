@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P150_Wu2023_Fully-Convolutional-Change-Detection-Fra
 paginas: 13
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[OSCD|OSCD]]"]
-metodos: ["[[SupervisaoFraca|Supervisão fraca]]", "[[RedeSiamesa|Redes siamesas]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[SupervisaoFraca|Supervisão fraca]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Wu 2023 — Fully Convolutional Change Detection Framework With Generative Adversarial Network for Unsupervised, Weakly Supervised and Regional Supervised Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -118,14 +121,6 @@ Resumo: não localizado no texto convertido.
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 3 ocorrências (p. 6, 9)
 - emprega conjunto de dados: [[OSCD|OSCD]] — 9 ocorrências (p. 6, 8, 9, 10)
 - utiliza método: [[SupervisaoFraca|Supervisão fraca]] — 30 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 7 ocorrências (p. 3, 12)
-- é avaliado por: [[F1|F1]] — 11 ocorrências (p. 6, 7, 8, 9)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 6 ocorrências (p. 6, 8, 9)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 6 ocorrências (p. 4, 6, 7, 13)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 8 ocorrências (p. 1, 3, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 7 ocorrências (p. 1, 3, 4, 5, 10)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 3 ocorrências (p. 3, 6, 7)
-- discute aspecto de monitoramento: [[FalsosAlertas|Falsos alertas]] — 8 ocorrências (p. 7, 8, 9, 10)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

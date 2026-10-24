@@ -17,11 +17,11 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | 3 (p. 10, 12) | — | — | — |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | retrospectivo | — | — | — | 2 (p. 2) | — | — | 2 (p. 23, 24) | 1 (p. 8) | — | — |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | retrospectivo | — | — | — | — | — | — | — | — | — | — |
-| [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
+| [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | retrospectivo (benchmark) | — | — | — | — | — | — | — | — | — | — |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | retrospectivo | — | 20 (p. 1, 2) | — | 1 (p. 4) | — | — | — | — | — | — |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | retrospectivo | 1 (p. 1) | 6 (p. 2, 6) | — | — | — | — | — | — | — | — |
 | [[Garnot_2021_PanopticSegmentationSatellite\|Garnot 2021]] | retrospectivo (sem evidência extraída de operação contínua) | — | 1 (p. 1) | — | — | 1 (p. 3) | — | — | — | — | — |
-| [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
+| [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | retrospectivo (previsão) | — | — | — | — | — | — | — | — | — | — |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
 | [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
 | [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | 4 (p. 7, 8) | — | — | — |
@@ -60,10 +60,10 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 | [[Reed_2022_ScaleMAEScale\|Reed 2022]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | 1 (p. 1) |
 | [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | 3 (p. 1, 2) | — | 1 (p. 8) | 2 (p. 1, 8) |
 | [[Karwowska_2022_SuperResolutionAlgorithms\|Karwowska 2022]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | 4 (p. 7, 11) | — | — | — | — | — | 2 (p. 1) |
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | retrospectivo (sem evidência extraída de operação contínua) | 9 (p. 2, 3) | 5 (p. 3, 4) | — | 2 (p. 23, 29) | 3 (p. 7, 9) | — | — | — | 10 (p. 3, 18) | 1 (p. 28) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | retrospectivo | 9 (p. 2, 3) | 5 (p. 3, 4) | — | 2 (p. 23, 29) | 3 (p. 7, 9) | — | — | — | 10 (p. 3, 18) | 1 (p. 28) |
 | [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | 3 (p. 1, 9) | — | — | — |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | 2 (p. 8, 13) | 1 (p. 13) | 2 (p. 2) | 5 (p. 2, 8) | — | — | — | — | — |
-| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | retrospectivo (sem evidência extraída de operação contínua) | 2 (p. 2) | 2 (p. 2, 15) | — | — | — | — | 2 (p. 1, 15) | — | — | 1 (p. 8) |
+| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | série retrospectiva com aviso de latência | 2 (p. 2) | 2 (p. 2, 15) | — | — | — | — | 2 (p. 1, 15) | — | — | 1 (p. 8) |
 | [[McVicar_2023_SmartflowEnablingScalable\|McVicar 2023]] | retrospectivo (sem evidência extraída de operação contínua) | — | 1 (p. 1) | — | — | 2 (p. 1) | — | 3 (p. 1, 2) | — | — | — |
 | [[He_2022_TrackingUrbanizationDeveloping\|He 2022]] | retrospectivo (sem evidência extraída de operação contínua) | — | 1 (p. 1) | — | — | — | — | 2 (p. 1, 5) | — | — | — |
 | [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | — | — | — | — | — | — | — |
@@ -72,10 +72,10 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | 1 (p. 19) | — | — | — | 1 (p. 20) | — | — | — |
 | [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | candidato a sistema operacional (verificar no texto) | 2 (p. 2) | 1 (p. 3) | — | 1 (p. 12) | 1 (p. 2) | — | 1 (p. 5) | — | 21 (p. 1, 2) | 4 (p. 2, 11) |
 | [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | candidato a sistema operacional (verificar no texto) | 6 (p. 1, 3) | — | 2 (p. 1, 3) | — | 3 (p. 1, 2) | — | — | — | 1 (p. 3) | 8 (p. 3, 4) |
-| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | candidato a sistema operacional (verificar no texto) | 19 (p. 1, 2) | 4 (p. 1, 2) | 7 (p. 3, 10) | 8 (p. 8, 12) | 6 (p. 5, 6) | — | 1 (p. 18) | — | 12 (p. 2, 3) | 25 (p. 1, 2) |
-| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | candidato a sistema operacional (verificar no texto) | 7 (p. 2, 3) | 2 (p. 3, 6) | 1 (p. 4) | 8 (p. 4, 5) | 1 (p. 8) | — | 1 (p. 3) | — | 230 (p. 1, 2) | 5 (p. 3, 4) |
-| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | candidato a sistema operacional (verificar no texto) | 10 (p. 2, 3) | 7 (p. 5, 10) | 1 (p. 11) | 32 (p. 2, 3) | — | — | — | — | 78 (p. 1, 2) | 5 (p. 3, 4) |
-| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | candidato a sistema operacional (verificar no texto) | 84 (p. 1, 2) | — | 3 (p. 5, 8) | 1 (p. 2) | 1 (p. 6) | — | 1 (p. 5) | — | 6 (p. 1, 2) | 5 (p. 1, 2) |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | sistema operacional (alertas) | 19 (p. 1, 2) | 4 (p. 1, 2) | 7 (p. 3, 10) | 8 (p. 8, 12) | 6 (p. 5, 6) | — | 1 (p. 18) | — | 12 (p. 2, 3) | 25 (p. 1, 2) |
+| [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | avaliação de sistemas operacionais | 7 (p. 2, 3) | 2 (p. 3, 6) | 1 (p. 4) | 8 (p. 4, 5) | 1 (p. 8) | — | 1 (p. 3) | — | 230 (p. 1, 2) | 5 (p. 3, 4) |
+| [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | sistema operacional (alertas) | 10 (p. 2, 3) | 7 (p. 5, 10) | 1 (p. 11) | 32 (p. 2, 3) | — | — | — | — | 78 (p. 1, 2) | 5 (p. 3, 4) |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | protótipo de quase tempo real | 84 (p. 1, 2) | — | 3 (p. 5, 8) | 1 (p. 2) | 1 (p. 6) | — | 1 (p. 5) | — | 6 (p. 1, 2) | 5 (p. 1, 2) |
 | [[Cortinhas_2024_UncontrolledIllegalMining\|Cortinhas 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | — | — | 6 (p. 2, 4) | 5 (p. 4, 9) | — | 1 (p. 12) | — | 1 (p. 9) | 1 (p. 11) |
 | [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | retrospectivo (sem evidência extraída de operação contínua) | 1 (p. 13) | — | 3 (p. 20, 24) | — | — | — | 7 (p. 7, 16) | — | — | 1 (p. 5) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | retrospectivo (sem evidência extraída de operação contínua) | — | 5 (p. 3, 4) | — | 1 (p. 25) | — | — | 1 (p. 3) | — | — | 2 (p. 9, 12) |
@@ -110,7 +110,7 @@ Um sistema de monitoramento contínuo exige evidência de frequência de atualiz
 
 ## Leitura da tabela
 
-- Classificações curadas (leitura): [[Wagner_2023_MappingTropicalForest|Wagner 2023]] → retrospectivo; [[Vincent_2024_SatelliteImageTime|Vincent 2024]] → retrospectivo; [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] → retrospectivo; [[Etten_2021_MultiTemporalUrban|Etten 2021]] → retrospectivo; [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] → retrospectivo; [[Wu_2026_GeoAIPythonPackage|Wu 2026]] → ferramenta (sem avaliação); [[Carter_2024_DetectionForestDisturbance|Carter 2024]] → retrospectivo; [[GonzalezVelez_2026_TropicalDryForest|GonzalezVelez 2026]] → retrospectivo.
+- Classificações curadas (leitura): [[Wagner_2023_MappingTropicalForest|Wagner 2023]] → retrospectivo; [[Vincent_2024_SatelliteImageTime|Vincent 2024]] → retrospectivo; [[Toker_2022_DynamicEarthNetDailyMulti|Toker 2022]] → retrospectivo; [[Etten_2021_MultiTemporalUrban|Etten 2021]] → retrospectivo; [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] → retrospectivo; [[Wu_2026_GeoAIPythonPackage|Wu 2026]] → ferramenta (sem avaliação); [[Carter_2024_DetectionForestDisturbance|Carter 2024]] → retrospectivo; [[GonzalezVelez_2026_TropicalDryForest|GonzalezVelez 2026]] → retrospectivo; [[Zhang_2023_MonitoringMonthlyTropical|Zhang 2023]] → retrospectivo; [[Reiche_2021_ForestDisturbanceAlerts|Reiche 2021]] → sistema operacional (alertas); [[Reiche_2024_IntegratingSatelliteForest|Reiche 2024]] → avaliação de sistemas operacionais; [[Ygorra_2024_NearRealTime|Ygorra 2024]] → protótipo de quase tempo real; [[Doblas_2022_DETEROperationalNear|Doblas 2022]] → sistema operacional (alertas); [[Glazer_2025_TEMPOGlobalTemporal|Glazer 2025]] → série retrospectiva com aviso de latência; [[Etten_2021_SpaceNetMultiTemporal|Etten 2021]] → retrospectivo (benchmark); [[Metzger_2023_UrbanChangeForecasting|Metzger 2023]] → retrospectivo (previsão).
 - “candidato a sistema operacional” significa apenas que o texto menciona operação e alertas; **deve ser verificado** (ex.: sistemas DETER).
 - Lacuna principal: [[L01_ValidacaoOperacional]].
 

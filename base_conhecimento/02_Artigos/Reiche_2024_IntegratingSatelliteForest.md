@@ -9,22 +9,25 @@ arquivo_fonte: "coleta/P118_Reiche2024_Integrating-satellite-based-forest-distur
 markdown_fonte: "output/pdf/P118_Reiche2024_Integrating-satellite-based-forest-disturbance-alerts-improv/document.md"
 paginas: 23
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e perturbação florestal]]", "[[Edificacoes|Edificações e urbanização]]"]
-sensores: ["[[Landsat|Landsat]]", "[[Sentinel1|Sentinel-1]]", "[[Sentinel2|Sentinel-2]]"]
-conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]", "[[MapBiomas|MapBiomas]]"]
+status_leitura: "lido (parcial)"
+relevancia_objetivo: "B"
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[Landsat|Landsat]]", "[[Sentinel1|Sentinel-1]]", "[[Sentinel2|Sentinel-2]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
+conjuntos_dados: []
 metodos: []
-preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Rotulagem|Rotulagem e anotação]]"]
+preparo: []
 validacao: []
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+ferramentas: []
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Reiche 2024 — Integrating satellite-based forest disturbance alerts improves detection timeliness and confidence
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Integração de alertas com validação em PlanetScope de 3,7 m.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -35,6 +38,10 @@ tags: [artigo, leitura/automatica]
 - **Tipo de documento:** artigo completo (texto integral convertido).
 
 ## 2. Problema investigado e contribuição principal
+
+**Evidência (leitura):**
+
+**Integrar alertas de perturbação florestal** de sistemas diferentes (**RADD** de Sentinel-1, **GLAD-S2** de Sentinel-2 e **GLAD-Landsat**) para detectar mais cedo e com mais confiança, em **dez sítios de 1° (~12.000 km²) na Amazônia**, ao longo de 2021 (p. 1–5).
 
 **Resumo detectado automaticamente (p. 2):** Satellite-based near-real-time forest disturbance alerting systems have been widely used to support law enforcement actions against illegal and unsustainable human activities in tropical forests. The availability of multiple optical and radar-based forest disturbance alerts, each with varying detection capabilities depending mainly on the satellite sensor used, poses a challenge for users in selecting the most suitable system for their monitoring needs and workflow. Integrating multiple alerts holds the potential to address the limitations of individual systems. We integrated radar-based RAdar for Detecting Deforestation (RADD) (Sentinel-1), and optical-based Global Land Analysis and Discovery Sentinel-2 (GLAD-S2) and GLAD-Landsat alerts using two confidence rulesets at ten 1 [◦] sites across the Amazon Basin. Alert integration resulted in faster detection of new disturbances by days to …
 
@@ -50,6 +57,12 @@ tags: [artigo, leitura/automatica]
 - “However, it reports tree cover loss only within the boundary of the primary forest mask of (Turubanova et al 2018) with 2001–2018 forest loss from (Hansen et al 2013) removed.” (p. 7, seção 2.2. Satellite alert products)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Dez sítios com tipos de mudança diferentes (incêndio em larga escala, desmatamento grande e pequeno para agricultura, corte seletivo, mineração em pequena escala, grandes tombamentos) e diferentes frequências de nuvem; contagem média de observações por sítio em 2021 (Sentinel-1 28–88, Sentinel-2 17–42 e Landsat 8–22) (p. 5–6, tabela 1).
+- Máscara de floresta úmida primária 2001 menos perda 2001–2020 e mangue (p. 5).
+- **Validação com PlanetScope de 3,7 m**, com apoio de Sentinel e Landsat quando a nuvem impediu a leitura visual (p. 9).
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **Landsat**: 25 ocorrências (p. 2, 3, 4, 5, 6)
@@ -75,15 +88,32 @@ tags: [artigo, leitura/automatica]
 
 ## 6. Análise: tarefa, modelos, atributos, arquitetura, estratégia temporal, treinamento, hiperparâmetros e baselines
 
+**Evidência (leitura) — Método de integração:**
+
+- **Regras de confiança** baixa, alta e **mais alta** (ruleset 1 e 2): mais alta quando três sistemas detectam (ao menos confiança baixa) ou dois com confiança alta; o ruleset 2 é mais conservador (p. 7–8).
+- Integração por **pixel** e também com **regra de vizinhança** (alertas a até 20–100 m reforçam a confiança uns dos outros, limite de 180 dias) (p. 8–9).
+
 - **Estratégia temporal (detecção automática, verificar):** imagem única ou não detectado (auto)
 **Hiperparâmetros detectados automaticamente (verificar):**
 - tamanho do patch: “20 × 22 m (10 m pixel” (p. 6)
 
 ## 7. Validação: divisão espacial e temporal, independência, desbalanceamento, vazamento e testes externos
 
-Não informado (nada detectado automaticamente).
+**Evidência (leitura) — Avaliação:**
+
+- **Latência:** diferença entre a data de cada sistema e a primeira data de baixa confiança entre os três; só alertas que chegaram à confiança alta (p. 9).
+- **Acurácia:** usuário e produtor ajustados por área, **250 pontos por sítio em 5 estratos** (3 sistemas, 2, 1, sem perturbação em 200 m, sem perturbação fora), unidade de 10 m com **tolerância de 30 m** pela diferença de geometria entre radar e óptico (p. 9–10).
+
+
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
+
+**Evidência (leitura) — Resultados:**
+
+- Em média, RADD detecta primeiro em 3 sítios e GLAD-S2 nos demais; o GLAD-Landsat tem maior atraso (p. 10).
+- **Integração dos três:** detecção mais cedo em média 16 dias (vs RADD), 9 (vs GLAD-S2) e 38 (vs GLAD-L); até 53, 33 e 70 dias por sítio; o tempo até alta confiança cai para 26 dias, e para a mais alta confiança são 45 (ruleset 1) e 73 dias (ruleset 2) (p. 10).
+- **Acurácia do produtor (todos os alertas):** GLAD-S2 85,7 %, RADD 60,2 %, GLAD-L 38,3 %; **combinados 97 %** (alta e mais alta: 92,2 %); a classe de confiança mais alta tem produtor 57,1 % (ruleset 1) e 50,3 % (ruleset 2) (p. 10–11). O resumo diz que a classe mais alta **não teve falso positivo** e que a regra de vizinhança aumenta a confiança mas também os falsos positivos (p. 1).
+- RADD falha em fogo e em grandes limpezas com resto de material (backscatter semelhante ao da floresta) (p. 10–11).
 
 **Trechos numéricos detectados automaticamente (verificar):**
 - “Detection accuracy The producer’s accuracy (detection rate; 100%— omission error) for individual alert systems exhibit large site-specific differences (figure 5).” (p. 10, seção 45 d to achieve the highest confidence using rules)
@@ -92,6 +122,10 @@ Não informado (nada detectado automaticamente).
 - “GLAD-L consistently displayed the lowest producer’s accuracy across all sites averaging 38.3% (14.2%–91.2%).” (p. 10, seção 45 d to achieve the highest confidence using rules)
 
 ## 9. Limitações e condições de aplicabilidade
+
+**Evidência (leitura) — Limites e observações:**
+
+- **Observações minhas:** (a) é uma avaliação em **2021 e em dez sítios**; os números por sítio variam muito (RADD de 10,8 % a 84,6 % de produtor); (b) a referência PlanetScope de 3,7 m também é visual e limitada por nuvem (p. 9); (c) a combinação de 97 % pode vir com mais falsos positivos nos níveis baixos; o texto resume que a classe mais alta fica sem falso positivo, mas com produtor de ~50 %; (d) o trabalho trata de **alertas prontos**, não de aprendizado de máquina próprio.
 
 **Trechos detectados automaticamente (verificar contexto):**
 - “This approach falls short in providing a nuanced understanding of the distinct advantages and limitations of the systems associated with different change types (e.g. fine-scale detections or wildfires) and regions characterized by persisten” (p. 4, seção 10 m in Sentinel-1 and − 2 data, for instance, enables)
@@ -106,26 +140,47 @@ Não informado (nada detectado automaticamente).
 
 ## 11. Aplicabilidade ao monitoramento contínuo
 
-- **Classificação (evidência):** candidato a sistema operacional (verificar no texto). menções: operacional 5, alertas 230, quase tempo real 7
+- **Classificação (evidência):** avaliação de sistemas operacionais. Compara a latência de alertas operacionais e mostra ganhos de 9 a 38 dias ao integrá-los.
 - menções de termos de monitoramento (contagem, não avaliação): Alertas 230 (p. 1, 2, 3, 4, 5); Persistência / confirmação 8 (p. 4, 5, 6, 7, 8); Quase tempo real 7 (p. 2, 3, 4, 7, 15); Sistema operacional 5 (p. 3, 4, 6, 14); Latência / frequência 2 (p. 3, 6)
+
+**Interpretação — O que reaproveitar:**
+
+- **Integração de várias fontes com níveis de confiança** (um alerta confirmado por duas fontes sobe de classe) como modelo para combinar um detector Planet com alertas externos (RADD, GLAD, DETER).
+- **Métrica de latência por pixel** (dias de atraso em relação ao primeiro alerta) para comparar sistemas.
+- **Estratos de amostragem por concordância entre sistemas** (3, 2, 1 alertas) para estimar falso positivo.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Os alertas têm 10–30 m; o Planet de 5 m detecta clareiras menores (ver P91), então a combinação é complementar.
 
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[Landsat|Landsat]] — 25 ocorrências (p. 2, 3, 4, 5, 6)
-- utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 19 ocorrências (p. 2, 3, 5, 6, 8)
-- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 16 ocorrências (p. 2, 3, 4, 5, 6)
-- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 18 ocorrências (p. 2, 3, 4, 5, 6)
-- emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 3 ocorrências (p. 3, 4)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 6 ocorrências (p. 2, 6, 7, 16)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 24 ocorrências (p. 3, 4, 5, 6, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 6 ocorrências (p. 2, 7, 8, 9, 14)
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 230 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 8 ocorrências (p. 4, 5, 6, 7, 8)
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 7 ocorrências (p. 2, 3, 4, 7, 15)
+- utiliza dado/sensor: [[Landsat|Landsat]] — 25 ocorrências (p. 2, 3, 4, 5, 6)
+- utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 19 ocorrências (p. 2, 3, 5, 6, 8)
+- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 16 ocorrências (p. 2, 3, 4, 5, 6)
+- utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 5 ocorrências (p. 5, 8, 9, 16)
+- referencia (suporte manual da leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[ReferenciaVisual|Referência por interpretação visual]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo integra o alerta de [[Reiche_2021_ForestDisturbanceAlerts|Reiche 2021]] — P118 combina RADD (P119), GLAD-S2 e GLAD-Landsat; o produtor médio chega a 97%.
+
+## Figuras selecionadas
+
+![[Reiche_2024_IntegratingSatelliteForest_p12_Figure6.png|520]]
+*Figure 6. Disturbance alerts at two sample locations for each of the individual alert systems and for the integrated alert based on (p. 12; recorte do PDF convertido)*
+
+![[Reiche_2024_IntegratingSatelliteForest_p8_Figure2.png|520]]
+*Figure 2. Example of pixel-based alert integration without (A) and with (B) considering the spatial neighborhood rule. Ruleset-1 (p. 8; recorte do PDF convertido)*
+
+![[Reiche_2024_IntegratingSatelliteForest_p13_Figure7.png|520]]
+*Figure 7. Disturbance alerts at two sample locations based on all 3 systems (ruleset-1) without (distance = 0 m) and with (p. 13; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

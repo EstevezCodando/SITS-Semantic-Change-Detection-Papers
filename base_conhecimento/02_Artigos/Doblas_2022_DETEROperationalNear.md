@@ -9,22 +9,25 @@ arquivo_fonte: "coleta/P117_Doblas2022_DETER-R-An-Operational-Near-Real-Time-Tro
 markdown_fonte: "output/pdf/P117_Doblas2022_DETER-R-An-Operational-Near-Real-Time-Tropical-Forest-Distur/document.md"
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
-status_leitura: "extraído automaticamente (não lido)"
-tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e perturbação florestal]]", "[[Edificacoes|Edificações e urbanização]]"]
-sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]", "[[PlanetProdutos|Produtos Planet (visão geral)]]"]
-conjuntos_dados: ["[[DETER|DETER (INPE)]]", "[[PRODES|PRODES (INPE)]]"]
+status_leitura: "lido (parcial)"
+relevancia_objetivo: "B"
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+conjuntos_dados: ["[[DETER|DETER (INPE)]]"]
 metodos: []
-preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
+preparo: []
 validacao: []
 ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
 # Doblas 2022 — DETER-R: An Operational Near-Real Time Tropical Forest Disturbance Warning System Based on Sentinel-1 Time Series Analysis
 
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
-**Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+**Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — DETER-R: alerta operacional por radar; Planet NICFI na validação visual.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -35,6 +38,10 @@ tags: [artigo, leitura/automatica]
 - **Tipo de documento:** artigo completo (texto integral convertido).
 
 ## 2. Problema investigado e contribuição principal
+
+**Evidência (leitura):**
+
+Descrever o **DETER-R**, sistema **operacional** de alerta de desmatamento da Amazônia brasileira baseado em **séries Sentinel-1 no Google Earth Engine**, analisadas diariamente, com vetorização de aglomerados de pixels desmatados e envio dos polígonos à agência de fiscalização (p. 1).
 
 **Resumo detectado automaticamente (p. 1):** Abstract: Continuous monitoring of forest disturbance on tropical forests is a fundamental tool to support proactive preservation actions and to stop further destruction of native vegetation. Currently most of the monitoring systems in operation are based on optical imagery, and thus are flaw-prone on areas with frequent cloud cover. As this, several Synthetic Aperture Radar (SAR)-based systems have been developed recently, aiming all-weather disturbance detection. This article presents the main aspects and the results of the first year of operation of the SAR based Near Real-Time Deforestation Detection System (DETER-R), an automated deforestation detection system focused on the Brazilian Amazon. DETER-R uses the Google Earth Engine platform to preprocess and analyze Sentinel-1 SAR time series. New images are treated and analyzed daily. After the automated analysis, the system vectorize…
 
@@ -48,6 +55,11 @@ tags: [artigo, leitura/automatica]
 - “After running a prototype of the system from November 2020 to March 2021 over a set of five areas subject to special monitoring by the Brazilian National Institute for Space Research (INPE), the system was made operational, covering the Bra” (p. 3, seção 42 days.)
 
 ## 4. Dados: sensores, bandas, resoluções, quantidade de imagens e referência de campo
+
+**Evidência (leitura):**
+
+- Sentinel-1 (radar) como entrada de detecção.
+- **Planet Basemaps (NICFI), mosaicos mensais e semestrais** são usados como **imagem óptica de referência** para a validação humana e para os comparativos com o DETER óptico (p. 5–6, figuras com fundo Planet).
 
 **Detectado automaticamente (verificar):**
 - sensor/produto **SAR**: 26 ocorrências (p. 1, 2, 3, 4, 6)
@@ -80,9 +92,14 @@ tags: [artigo, leitura/automatica]
 
 ## 7. Validação: divisão espacial e temporal, independência, desbalanceamento, vazamento e testes externos
 
-Não informado (nada detectado automaticamente).
+
 
 ## 8. Resultados: métricas, valores, classes, conjunto avaliado e incertezas
+
+**Evidência (leitura) — Resultados (resumo do artigo):**
+
+- **88.572 alertas** em 12 meses de operação; validação humana com **menos de 0,2 % da área detectada** correspondendo a falso positivo (p. 1).
+- **33.234 alertas** de interesse não detectados pelo DETER óptico no mesmo período, **105.238,5 ha (~5 %) das detecções**; na estação chuvosa a taxa adicional sobe para **8,1 %** (p. 1).
 
 **Trechos numéricos detectados automaticamente (verificar):**
 - “If we assume the Major disagreement to represent the misdetections of the DETER-R system, we can conclude that our system has a User’s Accuracy of 99.4%.” (p. 18, seção 5. Discussion)
@@ -91,6 +108,10 @@ Não informado (nada detectado automaticamente).
 - “For instance, they proposed an example of such a process, in which results of the tuned system are comparable to other SAR NRT detection systems, with User’s Accuracy of around 98% and Producer’s Accuracy around 90%.” (p. 18, seção 5. Discussion)
 
 ## 9. Limitações e condições de aplicabilidade
+
+**Evidência (leitura) — Limites e observações:**
+
+- **Observações minhas:** (a) a baixa taxa de falsos positivos é medida **sobre o que os analistas revisaram e confirmaram**; não é uma estimativa de omissão; (b) por ser radar C-band, o método tem omissão conhecida em fogo e restos de corte (ver P118); (c) como li o artigo só em parte, não descrevo os parâmetros do algoritmo.
 
 **Trechos detectados automaticamente (verificar contexto):**
 - “DETER started issuing alerts in 2004, as part of the Action Plan for the Prevention and Control of Deforestation in the Legal Amazon (PPCDAm), which, coupled with the deployment of law-enforcement teams on the field and the delimitation of ” (p. 2, seção 1. Introduction)
@@ -106,29 +127,44 @@ Não informado (nada detectado automaticamente).
 
 ## 11. Aplicabilidade ao monitoramento contínuo
 
-- **Classificação (evidência):** candidato a sistema operacional (verificar no texto). menções: operacional 25, alertas 12, quase tempo real 19
+- **Classificação (evidência):** sistema operacional (alertas). Sistema do INPE com análise diária e validação humana; 88.572 alertas em 12 meses.
 - menções de termos de monitoramento (contagem, não avaliação): Sistema operacional 25 (p. 1, 2, 3, 4, 5); Quase tempo real 19 (p. 1, 2, 3, 17, 18); Alertas 12 (p. 2, 3, 8, 10, 12); Persistência / confirmação 8 (p. 8, 12, 13, 19); Falsos alertas 7 (p. 3, 10, 19)
+
+**Interpretação — O que reaproveitar:**
+
+- **Fluxo operacional** (automático → polígonos → validação humana → agência) e a **métrica de alertas complementares** (o que o óptico não viu) como forma de avaliar valor adicional de um novo detector.
+- Uso de **Planet NICFI como fundo de validação visual**.
+
+**Interpretação — Cuidados para o nosso projeto:**
+
+- Não é detector de imagem Planet; conferir os detalhes do algoritmo no PDF antes de citar parâmetros.
 
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[SAR|Radar (SAR)]] — 26 ocorrências (p. 1, 2, 3, 4, 6)
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 10 ocorrências (p. 1, 2, 4, 7, 10)
-- utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 5 ocorrências (p. 11, 13, 14, 15)
-- emprega conjunto de dados: [[DETER|DETER (INPE)]] — 108 ocorrências (p. 1, 2, 3, 4, 5)
-- emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 11 ocorrências (p. 5, 8, 11, 16, 19)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 11 ocorrências (p. 1, 2, 3, 4, 6)
-- aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 7 ocorrências (p. 1, 2, 19)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 7 ocorrências (p. 10, 11, 12, 17, 18)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 6 ocorrências (p. 3, 4, 6, 7)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 5 ocorrências (p. 2, 5, 10)
-- discute aspecto de monitoramento: [[SistemaOperacional|Sistemas operacionais]] — 25 ocorrências (p. 1, 2, 3, 4, 5)
+- referência (curado pela leitura): [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 19 ocorrências (p. 1, 2, 3, 17, 18)
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 12 ocorrências (p. 2, 3, 8, 10, 12)
-- trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
+- emprega conjunto de dados: [[DETER|DETER (INPE)]] — 108 ocorrências (p. 1, 2, 3, 4, 5)
+- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 11 ocorrências (p. 1, 2, 3, 4, 6)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo é sistema paralelo ao [[Reiche_2021_ForestDisturbanceAlerts|Reiche 2021]] — DETER-R (INPE) e RADD (Wageningen) são alertas por radar Sentinel-1; ambos usam Planet na validação.
+
+## Figuras selecionadas
+
+![[Doblas_2022_DETEROperationalNear_p6_Figure3.png|520]]
+*Figure 3. Flowchart depicting the daily operational routine of the DETER-R system. (p. 6; recorte do PDF convertido)*
+
+![[Doblas_2022_DETEROperationalNear_p9_Figure6.png|520]]
+*Figure 6 shows an example of the output of this procedure, as a spatially explicit (p. 9; recorte do PDF convertido)*
+
+![[Doblas_2022_DETEROperationalNear_p11_Figure7.png|520]]
+*Figure 7. Flowchart of validation process. (p. 11; recorte do PDF convertido)*
+
 
 ## Anotações do leitor
 

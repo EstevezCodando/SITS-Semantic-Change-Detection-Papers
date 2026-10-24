@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P126_Shafique2022_Deep-Learning-Based-Change-Detecti
 paginas: 40
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[Edificacoes|Edificações e urbanização]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
-sensores: ["[[SAR|Radar (SAR)]]", "[[WorldView|WorldView]]", "[[Landsat|Landsat]]"]
-conjuntos_dados: ["[[OSCD|OSCD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[UNet|U-Net]]", "[[RedeSiamesa|Redes siamesas]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[SVM|SVM]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[CorrecaoAtmosferica|Correção atmosférica e reflectância]]", "[[AumentoDados|Aumento de dados]]", "[[Corregistro|Corregistro e georreferenciamento]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[PrecisaoRecall|Precisão e recall]]", "[[Kappa|Coeficiente kappa]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[F1|F1]]"]
+relevancia_objetivo: "C"
+tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
+sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]"]
+conjuntos_dados: []
+metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[Transformer|Transformers]]"]
+preparo: []
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
-tags: [artigo, leitura/parcial]
+tags: [artigo, leitura/parcial, relevancia/C]
 ---
 
 # Shafique 2022 — Deep Learning-Based Change Detection in Remote Sensing Images: A Review
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Revisão de detecção de mudança até 2021 (leitura parcial).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -166,29 +169,13 @@ Revisão da **detecção de mudança com aprendizado profundo** organizada **por
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 65 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza dado/sensor: [[WorldView|WorldView]] — 10 ocorrências (p. 5, 6, 8, 10)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 8 ocorrências (p. 5, 7, 8, 11, 13)
-- emprega conjunto de dados: [[OSCD|OSCD]] — 3 ocorrências (p. 8, 18)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 29 ocorrências (p. 15, 16, 17, 18, 19)
-- utiliza método: [[UNet|U-Net]] — 23 ocorrências (p. 15, 16, 18, 19, 20)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 18 ocorrências (p. 15, 16, 17, 22, 23)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 17 ocorrências (p. 1, 4, 14, 16, 18)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 16 ocorrências (p. 15, 16, 17, 20, 21)
-- utiliza método: [[SVM|SVM]] — 7 ocorrências (p. 15, 22, 29)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 25 ocorrências (p. 19, 27, 28, 30, 31)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 11 ocorrências (p. 16, 17, 21, 27)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 10 ocorrências (p. 19, 23, 28, 30, 31)
-- é avaliado por: [[F1|F1]] — 9 ocorrências (p. 23, 27, 28, 30, 31)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 29 ocorrências (p. 10, 14, 15, 16, 17)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 12 ocorrências (p. 15, 16, 22, 25, 27)
-- aplica etapa de preparo: [[CorrecaoAtmosferica|Correção atmosférica e reflectância]] — 9 ocorrências (p. 2, 5, 13, 15, 22)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 5 ocorrências (p. 18, 19, 21, 23, 31)
-- aplica etapa de preparo: [[Corregistro|Corregistro e georreferenciamento]] — 3 ocorrências (p. 2, 26, 32)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 6 ocorrências (p. 18, 19, 21, 23)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
+- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 65 ocorrências (p. 1, 2, 3, 4, 5)
+- referência (curado pela leitura): [[Sentinel1|Sentinel-1]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 29 ocorrências (p. 15, 16, 17, 18, 19)
+- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 17 ocorrências (p. 1, 4, 14, 16, 18)
+- referência (curado pela leitura): [[Transformer|Transformers]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Desbalanceamento|Desbalanceamento de classes]] — suporte vindo da leitura/título/resumo
 
 ## Figuras selecionadas
 

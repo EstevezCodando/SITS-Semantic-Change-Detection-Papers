@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P34_Shen2026_Foundation-Model-Driven-Semantic-Change
 paginas: 19
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
-sensores: []
-conjuntos_dados: ["[[SECOND|SECOND]]", "[[HRSCD|HRSCD]]"]
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[RedeSiamesa|Redes siamesas]]", "[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[CorrecaoAtmosferica|Correção atmosférica e reflectância]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[Desbalanceamento|Desbalanceamento de classes]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[PrecisaoRecall|Precisão e recall]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
+sensores: ["[[Landsat|Landsat]]"]
+conjuntos_dados: ["[[SECOND|SECOND]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Shen 2026 — Foundation Model-Driven Semantic Change Detection in Remote Sensing Imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Mudança semântica com modelo fundacional (SECOND, LandsatSCD); arquitetura transferível, não testada em 3–5 m.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -168,26 +171,19 @@ Como acoplar **modelos fundacionais de sensoriamento remoto** à detecção de m
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - emprega conjunto de dados: [[SECOND|SECOND]] — 11 ocorrências (p. 8, 9, 10, 11, 13)
-- emprega conjunto de dados: [[HRSCD|HRSCD]] — 5 ocorrências (p. 3, 9, 11)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 39 ocorrências (p. 1, 2, 3, 4, 6)
 - utiliza método: [[Transformer|Transformers]] — 33 ocorrências (p. 3, 4, 5, 8, 9)
 - utiliza método: [[Mamba|Mamba / modelos de espaço de estados]] — 12 ocorrências (p. 3, 4, 9, 11, 12)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 7 ocorrências (p. 3, 17, 18)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 6 ocorrências (p. 3, 12)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 6 ocorrências (p. 2, 3, 4, 5)
-- é avaliado por: [[IoU|IoU / mIoU]] — 13 ocorrências (p. 8, 11, 12, 13, 14)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 12 ocorrências (p. 8, 9, 11, 12, 13)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 12 ocorrências (p. 7, 8, 11, 15, 16)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 12 ocorrências (p. 1, 2, 5, 8, 9)
-- aplica etapa de preparo: [[CorrecaoAtmosferica|Correção atmosférica e reflectância]] — 5 ocorrências (p. 1, 4, 9, 13, 16)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 4 ocorrências (p. 4, 5, 8)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 3 ocorrências (p. 7, 11, 16)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 3 ocorrências (p. 8, 11)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 9 ocorrências (p. 1, 2, 3, 9, 12)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 5 ocorrências (p. 2, 4, 6, 14)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 7, 8, 9)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 4 ocorrências (p. 4, 5, 8)
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Landsat|Landsat]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo usa a mesma família de encoder de [[Chen_2024_ChangeMambaRemoteSensing|Chen 2024]] — P34 integra o VMamba-B ao seu decodificador (SeK 25,31 no SECOND), a mesma família Mamba de P28 (SeK 22,92 no SECOND).
+- [[Li_2024_NewLearningParadigm|Li 2024]] compartilha a abordagem de modelo fundacional com este artigo — P137 congela um modelo fundacional (CLIP) e P34 usa o PerA com decodificador modular; ambos em benchmarks bitemporais.
+- [[Szwarcman_2024_PrithviVersatileMultitemporal|Szwarcman 2024]] é modelo fundacional afim a este artigo — P34 testa SatMAE, ScaleMAE e SeCo como encoders; P32 é um encoder multitemporal em HLS de 30 m (interpretação: candidato a encoder, sem teste em mudança).
 
 ## Figuras selecionadas
 

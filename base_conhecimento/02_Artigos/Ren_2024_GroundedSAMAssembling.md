@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P57_Ren2024_Grounded-SAM-Assembling-Open-World-Model
 paginas: 11
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
 metodos: ["[[SAM|Segment Anything (SAM)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
+preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Ren 2024 — Grounded SAM: Assembling Open-World Models for Diverse Visual Tasks
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -94,7 +97,6 @@ Não informado (nenhum trecho com métrica e valor detectado).
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 70 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 25 ocorrências (p. 1, 2, 3, 4, 5)
 
 ## Anotações do leitor
 

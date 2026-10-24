@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P05_Zaraza-Aguilera2022_Change-Detection-over-mining
 paginas: 10
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[SITS|Séries temporais de imagens (SITS)]]", "[[Mineracao|Mineração]]"]
-sensores: ["[[Sentinel2|Sentinel-2]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[Mineracao|Mineração]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
+sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: []
-validacao: ["[[IoU|IoU / mIoU]]", "[[Kappa|Coeficiente kappa]]"]
+metodos: ["[[UNet|U-Net]]"]
+preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
+validacao: ["[[IoU|IoU / mIoU]]", "[[Kappa|Coeficiente kappa]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]", "[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # ZarazaAguilera 2022 — Change Detection over mining areas using Deep Neural Networks from Planetscope image time series
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — PlanetScope de 3 m em mineração; mudança direta vs pós-classificação; protocolo de Olofsson.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -146,16 +149,19 @@ Comparar **duas estratégias de deep learning** para detectar mudança em **áre
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 4 ocorrências (p. 2, 5)
 - utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 3 ocorrências (p. 1, 2)
+- trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 5 ocorrências (p. 1, 2, 3)
+- referência (curado pela leitura): [[PatchesTiles|Recorte em patches/tiles]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
+- referencia (suporte manual da leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
 - é avaliado por: [[IoU|IoU / mIoU]] — 19 ocorrências (p. 4, 5)
 - é avaliado por: [[Kappa|Coeficiente kappa]] — 8 ocorrências (p. 1, 7)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
-- referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[EstimativaArea|Estimativa de área com intervalo de confiança]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[F1|F1]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo aplica o protocolo de avaliação de [[Olofsson_2014_GoodPracticesEstimating|Olofsson 2014]] — P05 valida os mapas de mudança pelo método de Olofsson: (p. 4).

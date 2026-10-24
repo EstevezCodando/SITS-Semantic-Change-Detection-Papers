@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P01_Wagner2023_Mapping-Tropical-Forest-Cover-and-Def
 paginas: 20
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "A"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
-sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[Landsat|Landsat]]"]
+sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: ["[[PRODES|PRODES (INPE)]]", "[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Textura|Textura (GLCM)]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[F1|F1]]"]
-ferramentas: ["[[TensorFlow|TensorFlow / Keras]]"]
-tags: [artigo, leitura/profunda]
+preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[Rotulagem|Rotulagem e anotação]]"]
+validacao: ["[[AmostraIndependente|Amostra independente]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+ferramentas: []
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Wagner 2023 — Mapping Tropical Forest Cover and Deforestation with Planet NICFI Satellite Images and Deep Learning in Mato Grosso State (Brazil) from 2015 to 2021
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — NICFI mensal de 4,77 m com U-Net para cobertura arbórea e desmatamento por diferença; validado com LiDAR, PRODES e GFC.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -175,25 +178,27 @@ Mapear cobertura arbórea e desmatamento no Mato Grosso (~1 milhão de km²) com
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 62 ocorrências (p. 3, 4, 5, 6, 7)
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 21 ocorrências (p. 2, 3, 4, 5, 13)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 7 ocorrências (p. 3, 4, 5, 11, 15)
 - emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 14 ocorrências (p. 3, 4, 5, 6, 11)
 - emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 6 ocorrências (p. 3, 5, 15, 16)
 - utiliza método: [[UNet|U-Net]] — 25 ocorrências (p. 3, 4, 6, 7, 8)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 4, 16)
-- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 7, 14, 17)
-- usa ferramenta: [[TensorFlow|TensorFlow / Keras]] — 4 ocorrências (p. 3, 6, 17)
+- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 26 ocorrências (p. 4, 5, 6, 7, 8)
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 12 ocorrências (p. 3, 6, 7, 8, 11)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 12 ocorrências (p. 6, 14, 15, 16)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 10 ocorrências (p. 3, 4, 5, 6, 7)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 6 ocorrências (p. 4, 6, 15)
-- trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Normalizacao|Normalização e escala radiométrica]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[Rotulagem|Rotulagem e anotação]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[AmostraIndependente|Amostra independente]] — suporte vindo da leitura/título/resumo
+- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 7, 14, 17)
+- referência (curado pela leitura): [[AcuraciaGlobal|Acurácia global (OA)]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo tem lacuna complementada por [[Dalagnol_2023_MappingTropicalForest|Dalagnol 2023]] — P01 declara: (p. 15); P02 mapeia degradação com U-Net em Planet NICFI (leitura parcial).
 - este artigo convergem na cadência do NICFI [[Vizzari_2022_PlanetScopeSentinelSentinel|Vizzari 2022]] — Ambos descrevem a cadência do NICFI: (p. 3); (§ 1).
+- [[Zhang_2023_MonitoringMonthlyTropical|Zhang 2023]] é alternativa sem rótulos a este artigo — Ambos usam NICFI de ~5 m para a supressão de dossel: P91 usa o índice rHue e a persistência de 3 meses sem treinar modelo; P01 treina uma U-Net e deriva o desmatamento por diferença de mapas.
+- [[Masolele_2024_MappingDiversityLand|Masolele 2024]] usa o mesmo mosaico NICFI de 4,77 m de este artigo — P102 classifica o uso após a perda do Hansen e P01 classifica a floresta por data; ambos usam as quatro bandas do NICFI.
+- [[Wang_2024_ValidationDeforestationHigh|Wang 2024]] compartilha o produto NICFI e o alvo de este artigo — P04 valida alertas de desmatamento com par NICFI e U-Net bitemporal (F1 0,83), enquanto P01 classifica por data.
+- [[Carter_2024_DetectionForestDisturbance|Carter 2024]] replica a receita de este artigo — P03 aplica a ideia de P01 (U-Net por data e perda por diferença anual) ao produto visual RGB do PlanetScope e valida a perda contra LiDAR e CALFIRE.
 
 ## Figuras selecionadas
 

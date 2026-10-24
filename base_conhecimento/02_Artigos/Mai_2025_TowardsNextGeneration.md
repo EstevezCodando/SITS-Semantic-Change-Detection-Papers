@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P172_Mai2025_Towards-the-next-generation-of-Geospati
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[CNN|Redes convolucionais (CNN)]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]", "[[LSTM|Redes recorrentes (LSTM)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[CNN|Redes convolucionais (CNN)]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Mai 2025 — Towards the next generation of Geospatial Artificial Intelligence
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -99,13 +102,6 @@ Não informado (nenhum trecho de limitação detectado).
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 16 ocorrências (p. 2, 3, 10, 11, 12)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 14 ocorrências (p. 4, 7, 9, 14)
-- utiliza método: [[Transformer|Transformers]] — 7 ocorrências (p. 4, 6, 7, 12)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 5 ocorrências (p. 11, 12)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 3 ocorrências (p. 11, 12, 14)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 3 ocorrências (p. 7, 8, 11)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 4 ocorrências (p. 8, 11)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 7 ocorrências (p. 9, 13)
-- discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 7 ocorrências (p. 7, 8, 9)
 
 ## Anotações do leitor
 

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P29_Zheng2024_Segment-Any-Change/document.md"
 paginas: 15
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: []
 conjuntos_dados: ["[[S2Looking|S2Looking]]", "[[LEVIRCD|LEVIR-CD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]"]
+metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]", "[[ModeloFundacional|Modelos fundacionais]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Zheng 2024 — Segment Any Change
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -110,12 +113,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 64 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[Transformer|Transformers]] — 29 ocorrências (p. 4, 7, 8, 9, 10)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 15 ocorrências (p. 1, 2, 3, 6, 7)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 10 ocorrências (p. 8, 9, 10)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 5 ocorrências (p. 3, 6, 9)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 22 ocorrências (p. 5, 6, 7, 8)
-- é avaliado por: [[F1|F1]] — 6 ocorrências (p. 7, 8, 9, 10)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 13 ocorrências (p. 1, 4, 6, 7, 8)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 10 ocorrências (p. 1, 2, 3, 4)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

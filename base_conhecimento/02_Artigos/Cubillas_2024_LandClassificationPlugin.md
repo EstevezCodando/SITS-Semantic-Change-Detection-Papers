@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P159_Cubillas2024_Land-Classification-Plugin-for-QGI
 paginas: 7
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Edificacoes|Edificações e urbanização]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: []
 conjuntos_dados: []
 metodos: []
-preparo: ["[[Corregistro|Corregistro e georreferenciamento]]"]
-validacao: ["[[AcuraciaGlobal|Acurácia global (OA)]]"]
-ferramentas: ["[[QGIS|QGIS]]", "[[PyTorch|PyTorch]]", "[[GDAL|GDAL / rasterio]]"]
-tags: [artigo, leitura/automatica]
+preparo: []
+validacao: []
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Cubillas 2024 — Land Classification Plugin for QGIS Using Pix2Pix
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -95,11 +98,6 @@ Não informado (nenhum trecho de área ou período detectado automaticamente).
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 4 ocorrências (p. 1, 5, 6, 7)
-- usa ferramenta: [[QGIS|QGIS]] — 27 ocorrências (p. 1, 2, 3, 4, 5)
-- usa ferramenta: [[PyTorch|PyTorch]] — 4 ocorrências (p. 1, 2, 7)
-- usa ferramenta: [[GDAL|GDAL / rasterio]] — 4 ocorrências (p. 1, 2, 5, 7)
-- aplica etapa de preparo: [[Corregistro|Corregistro e georreferenciamento]] — 7 ocorrências (p. 1, 2, 3, 5)
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 

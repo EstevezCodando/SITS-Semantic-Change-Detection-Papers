@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P21_Ding2022_Bi-Temporal-Semantic-Reasoning-for-the-
 paginas: 14
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: ["[[SAR|Radar (SAR)]]"]
 conjuntos_dados: ["[[HRSCD|HRSCD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[UNet|U-Net]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
+metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]", "[[LSTM|Redes recorrentes (LSTM)]]"]
 preparo: []
-validacao: ["[[IoU|IoU / mIoU]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Ding 2022 — Bi-Temporal Semantic Reasoning for the Semantic Change Detection in HR Remote Sensing Images
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -110,10 +113,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 52 ocorrências (p. 1, 2, 3, 4, 7)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 11 ocorrências (p. 2, 3, 4, 5, 8)
 - utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 9 ocorrências (p. 2, 9, 10, 12, 13)
-- utiliza método: [[UNet|U-Net]] — 4 ocorrências (p. 8, 9, 10, 14)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 4 ocorrências (p. 2, 3, 13)
-- é avaliado por: [[IoU|IoU / mIoU]] — 20 ocorrências (p. 7, 8, 9)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 9 ocorrências (p. 7, 9)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 

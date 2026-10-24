@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P35_Su2026_Seg2Change-Adapting-Open-Vocabulary-Seman
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: []
 conjuntos_dados: ["[[WHUCD|WHU-CD]]", "[[LEVIRCD|LEVIR-CD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[SAM|Segment Anything (SAM)]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[Kappa|Coeficiente kappa]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[SAM|Segment Anything (SAM)]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Su 2026 — Seg2Change: Adapting Open-Vocabulary Semantic Segmentation Model for Remote Sensing Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -122,14 +125,6 @@ Não informado (nenhum trecho de limitação detectado).
 - emprega conjunto de dados: [[SECOND|SECOND]] — 8 ocorrências (p. 4, 7, 8, 10, 12)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 18 ocorrências (p. 2, 3, 4, 6, 7)
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 10 ocorrências (p. 1, 2, 3, 6, 7)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 3 ocorrências (p. 11, 14)
-- é avaliado por: [[IoU|IoU / mIoU]] — 49 ocorrências (p. 1, 6, 7, 8, 9)
-- é avaliado por: [[F1|F1]] — 38 ocorrências (p. 6, 7, 9, 10, 11)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 37 ocorrências (p. 6, 7, 8, 9, 10)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 10 ocorrências (p. 10, 12)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 22 ocorrências (p. 1, 2, 3, 4, 8)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 6 ocorrências (p. 3, 4, 6, 9, 13)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 5 ocorrências (p. 4, 9, 16)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo

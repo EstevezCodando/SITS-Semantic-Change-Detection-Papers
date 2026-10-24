@@ -305,14 +305,23 @@
       "id": "e11",
       "fromNode": "a_P10",
       "fromSide": "right",
+      "toNode": "c_RotulagemTemporal",
+      "toSide": "left",
+      "label": "refere",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e12",
+      "fromNode": "a_P10",
+      "fromSide": "right",
       "toNode": "c_Rotulagem",
       "toSide": "left",
       "label": "preparo",
       "toEnd": "arrow"
     },
     {
-      "id": "e12",
-      "fromNode": "a_P10",
+      "id": "e13",
+      "fromNode": "a_P12",
       "fromSide": "right",
       "toNode": "c_RotulagemTemporal",
       "toSide": "left",
@@ -320,19 +329,10 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e13",
-      "fromNode": "a_P12",
+      "id": "e14",
+      "fromNode": "a_P01",
       "fromSide": "right",
       "toNode": "c_Rotulagem",
-      "toSide": "left",
-      "label": "preparo",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e14",
-      "fromNode": "a_P12",
-      "fromSide": "right",
-      "toNode": "c_RotulagemTemporal",
       "toSide": "left",
       "label": "refere",
       "toEnd": "arrow"

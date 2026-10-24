@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P153_Xu2024_Specialized-Foundation-Models-Struggle-t
 paginas: 26
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: []
 conjuntos_dados: []
-metodos: ["[[TransferLearning|Aprendizado por transferência]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[CNN|Redes convolucionais (CNN)]]", "[[Transformer|Transformers]]", "[[UNet|U-Net]]"]
+metodos: ["[[TransferLearning|Aprendizado por transferência]]", "[[ModeloFundacional|Modelos fundacionais]]", "[[CNN|Redes convolucionais (CNN)]]"]
 preparo: []
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[F1|F1]]"]
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Xu 2024 — Specialized Foundation Models Struggle to Beat Supervised Baselines
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -112,10 +115,6 @@ Resumo: não localizado no texto convertido.
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 37 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 31 ocorrências (p. 1, 3, 6, 7, 8)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 25 ocorrências (p. 2, 3, 4, 5, 6)
-- utiliza método: [[Transformer|Transformers]] — 23 ocorrências (p. 2, 3, 4, 6, 12)
-- utiliza método: [[UNet|U-Net]] — 14 ocorrências (p. 1, 2, 4, 5, 6)
-- é avaliado por: [[F1|F1]] — 6 ocorrências (p. 6, 17)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 4 ocorrências (p. 19, 21, 22)
 
 ## Anotações do leitor
 

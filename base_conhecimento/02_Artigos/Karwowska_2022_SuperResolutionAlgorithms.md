@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P90_Karwowska2022_Using-Super-Resolution-Algorithms-
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[SAR|Radar (SAR)]]"]
 conjuntos_dados: []
-metodos: ["[[SuperResolucao|Super-resolução]]", "[[CNN|Redes convolucionais (CNN)]]", "[[SAM|Segment Anything (SAM)]]"]
-preparo: ["[[Reamostragem|Reamostragem]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[Textura|Textura (GLCM)]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[CorrecaoAtmosferica|Correção atmosférica e reflectância]]"]
+metodos: ["[[SuperResolucao|Super-resolução]]", "[[CNN|Redes convolucionais (CNN)]]"]
+preparo: []
 validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Karwowska 2022 — Using Super-Resolution Algorithms for Small Satellite Imagery: A Systematic Review
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -110,12 +113,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza dado/sensor: [[SAR|Radar (SAR)]] — 7 ocorrências (p. 8, 17, 18, 19, 20)
 - utiliza método: [[SuperResolucao|Super-resolução]] — 63 ocorrências (p. 1, 2, 3, 4, 8)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 20 ocorrências (p. 2, 9, 10, 11, 12)
-- utiliza método: [[SAM|Segment Anything (SAM)]] — 5 ocorrências (p. 7, 15, 16, 21)
-- aplica etapa de preparo: [[Reamostragem|Reamostragem]] — 19 ocorrências (p. 3, 4, 5, 11, 14)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 9 ocorrências (p. 4, 5, 6, 11, 12)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 7 ocorrências (p. 8, 11, 12, 13, 16)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 6 ocorrências (p. 9, 10, 19)
-- aplica etapa de preparo: [[CorrecaoAtmosferica|Correção atmosférica e reflectância]] — 4 ocorrências (p. 4, 8, 20)
 
 ## Anotações do leitor
 

@@ -8,11 +8,33 @@ tags: [painel, grafo]
 
 O arquivo `.obsidian/graph.json` já traz os filtros e as cores abaixo. O Obsidian reescreve esse arquivo quando você mexe nos controles, e a interface pode variar conforme a versão instalada: se algum controle não existir na sua versão, aplique os valores manualmente em *Grafo → Configurações*.
 
-## Cores por pasta (grupos)
+## Como o grafo foi organizado
 
-| Pasta | Cor | Consulta do grupo |
+- **Artigos por relevância para o objetivo** (Planet de ~5 m): quatro tons de azul, do mais escuro (A, dado Planet de 3–5 m e alvo próximo, lido) ao mais claro (D, não lido). A definição está em [[Trilha_Objetivo_Planet5m]].
+- **Conceitos de preparo, validação e métrica só se ligam a artigos lidos.** Artigos não lidos ligam apenas a sensor, dado, tarefa e poucos métodos, para que conceitos genéricos (rotulagem, F1, IoU) não virem nós ligados a tudo.
+- **Painéis, anexos e templates ficam ocultos** (campo de busca do grafo). Os mapas (`01_Mapas`) ficam em cinza-escuro e funcionam como centros de cada etapa.
+- Relações entre artigos (usa o dado de, valida com, compara-se com) são links com explicação na seção 12 de cada nota.
+
+## Quatro visões úteis
+
+| Pergunta | Como ver |
+|---|---|
+| Quais artigos importam para o objetivo e como se relacionam? | Campo de busca do grafo: `tag:#relevancia/A OR tag:#relevancia/B` (só artigos, ligados pelas relações) |
+| O que sustenta cada etapa do fluxo? | Abra [[Trilha_Objetivo_Planet5m]] → Grafo local, profundidade 2 |
+| Quem usa um conceito ou dado? | Abra a nota do conceito → Grafo local, profundidade 1 |
+| Quais são as lacunas? | Campo de busca: `path:"09_Lacunas" OR tag:#relevancia/A` |
+
+## Cores (grupos)
+
+O Obsidian aplica a cor do **primeiro grupo da lista** que casa com o nó; se as cores aparecerem trocadas na sua versão, arraste os grupos de relevância para o topo.
+
+| Grupo | Cor | Consulta |
 |---|---|---|
-| 02_Artigos | azul `#3B82F6` | `path:"02_Artigos"` |
+| Artigo relevância A | azul-escuro `#1E40AF` | `tag:#relevancia/A` |
+| Artigo relevância B | azul `#3B82F6` | `tag:#relevancia/B` |
+| Artigo relevância C | azul-claro `#93C5FD` | `tag:#relevancia/C` |
+| Artigo não lido (D) | cinza-azulado `#CBD5E1` | `tag:#relevancia/D` |
+| Mapas | cinza-escuro `#475569` | `path:"01_Mapas"` |
 | 03_Dados | ciano `#06B6D4` | `path:"03_Dados"` |
 | 04_Preparo | laranja `#F97316` | `path:"04_Preparo"` |
 | 05_Metodos | roxo `#8B5CF6` | `path:"05_Metodos"` |
@@ -25,7 +47,7 @@ Ciano e turquesa são próximos por pedido de paleta; se confundirem, aumente a 
 
 ## Filtros
 
-- Campo de busca do grafo: `-path:"90_Anexos" -path:"99_Templates" -file:README` (esconde anexos, templates e README).
+- Campo de busca do grafo: `-path:"00_Painel" -path:"90_Anexos" -path:"99_Templates" -file:README -file:"Sem título" -file:Matriz_Comparativa -file:Estudos_Retrospectivos_vs_Operacionais` (esconde painéis, anexos, templates, README e as duas tabelas que listam quase todos os artigos e virariam centros artificiais).
 - Desmarque “Anexos” e “Tags”; mantenha “Existentes apenas” ligado para ocultar links não resolvidos.
 - Para investigar, abra **Grafo local** (ícone no painel da nota) com **profundidade 1** (vizinhos diretos) ou **2** (vizinhos dos vizinhos). Em um conceito, a profundidade 1 mostra os artigos que o utilizam.
 

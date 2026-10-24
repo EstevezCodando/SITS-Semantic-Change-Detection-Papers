@@ -6,7 +6,7 @@
       "x": 0,
       "y": 0,
       "width": 400,
-      "height": 2630,
+      "height": 2370,
       "label": "Artigos",
       "color": "#3B82F6"
     },
@@ -101,39 +101,19 @@
       "file": "02_Artigos/Doblas_2024_DETERNewINPE.md"
     },
     {
-      "id": "a_P117",
-      "x": 40,
-      "y": 2410,
-      "width": 320,
-      "height": 180,
-      "color": "#3B82F6",
-      "type": "file",
-      "file": "02_Artigos/Doblas_2022_DETEROperationalNear.md"
-    },
-    {
       "id": "g_1",
       "type": "group",
       "x": 520,
       "y": 0,
       "width": 400,
-      "height": 2630,
+      "height": 2370,
       "label": "Conceitos",
       "color": "#8B5CF6"
     },
     {
-      "id": "c_MetricasMudancaSemantica",
-      "x": 560,
-      "y": 70,
-      "width": 320,
-      "height": 180,
-      "color": "#8B5CF6",
-      "type": "file",
-      "file": "06_Validacao/MetricasMudancaSemantica.md"
-    },
-    {
       "id": "c_Generalizacao",
       "x": 560,
-      "y": 330,
+      "y": 70,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -141,19 +121,19 @@
       "file": "06_Validacao/Generalizacao.md"
     },
     {
-      "id": "c_DivisaoEspacialBlocos",
+      "id": "c_MetricasMudancaSemantica",
       "x": 560,
-      "y": 590,
+      "y": 330,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
       "type": "file",
-      "file": "06_Validacao/DivisaoEspacialBlocos.md"
+      "file": "06_Validacao/MetricasMudancaSemantica.md"
     },
     {
       "id": "c_Desbalanceamento",
       "x": 560,
-      "y": 850,
+      "y": 590,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -161,9 +141,29 @@
       "file": "06_Validacao/Desbalanceamento.md"
     },
     {
-      "id": "c_Alertas",
+      "id": "c_DivisaoEspacialBlocos",
+      "x": 560,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "06_Validacao/DivisaoEspacialBlocos.md"
+    },
+    {
+      "id": "c_EstimativaArea",
       "x": 560,
       "y": 1110,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "file",
+      "file": "06_Validacao/EstimativaArea.md"
+    },
+    {
+      "id": "c_Alertas",
+      "x": 560,
+      "y": 1370,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -173,7 +173,7 @@
     {
       "id": "c_QuaseTempoReal",
       "x": 560,
-      "y": 1370,
+      "y": 1630,
       "width": 320,
       "height": 180,
       "color": "#8B5CF6",
@@ -181,22 +181,12 @@
       "file": "08_Monitoramento/QuaseTempoReal.md"
     },
     {
-      "id": "c_EstimativaArea",
-      "x": 560,
-      "y": 1630,
-      "width": 320,
-      "height": 180,
-      "color": "#8B5CF6",
-      "type": "file",
-      "file": "06_Validacao/EstimativaArea.md"
-    },
-    {
       "id": "g_2",
       "type": "group",
       "x": 1040,
       "y": 0,
       "width": 400,
-      "height": 2630,
+      "height": 2370,
       "label": "Lacunas",
       "color": "#EF4444"
     },
@@ -246,22 +236,13 @@
       "id": "e0",
       "fromNode": "a_P13",
       "fromSide": "right",
-      "toNode": "c_Generalizacao",
-      "toSide": "left",
-      "label": "validação",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e1",
-      "fromNode": "a_P13",
-      "fromSide": "right",
       "toNode": "c_MetricasMudancaSemantica",
       "toSide": "left",
       "label": "refere",
       "toEnd": "arrow"
     },
     {
-      "id": "e2",
+      "id": "e1",
       "fromNode": "a_P13",
       "fromSide": "right",
       "toNode": "c_DivisaoEspacialBlocos",
@@ -270,12 +251,21 @@
       "toEnd": "arrow"
     },
     {
+      "id": "e2",
+      "fromNode": "a_P13",
+      "fromSide": "right",
+      "toNode": "c_Generalizacao",
+      "toSide": "left",
+      "label": "validação",
+      "toEnd": "arrow"
+    },
+    {
       "id": "e3",
-      "fromNode": "a_P12",
+      "fromNode": "a_P13",
       "fromSide": "right",
       "toNode": "c_Desbalanceamento",
       "toSide": "left",
-      "label": "validação",
+      "label": "refere",
       "toEnd": "arrow"
     },
     {
@@ -298,24 +288,33 @@
     },
     {
       "id": "e6",
-      "fromNode": "a_P10",
+      "fromNode": "a_P12",
       "fromSide": "right",
-      "toNode": "c_MetricasMudancaSemantica",
+      "toNode": "c_Desbalanceamento",
       "toSide": "left",
-      "label": "refere",
+      "label": "validação",
       "toEnd": "arrow"
     },
     {
       "id": "e7",
       "fromNode": "a_P10",
       "fromSide": "right",
-      "toNode": "c_DivisaoEspacialBlocos",
+      "toNode": "c_MetricasMudancaSemantica",
       "toSide": "left",
       "label": "refere",
       "toEnd": "arrow"
     },
     {
       "id": "e8",
+      "fromNode": "a_P10",
+      "fromSide": "right",
+      "toNode": "c_DivisaoEspacialBlocos",
+      "toSide": "left",
+      "label": "refere",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e9",
       "fromNode": "a_P18",
       "fromSide": "right",
       "toNode": "c_Desbalanceamento",
@@ -324,7 +323,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e9",
+      "id": "e10",
       "fromNode": "a_P18",
       "fromSide": "right",
       "toNode": "c_DivisaoEspacialBlocos",
@@ -333,30 +332,21 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e10",
-      "fromNode": "a_P19",
-      "fromSide": "right",
-      "toNode": "c_Desbalanceamento",
-      "toSide": "left",
-      "label": "validação",
-      "toEnd": "arrow"
-    },
-    {
       "id": "e11",
       "fromNode": "a_P19",
       "fromSide": "right",
-      "toNode": "c_Generalizacao",
+      "toNode": "c_MetricasMudancaSemantica",
       "toSide": "left",
-      "label": "validação",
+      "label": "refere",
       "toEnd": "arrow"
     },
     {
       "id": "e12",
       "fromNode": "a_P19",
       "fromSide": "right",
-      "toNode": "c_MetricasMudancaSemantica",
+      "toNode": "c_Desbalanceamento",
       "toSide": "left",
-      "label": "refere",
+      "label": "validação",
       "toEnd": "arrow"
     },
     {
@@ -370,42 +360,24 @@
     },
     {
       "id": "e14",
-      "fromNode": "a_P115",
+      "fromNode": "a_P05",
       "fromSide": "right",
-      "toNode": "c_Alertas",
+      "toNode": "c_EstimativaArea",
       "toSide": "left",
-      "label": "monitora",
+      "label": "refere",
       "toEnd": "arrow"
     },
     {
       "id": "e15",
-      "fromNode": "a_P116",
+      "fromNode": "a_P46",
       "fromSide": "right",
-      "toNode": "c_QuaseTempoReal",
+      "toNode": "c_EstimativaArea",
       "toSide": "left",
-      "label": "monitora",
+      "label": "refere",
       "toEnd": "arrow"
     },
     {
       "id": "e16",
-      "fromNode": "a_P117",
-      "fromSide": "right",
-      "toNode": "c_QuaseTempoReal",
-      "toSide": "left",
-      "label": "monitora",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e17",
-      "fromNode": "a_P117",
-      "fromSide": "right",
-      "toNode": "c_Alertas",
-      "toSide": "left",
-      "label": "monitora",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "e18",
       "fromNode": "c_Alertas",
       "fromSide": "right",
       "toNode": "l_L01_ValidacaoOperacional",
@@ -414,7 +386,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e19",
+      "id": "e17",
       "fromNode": "c_Desbalanceamento",
       "fromSide": "right",
       "toNode": "l_L03_MudancaRara",
@@ -423,7 +395,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e20",
+      "id": "e18",
       "fromNode": "c_MetricasMudancaSemantica",
       "fromSide": "right",
       "toNode": "l_L03_MudancaRara",
@@ -432,7 +404,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e21",
+      "id": "e19",
       "fromNode": "c_Generalizacao",
       "fromSide": "right",
       "toNode": "l_L04_DomainShift",
@@ -441,7 +413,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e22",
+      "id": "e20",
       "fromNode": "c_DivisaoEspacialBlocos",
       "fromSide": "right",
       "toNode": "l_L04_DomainShift",
@@ -450,7 +422,7 @@
       "toEnd": "arrow"
     },
     {
-      "id": "e23",
+      "id": "e21",
       "fromNode": "c_MetricasMudancaSemantica",
       "fromSide": "right",
       "toNode": "l_L06_MetricasIncomparaveis",

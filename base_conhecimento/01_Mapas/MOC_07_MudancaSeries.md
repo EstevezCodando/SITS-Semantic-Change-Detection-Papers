@@ -18,25 +18,25 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Tarefa**
-- [[Deteccao_Mudanca|Detecção de mudanças]] — 40 artigos
-- [[MudancaSemantica|Mudança semântica (from–to)]] — 14 artigos
-- [[SITS|Séries temporais de imagens (SITS)]] — 11 artigos
-
-**Estratégia de mudança**
-- [[PosClassificacao|Pós-classificação]] — 2 artigos
+- [[Deteccao_Mudanca|Detecção de mudanças]] — 33 artigos
+- [[MudancaSemantica|Mudança semântica (from–to)]] — 16 artigos
+- [[SITS|Séries temporais de imagens (SITS)]] — 12 artigos
 
 **Arquitetura**
 - [[UTAE|U-TAE (U-Net com atenção temporal)]] — 3 artigos
-- [[RedeSiamesa|Redes siamesas]] — 21 artigos
+- [[RedeSiamesa|Redes siamesas]] — 12 artigos
 
 **Métrica**
-- [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — 4 artigos
+- [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — 7 artigos
 
 **Conjunto de dados**
 - [[DynamicEarthNet|DynamicEarthNet]] — 3 artigos
-- [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 7 artigos
-- [[HRSCD|HRSCD]] — 12 artigos
-- [[SECOND|SECOND]] — 8 artigos
+- [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 6 artigos
+- [[HRSCD|HRSCD]] — 8 artigos
+- [[SECOND|SECOND]] — 10 artigos
+
+**Método**
+- [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — 6 artigos
 
 ## Lacunas relacionadas
 

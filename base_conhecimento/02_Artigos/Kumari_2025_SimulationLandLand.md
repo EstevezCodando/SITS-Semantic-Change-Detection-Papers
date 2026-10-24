@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P185_Kumari2025_Simulation-of-Land-Use-and-Land-Cove
 paginas: 5
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: []
 conjuntos_dados: []
 metodos: []
 preparo: []
 validacao: []
-ferramentas: ["[[QGIS|QGIS]]"]
-tags: [artigo, leitura/automatica]
+ferramentas: []
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Kumari 2025 — Simulation of Land Use and Land Cover Using the MOLUSCE Plugin Integrated with QGIS for the Western Himalayan Region of India
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -88,7 +91,6 @@ Não informado (nenhum trecho de limitação detectado).
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- usa ferramenta: [[QGIS|QGIS]] — 7 ocorrências (p. 1, 2, 4)
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 
 ## Anotações do leitor

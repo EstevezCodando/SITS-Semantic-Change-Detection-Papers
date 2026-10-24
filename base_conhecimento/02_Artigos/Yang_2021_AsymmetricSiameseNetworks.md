@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P19_Yang2020_Asymmetric-Siamese-Networks-for-Semanti
 paginas: 14
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: ["[[HRSCD|HRSCD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[RedeSiamesa|Redes siamesas]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[SegmentacaoObjetos|Segmentação em objetos (SNIC/superpixels)]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[Generalizacao|Generalização e domain shift]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[Kappa|Coeficiente kappa]]"]
+metodos: ["[[RedeSiamesa|Redes siamesas]]", "[[CNN|Redes convolucionais (CNN)]]"]
+preparo: ["[[AumentoDados|Aumento de dados]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Yang 2021 — Asymmetric Siamese Networks for Semantic Change Detection in Aerial Images
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — SECOND e a métrica SeK para mudança semântica (aéreo bitemporal).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -147,24 +150,20 @@ Mudança semântica bitemporal (**SCD**) quando as mudanças são **assimétrica
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 6 ocorrências (p. 1, 6, 14)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 35 ocorrências (p. 4, 7, 8, 9, 10)
 - emprega conjunto de dados: [[SECOND|SECOND]] — 7 ocorrências (p. 2, 3, 6, 7, 9)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 41 ocorrências (p. 1, 2, 3, 4, 5)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 13 ocorrências (p. 2, 3, 6, 7)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 8 ocorrências (p. 1, 2, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 17 ocorrências (p. 1, 2, 3, 5, 6)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 5 ocorrências (p. 4, 5, 12)
-- aplica etapa de preparo: [[SegmentacaoObjetos|Segmentação em objetos (SNIC/superpixels)]] — 3 ocorrências (p. 3, 14)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 14 ocorrências (p. 1, 2, 3, 5, 6)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 6 ocorrências (p. 2, 3, 10, 11, 12)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[RedeSiamesa|Redes siamesas]] — 41 ocorrências (p. 1, 2, 3, 4, 5)
+- referência (curado pela leitura): [[CNN|Redes convolucionais (CNN)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 14 ocorrências (p. 1, 2, 3, 5, 6)
+- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 6 ocorrências (p. 1, 6, 14)
+- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo compara-se com e critica [[Daudt_2019_MultitaskLearningLarge|Daudt 2019]] — P19 supera HRSCD.str4 (P18): (p. 10); e critica a simetria: (p. 4).
 - [[Daudt_2019_MultitaskLearningLarge|Daudt 2019]] têm datasets complementares este artigo — HRSCD (aéreo, Urban Atlas) e SECOND (aéreo, anotação por especialistas) são benchmarks bitemporais de mudança semântica.
+- [[Chen_2024_ChangeMambaRemoteSensing|Chen 2024]] adota a métrica de este artigo — P28 relata SeK no SECOND, métrica proposta por P19.
 
 ## Figuras selecionadas
 

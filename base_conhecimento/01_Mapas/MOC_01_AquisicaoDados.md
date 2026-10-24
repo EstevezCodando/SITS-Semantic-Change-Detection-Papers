@@ -18,31 +18,31 @@ tags: [mapa]
 ## Conceitos deste mapa
 
 **Dado/produto**
-- [[PlanetNICFI|Planet NICFI (basemaps)]] — 6 artigos
-- [[PlanetProdutos|Produtos Planet (visão geral)]] — 14 artigos
+- [[PlanetNICFI|Planet NICFI (basemaps)]] — 10 artigos
+- [[PlanetProdutos|Produtos Planet (visão geral)]] — 7 artigos
 
 **Dado/sensor**
 - [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 7 artigos
-- [[Sentinel2|Sentinel-2]] — 25 artigos
-- [[Sentinel1|Sentinel-1]] — 11 artigos
-- [[SAR|Radar (SAR)]] — 15 artigos
-- [[Landsat|Landsat]] — 23 artigos
-- [[ImagensAereas|Imagens aéreas]] — 14 artigos
-- [[UAV|UAV / drones]] — 3 artigos
+- [[Sentinel2|Sentinel-2]] — 23 artigos
+- [[Sentinel1|Sentinel-1]] — 13 artigos
+- [[SAR|Radar (SAR)]] — 13 artigos
+- [[Landsat|Landsat]] — 17 artigos
+- [[ImagensAereas|Imagens aéreas]] — 13 artigos
+- [[UAV|UAV / drones]] — 2 artigos
 
 **Conjunto de dados**
-- [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 7 artigos
+- [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]] — 6 artigos
 - [[DynamicEarthNet|DynamicEarthNet]] — 3 artigos
-- [[HRSCD|HRSCD]] — 12 artigos
-- [[SECOND|SECOND]] — 8 artigos
+- [[HRSCD|HRSCD]] — 8 artigos
+- [[SECOND|SECOND]] — 10 artigos
 - [[LEVIRCD|LEVIR-CD]] — 15 artigos
-- [[OSCD|OSCD]] — 8 artigos
+- [[OSCD|OSCD]] — 6 artigos
 
 **Base de referência**
-- [[PRODES|PRODES (INPE)]] — 6 artigos
-- [[GlobalForestChange|Global Forest Change (Hansen)]] — 8 artigos
-- [[MapBiomas|MapBiomas]] — 4 artigos
-- [[DETER|DETER (INPE)]] — 4 artigos
+- [[PRODES|PRODES (INPE)]] — 4 artigos
+- [[GlobalForestChange|Global Forest Change (Hansen)]] — 6 artigos
+- [[MapBiomas|MapBiomas]] — 3 artigos
+- [[DETER|DETER (INPE)]] — 3 artigos
 
 ## Lacunas relacionadas
 

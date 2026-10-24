@@ -43,8 +43,8 @@ Rótulos ruidosos limitam a acurácia.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Wu_2023_FullyConvolutionalChange\|Wu 2023]] | utiliza método | 30 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
-| [[Simeoni_2025_DINOv3\|Simeoni 2025]] | utiliza método | 17 | 1, 2, 6, 7, 9 | extraído automaticamente (não lido) |
 | [[Bou_2026_RemoteSensingChange\|Bou 2026]] | utiliza método | 9 | 2, 3, 5, 6, 8 | extraído automaticamente (não lido) |
+| [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 

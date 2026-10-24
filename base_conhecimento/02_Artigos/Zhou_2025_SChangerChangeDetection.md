@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P132_Zhou2025_SChanger-Change-Detection-From-a-Seman
 paginas: 18
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: ["[[ImagensAereas|Imagens aéreas]]"]
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[S2Looking|S2Looking]]"]
-metodos: ["[[Transformer|Transformers]]", "[[RedeSiamesa|Redes siamesas]]", "[[TransferLearning|Aprendizado por transferência]]", "[[CNN|Redes convolucionais (CNN)]]", "[[LSTM|Redes recorrentes (LSTM)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[Transformer|Transformers]]", "[[RedeSiamesa|Redes siamesas]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Zhou 2025 — SChanger: Change Detection From a Semantic Change and Spatial Consistency Perspective
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -123,14 +126,6 @@ Não informado (nenhum trecho de limitação detectado).
 - utiliza método: [[Transformer|Transformers]] — 22 ocorrências (p. 1, 2, 3, 9, 10)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 21 ocorrências (p. 1, 2, 3, 5, 6)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 21 ocorrências (p. 1, 2, 3, 6, 7)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 12 ocorrências (p. 1, 3, 9, 10, 17)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 3 ocorrências (p. 3, 17)
-- é avaliado por: [[F1|F1]] — 40 ocorrências (p. 1, 9, 10, 11, 12)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 19 ocorrências (p. 1, 9, 12, 13, 14)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 11 ocorrências (p. 1, 2, 8, 10, 16)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 6 ocorrências (p. 5, 6, 16, 17)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 7 ocorrências (p. 2, 6, 11, 12, 15)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 4 ocorrências (p. 8, 11)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 

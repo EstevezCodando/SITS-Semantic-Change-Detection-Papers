@@ -102,12 +102,30 @@ nlink_ok = sum(1 for x in links1 if x[1] in (200, 301, 302, 202, 203))
 nlink_blk = sum(1 for x in links1 if x[1] == 403)
 nlink_other = len(links1) - nlink_ok - nlink_blk
 
+import glob as _g, collections as _c
+_nf = len([f for f in _g.glob(f'{root}/dados/leitura_profunda/P*.md')])
+_ns = len([f for f in _g.glob(f'{root}/dados/leitura_profunda/_sintese_*.md')])
+_st = _c.Counter(); _tr = _c.Counter()
+for _f in _g.glob(f'{root}/base_conhecimento/02_Artigos/*.md'):
+    _x = open(_f, encoding='utf-8').read(3000)
+    _m = re.search(r'status_leitura: "([^"]+)"', _x); _st[_m.group(1) if _m else '?'] += 1
+    _m = re.search(r'relevancia_objetivo: "(.)"', _x); _tr[_m.group(1) if _m else '?'] += 1
+_kb = f'{root}/base_conhecimento'
+_nn = sum(len(fs) for d, _, fs in os.walk(_kb) if '.obsidian' not in d for f in fs if f.endswith('.md'))
+_nc = len(_g.glob(f'{_kb}/01_Mapas/*.canvas'))
+_ncon = 0
+for _d in ('03_Dados', '04_Preparo', '05_Metodos', '06_Validacao', '08_Monitoramento'):
+    for _f in _g.glob(f'{_kb}/{_d}/*.md'):
+        if 'tipo: conceito' in open(_f, encoding='utf-8').read(400) or 'tipo: ' in open(_f, encoding='utf-8').read(60) and 'conceito' in open(_f, encoding='utf-8').read(200): _ncon += 1
+_nfig = len(_g.glob(f'{_kb}/90_Anexos/figuras/*'))
+_prof = _st['lido (profundo)']; _par = _st['lido (parcial)']; _aut = _st['extraído automaticamente (não lido)']
+
 L = []
 w = L.append
 w('# Detecção e Classificação de Mudanças da Cobertura Terrestre com Séries Planet — Coletânea de Artigos\n')
 w('**Idioma:** Português (Brasil)\n')
 w(f'Lista curada de **{total} trabalhos** sobre detecção semântica de mudanças em séries temporais de imagens de satélite (SITS-SCD), orientada a **mosaicos mensais Planet de 3–5 m (2020–2026)**: supressão vegetal, novas construções, abertura de vias e outras transições de cobertura. Cada entrada informa **onde**, **entre quais datas** e **de qual cobertura para qual cobertura** o estudo trata, com comentário de método, aplicação e limite. A coletânea inclui ainda artigos sobre **GeoAI e plugins de QGIS**, bibliotecas verificadas e um guia metodológico para o experimento do projeto.\n')
-w('> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Nem todos os artigos foram lidos: 27 têm ficha de leitura profunda ou parcial com páginas citadas; os demais têm apenas extração automática (veja [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)).\n')
+w(f'> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Nem todos os artigos foram lidos: {_nf} têm ficha de leitura profunda ou parcial com páginas citadas; os demais têm apenas extração automática (veja [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)).\n')
 w('## Sobre esta coleta\n')
 w('**Autor da coleta:** Jean Michael Estevez Alvarez\n')
 w(f'- **Data da coleta e verificação:** {DATA}.')
@@ -130,12 +148,14 @@ w('| 5. GeoAI e QGIS | Busca de artigos que citam o GeoAI e de plugins de QGIS (
 w('| 6. Conversão para Markdown | Os PDFs foram convertidos em Markdown com marcadores de página e figuras recortadas, com ferramenta própria e validação. | 97 documentos convertidos | `output/pdf/` (fora do git), `scripts/convert_pdfs.ps1`, `scripts/pdf_to_markdown.py`, `scripts/validate_pdf_markdown.py`, `scripts/PDF_PIPELINE.md` |')
 w('| 7. Extração automática | Para cada texto: sensores, conjuntos de dados, métodos, métricas, hiperparâmetros, frases com números, URLs de código, legendas de figuras e resumo, sempre com a página. | `dados/kb_extract.json` e chunks por seção para RAG | `scripts/kb_extract.py`, `scripts/chunk_text.py`, `dados/chunks/` (fora do git) |')
 w('| 8. Primeiro vault Obsidian | Notas por artigo, conceitos, pipeline, experimentos e grafo. | Vault anterior, mantido | `vault/` |')
-w('| 9. Leitura profunda | Leitura de texto integral ou parcial, com fichas que separam o que o artigo diz (com página) do que é interpretação. | 27 fichas por artigo (11 de prioridade alta, 6 de GeoAI/QGIS e as demais dos artigos com mais conceitos ligados) e 7 sínteses | `dados/leitura_profunda/` |')
-w('| 10. Nova base de conhecimento | Vault em `00_Painel` … `99_Templates`: notas de artigo com 12 seções e YAML, conceitos, 10 MOCs, lacunas, matriz comparativa, tabela de monitoramento (retrospectivo ou operacional), figuras, anexos e templates. | 103 artigos, 93 conceitos, 51 figuras, 245 notas | `base_conhecimento/`, `scripts/kb_*.py` |')
-w('| 11. Mapas e grafo | Canvas metodológico e 4 canvases temáticos (cartões 320×180, grupos por etapa) e guia de cores do grafo por pasta. | 5 canvases com checagem geométrica sem sobreposição | `base_conhecimento/01_Mapas/`, `base_conhecimento/.obsidian/graph.json` |')
+w(f'| 9. Leitura profunda | Leitura de texto integral ou parcial, com fichas que separam o que o artigo diz (com página) do que é interpretação. | {_nf} fichas por artigo e {_ns} sínteses; os artigos de maior relevância para o objetivo foram lidos em uma segunda rodada | `dados/leitura_profunda/` |')
+w(f'| 10. Nova base de conhecimento | Vault em `00_Painel` … `99_Templates`: notas de artigo com 12 seções e YAML, conceitos, 10 MOCs, lacunas, matriz comparativa, tabela de monitoramento (retrospectivo ou operacional), figuras, anexos e templates. | 103 artigos, {_ncon} conceitos, {_nfig} figuras, {_nn} notas | `base_conhecimento/`, `scripts/kb_*.py` |')
+w('| 10b. Relevância e trilha para o objetivo | Ranking automático de relevância sobre os 97 textos; segunda rodada de leitura dos artigos com Planet de 3–5 m, construção, supressão de vegetação, vias e alertas; faixas de relevância A–D no campo `relevancia_objetivo`; nota `Trilha_Objetivo_Planet5m` com o fluxo dados → preparo → rótulos → modelo → pós-processamento temporal → validação → monitoramento. | faixas A, B, C e D por artigo; trilha e canvas da trilha | `scripts/kb_rank.py`, `dados/ranking_relevancia.json`, `base_conhecimento/01_Mapas/Trilha_Objetivo_Planet5m.md` |')
+w('| 10c. Reorganização do grafo | Artigos coloridos por relevância; links de artigos não lidos limitados a sensor, dado, tarefa e poucos métodos; links curados pela leitura nos artigos lidos; painéis e tabelas-índice ocultos no grafo; relações entre artigos com explicação. | grafo com núcleo legível (A e B) e visões prontas em `Guia_Grafo` | `base_conhecimento/.obsidian/graph.json`, `base_conhecimento/00_Painel/Guia_Grafo.md` |')
+w(f'| 11. Mapas e grafo | Canvas metodológico, canvases temáticos e canvas da trilha (cartões 320×180, grupos por etapa) e guia de cores do grafo. | {_nc} canvases com checagem geométrica sem sobreposição | `base_conhecimento/01_Mapas/`, `base_conhecimento/.obsidian/graph.json` |')
 w('| 12. Verificação | Links quebrados, duplicados, notas órfãs, YAML, rastreabilidade das evidências, página de cada trecho e validade dos canvases. | 0 quebrados, 0 duplicados, 0 órfãs, 0 trechos sem página | `base_conhecimento/00_Painel/Verificacao.md` |')
 w('| 13. Empacotamento | Pasta compactada da base para levar ao Obsidian. | `base_conhecimento.zip` (fora do git) | raiz |\n')
-w('**Estado da leitura.** Das notas de artigo da base, 18 estão como *lido (profundo)*, 9 como *lido (parcial)* e 76 como *extraído automaticamente (não lido)*. A lista de pendências está em `base_conhecimento/00_Painel/Pendencias_Leitura.md`.\n')
+w(f'**Estado da leitura.** Das notas de artigo da base, {_prof} estão como *lido (profundo)*, {_par} como *lido (parcial)* e {_aut} como *extraído automaticamente (não lido)*. Relevância para o objetivo (Planet de ~5 m: construção, supressão de vegetação, vias): {_tr["A"]} artigos A, {_tr["B"]} B, {_tr["C"]} C e {_tr["D"]} não avaliados (D). A lista de pendências, com o ranking dos próximos a ler, está em `base_conhecimento/00_Painel/Pendencias_Leitura.md`.'+chr(10))
 w('**Regras seguidas no tratamento:** originais e notas existentes preservados; nada inventado, usando "não informado" quando o texto não traz o dado; cada afirmação de método ou resultado com página ou seção; resultados de benchmarks diferentes não são ordenados entre si; evidência e interpretação ficam separadas.\n')
 w('**Limites.** A busca é dirigida, sem PRISMA. A checagem dos canvases foi só geométrica; a conferência visual no Obsidian ainda não foi feita. Parte dos PDFs (88 registros) não pôde ser baixada. As extrações automáticas podem errar (por exemplo, atribuir um sensor citado de passagem como o dado do estudo), e só as notas marcadas como lidas foram revisadas manualmente.\n')
 w('**Como abrir a base:** no Obsidian, *Abrir pasta como cofre* e escolha `base_conhecimento/`; comece por `00_Painel/00_Inicio.md`. Para regenerar: `python -I scripts/kb_build.py .` na raiz.\n')
@@ -274,7 +294,7 @@ w('dados/links_original.json resultado da checagem dos URLs do documento origina
 w('dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs')
 w('dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)')
 w('dados/kb_extract.json     extracao automatica por artigo (entidades, numeros, URLs, figuras) com pagina')
-w('dados/leitura_profunda/   27 fichas de leitura (profunda ou parcial) e 7 sinteses; fonte do vault')
+w(f'dados/leitura_profunda/   {_nf} fichas de leitura (profunda ou parcial) e {_ns} sinteses; fonte do vault')
 w('output/                   PDFs convertidos em Markdown e figuras (ferramenta propria; fora do git)')
 w('base_conhecimento.zip      pacote da base (fora do git)')
 w('vault/                    vault Obsidian anterior (artigos, conceitos, pipeline, experimentos, reuso)')

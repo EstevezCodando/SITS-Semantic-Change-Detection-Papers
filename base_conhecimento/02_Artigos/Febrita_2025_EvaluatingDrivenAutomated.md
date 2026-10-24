@@ -10,6 +10,7 @@ markdown_fonte: "output/pdf/P158_Febrita2025_Evaluating-AI-Driven-Automated-Map-
 paginas: 13
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "C"
 tarefas: []
 sensores: []
 conjuntos_dados: ["[[OpenStreetMap|OpenStreetMap]]"]
@@ -17,7 +18,7 @@ metodos: []
 preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
 validacao: ["[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]"]
 ferramentas: ["[[QGIS|QGIS]]"]
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/C]
 ---
 
 # Febrita 2025 — Evaluating AI-Driven Automated Map Digitization in QGIS
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Avaliação independente do Deepness em edificações.
 
 ## 1. Referência bibliográfica e acesso ao original
 

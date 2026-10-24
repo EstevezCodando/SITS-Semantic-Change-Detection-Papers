@@ -4,7 +4,7 @@ subtipo: "dado/produto"
 titulo: "Planet NICFI (basemaps)"
 aliases: ["Planet NICFI (basemaps)"]
 pasta_tematica: "03_Dados"
-n_artigos: 6
+n_artigos: 10
 tags: [conceito, dado]
 ---
 
@@ -42,14 +42,19 @@ Cadência não é mensal antes de set/2020; sem correção atmosférica nos estu
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | utiliza dado/sensor | 56 | 1, 2, 5, 6, 7 | extraído automaticamente (não lido) |
+| [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | utiliza dado/sensor | 56 | 1, 2, 5, 6, 7 | lido (profundo) |
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | utiliza dado/sensor | 21 | 2, 3, 4, 5, 13 | lido (profundo) |
-| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | utiliza dado/sensor | 16 | 3, 6, 8, 10, 13 | extraído automaticamente (não lido) |
-| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | utiliza dado/sensor | 4 | 2, 3, 4, 6 | extraído automaticamente (não lido) |
-| [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | utiliza dado/sensor | 3 | 2, 12, 13 | lido (profundo) |
+| [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | utiliza dado/sensor | 16 | 3, 6, 8, 10, 13 | lido (profundo) |
+| [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza dado/sensor | 10 | 7, 8, 10, 11 | lido (profundo) |
+| [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | utiliza dado/sensor | 4 | 2, 3, 4, 6 | lido (profundo) |
+| [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 | [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | utiliza dado/sensor | — | ver nota do artigo | lido (profundo) |
+| [[Crato_2025_DetectionRuralRoads\|Crato 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
+| [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
+| [[Ygorra_2024_NearRealTime\|Ygorra 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
 
 ## Navegação
 
 - Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]
 - Lacuna que afeta este conceito: [[L02_CadenciaPlanet|A cadência real dos mosaicos Planet nem sempre é mensal]]
+- Lacuna que afeta este conceito: [[L12_SupressaoSemComparacao|Supressão de vegetação em NICFI mensal: os métodos não foram comparados nos mesmos dados]]

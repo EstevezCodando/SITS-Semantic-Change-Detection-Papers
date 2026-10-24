@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P36_Shu2026_RB-SCD-A-New-Benchmark-for-Semantic-Chan
 paginas: 35
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]", "[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Edificacoes|Edificações e urbanização]]", "[[Vias|Vias e estradas]]"]
-sensores: ["[[Landsat|Landsat]]"]
-conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[HRSCD|HRSCD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[Generalizacao|Generalização e domain shift]]", "[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]", "[[PrecisaoRecall|Precisão e recall]]"]
+relevancia_objetivo: "B"
+tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Vias|Vias e estradas]]"]
+sensores: []
+conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[HRSCD|HRSCD]]", "[[SECOND|SECOND]]"]
+metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[ModeloFundacional|Modelos fundacionais]]"]
+preparo: []
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Shu 2025 — RB-SCD: A New Benchmark for Semantic Change Detection of Roads and Bridges in Traffic Scenes
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Mudança semântica de vias e pontes e taxonomia de transições; imagem de 0,59 m.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -167,24 +170,21 @@ Detectar **mudança semântica de estradas e pontes** (estruturas lineares, cont
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[Landsat|Landsat]] — 3 ocorrências (p. 2, 3, 6)
+- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
+- trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 7, 17, 26)
+- referência (curado pela leitura): [[ModeloFundacional|Modelos fundacionais]] — suporte vindo da leitura/título/resumo
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 12 ocorrências (p. 3, 18, 21, 22, 24)
 - emprega conjunto de dados: [[WHUCD|WHU-CD]] — 9 ocorrências (p. 18, 21, 22, 24, 25)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 3 ocorrências (p. 2, 3, 6)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 7, 17, 26)
+- referência (curado pela leitura): [[SECOND|SECOND]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 5 ocorrências (p. 6, 11, 19)
 - é avaliado por: [[IoU|IoU / mIoU]] — 22 ocorrências (p. 19, 20, 21, 22, 24)
 - é avaliado por: [[F1|F1]] — 18 ocorrências (p. 19, 20, 21, 22)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 4 ocorrências (p. 19, 23, 28)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 9 ocorrências (p. 1, 5, 6, 8, 21)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 6 ocorrências (p. 3, 9, 10, 11, 18)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 3 ocorrências (p. 11, 14, 19)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 5 ocorrências (p. 6, 11, 19)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 4 ocorrências (p. 6, 7, 21, 29)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 3 ocorrências (p. 9, 18)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- [[Lee_2026_RoadChangeDetection|Lee 2026]] usa informação prévia de vias como este artigo — P40 usa o mapa anterior como entrada do modelo; P36 define 11 transições de vias a partir de imagens bitemporais.
+- [[Crato_2025_DetectionRuralRoads|Crato 2025]] trata de vias, como este artigo — P100 detecta estradas rurais em Planet de ~5 m por data (F1 69%) e P36 define transições de vias em imagem de 0,59 m.
 
 ## Figuras selecionadas
 

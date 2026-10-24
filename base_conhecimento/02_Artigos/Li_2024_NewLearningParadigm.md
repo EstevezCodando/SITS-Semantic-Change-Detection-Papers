@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P137_Li2024_A-New-Learning-Paradigm-for-Foundation-M
 paginas: 13
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "B"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[S2Looking|S2Looking]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[RedeSiamesa|Redes siamesas]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[CNN|Redes convolucionais (CNN)]]", "[[TransferLearning|Aprendizado por transferência]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[DivisaoTreinoTeste|Divisão treino/validação/teste]]", "[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: ["[[Generalizacao|Generalização e domain shift]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
 # Li 2024 — A New Learning Paradigm for Foundation Model-Based Remote-Sensing Change Detection
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **B** — Side-tuning de modelo fundacional congelado para poucos rótulos; RGB bitemporal.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -168,26 +171,19 @@ Como **reaproveitar o conhecimento de modelos fundacionais** (CLIP, RemoteCLIP, 
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[Landsat|Landsat]] — 5 ocorrências (p. 7, 9)
+- utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 76 ocorrências (p. 1, 2, 3, 4, 5)
+- utiliza método: [[Transformer|Transformers]] — 62 ocorrências (p. 1, 2, 3, 4, 5)
+- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 12 ocorrências (p. 4, 7, 9, 10, 12)
+- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 7 ocorrências (p. 3, 12)
+- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 11 ocorrências (p. 1, 6, 7, 8, 9)
 - emprega conjunto de dados: [[S2Looking|S2Looking]] — 6 ocorrências (p. 6, 7, 8)
 - emprega conjunto de dados: [[WHUCD|WHU-CD]] — 5 ocorrências (p. 6, 7, 9, 11)
-- utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 76 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[Transformer|Transformers]] — 62 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 15 ocorrências (p. 2, 3, 4, 5, 11)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 12 ocorrências (p. 4, 7, 9, 10, 12)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 10 ocorrências (p. 1, 2, 3, 5, 13)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 7 ocorrências (p. 3, 12)
-- é avaliado por: [[IoU|IoU / mIoU]] — 41 ocorrências (p. 1, 7, 8, 9, 10)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 14 ocorrências (p. 7, 9, 10, 11)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 7 ocorrências (p. 7, 11)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 24 ocorrências (p. 1, 6, 7, 8, 9)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 15 ocorrências (p. 2, 3, 5, 6, 7)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 5 ocorrências (p. 1, 3, 7, 12)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 3 ocorrências (p. 3, 5, 6)
-- adota desenho de validação: [[DivisaoTreinoTeste|Divisão treino/validação/teste]] — 4 ocorrências (p. 6, 7)
+- utiliza dado/sensor: [[Landsat|Landsat]] — 5 ocorrências (p. 7, 9)
 - adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 4 ocorrências (p. 3, 7, 9, 12)
-- trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
+
+**Comparações substantivas com outros artigos:**
+- este artigo compartilha a abordagem de modelo fundacional com [[Shen_2026_FoundationModelDriven|Shen 2026]] — P137 congela um modelo fundacional (CLIP) e P34 usa o PerA com decodificador modular; ambos em benchmarks bitemporais.
 
 ## Figuras selecionadas
 

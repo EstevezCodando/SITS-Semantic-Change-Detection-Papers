@@ -10,6 +10,7 @@ markdown_fonte: "output/pdf/P157_Tresson2026_IAMAP-Unlocking-Deep-Learning-in-QG
 paginas: 5
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
+relevancia_objetivo: "C"
 tarefas: []
 sensores: []
 conjuntos_dados: []
@@ -17,7 +18,7 @@ metodos: ["[[ModeloFundacional|Modelos fundacionais]]"]
 preparo: []
 validacao: []
 ferramentas: ["[[QGIS|QGIS]]"]
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/C]
 ---
 
 # Tresson 2026 — IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited computing resources
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Plugin IAMAP para QGIS.
 
 ## 1. Referência bibliográfica e acesso ao original
 

@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P171_Boutayeb2024_A-comprehensive-GeoAI-review-Progr
 paginas: 50
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
-tarefas: []
-sensores: ["[[UAV|UAV / drones]]", "[[SAR|Radar (SAR)]]", "[[Landsat|Landsat]]"]
-conjuntos_dados: ["[[OpenStreetMap|OpenStreetMap]]", "[[xBD|xBD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[RandomForest|Random Forest]]", "[[UNet|U-Net]]", "[[XGBoost|XGBoost]]", "[[SVM|SVM]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[Corregistro|Corregistro e georreferenciamento]]"]
-validacao: ["[[ValidacaoCruzada|Validação cruzada]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[mAP|mAP]]"]
-ferramentas: []
-tags: [artigo, leitura/parcial]
+relevancia_objetivo: "C"
+tarefas: ["[[SegmentacaoSemantica|Segmentação semântica]]"]
+sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
+conjuntos_dados: []
+metodos: ["[[UNet|U-Net]]"]
+preparo: []
+validacao: []
+ferramentas: ["[[QGIS|QGIS]]"]
+tags: [artigo, leitura/parcial, relevancia/C]
 ---
 
 # Boutayeb 2024 — A comprehensive GeoAI review: Progress, Challenges and Outlooks
@@ -25,6 +26,8 @@ tags: [artigo, leitura/parcial]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (parcial). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **C** — Revisão ampla de GeoAI (leitura parcial).
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -155,28 +158,10 @@ Revisão ampla de **GeoAI** (IA aplicada a dados geoespaciais), com três pergun
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[UAV|UAV / drones]] — 24 ocorrências (p. 1, 11, 12, 13, 17)
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 15 ocorrências (p. 12, 13, 16, 17, 28)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 13 ocorrências (p. 11, 17, 18, 19, 21)
-- emprega conjunto de dados: [[OpenStreetMap|OpenStreetMap]] — 6 ocorrências (p. 13, 14, 15, 20, 21)
-- emprega conjunto de dados: [[xBD|xBD]] — 3 ocorrências (p. 12, 27)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 35 ocorrências (p. 6, 7, 16, 17, 18)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 29 ocorrências (p. 7, 20, 21, 22, 23)
-- utiliza método: [[RandomForest|Random Forest]] — 29 ocorrências (p. 5, 17, 18, 20, 22)
+- referência (curado pela leitura): [[QGIS|QGIS]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[PlanetScope|PlanetScope (Dove/SuperDove)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 21 ocorrências (p. 6, 17, 18, 19, 20)
-- utiliza método: [[XGBoost|XGBoost]] — 15 ocorrências (p. 6, 18, 22, 23, 24)
-- utiliza método: [[SVM|SVM]] — 15 ocorrências (p. 5, 18, 20, 24, 25)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 58 ocorrências (p. 1, 2, 9, 10, 13)
-- é avaliado por: [[F1|F1]] — 19 ocorrências (p. 10, 17, 18, 19, 21)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 12 ocorrências (p. 17, 19, 21, 22, 23)
-- é avaliado por: [[mAP|mAP]] — 6 ocorrências (p. 10, 20, 21, 30)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 21 ocorrências (p. 1, 8, 14, 16, 17)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 17 ocorrências (p. 3, 6, 9, 10, 11)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 14 ocorrências (p. 18, 22, 24, 25, 28)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 10 ocorrências (p. 2, 8, 9, 10, 25)
-- aplica etapa de preparo: [[Corregistro|Corregistro e georreferenciamento]] — 3 ocorrências (p. 12, 20)
-- adota desenho de validação: [[ValidacaoCruzada|Validação cruzada]] — 3 ocorrências (p. 26, 28)
-- discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 9 ocorrências (p. 15, 16, 17, 26, 28)
+- referência (curado pela leitura): [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 
 ## Figuras selecionadas
 

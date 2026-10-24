@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P03_Carter2024_Detection-of-forest-disturbance-acros
 paginas: 15
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
-tarefas: ["[[DegradacaoFlorestal|Degradação e perturbação florestal]]", "[[Edificacoes|Edificações e urbanização]]"]
-sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]", "[[PlanetProdutos|Produtos Planet (visão geral)]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+relevancia_objetivo: "A"
+tarefas: ["[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e perturbação florestal]]"]
+sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]", "[[Textura|Textura (GLCM)]]", "[[Rotulagem|Rotulagem e anotação]]", "[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[AmostraIndependente|Amostra independente]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
+metodos: ["[[UNet|U-Net]]"]
+preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
+validacao: ["[[AmostraIndependente|Amostra independente]]", "[[F1|F1]]"]
 ferramentas: []
-tags: [artigo, leitura/profunda]
+tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
 # Carter 2024 — Detection of forest disturbance across California using deep-learning on PlanetScope imagery
@@ -25,6 +26,8 @@ tags: [artigo, leitura/profunda]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** lido (profundo). Fichas de leitura profunda usadas como evidência.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **A** — PlanetScope RGB mensal de 4,77 m; perturbação florestal anual; validação independente por LiDAR e CALFIRE.
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -184,24 +187,19 @@ Mapear **cobertura arbórea mensal** e **perturbação florestal anual** em toda
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 15 ocorrências (p. 1, 2, 3, 4, 11)
-- utiliza dado/sensor: [[PlanetProdutos|Produtos Planet (visão geral)]] — 12 ocorrências (p. 2, 4, 5, 12, 13)
-- utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 3 ocorrências (p. 2, 12, 13)
-- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 3 ocorrências (p. 2, 6)
 - utiliza método: [[UNet|U-Net]] — 22 ocorrências (p. 1, 2, 3, 4, 6)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 7 ocorrências (p. 1, 2, 12, 13)
-- utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 3 ocorrências (p. 3, 4, 13)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 8 ocorrências (p. 1, 6, 7)
-- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 6, 7)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 3 ocorrências (p. 1, 6, 13)
-- é avaliado por: [[EstimativaArea|Estimativa de área com intervalo de confiança]] — 3 ocorrências (p. 6, 12)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 22 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 8 ocorrências (p. 3, 4, 12, 13)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 4, 12, 13)
-- aplica etapa de preparo: [[AumentoDados|Aumento de dados]] — 3 ocorrências (p. 4, 5)
-- adota desenho de validação: [[AmostraIndependente|Amostra independente]] — 3 ocorrências (p. 1, 6, 13)
+- referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
+- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
+- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 4, 12, 13)
+- referencia (suporte manual da leitura): [[AprendizadoAtivo|Aprendizado ativo para rotulagem]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
+- adota desenho de validação: [[AmostraIndependente|Amostra independente]] — 3 ocorrências (p. 1, 6, 13)
+- emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 3 ocorrências (p. 2, 6)
+- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 6, 7)
+
+**Comparações substantivas com outros artigos:**
+- este artigo replica a receita de [[Wagner_2023_MappingTropicalForest|Wagner 2023]] — P03 aplica a ideia de P01 (U-Net por data e perda por diferença anual) ao produto visual RGB do PlanetScope e valida a perda contra LiDAR e CALFIRE.
 
 ## Figuras selecionadas
 

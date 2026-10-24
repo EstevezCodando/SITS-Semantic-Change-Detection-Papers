@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P56_Osco2023_The-Segment-Anything-Model-SAM-for-remo
 paginas: 21
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: []
 sensores: ["[[UAV|UAV / drones]]"]
 conjuntos_dados: []
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]", "[[CNN|Redes convolucionais (CNN)]]", "[[OBIA|Análise baseada em objetos (OBIA)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[MosaicosCompostos|Mosaicos e compostos temporais]]"]
-validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: ["[[SAM|Segment Anything (SAM)]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Osco 2023 — The Segment Anything Model (SAM) for remote sensing applications: From zero to one shot
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -115,14 +118,6 @@ Não informado (nenhum trecho com métrica e valor detectado).
 - utiliza método: [[SAM|Segment Anything (SAM)]] — 177 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[Transformer|Transformers]] — 14 ocorrências (p. 2, 3, 5, 8, 17)
 - utiliza método: [[TransferLearning|Aprendizado por transferência]] — 12 ocorrências (p. 1, 3, 7, 15)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 6 ocorrências (p. 3, 18)
-- utiliza método: [[OBIA|Análise baseada em objetos (OBIA)]] — 3 ocorrências (p. 2, 7)
-- é avaliado por: [[IoU|IoU / mIoU]] — 8 ocorrências (p. 8, 9, 11, 15)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 7 ocorrências (p. 2, 4, 6)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 27 ocorrências (p. 1, 2, 3, 8, 9)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 8 ocorrências (p. 4, 8, 9)
-- aplica etapa de preparo: [[MosaicosCompostos|Mosaicos e compostos temporais]] — 5 ocorrências (p. 5, 6, 8)
-- adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 6 ocorrências (p. 1, 15, 17, 18)
 
 ## Anotações do leitor
 

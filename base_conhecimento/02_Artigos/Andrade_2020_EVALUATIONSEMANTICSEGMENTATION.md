@@ -10,14 +10,15 @@ markdown_fonte: "output/pdf/P112_Andrade2020_EVALUATION-OF-SEMANTIC-SEGMENTATION
 paginas: 9
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "extraído automaticamente (não lido)"
+relevancia_objetivo: "D"
 tarefas: ["[[Desmatamento|Desmatamento]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
 sensores: ["[[Landsat|Landsat]]"]
 conjuntos_dados: ["[[PRODES|PRODES (INPE)]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]", "[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]"]
+preparo: []
+validacao: []
 ferramentas: []
-tags: [artigo, leitura/automatica]
+tags: [artigo, leitura/automatica, relevancia/D]
 ---
 
 # Andrade 2020 — EVALUATION OF SEMANTIC SEGMENTATION METHODS FOR DEFORESTATION DETECTION IN THE AMAZON
@@ -25,6 +26,8 @@ tags: [artigo, leitura/automatica]
 > **Convenção desta nota.** *Evidência do artigo* traz fatos com página (p.), seção (§) ou “não informado”. *Interpretação* é a leitura da base de conhecimento e aparece sempre sob esse rótulo. Blocos “detectado automaticamente” vêm de busca por padrões no texto convertido e **devem ser conferidos na página citada**.
 
 **Situação da leitura:** extraído automaticamente (não lido). Nenhuma leitura humana: seções preenchidas por extração automática; onde nada foi detectado, consta “não informado”.
+
+**Relevância para o objetivo** (detectar automaticamente mudanças de cobertura com imagem óptica Planet de ~5 m: início de construção, supressão de vegetação, vias): **D** — não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].
 
 ## 1. Referência bibliográfica e acesso ao original
 
@@ -117,12 +120,6 @@ Não informado (nenhum trecho de limitação detectado).
 - emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 4 ocorrências (p. 2, 4, 6)
 - utiliza método: [[CNN|Redes convolucionais (CNN)]] — 18 ocorrências (p. 2, 3, 5, 6, 7)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 13 ocorrências (p. 1, 2, 3, 6)
-- utiliza método: [[UNet|U-Net]] — 3 ocorrências (p. 2, 3)
-- é avaliado por: [[F1|F1]] — 6 ocorrências (p. 1, 6, 7)
-- é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 3 ocorrências (p. 1, 2, 6)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 61 ocorrências (p. 1, 2, 3, 4, 5)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 3 ocorrências (p. 2, 4, 5)
-- adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 6 ocorrências (p. 5, 7)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 
