@@ -4,7 +4,7 @@
 
 Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em séries temporais de imagens de satélite (SITS-SCD), orientada a **mosaicos mensais Planet de 3–5 m (2020–2026)**: supressão vegetal, novas construções, abertura de vias e outras transições de cobertura. Cada entrada informa **onde**, **entre quais datas** e **de qual cobertura para qual cobertura** o estudo trata, com comentário de método, aplicação e limite. A coletânea inclui ainda artigos sobre **GeoAI e plugins de QGIS**, bibliotecas verificadas e um guia metodológico para o experimento do projeto.
 
-> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Os artigos não foram lidos integralmente.
+> Os resultados citados são **os relatados pelos autores**, não reproduções. Ao comentar um artigo, as limitações indicam o que **não** se pode concluir sobre mosaicos Planet de 3–5 m. Esta é uma busca dirigida, **não** uma revisão sistemática PRISMA nem um censo da literatura. Nem todos os artigos foram lidos: 27 têm ficha de leitura profunda ou parcial com páginas citadas; os demais têm apenas extração automática (veja [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)).
 
 ## Sobre esta coleta
 
@@ -19,8 +19,37 @@ Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em s�
 
 **Legenda:** ✓ = título, ano e DOI/identificador conferidos em base bibliográfica em 24/10/2026; ○ = não localizado automaticamente (conferir manualmente). A marca não atesta a qualidade metodológica do estudo. Em PDF, `—` indica que não há cópia aberta em `coleta/`.
 
+## Tratamento realizado: da coleta à base de conhecimento
+
+Além da lista de artigos, este repositório documenta todo o tratamento aplicado a ela. Cada etapa tem script ou pasta própria e pode ser refeita.
+
+| Etapa | O que foi feito | Resultado | Onde |
+|---|---|---|---|
+| 1. Padronização | O documento de revisão original foi reorganizado no formato do repositório de referência, com a autoria da coleta logo após a explicação base. | Documento original preservado sem alteração | `fonte_original/`, `scripts/make_readme.py` |
+| 2. Coleta e catalogação | Busca complementar em OpenAlex, Crossref, arXiv e Semantic Scholar, com conferência de título, ano e DOI. | 185 registros (80 do original e 105 novos); 185 conferidos (✓) | `scripts/build_catalog.py`, `dados/catalog.json` |
+| 3. Verificação de links e bibliotecas | Teste de todos os URLs do original; consulta a GitHub e PyPI para versão, licença e atividade. | 117 URLs testados, nenhum 404; bibliotecas em [Bibliotecas e ferramentas verificadas](#bibliotecas-e-ferramentas-verificadas) | `scripts/check_tools.py`, `dados/tools.json`, `dados/links_original.json` |
+| 4. Download dos PDFs | Download de versões de acesso aberto, com fallback quando a editora bloqueou o acesso simples; os bloqueios por CAPTCHA não foram contornados. | 97 PDFs; os demais seguem só com o link | `scripts/download_pdfs.py`, `scripts/download_fallback.py`, `coleta/_manifesto.csv` |
+| 5. GeoAI e QGIS | Busca de artigos que citam o GeoAI e de plugins de QGIS (GeoAI, Deepness, IAMAP, Geo-SAM, MO-SAM). | Seção N e [artigos que citam o GeoAI](#geoai-e-qgis-artigos-que-citam-o-geoai) | `dados/leitura_profunda/_sintese_qgis_geoai.md` |
+| 6. Conversão para Markdown | Os PDFs foram convertidos em Markdown com marcadores de página e figuras recortadas, com ferramenta própria e validação. | 97 documentos convertidos | `output/pdf/` (fora do git), `scripts/convert_pdfs.ps1`, `scripts/pdf_to_markdown.py`, `scripts/validate_pdf_markdown.py`, `scripts/PDF_PIPELINE.md` |
+| 7. Extração automática | Para cada texto: sensores, conjuntos de dados, métodos, métricas, hiperparâmetros, frases com números, URLs de código, legendas de figuras e resumo, sempre com a página. | `dados/kb_extract.json` e chunks por seção para RAG | `scripts/kb_extract.py`, `scripts/chunk_text.py`, `dados/chunks/` (fora do git) |
+| 8. Primeiro vault Obsidian | Notas por artigo, conceitos, pipeline, experimentos e grafo. | Vault anterior, mantido | `vault/` |
+| 9. Leitura profunda | Leitura de texto integral ou parcial, com fichas que separam o que o artigo diz (com página) do que é interpretação. | 27 fichas por artigo (11 de prioridade alta, 6 de GeoAI/QGIS e as demais dos artigos com mais conceitos ligados) e 7 sínteses | `dados/leitura_profunda/` |
+| 10. Nova base de conhecimento | Vault em `00_Painel` … `99_Templates`: notas de artigo com 12 seções e YAML, conceitos, 10 MOCs, lacunas, matriz comparativa, tabela de monitoramento (retrospectivo ou operacional), figuras, anexos e templates. | 103 artigos, 93 conceitos, 51 figuras, 245 notas | `base_conhecimento/`, `scripts/kb_*.py` |
+| 11. Mapas e grafo | Canvas metodológico e 4 canvases temáticos (cartões 320×180, grupos por etapa) e guia de cores do grafo por pasta. | 5 canvases com checagem geométrica sem sobreposição | `base_conhecimento/01_Mapas/`, `base_conhecimento/.obsidian/graph.json` |
+| 12. Verificação | Links quebrados, duplicados, notas órfãs, YAML, rastreabilidade das evidências, página de cada trecho e validade dos canvases. | 0 quebrados, 0 duplicados, 0 órfãs, 0 trechos sem página | `base_conhecimento/00_Painel/Verificacao.md` |
+| 13. Empacotamento | Pasta compactada da base para levar ao Obsidian. | `base_conhecimento.zip` (fora do git) | raiz |
+
+**Estado da leitura.** Das notas de artigo da base, 18 estão como *lido (profundo)*, 9 como *lido (parcial)* e 76 como *extraído automaticamente (não lido)*. A lista de pendências está em `base_conhecimento/00_Painel/Pendencias_Leitura.md`.
+
+**Regras seguidas no tratamento:** originais e notas existentes preservados; nada inventado, usando "não informado" quando o texto não traz o dado; cada afirmação de método ou resultado com página ou seção; resultados de benchmarks diferentes não são ordenados entre si; evidência e interpretação ficam separadas.
+
+**Limites.** A busca é dirigida, sem PRISMA. A checagem dos canvases foi só geométrica; a conferência visual no Obsidian ainda não foi feita. Parte dos PDFs (88 registros) não pôde ser baixada. As extrações automáticas podem errar (por exemplo, atribuir um sensor citado de passagem como o dado do estudo), e só as notas marcadas como lidas foram revisadas manualmente.
+
+**Como abrir a base:** no Obsidian, *Abrir pasta como cofre* e escolha `base_conhecimento/`; comece por `00_Painel/00_Inicio.md`. Para regenerar: `python -I scripts/kb_build.py .` na raiz.
+
 ## Conteúdo
 
+- [Tratamento realizado](#tratamento-realizado-da-coleta-à-base-de-conhecimento)
 - [Resultado principal e ordem de leitura](#resultado-principal-e-ordem-de-leitura)
 - [Revisões](#revisões)
 - [Artigos e códigos](#artigos-e-códigos)
@@ -1095,7 +1124,10 @@ dados/tools.json          repositórios GitHub e pacotes PyPI verificados
 dados/links_original.json resultado da checagem dos URLs do documento original
 dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs
 dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)
-dados/leitura_profunda/   fichas de leitura profunda (11 artigos) e sinteses; fonte do vault
+dados/kb_extract.json     extracao automatica por artigo (entidades, numeros, URLs, figuras) com pagina
+dados/leitura_profunda/   27 fichas de leitura (profunda ou parcial) e 7 sinteses; fonte do vault
+output/                   PDFs convertidos em Markdown e figuras (ferramenta propria; fora do git)
+base_conhecimento.zip      pacote da base (fora do git)
 vault/                    vault Obsidian anterior (artigos, conceitos, pipeline, experimentos, reuso)
 base_conhecimento/        novo vault Obsidian (00_Painel ... 99_Templates), com paginas citadas; abra esta pasta no Obsidian
 fonte_original/           documento de revisão que originou a coleta (inalterado)
