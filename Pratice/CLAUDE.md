@@ -82,7 +82,8 @@ Pratice/
   CLAUDE.md                 este contexto
   README.md                 visão geral e primeiros passos
   configs/                  pipeline.yaml, classes.yaml, esquema_vetor.yaml
-  docs/                     dados, arquitetura, esquema dos vetores, métodos, roteiro, conhecimento
+  docs/                     dados, arquitetura, esquema dos vetores, métodos, roteiro, conhecimento, banco da máscara
+  db/                       mascara_cobertura.sql: banco PostGIS dos rótulos de cobertura (docs/banco_mascara.md)
   .claude/skills/           procedimentos reutilizáveis (um por etapa)
   src/  (a criar)           código do pipeline, por etapa
   runs/ (a criar, ignorado) saídas de cada execução e experimento
