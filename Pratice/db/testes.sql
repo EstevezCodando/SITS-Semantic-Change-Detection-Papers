@@ -1,8 +1,11 @@
 -- Testes das regras do banco mudanca_mascara v2. Rodam numa transação e desfazem tudo no fim.
 --   psql -U postgres -d mudanca_mascara -f db/testes.sql
 -- Cada teste imprime "ok: ..." ou interrompe com o motivo. Seções marcadas com a falha que cobrem (F1–F9).
+-- O trecho esperado de cada erro é a mensagem das nossas funções ou o nome da restrição; erros do próprio
+-- PostgreSQL, cujo texto muda com o idioma do servidor, são conferidos pelo SQLSTATE.
 
 \set ON_ERROR_STOP on
+SET client_encoding = 'UTF8';
 SET client_min_messages = notice;
 \pset tuples_only on
 BEGIN;
@@ -13,7 +16,7 @@ BEGIN
     BEGIN
         EXECUTE p_sql;
     EXCEPTION WHEN others THEN
-        IF position(p_trecho IN SQLERRM) = 0 THEN
+        IF position(p_trecho IN SQLERRM) = 0 AND p_trecho <> SQLSTATE THEN
             RAISE EXCEPTION 'FALHOU %: erro inesperado: %', p_nome, SQLERRM;
         END IF;
         RAISE NOTICE 'ok: % (recusado: %)', p_nome, SQLERRM;
@@ -208,7 +211,7 @@ SELECT pg_temp.confere((SELECT count(*) = 2 AND bool_and(sessao_id = pg_temp.v('
                        'bia vê só as próprias anotações');
 SELECT pg_temp.espera_erro($$INSERT INTO rotulo.vw_minha_anotacao (sessao_id, tarefa_id, data_referencia, classe_id, geom)
     VALUES (pg_temp.v('s_pre'), 0, now(), pg_temp.classe('agua'), pg_temp.caixa(726690, 7462340, 726700, 7462350))$$,
-    'check option', 'bia não grava na sessão da ana');
+    '44000', 'bia não grava na sessão da ana');
 SELECT set_config('app.usuario', 'ana', true);
 SELECT pg_temp.confere((SELECT count(*) FROM rotulo.vw_minha_anotacao) = 4, 'ana vê só as próprias anotações');
 SELECT set_config('app.usuario', '', true);
