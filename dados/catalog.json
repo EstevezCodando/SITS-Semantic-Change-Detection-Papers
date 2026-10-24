@@ -47,7 +47,8 @@
   "checked": true,
   "pdf_file": "P01_Wagner2023_Mapping-Tropical-Forest-Cover-and-Deforestation-with-Planet-.pdf",
   "pdf_source": "https://arxiv.org/pdf/2211.09806",
-  "pdf_bytes": 19767666
+  "pdf_bytes": 19767666,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P02",
@@ -149,7 +150,8 @@
   "pdf_errors": [
    "https://doi.org/10.3389/frsen.2024.1409400: ValueError nao e PDF"
   ],
-  "pdf_source": "fallback (execucao anterior)"
+  "pdf_source": "fallback (execucao anterior)",
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P04",
@@ -195,7 +197,8 @@
   "checked": true,
   "pdf_file": "P04_Wang2024_AI-based-Validation-of-Deforestation-Using-High-Resolution-S.pdf",
   "pdf_source": "https://isprs-archives.copernicus.org/articles/XLVIII-3-2024/583/2024/isprs-archives-XLVIII-3-2024-583-2024.pdf",
-  "pdf_bytes": 5281429
+  "pdf_bytes": 5281429,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P05",
@@ -277,7 +280,8 @@
   "checked": true,
   "pdf_file": "P06_Simsek2025_Determination-of-land-use-and-land-cover-change-using-multi-.pdf",
   "pdf_source": "https://link.springer.com/content/pdf/10.1007/s10333-025-01024-9.pdf",
-  "pdf_bytes": 4711760
+  "pdf_bytes": 4711760,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P07",
@@ -411,7 +415,8 @@
   "checked": true,
   "pdf_file": "P09_Gonzalez-Velez2026_Tropical-dry-forest-land-use-land-cover-change-detection-usi.pdf",
   "pdf_source": "https://link.springer.com/content/pdf/10.1007/s10661-025-14897-4.pdf",
-  "pdf_bytes": 6955402
+  "pdf_bytes": 6955402,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P10",
@@ -457,7 +462,8 @@
   "checked": true,
   "pdf_file": "P10_Etten2021_The-Multi-Temporal-Urban-Development-SpaceNet-Dataset.pdf",
   "pdf_source": "https://arxiv.org/pdf/2102.04420",
-  "pdf_bytes": 17717054
+  "pdf_bytes": 17717054,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P11",
@@ -502,7 +508,8 @@
   "checked": true,
   "pdf_file": "P11_Etten2021_The-SpaceNet-Multi-Temporal-Urban-Development-Challenge.pdf",
   "pdf_source": "https://arxiv.org/pdf/2102.11958",
-  "pdf_bytes": 8247295
+  "pdf_bytes": 8247295,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P12",
@@ -555,7 +562,8 @@
   "checked": true,
   "pdf_file": "P12_Toker2022_DynamicEarthNet-Daily-Multi-Spectral-Satellite-Dataset-for-S.pdf",
   "pdf_source": "https://arxiv.org/pdf/2203.12560",
-  "pdf_bytes": 15414322
+  "pdf_bytes": 15414322,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P13",
@@ -599,7 +607,8 @@
   "checked": true,
   "pdf_file": "P13_Vincent2024_Satellite-Image-Time-Series-Semantic-Change-Detection-Novel-.pdf",
   "pdf_source": "https://arxiv.org/pdf/2407.07616",
-  "pdf_bytes": 6913499
+  "pdf_bytes": 6913499,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P14",
@@ -692,7 +701,8 @@
   "checked": true,
   "pdf_file": "P15_Garnot2021_Panoptic-Segmentation-of-Satellite-Image-Time-Series-With-Co.pdf",
   "pdf_source": "https://arxiv.org/pdf/2107.07933",
-  "pdf_bytes": 13221393
+  "pdf_bytes": 13221393,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P16",
@@ -780,7 +790,8 @@
   "checked": true,
   "pdf_file": "P17_Metzger2023_Urban-Change-Forecasting-from-Satellite-Images.pdf",
   "pdf_source": "https://link.springer.com/content/pdf/10.1007/s41064-023-00258-8.pdf",
-  "pdf_bytes": 1656082
+  "pdf_bytes": 1656082,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P18",
@@ -824,7 +835,8 @@
   "checked": true,
   "pdf_file": "P18_Daudt2018_Multitask-Learning-for-Large-scale-Semantic-Change-Detection.pdf",
   "pdf_source": "https://arxiv.org/pdf/1810.08452",
-  "pdf_bytes": 6848259
+  "pdf_bytes": 6848259,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P19",
@@ -875,7 +887,8 @@
   "checked": true,
   "pdf_file": "P19_Yang2020_Asymmetric-Siamese-Networks-for-Semantic-Change-Detection-in.pdf",
   "pdf_source": "https://arxiv.org/pdf/2010.05687",
-  "pdf_bytes": 4461259
+  "pdf_bytes": 4461259,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P20",
@@ -965,7 +978,8 @@
   "checked": true,
   "pdf_file": "P21_Ding2022_Bi-Temporal-Semantic-Reasoning-for-the-Semantic-Change-Detec.pdf",
   "pdf_source": "https://arxiv.org/pdf/2108.06103",
-  "pdf_bytes": 10695087
+  "pdf_bytes": 10695087,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P22",
@@ -1056,7 +1070,8 @@
   "checked": true,
   "pdf_file": "P23_Daudt2018_Fully-Convolutional-Siamese-Networks-for-Change-Detection.pdf",
   "pdf_source": "https://arxiv.org/pdf/1810.08462",
-  "pdf_bytes": 7210963
+  "pdf_bytes": 7210963,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P24",
@@ -1147,7 +1162,8 @@
   "checked": true,
   "pdf_file": "P25_Chen2021_Remote-Sensing-Image-Change-Detection-With-Transformers.pdf",
   "pdf_source": "https://arxiv.org/pdf/2103.00208",
-  "pdf_bytes": 6370521
+  "pdf_bytes": 6370521,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P26",
@@ -1192,7 +1208,8 @@
   "checked": true,
   "pdf_file": "P26_Bandara2022_A-Transformer-Based-Siamese-Network-for-Change-Detection.pdf",
   "pdf_source": "https://arxiv.org/pdf/2201.01293",
-  "pdf_bytes": 1385299
+  "pdf_bytes": 1385299,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P27",
@@ -1235,7 +1252,8 @@
   "checked": true,
   "pdf_file": "P27_Zheng2021_Change-Is-Everywhere-Single-Temporal-Supervised-Object-Chang.pdf",
   "pdf_errors": [],
-  "pdf_source": "fallback (execucao anterior)"
+  "pdf_source": "fallback (execucao anterior)",
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P28",
@@ -1283,7 +1301,8 @@
   "checked": true,
   "pdf_file": "P28_Chen2024_ChangeMamba-Remote-Sensing-Change-Detection-With-Spatiotempo.pdf",
   "pdf_source": "https://arxiv.org/pdf/2404.03425",
-  "pdf_bytes": 7754845
+  "pdf_bytes": 7754845,
+  "pdf_titulo_match": 0.9
  },
  {
   "id": "P29",
@@ -1330,7 +1349,8 @@
   "checked": true,
   "pdf_file": "P29_Zheng2024_Segment-Any-Change.pdf",
   "pdf_source": "https://arxiv.org/pdf/2402.01188",
-  "pdf_bytes": 9808446
+  "pdf_bytes": 9808446,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P30",
@@ -1374,7 +1394,8 @@
   "checked": true,
   "pdf_file": "P30_Yongshuo2025_Semantic-CD-Remote-Sensing-Image-Semantic-Change-Detection-t.pdf",
   "pdf_source": "https://arxiv.org/pdf/2501.06808",
-  "pdf_bytes": 1668664
+  "pdf_bytes": 1668664,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P31",
@@ -1420,7 +1441,8 @@
   "checked": true,
   "pdf_file": "P31_Huang2025_TextSCD-Leveraging-Text-based-Semantic-Guidance-for-Remote-S.pdf",
   "pdf_source": "https://isprs-annals.copernicus.org/articles/X-G-2025/383/2025/isprs-annals-X-G-2025-383-2025.pdf",
-  "pdf_bytes": 2509804
+  "pdf_bytes": 2509804,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P32",
@@ -1501,7 +1523,8 @@
   "checked": true,
   "pdf_file": "P32_Szwarcman2025_Prithvi-EO-2-0-A-Versatile-Multitemporal-Foundation-Model-fo.pdf",
   "pdf_source": "https://arxiv.org/pdf/2412.02732",
-  "pdf_bytes": 16775077
+  "pdf_bytes": 16775077,
+  "pdf_titulo_match": 0.88
  },
  {
   "id": "P33",
@@ -1547,7 +1570,8 @@
   "checked": true,
   "pdf_file": "P33_Bou2026_Remote-Sensing-Change-Detection-via-Weak-Temporal-Supervisio.pdf",
   "pdf_source": "https://arxiv.org/pdf/2601.02126",
-  "pdf_bytes": 30437291
+  "pdf_bytes": 30437291,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P34",
@@ -1598,7 +1622,8 @@
   "checked": true,
   "pdf_file": "P34_Shen2026_Foundation-Model-Driven-Semantic-Change-Detection-in-Remote-.pdf",
   "pdf_source": "https://arxiv.org/pdf/2602.13780",
-  "pdf_bytes": 3422981
+  "pdf_bytes": 3422981,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P35",
@@ -1645,7 +1670,8 @@
   "checked": true,
   "pdf_file": "P35_Su2026_Seg2Change-Adapting-Open-Vocabulary-Semantic-Segmentation-Mo.pdf",
   "pdf_source": "https://arxiv.org/pdf/2604.11231",
-  "pdf_bytes": 23877774
+  "pdf_bytes": 23877774,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P36",
@@ -1692,7 +1718,8 @@
   "checked": true,
   "pdf_file": "P36_Shu2026_RB-SCD-A-New-Benchmark-for-Semantic-Change-Detection-of-Road.pdf",
   "pdf_source": "https://arxiv.org/pdf/2505.13212",
-  "pdf_bytes": 14919054
+  "pdf_bytes": 14919054,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P37",
@@ -1742,7 +1769,8 @@
   "checked": true,
   "pdf_file": "P37_Bastani2018_RoadTracer-Automatic-Extraction-of-Road-Networks-From-Aerial.pdf",
   "pdf_errors": [],
-  "pdf_source": "fallback (execucao anterior)"
+  "pdf_source": "fallback (execucao anterior)",
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P38",
@@ -1787,7 +1815,8 @@
   "checked": true,
   "pdf_file": "P38_Buslaev2018_Fully-Convolutional-Network-for-Automatic-Road-Extraction-Fr.pdf",
   "pdf_source": "https://arxiv.org/pdf/1806.05182",
-  "pdf_bytes": 1755238
+  "pdf_bytes": 1755238,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P39",
@@ -1833,7 +1862,8 @@
   "checked": true,
   "pdf_file": "P39_Bernhard2023_MapFormer-Boosting-Change-Detection-by-Using-Pre-change-Info.pdf",
   "pdf_source": "https://arxiv.org/pdf/2303.17859",
-  "pdf_bytes": 2768255
+  "pdf_bytes": 2768255,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P40",
@@ -1880,7 +1910,8 @@
   "pdf_errors": [
    "https://doi.org/10.7780/kjrs.2026.42.2.5: ValueError nao e PDF"
   ],
-  "pdf_source": "fallback (execucao anterior)"
+  "pdf_source": "fallback (execucao anterior)",
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P41",
@@ -2117,7 +2148,8 @@
   "checked": true,
   "pdf_file": "P45_Brown2022_Dynamic-World-Near-real-time-global-10-m-land-use-land-cover.pdf",
   "pdf_source": "https://www.nature.com/articles/s41597-022-01307-4.pdf",
-  "pdf_bytes": 3242552
+  "pdf_bytes": 3242552,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P46",
@@ -2302,7 +2334,8 @@
   "checked": true,
   "pdf_file": "P49_Lei2026_Remote-sensing-image-change-detection-using-deep-learning-te.pdf",
   "pdf_source": "https://www.researchsquare.com/article/rs-7587199/latest.pdf",
-  "pdf_bytes": 1386650
+  "pdf_bytes": 1386650,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P50",
@@ -2439,7 +2472,8 @@
   "pdf_errors": [
    "http://hdl.handle.net/2013/ULB-DIPOT:oai:dipot.ulb.ac.be:201: ValueError nao e PDF"
   ],
-  "pdf_source": "fallback (execucao anterior)"
+  "pdf_source": "fallback (execucao anterior)",
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P53",
@@ -2479,7 +2513,8 @@
   "checked": true,
   "pdf_file": "P53_Tianqi2016_XGBoost-A-Scalable-Tree-Boosting-System.pdf",
   "pdf_source": "https://arxiv.org/pdf/1603.02754",
-  "pdf_bytes": 944793
+  "pdf_bytes": 944793,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P54",
@@ -2611,7 +2646,8 @@
   "checked": true,
   "pdf_file": "P56_Osco2023_The-Segment-Anything-Model-SAM-for-remote-sensing-applicatio.pdf",
   "pdf_source": "https://arxiv.org/pdf/2306.16623",
-  "pdf_bytes": 50478932
+  "pdf_bytes": 50478932,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P57",
@@ -2668,7 +2704,8 @@
   "checked": true,
   "pdf_file": "P57_Ren2024_Grounded-SAM-Assembling-Open-World-Models-for-Diverse-Visual.pdf",
   "pdf_source": "https://arxiv.org/pdf/2401.14159",
-  "pdf_bytes": 3931092
+  "pdf_bytes": 3931092,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P58",
@@ -2927,7 +2964,8 @@
   "checked": true,
   "pdf_file": "P62_Carion2025_SAM-3-Segment-Anything-with-Concepts.pdf",
   "pdf_source": "https://arxiv.org/pdf/2511.16719",
-  "pdf_bytes": 35521939
+  "pdf_bytes": 35521939,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P63",
@@ -2969,7 +3007,8 @@
   "checked": true,
   "pdf_file": "P63_Dabaja2026_Promptable-Concept-Segmentation-from-Above-Evaluating-SAM-3s.pdf",
   "pdf_source": "https://arxiv.org/pdf/2607.09583",
-  "pdf_bytes": 44363452
+  "pdf_bytes": 44363452,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P64",
@@ -3036,7 +3075,8 @@
   "checked": true,
   "pdf_file": "P64_Simeoni2025_DINOv3.pdf",
   "pdf_source": "https://arxiv.org/pdf/2508.10104",
-  "pdf_bytes": 15823906
+  "pdf_bytes": 15823906,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P65",
@@ -3081,7 +3121,8 @@
   "checked": true,
   "pdf_file": "P65_Faulkenberry2026_DINO-Soars-DINOv3-for-Open-Vocabulary-Semantic-Segmentation-.pdf",
   "pdf_source": "https://arxiv.org/pdf/2605.03175",
-  "pdf_bytes": 19943349
+  "pdf_bytes": 19943349,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P66",
@@ -3141,7 +3182,8 @@
   "checked": true,
   "pdf_file": "P66_Brown2025_AlphaEarth-Foundations-An-embedding-field-model-for-accurate.pdf",
   "pdf_source": "https://arxiv.org/pdf/2507.22291",
-  "pdf_bytes": 25392175
+  "pdf_bytes": 25392175,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P67",
@@ -3191,7 +3233,8 @@
   "checked": true,
   "pdf_file": "P67_Xiong2024_Neural-Plasticity-Inspired-Multimodal-Foundation-Model-for-E.pdf",
   "pdf_source": "https://arxiv.org/pdf/2403.15356",
-  "pdf_bytes": 9163395
+  "pdf_bytes": 9163395,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P68",
@@ -3299,7 +3342,8 @@
   "checked": true,
   "pdf_file": "P69_Ferreira2022_Building-Earth-Observation-Data-Cubes-on-AWS.pdf",
   "pdf_source": "https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIII-B3-2022/597/2022/isprs-archives-XLIII-B3-2022-597-2022.pdf",
-  "pdf_bytes": 8794282
+  "pdf_bytes": 8794282,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P70",
@@ -3348,7 +3392,8 @@
   "checked": true,
   "pdf_file": "P70_Simoes2021_Satellite-Image-Time-Series-Analysis-for-Big-Earth-Observati.pdf",
   "pdf_source": "https://arxiv.org/pdf/2204.11301",
-  "pdf_bytes": 3378070
+  "pdf_bytes": 3378070,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P71",
@@ -3628,7 +3673,8 @@
   "checked": true,
   "pdf_file": "P76_Kerdreux2025_Efficient-Self-Supervised-Learning-for-Earth-Observation-via.pdf",
   "pdf_source": "https://arxiv.org/pdf/2504.06962",
-  "pdf_bytes": 4177547
+  "pdf_bytes": 4177547,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P77",
@@ -3764,7 +3810,8 @@
   "checked": true,
   "pdf_file": "P79_Reed2023_Scale-MAE-A-Scale-Aware-Masked-Autoencoder-for-Multiscale-Ge.pdf",
   "pdf_source": "https://arxiv.org/pdf/2212.14532",
-  "pdf_bytes": 2116234
+  "pdf_bytes": 2116234,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P80",
@@ -4098,7 +4145,8 @@
   "checked": true,
   "pdf_file": "P88_Aragon2021_CubeSats-deliver-new-insights-into-agricultural-water-use-at.pdf",
   "pdf_source": "https://www.nature.com/articles/s41598-021-91646-w.pdf",
-  "pdf_bytes": 2043291
+  "pdf_bytes": 2043291,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P89",
@@ -4173,7 +4221,8 @@
   "checked": true,
   "pdf_file": "P90_Karwowska2022_Using-Super-Resolution-Algorithms-for-Small-Satellite-Imager.pdf",
   "pdf_source": "https://ieeexplore.ieee.org/ielx7/4609443/9656571/09757881.pdf",
-  "pdf_bytes": 8000960
+  "pdf_bytes": 8000960,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P91",
@@ -4208,7 +4257,8 @@
   "checked": true,
   "pdf_file": "P91_Zhang2023_Monitoring-monthly-tropical-humid-forest-disturbances-with-P.pdf",
   "pdf_source": "https://eprints.lancs.ac.uk/id/eprint/204092/1/Planet_NICFI_monthly_forest_disturbance_mapping_AFM.pdf",
-  "pdf_bytes": 13439770
+  "pdf_bytes": 13439770,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P92",
@@ -4547,7 +4597,8 @@
    "https://www.scielo.br/j/bcg/a/PDXjdMpswyRzknDwVXMYpJg/?lang=: HTTPError HTTP Error 502: Bad Gateway"
   ],
   "pdf_source": "https://www.scielo.br/j/bcg/a/PDXjdMpswyRzknDwVXMYpJg/?lang=en&format=pdf",
-  "pdf_bytes": 6064355
+  "pdf_bytes": 6064355,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P101",
@@ -4630,7 +4681,8 @@
   "checked": true,
   "pdf_file": "P102_Masolele2024_Mapping-the-diversity-of-land-uses-following-deforestation-a.pdf",
   "pdf_source": "https://www.nature.com/articles/s41598-024-52138-9.pdf",
-  "pdf_bytes": 4865973
+  "pdf_bytes": 4865973,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P103",
@@ -4672,7 +4724,8 @@
   "checked": true,
   "pdf_file": "P103_Glazer2025_TEMPO-Global-Temporal-Building-Density-and-Height-Estimation.pdf",
   "pdf_source": "https://arxiv.org/pdf/2511.12104",
-  "pdf_bytes": 4523540
+  "pdf_bytes": 4523540,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P104",
@@ -4708,7 +4761,8 @@
   "checked": true,
   "pdf_file": "P104_McVicar2023_Smartflow-Enabling-Scalable-Spatiotemporal-Geospatial-Resear.pdf",
   "pdf_source": "https://arxiv.org/pdf/2506.03022",
-  "pdf_bytes": 769144
+  "pdf_bytes": 769144,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P105",
@@ -4744,7 +4798,8 @@
   "checked": true,
   "pdf_file": "P105_He2022_Tracking-Urbanization-in-Developing-Regions-with-Remote-Sens.pdf",
   "pdf_source": "https://arxiv.org/pdf/2204.01736",
-  "pdf_bytes": 1336205
+  "pdf_bytes": 1336205,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P106",
@@ -4778,7 +4833,8 @@
   "checked": true,
   "pdf_file": "P106_Rahul2023_An-Aligned-Multi-Temporal-Multi-Resolution-Satellite-Image-D.pdf",
   "pdf_source": "https://arxiv.org/pdf/2302.12301",
-  "pdf_bytes": 9194743
+  "pdf_bytes": 9194743,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P107",
@@ -4922,7 +4978,8 @@
   "checked": true,
   "pdf_file": "P110_Alshehri2024_Deep-Transformer-Based-Network-Deforestation-Detection-in-th.pdf",
   "pdf_source": "https://ieeexplore.ieee.org/ielx7/8859/4357975/10402113.pdf",
-  "pdf_bytes": 22385462
+  "pdf_bytes": 22385462,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P111",
@@ -4996,7 +5053,8 @@
   "checked": true,
   "pdf_file": "P112_Andrade2020_EVALUATION-OF-SEMANTIC-SEGMENTATION-METHODS-FOR-DEFORESTATIO.pdf",
   "pdf_source": "https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIII-B3-2020/1497/2020/isprs-archives-XLIII-B3-2020-1497-2020.pdf",
-  "pdf_bytes": 7541892
+  "pdf_bytes": 7541892,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P113",
@@ -5030,7 +5088,8 @@
   "checked": true,
   "pdf_file": "P113_Jelas2024_Deforestation-detection-using-deep-learning-based-semantic-s.pdf",
   "pdf_source": "https://www.frontiersin.org/articles/10.3389/ffgc.2024.1300060/pdf?isPublishedV2=False",
-  "pdf_bytes": 2098037
+  "pdf_bytes": 2098037,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P114",
@@ -5113,7 +5172,8 @@
   "checked": true,
   "pdf_file": "P115_McCallum2023_Crowd-Driven-Deep-Learning-Tracks-Amazon-Deforestation.pdf",
   "pdf_source": "https://pure.iiasa.ac.at/id/eprint/19162/1/remotesensing-15-05204-v2.pdf",
-  "pdf_bytes": 2063440
+  "pdf_bytes": 2063440,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P116",
@@ -5152,7 +5212,8 @@
   "checked": true,
   "pdf_file": "P116_Doblas2024_DETER-RT-The-new-INPE-TropiSCO-deforestation-monitoring-syst.pdf",
   "pdf_source": "https://isprs-archives.copernicus.org/articles/XLVIII-3-2024/127/2024/isprs-archives-XLVIII-3-2024-127-2024.pdf",
-  "pdf_bytes": 2645197
+  "pdf_bytes": 2645197,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P117",
@@ -5193,7 +5254,8 @@
   "checked": true,
   "pdf_file": "P117_Doblas2022_DETER-R-An-Operational-Near-Real-Time-Tropical-Forest-Distur.pdf",
   "pdf_source": "http://urlib.net/sid.inpe.br/mtc-m21d/2022/09.16.12.13",
-  "pdf_bytes": 687233
+  "pdf_bytes": 687233,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P118",
@@ -5234,7 +5296,8 @@
   "checked": true,
   "pdf_file": "P118_Reiche2024_Integrating-satellite-based-forest-disturbance-alerts-improv.pdf",
   "pdf_source": "https://edepot.wur.nl/656298",
-  "pdf_bytes": 3300518
+  "pdf_bytes": 3300518,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P119",
@@ -5279,7 +5342,8 @@
   "checked": true,
   "pdf_file": "P119_Reiche2021_Forest-disturbance-alerts-for-the-Congo-Basin-using-Sentinel.pdf",
   "pdf_source": "https://iopscience.iop.org/article/10.1088/1748-9326/abd0a8/pdf",
-  "pdf_bytes": 2951270
+  "pdf_bytes": 2951270,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P120",
@@ -5318,7 +5382,8 @@
   "checked": true,
   "pdf_file": "P120_Ygorra2024_A-near-real-time-tropical-deforestation-monitoring-algorithm.pdf",
   "pdf_source": "https://www.frontiersin.org/journals/remote-sensing/articles/10.3389/frsen.2024.1416550/pdf",
-  "pdf_bytes": 3611959
+  "pdf_bytes": 3611959,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P121",
@@ -5410,7 +5475,8 @@
   "checked": true,
   "pdf_file": "P122_Cortinhas2024_Uncontrolled-Illegal-Mining-and-Garimpo-in-the-Brazilian-Ama.pdf",
   "pdf_source": "https://www.nature.com/articles/s41467-024-54220-2.pdf",
-  "pdf_bytes": 7990459
+  "pdf_bytes": 7990459,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P123",
@@ -5576,7 +5642,8 @@
   "checked": true,
   "pdf_file": "P126_Shafique2022_Deep-Learning-Based-Change-Detection-in-Remote-Sensing-Image.pdf",
   "pdf_source": "https://myresearchspace.uws.ac.uk/ws/files/52255952/2022_02_05_Shafique_et_al_Deep_final.pdf",
-  "pdf_bytes": 2138298
+  "pdf_bytes": 2138298,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P127",
@@ -5610,7 +5677,8 @@
   "checked": true,
   "pdf_file": "P127_Miller2024_Deep-Learning-for-Satellite-Image-Time-Series-Analysis-A-rev.pdf",
   "pdf_source": "http://arxiv.org/pdf/2404.03936",
-  "pdf_bytes": 1198547
+  "pdf_bytes": 1198547,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P128",
@@ -5716,7 +5784,8 @@
   "checked": true,
   "pdf_file": "P130_Shen2021_S2Looking-A-Satellite-Side-Looking-Dataset-for-Building-Chan.pdf",
   "pdf_source": "https://arxiv.org/pdf/2107.09244",
-  "pdf_bytes": 4163142
+  "pdf_bytes": 4163142,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P131",
@@ -5784,7 +5853,8 @@
   "checked": true,
   "pdf_file": "P132_Zhou2025_SChanger-Change-Detection-From-a-Semantic-Change-and-Spatial.pdf",
   "pdf_source": "https://arxiv.org/pdf/2503.20734",
-  "pdf_bytes": 9148447
+  "pdf_bytes": 9148447,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P133",
@@ -5820,7 +5890,8 @@
   "checked": true,
   "pdf_file": "P133_Ding2024_Adapting-Segment-Anything-Model-for-Change-Detection-in-VHR-.pdf",
   "pdf_source": "https://arxiv.org/pdf/2309.01429",
-  "pdf_bytes": 10359222
+  "pdf_bytes": 10359222,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P134",
@@ -5958,7 +6029,8 @@
   "checked": true,
   "pdf_file": "P137_Li2024_A-New-Learning-Paradigm-for-Foundation-Model-Based-Remote-Se.pdf",
   "pdf_source": "https://arxiv.org/pdf/2312.01163",
-  "pdf_bytes": 1429225
+  "pdf_bytes": 1429225,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P138",
@@ -5994,7 +6066,8 @@
   "checked": true,
   "pdf_file": "P138_Zhang2025_Recurrent-Semantic-Change-Detection-in-VHR-Remote-Sensing-Im.pdf",
   "pdf_source": "https://eprints.lancs.ac.uk/id/eprint/229261/1/TGRS_Recurrent_Semantic_Change_Detection_in_VHR_final.pdf",
-  "pdf_bytes": 10260719
+  "pdf_bytes": 10260719,
+  "pdf_titulo_match": 0.91
  },
  {
   "id": "P139",
@@ -6028,7 +6101,8 @@
   "checked": true,
   "pdf_file": "P139_Benidir2025_The-Change-You-Want-To-Detect-Semantic-Change-Detection-In-E.pdf",
   "pdf_source": "https://arxiv.org/pdf/2503.15683",
-  "pdf_bytes": 35855364
+  "pdf_bytes": 35855364,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P140",
@@ -6102,7 +6176,8 @@
   "checked": true,
   "pdf_file": "P141_Guo2025_HRMS-SCD-A-High-Resolution-Multi-Scene-Satellite-Imagery-Dat.pdf",
   "pdf_source": "https://isprs-annals.copernicus.org/articles/X-G-2025/323/2025/isprs-annals-X-G-2025-323-2025.pdf",
-  "pdf_bytes": 2619727
+  "pdf_bytes": 2619727,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P142",
@@ -6238,7 +6313,8 @@
   "checked": true,
   "pdf_file": "P145_Zhang2025_UniChange-Unifying-Change-Detection-with-Multimodal-Large-La.pdf",
   "pdf_source": "https://arxiv.org/pdf/2511.02607",
-  "pdf_bytes": 2226474
+  "pdf_bytes": 2226474,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P146",
@@ -6273,7 +6349,8 @@
   "checked": true,
   "pdf_file": "P146_Papadomanolaki2019_Detecting-Urban-Changes-with-Recurrent-Neural-Networks-from-.pdf",
   "pdf_source": "https://arxiv.org/pdf/1910.07778",
-  "pdf_bytes": 1124759
+  "pdf_bytes": 1124759,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P147",
@@ -6339,7 +6416,8 @@
   "checked": true,
   "pdf_file": "P148_Chen2021_Self-Supervised-Change-Detection-in-Multiview-Remote-Sensing.pdf",
   "pdf_source": "https://arxiv.org/pdf/2103.05969",
-  "pdf_bytes": 3870588
+  "pdf_bytes": 3870588,
+  "pdf_titulo_match": 0.88
  },
  {
   "id": "P149",
@@ -6409,7 +6487,8 @@
   "checked": true,
   "pdf_file": "P150_Wu2023_Fully-Convolutional-Change-Detection-Framework-With-Generati.pdf",
   "pdf_source": "https://arxiv.org/pdf/2201.06030",
-  "pdf_bytes": 1428831
+  "pdf_bytes": 1428831,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P151",
@@ -6447,7 +6526,8 @@
   "checked": true,
   "pdf_file": "P151_Lu2025_Vision-Foundation-Models-in-Remote-Sensing-A-survey.pdf",
   "pdf_source": "https://arxiv.org/pdf/2408.03464",
-  "pdf_bytes": 2622456
+  "pdf_bytes": 2622456,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P152",
@@ -6519,7 +6599,8 @@
   "checked": true,
   "pdf_file": "P153_Xu2024_Specialized-Foundation-Models-Struggle-to-Beat-Supervised-Ba.pdf",
   "pdf_source": "https://arxiv.org/pdf/2411.02796",
-  "pdf_bytes": 935756
+  "pdf_bytes": 935756,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P154",
@@ -6552,7 +6633,8 @@
   "checked": true,
   "pdf_file": "P154_Ramos-Pollan2024_Uncertainty-and-Generalizability-in-Foundation-Models-for-Ea.pdf",
   "pdf_source": "https://arxiv.org/pdf/2409.08744",
-  "pdf_bytes": 1276807
+  "pdf_bytes": 1276807,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P155",
@@ -6585,7 +6667,8 @@
   "checked": true,
   "pdf_file": "P155_Wu2026_GeoAI-A-Python-package-for-integrating-artificial-intelligen.pdf",
   "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.09605.pdf",
-  "pdf_bytes": 208101
+  "pdf_bytes": 208101,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P156",
@@ -6659,7 +6742,8 @@
   "checked": true,
   "pdf_file": "P157_Tresson2026_IAMAP-Unlocking-Deep-Learning-in-QGIS-for-non-coders-and-lim.pdf",
   "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.10329.pdf",
-  "pdf_bytes": 2220055
+  "pdf_bytes": 2220055,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P158",
@@ -6690,7 +6774,8 @@
   "checked": true,
   "pdf_file": "P158_Febrita2025_Evaluating-AI-Driven-Automated-Map-Digitization-in-QGIS.pdf",
   "pdf_source": "https://arxiv.org/pdf/2504.18777",
-  "pdf_bytes": 1913120
+  "pdf_bytes": 1913120,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P159",
@@ -6724,7 +6809,8 @@
   "checked": true,
   "pdf_file": "P159_Cubillas2024_Land-Classification-Plugin-for-QGIS-Using-Pix2Pix.pdf",
   "pdf_source": "https://isprs-annals.copernicus.org/articles/X-5-2024/33/2024/isprs-annals-X-5-2024-33-2024.pdf",
-  "pdf_bytes": 1505230
+  "pdf_bytes": 1505230,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P160",
@@ -6932,7 +7018,8 @@
   "checked": true,
   "pdf_file": "P165_Wang2025_MO-SAM-Testing-the-reliability-and-limits-of-mine-feature-de.pdf",
   "pdf_source": "https://journals.plos.org/sustainabilitytransformation/article/file?id=10.1371/journal.pstr.0000182&type=printable",
-  "pdf_bytes": 2026663
+  "pdf_bytes": 2026663,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P166",
@@ -6999,7 +7086,8 @@
   "checked": true,
   "pdf_file": "P167_Wu2023_samgeo-A-Python-package-for-segmenting-geospatial-data-with-.pdf",
   "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.05663.pdf",
-  "pdf_bytes": 189100
+  "pdf_bytes": 189100,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P168",
@@ -7032,7 +7120,8 @@
   "checked": true,
   "pdf_file": "P168_Wu2020_geemap-A-Python-package-for-interactive-mapping-with-Google-.pdf",
   "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.02305.pdf",
-  "pdf_bytes": 128324
+  "pdf_bytes": 128324,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P169",
@@ -7066,7 +7155,8 @@
    "https://doi.org/10.21105/joss.03172: ValueError nao e PDF"
   ],
   "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.03172.pdf",
-  "pdf_bytes": 384810
+  "pdf_bytes": 384810,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P170",
@@ -7143,7 +7233,8 @@
   "checked": true,
   "pdf_file": "P171_Boutayeb2024_A-comprehensive-GeoAI-review-Progress-Challenges-and-Outlook.pdf",
   "pdf_source": "https://arxiv.org/pdf/2412.11643",
-  "pdf_bytes": 43246370
+  "pdf_bytes": 43246370,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P172",
@@ -7184,7 +7275,8 @@
   "checked": true,
   "pdf_file": "P172_Mai2025_Towards-the-next-generation-of-Geospatial-Artificial-Intelli.pdf",
   "pdf_source": "https://escholarship.org/content/qt2nh2w5c8/qt2nh2w5c8.pdf",
-  "pdf_bytes": 4169066
+  "pdf_bytes": 4169066,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P173",
@@ -7301,7 +7393,8 @@
   "checked": true,
   "pdf_file": "P175_Sanca2023_AN-END-TO-END-DEEP-LEARNING-WORKFLOW-FOR-BUILDING-SEGMENTATI.pdf",
   "pdf_source": "https://isprs-archives.copernicus.org/articles/XLVIII-4-W7-2023/169/2023/isprs-archives-XLVIII-4-W7-2023-169-2023.pdf",
-  "pdf_bytes": 14235180
+  "pdf_bytes": 14235180,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P176",
@@ -7446,7 +7539,8 @@
   "checked": true,
   "pdf_file": "P179_Robinson2026_Advancing-Earth-Observation-Through-Machine-Learning-A-Torch.pdf",
   "pdf_source": "https://arxiv.org/pdf/2603.02386",
-  "pdf_bytes": 9731741
+  "pdf_bytes": 9731741,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P180",
@@ -7617,7 +7711,8 @@
   "checked": true,
   "pdf_file": "P184_Ramadan2022_Prediction-and-Simulation-of-Land-Use-and-Land-Cover-Changes.pdf",
   "pdf_source": "https://journal.ugm.ac.id/ijg/article/download/68702/pdf",
-  "pdf_bytes": 2099119
+  "pdf_bytes": 2099119,
+  "pdf_titulo_match": 1.0
  },
  {
   "id": "P185",
@@ -7650,6 +7745,7 @@
    "https://doi.org/10.5194/isprs-archives-xlviii-m-5-2024-81-20: ValueError nao e PDF"
   ],
   "pdf_source": "https://isprs-archives.copernicus.org/articles/XLVIII-M-5-2024/81/2025/isprs-archives-XLVIII-M-5-2024-81-2025.pdf",
-  "pdf_bytes": 1478826
+  "pdf_bytes": 1478826,
+  "pdf_titulo_match": 1.0
  }
 ]

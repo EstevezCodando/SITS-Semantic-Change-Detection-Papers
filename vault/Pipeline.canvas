@@ -1,0 +1,406 @@
+{
+ "nodes": [
+  {
+   "id": "E01",
+   "type": "file",
+   "file": "Pipeline/E01 Inventário e catálogo.md",
+   "x": 0,
+   "y": 0,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E02",
+   "type": "file",
+   "file": "Pipeline/E02 Qualidade e harmonização.md",
+   "x": 520,
+   "y": 0,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E03",
+   "type": "file",
+   "file": "Pipeline/E03 Cubo espaço-temporal e partições.md",
+   "x": 1040,
+   "y": 0,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E04",
+   "type": "file",
+   "file": "Pipeline/E04 Rotulagem e pré-anotação.md",
+   "x": 1560,
+   "y": 0,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E05",
+   "type": "file",
+   "file": "Pipeline/E05 Atributos e representações.md",
+   "x": 0,
+   "y": 380,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E06",
+   "type": "file",
+   "file": "Pipeline/E06 Modelos-base de cobertura.md",
+   "x": 520,
+   "y": 380,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E07",
+   "type": "file",
+   "file": "Pipeline/E07 Modelos de mudança em pares.md",
+   "x": 1040,
+   "y": 380,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E08",
+   "type": "file",
+   "file": "Pipeline/E08 Modelos de série temporal.md",
+   "x": 1560,
+   "y": 380,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E09",
+   "type": "file",
+   "file": "Pipeline/E09 Pós-processamento e eventos.md",
+   "x": 0,
+   "y": 760,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E10",
+   "type": "file",
+   "file": "Pipeline/E10 Avaliação e incerteza.md",
+   "x": 520,
+   "y": 760,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "E11",
+   "type": "file",
+   "file": "Pipeline/E11 Operação e atualização.md",
+   "x": 1040,
+   "y": 760,
+   "width": 440,
+   "height": 300,
+   "color": "1"
+  },
+  {
+   "id": "X0",
+   "type": "file",
+   "file": "Experimentos/EXP0 Piloto de verificação dos dados.md",
+   "x": 0,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X1",
+   "type": "file",
+   "file": "Experimentos/EXP1 Baseline de atributos (RF-XGBoost-LightGBM).md",
+   "x": 400,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X2",
+   "type": "file",
+   "file": "Experimentos/EXP2 U-Net mensal + persistência.md",
+   "x": 800,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X3",
+   "type": "file",
+   "file": "Experimentos/EXP3 Pares siameses (FC-Siam - ChangeFormer).md",
+   "x": 1200,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X4",
+   "type": "file",
+   "file": "Experimentos/EXP4 Modelo semântico conjunto.md",
+   "x": 1600,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X5",
+   "type": "file",
+   "file": "Experimentos/EXP5 Modelo de série temporal.md",
+   "x": 2000,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "X6",
+   "type": "file",
+   "file": "Experimentos/EXP6 Pré-anotação assistida (SAM-YOLO-QGIS).md",
+   "x": 2400,
+   "y": 1180,
+   "width": 360,
+   "height": 220,
+   "color": "6"
+  },
+  {
+   "id": "R",
+   "type": "file",
+   "file": "Resultados/Quadro de resultados.md",
+   "x": 1200,
+   "y": 1550,
+   "width": 460,
+   "height": 200,
+   "color": "4"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "fromNode": "E01",
+   "toNode": "E02",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e2",
+   "fromNode": "E02",
+   "toNode": "E03",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e3",
+   "fromNode": "E03",
+   "toNode": "E04",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e4",
+   "fromNode": "E04",
+   "toNode": "E05",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "e5",
+   "fromNode": "E05",
+   "toNode": "E06",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e6",
+   "fromNode": "E06",
+   "toNode": "E07",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e7",
+   "fromNode": "E07",
+   "toNode": "E08",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e8",
+   "fromNode": "E08",
+   "toNode": "E09",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "e9",
+   "fromNode": "E09",
+   "toNode": "E10",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "e10",
+   "fromNode": "E10",
+   "toNode": "E11",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "x0E01",
+   "fromNode": "E01",
+   "toNode": "X0",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x0E02",
+   "fromNode": "E02",
+   "toNode": "X0",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x0E03",
+   "fromNode": "E03",
+   "toNode": "X0",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x1E05",
+   "fromNode": "E05",
+   "toNode": "X1",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x1E06",
+   "fromNode": "E06",
+   "toNode": "X1",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x2E06",
+   "fromNode": "E06",
+   "toNode": "X2",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x2E09",
+   "fromNode": "E09",
+   "toNode": "X2",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x3E07",
+   "fromNode": "E07",
+   "toNode": "X3",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x4E07",
+   "fromNode": "E07",
+   "toNode": "X4",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x4E09",
+   "fromNode": "E09",
+   "toNode": "X4",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x5E08",
+   "fromNode": "E08",
+   "toNode": "X5",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x6E04",
+   "fromNode": "E04",
+   "toNode": "X6",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "x6E11",
+   "fromNode": "E11",
+   "toNode": "X6",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r0",
+   "fromNode": "X0",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r1",
+   "fromNode": "X1",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r2",
+   "fromNode": "X2",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r3",
+   "fromNode": "X3",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r4",
+   "fromNode": "X4",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r5",
+   "fromNode": "X5",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "r6",
+   "fromNode": "X6",
+   "toNode": "R",
+   "fromSide": "bottom",
+   "toSide": "top"
+  }
+ ]
+}

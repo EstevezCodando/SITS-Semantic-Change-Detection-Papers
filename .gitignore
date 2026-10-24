@@ -1,2 +1,5 @@
-﻿coleta/*.pdf
+coleta/*.pdf
 __pycache__/
+dados/chunks/
+vault/Chunks/
+vault/.obsidian/workspace*.json

@@ -1093,6 +1093,9 @@ coleta/                   PDFs de acesso aberto + _manifesto.csv
 dados/catalog.json        metadados verificados de cada registro
 dados/tools.json          repositórios GitHub e pacotes PyPI verificados
 dados/links_original.json resultado da checagem dos URLs do documento original
+dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs
+dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)
+vault/                    vault Obsidian: artigos, conceitos, pipeline, experimentos, reuso (abra esta pasta no Obsidian)
 fonte_original/           documento de revisão que originou a coleta (inalterado)
 scripts/                  scripts de coleta, verificação e geração do README
 ```
