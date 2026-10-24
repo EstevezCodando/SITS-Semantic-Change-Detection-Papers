@@ -1,0 +1,12 @@
+runs/
+models/
+data/
+.venv/
+__pycache__/
+*.pt
+*.pth
+*.ckpt
+*.tif
+*.tiff
+*.env
+.env

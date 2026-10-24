@@ -1,0 +1,88 @@
+# Esquema legível por máquina dos vetores (ver docs/esquema_vetores.md). Usado pela validação de saída.
+versao_esquema: "0.1"
+crs: "EPSG:32723"
+
+camadas:
+  mudancas:        # delta mensal
+    geometria: Polygon
+    atributos:
+      id_mudanca:        {tipo: texto, obrigatorio: true}
+      id_evento:         {tipo: texto, obrigatorio: true}
+      mes_ini:           {tipo: texto, formato: "AAAA-MM", obrigatorio: true}
+      mes_fim:           {tipo: texto, formato: "AAAA-MM", obrigatorio: true}
+      imagem_ini:        {tipo: texto, obrigatorio: true}
+      imagem_fim:        {tipo: texto, obrigatorio: true}
+      tipo_alteracao:    {tipo: texto, dominio: "classes.yaml:tipo_alteracao", obrigatorio: true}
+      classe_de:         {tipo: texto, dominio: "classes.yaml:cobertura", obrigatorio: true}
+      classe_para:       {tipo: texto, dominio: "classes.yaml:cobertura", obrigatorio: true}
+      estagio:           {tipo: texto, dominio: "classes.yaml:estagio", obrigatorio: true}
+      area_m2:           {tipo: real, minimo: 0, obrigatorio: true}
+      area_ha:           {tipo: real, minimo: 0, obrigatorio: true}
+      perimetro_m:       {tipo: real, minimo: 0}
+      compacidade:       {tipo: real, minimo: 0, maximo: 1}
+      largura_media_m:   {tipo: real, minimo: 0, nota: "só para vias"}
+      confianca:         {tipo: real, minimo: 0, maximo: 1, obrigatorio: true}
+      classe_confianca:  {tipo: texto, dominio: [alta, media, baixa, provisoria], obrigatorio: true}
+      conf_modelo:       {tipo: real, minimo: 0, maximo: 1}
+      conf_persistencia: {tipo: real, minimo: 0, maximo: 1, nulo_permitido: true, nota: "nulo enquanto provisória"}
+      n_obs_confirma:    {tipo: inteiro, minimo: 0}
+      n_obs_disponiveis: {tipo: inteiro, minimo: 0}
+      conf_qualidade:    {tipo: real, minimo: 0, maximo: 1}
+      conf_concordancia: {tipo: real, minimo: 0, maximo: 1, nulo_permitido: true}
+      conf_tamanho:      {tipo: real, minimo: 0, maximo: 1}
+      flag_nuvem:        {tipo: booleano}
+      flag_sombra:       {tipo: booleano}
+      flag_borda_mosaico: {tipo: booleano}
+      flag_registro:     {tipo: booleano}
+      flag_sazonal:      {tipo: booleano}
+      flag_radiometria:  {tipo: booleano}
+      modelo_id:         {tipo: texto, obrigatorio: true}
+      versao_pipeline:   {tipo: texto, obrigatorio: true}
+      run_id:            {tipo: texto, obrigatorio: true}
+      resolucao_m:       {tipo: real}
+      status_revisao:    {tipo: texto, dominio: [nao_revisado, confirmado, rejeitado], padrao: nao_revisado}
+      revisor:           {tipo: texto, nulo_permitido: true}
+      data_revisao:      {tipo: texto, nulo_permitido: true}
+
+  qualidade:       # auditoria
+    geometria: Polygon
+    atributos:
+      mes:   {tipo: texto, formato: "AAAA-MM", obrigatorio: true}
+      causa: {tipo: texto, dominio: [nuvem, sombra, borda_mosaico, sem_dado, registro_suspeito], obrigatorio: true}
+
+  eventos:         # consolidado anual
+    geometria: Polygon
+    atributos:
+      id_evento:               {tipo: texto, obrigatorio: true}
+      ano:                     {tipo: inteiro, obrigatorio: true}
+      mes_primeira_deteccao:   {tipo: texto, formato: "AAAA-MM", obrigatorio: true}
+      mes_ultima_deteccao:     {tipo: texto, formato: "AAAA-MM", obrigatorio: true}
+      n_meses_ativo:           {tipo: inteiro, minimo: 1}
+      n_mudancas_mensais:      {tipo: inteiro, minimo: 1}
+      tipo_alteracao:          {tipo: texto, dominio: "classes.yaml:tipo_alteracao", obrigatorio: true}
+      classe_de:               {tipo: texto, dominio: "classes.yaml:cobertura", obrigatorio: true}
+      classe_para:             {tipo: texto, dominio: "classes.yaml:cobertura", obrigatorio: true}
+      estagio:                 {tipo: texto, dominio: "classes.yaml:estagio", obrigatorio: true}
+      area_final_m2:           {tipo: real, minimo: 0, obrigatorio: true}
+      crescimento_m2:          {tipo: real}
+      confianca_anual:         {tipo: real, minimo: 0, maximo: 1, obrigatorio: true}
+      classe_confianca:        {tipo: texto, dominio: [alta, media, baixa, provisoria], obrigatorio: true}
+      conf_comparacao_anual:   {tipo: real, minimo: 0, maximo: 1, nulo_permitido: true}
+      status_revisao:          {tipo: texto, dominio: [nao_revisado, confirmado, rejeitado], padrao: nao_revisado}
+      modelo_id:               {tipo: texto, obrigatorio: true}
+      versao_pipeline:         {tipo: texto, obrigatorio: true}
+      run_id:                  {tipo: texto, obrigatorio: true}
+
+  resumo:          # tabela sem geometria
+    atributos:
+      ano:              {tipo: inteiro}
+      tipo_alteracao:   {tipo: texto}
+      classe_confianca: {tipo: texto}
+      n_eventos:        {tipo: inteiro}
+      area_ha:          {tipo: real}
+
+regras:
+  - "geometria válida e simples; sem sobreposição dentro do mesmo mês"
+  - "nada fora da máscara da AOI nem sobre alfa 0 em qualquer das duas datas"
+  - "classe_de diferente de classe_para, exceto estagio = em_expansao"
+  - "mesma configuração produz os mesmos identificadores"

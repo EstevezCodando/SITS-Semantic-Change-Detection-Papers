@@ -1,0 +1,83 @@
+# Configuração do pipeline (valores iniciais; tudo aqui é revisável e deve ser registrado em cada execução).
+# Nada de caminho absoluto dentro do código: leia daqui.
+
+dados:
+  raiz: "D:/PT2-build/Imagens de Satelite"          # somente leitura
+  aoi: "Jardim_Interlagos.geojson"                   # relativo à raiz
+  mascara_aoi: "data/planet_basemaps/mascara_aoi.tif"
+  crs: "EPSG:32723"
+  fontes:
+    global_monthly:                                  # série principal candidata
+      pasta: "data/planet_basemaps/global_monthly"
+      padrao: "global_monthly_{ano}_{mes}_mosaic.tif"
+      resolucao_m: 4.5
+      bandas: ["R", "G", "B", "alfa"]
+      dtype: "uint8"
+    medres_normalized:                               # candidata a radiometria mais estável
+      pasta: "data/planet_basemaps/medres_normalized"
+      resolucao_m: 4.5
+      bandas: ["R", "G", "B", "alfa"]
+      dtype: "uint8"
+    psscene:                                         # imagem nova de teste / apoio de rotulagem
+      pasta: "data/planet_psscene/mosaico_2026-10-23/mosaico"
+      resolucao_m: 3.0
+    cbers_wpm:                                       # só apoio de rotulagem (2 m, não é Planet)
+      pasta: "CBERS/wpm_fused_2m"
+      resolucao_m: 2.0
+  fonte_principal: "global_monthly"                  # decidir pela evidência do inventário
+
+saidas:
+  raiz: "runs"                                       # fora do git
+  modelos: "models"                                  # fora do git
+
+recortes:
+  tamanho_px: 256
+  sobreposicao_px: 32
+  min_fracao_valida: 0.9                             # fração mínima de pixels com alfa > 0
+
+divisao:
+  tipo: "blocos_espaciais"                           # nunca por pixel nem por recorte aleatório
+  tamanho_bloco_m: 600
+  folga_m: 100                                       # faixa descartada entre blocos de conjuntos diferentes
+  proporcao: {treino: 0.6, validacao: 0.2, teste: 0.2}
+  periodo_teste_final: ["2026-01", "2026-09"]        # meses reservados, usados só no fim
+  semente: 42
+
+harmonizacao:
+  normalizacao: "histograma_em_areas_estaveis"       # ajustada só em controles estáveis do treino
+  mascara_nuvem_sombra: "heuristica_brilho_saturacao"  # sem UDM; validar em controles
+
+deteccao:
+  metodo: "unet_bitemporal"                          # baseline_diferenca | baseline_hue | unet_bitemporal | unet_por_data | serie_utae
+  entrada: "par_meses_consecutivos"
+  encoder: "resnet18"
+  precisao_mista: true
+  lote: 8                                            # ajuste à GPU de 4 GB
+  epocas_max: 100
+  perda: "dice_focal"                                # mudança é rara (poucos % dos pixels)
+  tentativas_hiperparametros: 10                     # igual para todos os métodos comparados
+
+posproc:
+  persistencia_meses: 3                              # confirmação (Zhang 2023); mudanças recentes ficam provisórias
+  janela_rastreio_iou: 0.3
+  area_min_m2: 100                                   # ~5 px a 4,5 m; revisar com o recall por tamanho
+  fechar_vazios_m2: 100
+
+confianca:
+  componentes: ["modelo", "persistencia", "qualidade", "concordancia", "tamanho"]
+  calibracao: "logistica_mais_isotonica"
+  meta_precisao: {alta: 0.90, media: 0.70}           # pontos de partida do projeto, não da literatura
+  segundo_metodo: "baseline_hue"                     # para a concordância
+
+vetores:
+  formato: "gpkg"
+  crs_saida: "EPSG:32723"
+  copia_4326: false
+  esquema: "configs/esquema_vetor.yaml"
+  classes: "configs/classes.yaml"
+
+avaliacao:
+  iou_evento: 0.25                                   # como no SpaceNet 7
+  faixas_area_px: [[0, 4], [4, 16], [16, 64], [64, 100000]]
+  sementes: [1, 2, 3]
+  controles_estaveis: "runs/referencia/controles_estaveis.gpkg"

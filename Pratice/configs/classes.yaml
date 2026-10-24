@@ -1,0 +1,34 @@
+# Taxonomia de cobertura e de alteração (proposta inicial para a AOI; enxuta de propósito).
+# Transições raras e muitas classes pioram a mudança semântica (lacuna L10): comece pequeno e valide com amostras locais.
+
+cobertura:
+  - {id: 1, nome: vegetacao_arborea,   descricao: "árvores, mata, restinga arbórea, mangue"}
+  - {id: 2, nome: vegetacao_rasteira,  descricao: "pasto, campo, gramado, vegetação baixa e brejo vegetado"}
+  - {id: 3, nome: solo_exposto,        descricao: "terra sem cobertura, aterro, areia, movimentação de terra"}
+  - {id: 4, nome: edificacao,          descricao: "telhados e estruturas fechadas"}
+  - {id: 5, nome: via_pavimentada,     descricao: "asfalto, concreto, calçamento"}
+  - {id: 6, nome: via_terra,           descricao: "estrada e rua de terra"}
+  - {id: 7, nome: agua,                descricao: "lagoa, canal, represa"}
+  # fora de classe (máscaras, não classes): nuvem, sombra, sem_dado (alfa 0), borda_mosaico
+
+tipo_alteracao:
+  - {nome: supressao_vegetacao_arborea,  de: [vegetacao_arborea],  para: [solo_exposto, edificacao, via_terra, via_pavimentada, vegetacao_rasteira]}
+  - {nome: supressao_vegetacao_rasteira, de: [vegetacao_rasteira], para: [solo_exposto, edificacao, via_terra, via_pavimentada]}
+  - {nome: inicio_construcao,            de: [vegetacao_arborea, vegetacao_rasteira, solo_exposto], para: [solo_exposto], nota: "terraplenagem, fundação e canteiro; ainda sem telhado reconhecível; a classe final só é conhecida meses depois"}
+  - {nome: edificacao_nova,              de: [vegetacao_arborea, vegetacao_rasteira, solo_exposto], para: [edificacao]}
+  - {nome: abertura_via,                 de: [vegetacao_arborea, vegetacao_rasteira, solo_exposto], para: [via_terra, via_pavimentada]}
+  - {nome: ampliacao_via,                de: [via_terra],          para: [via_pavimentada]}
+  - {nome: solo_exposto_movimentacao,    de: [vegetacao_arborea, vegetacao_rasteira], para: [solo_exposto]}
+  - {nome: mineracao,                    de: [vegetacao_arborea, vegetacao_rasteira, solo_exposto], para: [solo_exposto], nota: "provavelmente ausente nesta AOI; mantido para outras áreas"}
+  - {nome: outra}
+
+estagio:
+  - novo
+  - em_expansao
+  - consolidado
+  - revertido   # rebrota, demolição ou reversão
+
+observacao: >
+  "inicio_construcao" e "edificacao_nova" são o par mais difícil: objetos de 4–5 px, e o melhor escore de mudança
+  publicado em Planet de ~4 m é baixo (0,20 no SpaceNet 7). Mantenha as duas classes separadas na referência, mas
+  avalie também a fusão ("construcao") para saber se a separação é sustentada pelos dados.
