@@ -11,7 +11,9 @@ Base de conhecimento: `..\base_conhecimento\07_Resultados\Sintese_Rotulagem.md`,
 
 ## Unidade de referência
 
-Camada `referencia_eventos` (GeoPackage em `runs/referencia/`, EPSG:32723):
+A referência vive no banco PostGIS `mudanca_mascara` (`db/mudanca_mascara.sql`, guia em `docs/banco_mascara.md`): eventos em `rotulo.evento`, controles em `rotulo.controle_estavel`, cobertura por data em `rotulo.tarefa`/`anotacao`, divisão em `treino.bloco`. O GeoPackage abaixo é a exportação para o pipeline.
+
+Camada `referencia_eventos` (GeoPackage em `runs/referencia/`, EPSG:32723; espelha `rotulo.evento`):
 
 | Campo | Descrição |
 |---|---|
@@ -58,7 +60,7 @@ Ciclo por entropia, como em Masolele 2024 (p. 2 e 10; F1 macro de 43% para 84% e
 Para cada par de meses consecutivos `(M-1, M)`, rasterize na grade da série:
 
 - classe 1 (mudança) no par `(M-1, M)` quando `mes_inicio == M` (mudança **nova** naquele par). Nos pares seguintes o evento é "mudança já ocorrida" e não leva rótulo de mudança nova; registre essa regra em `rotulos.md`.
-- alfa 0 e fora da AOI viram `ignorar` (255).
+- alfa 0, fora da AOI e fora das tarefas viram `valor_nao_rotulado` (0); `indeterminado` é 255 e nuvem, sombra, sem dado e borda são 251–254. Todos entram como `ignore_index` (convenção do banco `mudanca_mascara`, `docs/banco_mascara.md`).
 - Guarde também a rasterização de `classe_de` e `classe_para` para os modelos semânticos.
 
 ## Quanto rotular (ponto de partida a validar)
