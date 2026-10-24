@@ -1,0 +1,310 @@
+{
+  "nodes": [
+    {
+      "id": "g_0",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Dados",
+      "color": "#06B6D4"
+    },
+    {
+      "id": "d1",
+      "x": 40,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "text",
+      "text": "**Planet NICFI / PlanetScope**\nBasemaps de 4 bandas; NICFI semestral até ago/2020, mensal depois.\n[[PlanetNICFI]]"
+    },
+    {
+      "id": "d2",
+      "x": 40,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "text",
+      "text": "**Sensores complementares**\nSentinel-2, Sentinel-1, Landsat e imagens aéreas.\n[[Sentinel2]]"
+    },
+    {
+      "id": "d3",
+      "x": 40,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#06B6D4",
+      "type": "text",
+      "text": "**Referências e benchmarks**\nPRODES, GFC, SpaceNet 7, DynamicEarthNet, HRSCD, SECOND.\n[[DynamicEarthNet]]"
+    },
+    {
+      "id": "g_1",
+      "type": "group",
+      "x": 520,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Preparação",
+      "color": "#F97316"
+    },
+    {
+      "id": "p1",
+      "x": 560,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "text",
+      "text": "**Qualidade da observação**\nMáscara de nuvem e sombra; corregistro; UDM.\n[[MascaraNuvem]]"
+    },
+    {
+      "id": "p2",
+      "x": 560,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "text",
+      "text": "**Normalização e patches**\nEscala para 8 bits; recortes 256×256; aumento de dados.\n[[Normalizacao]]"
+    },
+    {
+      "id": "p3",
+      "x": 560,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#F97316",
+      "type": "text",
+      "text": "**Rotulagem**\nSequencial e temporal; pré-anotação com SAM no QGIS.\n[[Rotulagem]]"
+    },
+    {
+      "id": "g_2",
+      "type": "group",
+      "x": 1040,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Métodos",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "m1",
+      "x": 1080,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "text",
+      "text": "**ML sobre atributos**\nRandom Forest, XGBoost; objetos + textura.\n[[RandomForest]]"
+    },
+    {
+      "id": "m2",
+      "x": 1080,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "text",
+      "text": "**U-Net e CNN**\nBase dos estudos Planet lidos.\n[[UNet]]"
+    },
+    {
+      "id": "m3",
+      "x": 1080,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "text",
+      "text": "**Mudança semântica**\nSiamesas, pós-classificação, SITS-SCD.\n[[MudancaSemantica]]"
+    },
+    {
+      "id": "m4",
+      "x": 1080,
+      "y": 850,
+      "width": 320,
+      "height": 180,
+      "color": "#8B5CF6",
+      "type": "text",
+      "text": "**Séries e fundacionais**\nU-TAE; SAM; modelos fundacionais.\n[[UTAE]]"
+    },
+    {
+      "id": "g_3",
+      "type": "group",
+      "x": 1560,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Validação",
+      "color": "#EAB308"
+    },
+    {
+      "id": "v1",
+      "x": 1600,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "text",
+      "text": "**Três regimes de partição**\nSem shift, temporal e espacial; blocos com folga.\n[[Generalizacao]]"
+    },
+    {
+      "id": "v2",
+      "x": 1600,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "text",
+      "text": "**Métricas por tarefa**\nF1, IoU; SeK, SCS e SCOT para mudança.\n[[MetricasMudancaSemantica]]"
+    },
+    {
+      "id": "v3",
+      "x": 1600,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#EAB308",
+      "type": "text",
+      "text": "**Área com incerteza**\nAmostra probabilística e IC.\n[[EstimativaArea]]"
+    },
+    {
+      "id": "g_4",
+      "type": "group",
+      "x": 2080,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Resultados",
+      "color": "#22C55E"
+    },
+    {
+      "id": "r1",
+      "x": 2120,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#22C55E",
+      "type": "text",
+      "text": "**Mudança é rara**\n≈5% dos pixels por mês; OA engana.\n[[Achados_Relevantes]]"
+    },
+    {
+      "id": "r2",
+      "x": 2120,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#22C55E",
+      "type": "text",
+      "text": "**Shift espacial degrada**\nQueda média de SCS de 39% (P13).\n[[Matriz_Comparativa]]"
+    },
+    {
+      "id": "r3",
+      "x": 2120,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#22C55E",
+      "type": "text",
+      "text": "**Edificações em 4–5 px**\nF1 ≈ 0,45; mudança < 0,1.\n[[Sintese_Edificacoes_Vias]]"
+    },
+    {
+      "id": "g_5",
+      "type": "group",
+      "x": 2600,
+      "y": 0,
+      "width": 400,
+      "height": 1070,
+      "label": "Monitoramento",
+      "color": "#14B8A6"
+    },
+    {
+      "id": "o1",
+      "x": 2640,
+      "y": 70,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "text",
+      "text": "**Revisão humana e QGIS**\nPré-anotar e revisar eventos.\n[[QGIS]]"
+    },
+    {
+      "id": "o2",
+      "x": 2640,
+      "y": 330,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "text",
+      "text": "**Alertas e falsos alertas**\nLatência, persistência e custo.\n[[Alertas]]"
+    },
+    {
+      "id": "o3",
+      "x": 2640,
+      "y": 590,
+      "width": 320,
+      "height": 180,
+      "color": "#14B8A6",
+      "type": "text",
+      "text": "**Lacuna principal**\nPoucos estudos avaliam operação contínua.\n[[L01_ValidacaoOperacional]]"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "g_0",
+      "fromSide": "right",
+      "toNode": "g_1",
+      "toSide": "left",
+      "label": "prepara",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e1",
+      "fromNode": "g_1",
+      "fromSide": "right",
+      "toNode": "g_2",
+      "toSide": "left",
+      "label": "alimenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e2",
+      "fromNode": "g_2",
+      "fromSide": "right",
+      "toNode": "g_3",
+      "toSide": "left",
+      "label": "avalia",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e3",
+      "fromNode": "g_3",
+      "fromSide": "right",
+      "toNode": "g_4",
+      "toSide": "left",
+      "label": "gera",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e4",
+      "fromNode": "g_4",
+      "fromSide": "right",
+      "toNode": "g_5",
+      "toSide": "left",
+      "label": "sustenta",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "eloop",
+      "fromNode": "g_5",
+      "fromSide": "bottom",
+      "toNode": "g_0",
+      "toSide": "bottom",
+      "label": "novos mosaicos",
+      "toEnd": "arrow"
+    }
+  ]
+}

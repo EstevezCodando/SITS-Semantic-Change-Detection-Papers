@@ -21,8 +21,6 @@ Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em s�
 
 ## Conteúdo
 
-Os PDFs convertidos para Markdown, com imagens, estão em [`output/pdf/README.md`](output/pdf/README.md). Consulte a [pipeline de conversão](scripts/PDF_PIPELINE.md) para executar novamente ou processar novos PDFs.
-
 - [Resultado principal e ordem de leitura](#resultado-principal-e-ordem-de-leitura)
 - [Revisões](#revisões)
 - [Artigos e códigos](#artigos-e-códigos)
@@ -1098,7 +1096,8 @@ dados/links_original.json resultado da checagem dos URLs do documento original
 dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs
 dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)
 dados/leitura_profunda/   fichas de leitura profunda (11 artigos) e sinteses; fonte do vault
-vault/                    vault Obsidian: artigos, conceitos, pipeline, experimentos, reuso (abra esta pasta no Obsidian)
+vault/                    vault Obsidian anterior (artigos, conceitos, pipeline, experimentos, reuso)
+base_conhecimento/        novo vault Obsidian (00_Painel ... 99_Templates), com paginas citadas; abra esta pasta no Obsidian
 fonte_original/           documento de revisão que originou a coleta (inalterado)
 scripts/                  scripts de coleta, verificação e geração do README
 ```
