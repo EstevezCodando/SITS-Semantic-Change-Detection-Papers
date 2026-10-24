@@ -44,6 +44,10 @@ SEC_DESC = {
 ORDER = list('ABCDEFGHIJKLMN')
 
 
+def anchor(t):
+    return re.sub(r'\s', '-', re.sub(r'[^\w\s-]', '', t.lower()))
+
+
 def esc(s): return (s or '').replace('|', '\\|').replace('\n', ' ')
 def short_venue(r):
     v = (r.get('venue') or '').replace('(Cornell University)', '').strip()
@@ -83,6 +87,10 @@ def sect(heading_regex, end_regex):
     return '\n'.join(('#' + l if l.startswith('#') else l) for l in body).rstrip()
 
 
+ID = {r['doi'].lower(): r['id'] for r in cat if r.get('doi')}
+def pid(doi): return ID.get(doi.lower(), '?')
+
+
 by_sec = {k: [r for r in cat if r['section'] == k] for k in SEC}
 by_sec['R'] = [r for r in cat if r['section'] == 'R']
 reviews = [r for r in cat if r['section'] == 'R' or r['kind'] == 'Revisão']
@@ -105,7 +113,7 @@ w('**Autor da coleta:** Jean Michael Estevez Alvarez\n')
 w(f'- **Data da coleta e verificação:** {DATA}.')
 w('- **Fontes:** OpenAlex, Crossref, arXiv, Semantic Scholar, páginas de editoras, GitHub e PyPI. Sem consulta autenticada a Scopus ou Web of Science.')
 w(f'- **Origem dos registros:** {norig} do documento de revisão original (P01–P80) e {total - norig} acrescentados nesta coleta (P81 em diante).')
-w(f'- **Pasta `coleta/`:** {npdf} PDFs de acesso aberto, com nomes `ID_Autor-Ano_titulo.pdf`. Veja também [`coleta/_manifesto.csv`](coleta/_manifesto.csv). Os demais são de acesso restrito ou sem versão aberta localizada; o link da publicação está na tabela.')
+w(f'- **Pasta `coleta/`:** {npdf} PDFs de acesso aberto, com nomes `ID_Autor-Ano_titulo.pdf`. Veja também [`coleta/_manifesto.csv`](coleta/_manifesto.csv). Os demais são de acesso restrito, sem versão aberta localizada ou bloqueados contra download automático (parte do MDPI e do ScienceDirect, onde o 403 persistiu mesmo com o fallback); use o link da publicação na tabela.')
 w('- **Scripts** em [`scripts/`](scripts/) reproduzem a coleta: `build_catalog.py`, `download_pdfs.py`, `download_fallback.py`, `check_tools.py`, `make_readme.py`. Quando uma editora bloqueou o download simples, o fallback usou o `curl_cffi` (a mesma base do Scrapling de `C:\\Desenvolvimento\\WebScrapping`).')
 w('- **Direitos autorais:** os PDFs são de acesso aberto (arXiv, MDPI, Frontiers e repositórios institucionais), baixados para estudo pessoal. Respeite as licenças de cada artigo ao redistribuir.\n')
 w(f'**Legenda:** ✓ = título, ano e DOI/identificador conferidos em base bibliográfica em {DATA}; ○ = não localizado automaticamente (conferir manualmente). A marca não atesta a qualidade metodológica do estudo. Em PDF, `—` indica que não há cópia aberta em `coleta/`.\n')
@@ -114,7 +122,7 @@ w('## Conteúdo\n')
 w('- [Resultado principal e ordem de leitura](#resultado-principal-e-ordem-de-leitura)')
 w('- [Revisões](#revisões)')
 w('- [Artigos e códigos](#artigos-e-códigos)')
-for k in ORDER: w(f'  - [{k}. {SEC[k]}](#{k.lower()}-{re.sub(r"[^a-z0-9]+", "-", SEC[k].lower().replace("ç","c").replace("ã","a").replace("é","e").replace("í","i").replace("ê","e").replace("ó","o").replace("á","a").replace("ú","u")).strip("-")})')
+for k in ORDER: w(f'  - [{k}. {SEC[k]}](#{anchor(k + ". " + SEC[k])})')
 w('- [GeoAI e QGIS: artigos que citam o GeoAI](#geoai-e-qgis-artigos-que-citam-o-geoai)')
 w('- [Comentário por artigo](#comentário-por-artigo)')
 w('- [Bibliotecas e ferramentas verificadas](#bibliotecas-e-ferramentas-verificadas)')
@@ -150,15 +158,15 @@ for k in ORDER:
 # --- GeoAI / QGIS
 w('## GeoAI e QGIS: artigos que citam o GeoAI\n')
 w(f'Consulta feita em {DATA} no OpenAlex (citações indexadas) e nas páginas oficiais do projeto:\n')
-w('- **Existe um artigo citável do pacote:** Wu, Q. (2026). *GeoAI: A Python package for integrating artificial intelligence with geospatial data analysis and visualization*. Journal of Open Source Software, 11(118), 9605. https://doi.org/10.21105/joss.09605 (**P157**).')
+w(f'- **Existe um artigo citável do pacote:** Wu, Q. (2026). *GeoAI: A Python package for integrating artificial intelligence with geospatial data analysis and visualization*. Journal of Open Source Software, 11(118), 9605. https://doi.org/10.21105/joss.09605 (**{pid('10.21105/joss.09605')}**).')
 w('- **O plugin QGIS faz parte do pacote.** O README do repositório [opengeos/geoai](https://github.com/opengeos/geoai) lista a "integração com o QGIS por um plugin dedicado" (código na pasta `qgis_plugin`; documentação em https://opengeoai.org/qgis_plugin/). **Não localizei um artigo separado só do plugin.** O trabalho a citar é o do JOSS.')
 w(f"- **Pacote:** PyPI `geoai-py` {tools['pypi']['geoai-py']['version']}, licença MIT, Python {tools['pypi']['geoai-py']['requires_python']}.")
 w('- **Trabalhos que citam o JOSS do GeoAI (OpenAlex, 24/10/2026):** o índice mostrou apenas 4, o que reflete a publicação recente (fev/2026) e o atraso de indexação:')
-w('  1. Zhou, Huang, Wang e Mai (2026). *Measuring the spatial explicitness of GeoAI and geospatial foundation models: a systematic review and future roadmap*. ISPRS J. Photogramm. Remote Sens. https://doi.org/10.1016/j.isprsjprs.2026.08.001 (**P170**).')
-w('  2. Le Guillou, A. (2026). *SemanticSeg4EO: an open-source unified framework and QGIS plugin for semantic segmentation in Earth Observation*. SoftwareX. https://doi.org/10.1016/j.softx.2026.102741 (**P160**).')
+w(f'  1. Zhou, Huang, Wang e Mai (2026). *Measuring the spatial explicitness of GeoAI and geospatial foundation models: a systematic review and future roadmap*. ISPRS J. Photogramm. Remote Sens. https://doi.org/10.1016/j.isprsjprs.2026.08.001 (**{pid('10.1016/j.isprsjprs.2026.08.001')}**).')
+w(f'  2. Le Guillou, A. (2026). *SemanticSeg4EO: an open-source unified framework and QGIS plugin for semantic segmentation in Earth Observation*. SoftwareX. https://doi.org/10.1016/j.softx.2026.102741 (**{pid('10.1016/j.softx.2026.102741')}**).')
 w('  3. Polanco et al. (2026). *Dry forest wood and fiber provision for traditional crafts and its potential impact on woody cactus (Leptocereus paniculatus) populations in the Dominican Republic*. Conservation, 6(4), 127. https://doi.org/10.3390/conservation6040127 (aplicação ecológica; fora do escopo de mudança de cobertura).')
 w('  4. Fraser et al. (2026). *A multi-year assessment of oak response to spongy moth using uncrewed aerial vehicles*. J. Earth Obs. Geospat. Appl. https://doi.org/10.65372/ptapac10 (aplicação com UAV; fora do escopo).')
-w('- **Outros plugins QGIS de deep learning com artigo:** Deepness (**P156**, SoftwareX 2023), IAMAP (**P157**→ver tabela N), Geo-SAM e MO-SAM, Land Classification Plugin com Pix2Pix, SemanticSeg4EO, YOLO-MOD, TreeEyed e SpecDeepMap, todos na seção N. O Deepness acumula citações de plugins posteriores (YOLO-MOD, SemanticSeg4EO, TreeEyed, GSIP).')
+w(f'- **Outros plugins QGIS de deep learning com artigo:** Deepness (**{pid('10.1016/j.softx.2023.101495')}**, SoftwareX 2023), IAMAP (**{pid('10.21105/joss.10329')}**), Geo-SAM e MO-SAM, Land Classification Plugin com Pix2Pix, SemanticSeg4EO, YOLO-MOD, TreeEyed e SpecDeepMap, todos na seção N. O Deepness acumula citações de plugins posteriores (YOLO-MOD, SemanticSeg4EO, TreeEyed, GSIP).')
 w('- **Mudança de cobertura no QGIS:** o plugin MOLUSCE (previsão de uso/cobertura por autômatos celulares e redes neurais) tem vários estudos aplicados, listados na seção N. Nenhum deles usa mosaicos Planet mensais nem substitui um modelo temporal.')
 w('- **Limite:** nenhum artigo localizado combina GeoAI/QGIS com mosaicos Planet mensais para eventos de mudança. A integração é uma oportunidade de implementação (pré-anotar no QGIS, rodar o modelo e revisar o resultado), não um fluxo validado.\n')
 
@@ -186,7 +194,7 @@ w('### Revisões do documento original (P48–P50)\n')
 for r in sorted(by_sec['R'], key=lambda x: x['n']):
     b = r['bullets']
     parts = [f'_{key}:_ {val}' for key, val in b.items() if key not in SKIP and not key.startswith('Código')]
-    w(f"**[{r['id']}] {author1(r)} {year(r)} — {r['title']}.** {mark(r)} _Referência:_ {re.sub(chr(42), '', b.get('Referência', ''))} " + ' '.join(parts) + '\n')
+    w(f"**[{r['id']}] {author1(r)} {year(r)} — {r['title']}.** {mark(r)} _Referência:_ {re.sub(r'[*]', '', b.get('Referência', ''))} " + ' '.join(parts) + '\n')
 
 # --- ferramentas
 w('## Bibliotecas e ferramentas verificadas\n')
@@ -216,10 +224,10 @@ w(f'Registros não conferidos automaticamente: **{len(bad)}**.' + ('' if not bad
 # --- tendencias
 w('## Tendências 2024–2026\n')
 w('Observadas nesta coleta; são leituras do conjunto de títulos e resumos, não resultados medidos:\n')
-w('1. **Modelos fundacionais (SAM, DINOv3, Prithvi) adaptados à detecção de mudanças**, com muitos trabalhos novos em 2025–2026 (seções C, G e M). Há também avisos de que modelos especializados podem não superar baselines supervisionados (P155).')
-w('2. **Mudança semântica em séries temporais**, e não só em pares de datas: TSSCD, DynamicEarthNet, MUDS e redes espaço-temporais (P10–P16, P145).')
-w('3. **Supervisão fraca e poucos rótulos**: supervisão temporal fraca, pseudorrótulos, aprendizado ativo e pré-anotação com SAM/YOLO (P33, P59, P78, P128).')
-w('4. **Planet NICFI como base operacional para floresta**: cobertura arbórea, degradação, perturbações mensais e validação de alertas (P01–P04, P91).')
+w(f'1. **Modelos fundacionais (SAM, DINOv3, Prithvi) adaptados à detecção de mudanças**, com muitos trabalhos novos em 2025–2026 (seções C, G e M). Há também avisos de que modelos especializados podem não superar baselines supervisionados ({pid('10.48550/arXiv.2411.02796')}).')
+w(f'2. **Mudança semântica em séries temporais**, e não só em pares de datas: TSSCD, DynamicEarthNet, MUDS e redes espaço-temporais (P10–P16, {pid('10.1109/tgrs.2026.3713303')}).')
+w(f'3. **Supervisão fraca e poucos rótulos**: supervisão temporal fraca, pseudorrótulos, aprendizado ativo e pré-anotação com SAM/YOLO (P33, P59, P78, {pid('10.1111/phor.70021')}).')
+w(f'4. **Planet NICFI como base operacional para floresta**: cobertura arbórea, degradação, perturbações mensais e validação de alertas (P01–P04, {pid('10.1016/j.agrformet.2023.109676')}).')
 w('5. **IA geoespacial dentro do QGIS**: plugins de inferência (Deepness, IAMAP, Geo-SAM, GeoAI) reduzem a barreira de uso, mas ainda não há validação publicada com mosaicos Planet mensais (seção N).')
 w('6. **Engenharia de dados antes do modelo**: cubos, STAC e controle de qualidade são pré-requisitos para não aprender diferenças de produto como mudança no terreno (seção H).\n')
 

@@ -102,7 +102,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.rse.2023.113798: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -145,10 +145,11 @@
   "cited_by": 12,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P03_Carter2024_Detection-of-forest-disturbance-across-California-using-deep.pdf",
   "pdf_errors": [
    "https://doi.org/10.3389/frsen.2024.1409400: ValueError nao e PDF"
-  ]
+  ],
+  "pdf_source": "fallback (execucao anterior)"
  },
  {
   "id": "P04",
@@ -317,7 +318,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/14/11/2628/pdf?version=165416: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -362,7 +364,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.rsase.2025.101653: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -732,7 +734,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.3390/rs17050792: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -1099,7 +1101,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/10/1662/pdf: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -1230,8 +1233,9 @@
   "cited_by": 176,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
-  "pdf_errors": []
+  "pdf_file": "P27_Zheng2021_Change-Is-Everywhere-Single-Temporal-Supervised-Object-Chang.pdf",
+  "pdf_errors": [],
+  "pdf_source": "fallback (execucao anterior)"
  },
  {
   "id": "P28",
@@ -1736,8 +1740,9 @@
   "cited_by": 382,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
-  "pdf_errors": []
+  "pdf_file": "P37_Bastani2018_RoadTracer-Automatic-Extraction-of-Road-Networks-From-Aerial.pdf",
+  "pdf_errors": [],
+  "pdf_source": "fallback (execucao anterior)"
  },
  {
   "id": "P38",
@@ -1871,10 +1876,11 @@
   "cited_by": 0,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P40_Lee2026_Road-Change-Detection-Using-Maps-and-Aerial-Imagery-for-Digi.pdf",
   "pdf_errors": [
    "https://doi.org/10.7780/kjrs.2026.42.2.5: ValueError nao e PDF"
-  ]
+  ],
+  "pdf_source": "fallback (execucao anterior)"
  },
  {
   "id": "P41",
@@ -1917,7 +1923,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://research.wur.nl/en/publications/detecting-trend-and-: ValueError nao e PDF"
+   "curl_cffi: HTTP 200 text/html;charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -1960,7 +1967,9 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": []
+  "pdf_errors": [
+   "semantic-scholar: HTTP 200 text/html; charset=UTF-8"
+  ]
  },
  {
   "id": "P43",
@@ -2049,7 +2058,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S156984322: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -2151,7 +2161,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://research.wur.nl/en/publications/good-practices-for-e: ValueError nao e PDF"
+   "curl_cffi: HTTP 200 text/html;charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -2195,8 +2206,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://nottingham-repository.worktribe.com/file/2306994/1/A: HTTPError HTTP Error 403: Forbidden",
-   "https://doi.org/10.1016/j.rse.2019.05.018: ValueError nao e PDF"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -2242,7 +2253,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.jag.2024.104282: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -2333,7 +2344,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/18/15/2573/pdf?version=178583: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -2379,7 +2391,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/17/3/480/pdf?version=17382316: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -2422,10 +2435,11 @@
   "cited_by": 295,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P52_Georganos2018_Very-High-Resolution-Object-Based-Land-Use-Land-Cover-Urban-.pdf",
   "pdf_errors": [
    "http://hdl.handle.net/2013/ULB-DIPOT:oai:dipot.ulb.ac.be:201: ValueError nao e PDF"
-  ]
+  ],
+  "pdf_source": "fallback (execucao anterior)"
  },
  {
   "id": "P53",
@@ -2507,7 +2521,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1111/tgis.70293: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -2550,7 +2564,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1080/19376812.2024.2424378: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -2697,7 +2711,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1109/jstars.2025.3649081: ValueError nao e PDF"
+   "semantic-scholar: HTTP 202 text/html; charset=UTF-8"
   ]
  },
  {
@@ -2738,7 +2752,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1080/15481603.2025.2543102: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -2833,7 +2847,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/1424-8220/25/14/4375/pdf?version=175232: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3238,7 +3253,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/24/4033/pdf?version=160756: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3372,7 +3388,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.3390/data4030092: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3429,7 +3445,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/13/6/1125/pdf?version=1616681: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3470,7 +3487,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.3390/rs18020260: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3564,7 +3581,9 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": []
+  "pdf_errors": [
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
+  ]
  },
  {
   "id": "P76",
@@ -3652,7 +3671,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.isprsjprs.2019.08.018: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -3694,7 +3713,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1109/jstars.2025.3597196: ValueError nao e PDF"
+   "semantic-scholar: HTTP 202 text/html; charset=UTF-8"
   ]
  },
  {
@@ -3818,7 +3837,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/13/19/3930/pdf?version=163403: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -3853,7 +3873,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S003442572: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -3893,7 +3914,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/am/pii/S003442: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 404 text/html",
+   "semantic-scholar: HTTP 404 text/html"
   ]
  },
  {
@@ -3926,7 +3948,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S266601722: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -3964,7 +3987,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "http://ira.lib.polyu.edu.hk/bitstream/10397/99579/1/Wang_New: ConnectionResetError [WinError 10054] Foi forçado o cancelame"
+   "curl_cffi: Failed to perform, curl: (56) Recv failu",
+   "semantic-scholar: Failed to perform, curl: (56) Recv failu"
   ]
  },
  {
@@ -3997,7 +4021,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/15/2366/pdf?version=159550: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4036,7 +4061,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S030324342: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -4113,7 +4139,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/am/pii/S003442: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 404 text/html",
+   "semantic-scholar: HTTP 404 text/html"
   ]
  },
  {
@@ -4214,7 +4241,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.ecoinf.2025.103034: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -4265,7 +4292,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1002/rse2.70041: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -4305,7 +4332,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2073-445X/14/2/325/pdf?version=17388278: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4337,7 +4365,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1080/15481603.2022.2060595: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -4373,7 +4401,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2073-4441/14/21/3363/pdf?version=166652: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4407,7 +4436,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/13/2121/pdf?version=159376: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4444,7 +4474,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S003442572: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -4478,7 +4509,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2306-5729/8/12/185/pdf?version=17016578: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4510,10 +4542,12 @@
   "cited_by": 0,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P100_Crato2025_Detection-of-rural-roads-from-planet-images-using-convolutio.pdf",
   "pdf_errors": [
    "https://www.scielo.br/j/bcg/a/PDXjdMpswyRzknDwVXMYpJg/?lang=: HTTPError HTTP Error 502: Bad Gateway"
-  ]
+  ],
+  "pdf_source": "https://www.scielo.br/j/bcg/a/PDXjdMpswyRzknDwVXMYpJg/?lang=en&format=pdf",
+  "pdf_bytes": 6064355
  },
  {
   "id": "P101",
@@ -4551,8 +4585,9 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/16/6/1083/pdf?version=1710926: HTTPError HTTP Error 403: Forbidden",
-   "https://open.library.ubc.ca/media/download/pdf/52383/1.04414: ValueError nao e PDF"
+   "curl_cffi: HTTP 200 text/html",
+   "curl_cffi: HTTP 200 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4778,7 +4813,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1109/jstars.2024.3404781: ValueError nao e PDF"
+   "semantic-scholar: HTTP 202 text/html; charset=UTF-8"
   ]
  },
  {
@@ -4813,7 +4848,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/6/901/pdf?version=15840122: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4851,7 +4887,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/13/24/5084/pdf?version=163998: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -4918,7 +4955,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/14/19/4694/pdf?version=166389: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5028,7 +5066,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/15/2/463/pdf?version=16739593: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5320,8 +5359,9 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/14/7/1746/pdf?version=1649216: HTTPError HTTP Error 403: Forbidden",
-   "https://scholars.cityu.edu.hk/files/106079655/remotesensing_: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5416,7 +5456,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/6/924/pdf?version=15840985: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5497,7 +5538,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/14/7/1552/pdf?version=1648046: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5632,7 +5674,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/11/11/1382/pdf?version=156032: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5845,7 +5888,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/17/3/369/pdf?version=17375511: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -5880,7 +5924,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/17/15/2742/pdf?version=175464: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html"
   ]
  },
  {
@@ -6019,7 +6063,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1109/jstars.2022.3159528: ValueError nao e PDF"
+   "semantic-scholar: HTTP 202 text/html; charset=UTF-8"
   ]
  },
  {
@@ -6092,7 +6136,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.3390/rs18162789: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -6330,7 +6374,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2072-4292/12/2/207/pdf?version=15784010: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -6575,7 +6620,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.softx.2023.101495: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -6708,7 +6753,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.softx.2026.102741: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -6740,7 +6785,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.softx.2026.102721: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -6773,7 +6818,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.softx.2025.102071: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -6807,7 +6852,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.softx.2025.102481: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -6847,9 +6892,7 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": [
-   "https://doi.org/10.2139/ssrn.4786825: HTTPError HTTP Error 403: Forbidden"
-  ]
+  "pdf_errors": []
  },
  {
   "id": "P165",
@@ -6921,7 +6964,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1080/10106049.2026.2717446: HTTPError HTTP Error 403: Forbidden"
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -7018,10 +7061,12 @@
   "cited_by": 506,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P169_Congedo2021_Semi-Automatic-Classification-Plugin-A-Python-tool-for-the-d.pdf",
   "pdf_errors": [
    "https://doi.org/10.21105/joss.03172: ValueError nao e PDF"
-  ]
+  ],
+  "pdf_source": "https://joss.theoj.org/papers/10.21105/joss.03172.pdf",
+  "pdf_bytes": 384810
  },
  {
   "id": "P170",
@@ -7064,7 +7109,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://doi.org/10.1016/j.isprsjprs.2026.08.001: ValueError nao e PDF"
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -7183,7 +7228,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://dl.acm.org/doi/pdf/10.1145/3653070: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -7220,7 +7266,7 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.sciencedirect.com/science/article/pii/S156984322: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -7326,9 +7372,9 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://shs.hal.science/halshs-04695217v1/document: ValueError nao e PDF",
-   "https://iris.unito.it/bitstream/2318/2013990/1/2024%20Gluski: HTTPError HTTP Error 403: Forbidden",
-   "http://dx.doi.org/10.1016/j.rsase.2024.101351: ValueError nao e PDF"
+   "curl_cffi: HTTP 200 text/html; charset=utf-8",
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 200 text/html;charset=UTF-8"
   ]
  },
  {
@@ -7359,7 +7405,9 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": []
+  "pdf_errors": [
+   "doi-landing: HTTP 204 "
+  ]
  },
  {
   "id": "P179",
@@ -7433,7 +7481,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://www.mdpi.com/2073-445X/11/3/419/pdf?version=16473080: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 200 text/html",
+   "semantic-scholar: HTTP 200 text/html"
   ]
  },
  {
@@ -7464,7 +7513,9 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": []
+  "pdf_errors": [
+   "doi-landing: HTTP 204 "
+  ]
  },
  {
   "id": "P182",
@@ -7498,7 +7549,9 @@
   "title_sim": 1.0,
   "checked": true,
   "pdf_file": "",
-  "pdf_errors": []
+  "pdf_errors": [
+   "doi-landing: HTTP 204 "
+  ]
  },
  {
   "id": "P183",
@@ -7530,7 +7583,8 @@
   "checked": true,
   "pdf_file": "",
   "pdf_errors": [
-   "https://downloads.hindawi.com/journals/js/2022/7419031.pdf: HTTPError HTTP Error 403: Forbidden"
+   "curl_cffi: HTTP 403 text/html; charset=UTF-8",
+   "semantic-scholar: HTTP 403 text/html; charset=UTF-8"
   ]
  },
  {
@@ -7591,9 +7645,11 @@
   "cited_by": 5,
   "title_sim": 1.0,
   "checked": true,
-  "pdf_file": "",
+  "pdf_file": "P185_Kumari2025_Simulation-of-Land-Use-and-Land-Cover-Using-the-MOLUSCE-Plug.pdf",
   "pdf_errors": [
    "https://doi.org/10.5194/isprs-archives-xlviii-m-5-2024-81-20: ValueError nao e PDF"
-  ]
+  ],
+  "pdf_source": "https://isprs-archives.copernicus.org/articles/XLVIII-M-5-2024/81/2025/isprs-archives-XLVIII-M-5-2024-81-2025.pdf",
+  "pdf_bytes": 1478826
  }
 ]

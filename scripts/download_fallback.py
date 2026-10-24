@@ -19,7 +19,7 @@ def sim(a, b): return difflib.SequenceMatcher(None, norm(a), norm(b)).ratio()
 def try_pdf(url, dest, referer=None):
     h = {'Accept': 'application/pdf,*/*'}
     if referer: h['Referer'] = referer
-    r = cr.get(url, impersonate='chrome', timeout=60, allow_redirects=True, headers=h)
+    r = cr.get(url, impersonate='chrome', timeout=40, allow_redirects=True, headers=h)
     if r.status_code == 200 and r.content.startswith(b'%PDF') and len(r.content) > 30_000:
         open(dest, 'wb').write(r.content)
         return len(r.content)
@@ -27,7 +27,14 @@ def try_pdf(url, dest, referer=None):
 
 
 def pdf_from_landing(url):
-    r = cr.get(url, impersonate='chrome', timeout=45, allow_redirects=True)
+    try:
+        return _landing(url)
+    except Exception:
+        return None, None
+
+
+def _landing(url):
+    r = cr.get(url, impersonate='chrome', timeout=25, allow_redirects=True)
     if r.status_code != 200: return None, None
     m = re.search(r'<meta[^>]+name=["\']citation_pdf_url["\'][^>]+content=["\']([^"\']+)', r.text, re.I) or \
         re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']citation_pdf_url["\']', r.text, re.I)
@@ -58,8 +65,19 @@ def arxiv_by_title(title):
 
 
 def work(r, outdir):
+    try:
+        return _work(r, outdir)
+    except Exception as e:
+        r['pdf_errors'] = ['erro: ' + type(e).__name__]
+        return r
+
+
+def _work(r, outdir):
     if r.get('pdf_file'): return r
     dest = os.path.join(outdir, filename(r))
+    if os.path.exists(dest) and os.path.getsize(dest) > 30_000:
+        r['pdf_file'] = os.path.basename(dest); r['pdf_source'] = 'fallback (execucao anterior)'
+        return r
     tried = []
 
     def attempt(label, url, referer=None):
