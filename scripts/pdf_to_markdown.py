@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
 import time
 from urllib.parse import quote
 
@@ -13,11 +14,50 @@ import pymupdf
 import pymupdf4llm
 
 VERSION = 1
+AUDIT_VERSION = 1
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def dump(path, data):
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
+    temporary.replace(path)
+
+
+def preserve_text(record, source):
+    """Keep extractable text even when a layout detector absorbs it into a figure."""
+    destination = Path(record['output'])
+    if record.get('text_audit') == AUDIT_VERSION and (destination / 'text.md').is_file():
+        return record
+    pages_path = destination / 'pages.json'
+    page_records = json.loads(pages_path.read_text(encoding='utf-8'))
+    content = (destination / 'document.md').read_text(encoding='utf-8')
+    sections = re.split(r'(?=<!-- page: \d+ -->)', content)
+    plain = [f"# Texto extraído: {Path(record['source']).stem}\n\nExtração textual direta, sem reconstrução de tabelas ou fórmulas. Consulte `document.md` para layout e figuras.\n"]
+    with pymupdf.open(source) as doc:
+        for pno, page in enumerate(doc):
+            raw = page.get_text(sort=True).strip()
+            fence = '`' * max(3, max((len(x) + 1 for x in re.findall(r'`+', raw)), default=3))
+            text_block = f"\n\n{fence}text\n{raw}\n{fence}\n"
+            plain.append(f"\n\n<!-- page: {pno + 1} -->\n\n## Página {pno + 1}{text_block}")
+            stats = page_records[pno]
+            if stats['source_characters'] > 500 and stats['markdown_characters'] < stats['source_characters'] * 0.5:
+                addition = '\n\n### Complemento de texto extraído\n\nA análise de layout retornou menos da metade do texto desta página. A extração direta abaixo preserva o conteúdo disponível e pode repetir trechos, rótulos ou camadas do PDF.\n' + text_block
+                # The last page also includes the raster appendix; insert before it.
+                appendix = '\n\n## Imagens raster incorporadas'
+                if appendix in sections[pno + 1]:
+                    sections[pno + 1] = sections[pno + 1].replace(appendix, addition + appendix, 1)
+                else:
+                    sections[pno + 1] += addition
+                stats['text_supplement'] = True
+                record['warnings'].append(f"Página {pno + 1}: cobertura de layout reduzida; texto direto incluído como complemento.")
+    (destination / 'document.md').write_text(''.join(sections), encoding='utf-8')
+    (destination / 'text.md').write_text(''.join(plain), encoding='utf-8')
+    dump(pages_path, page_records)
+    record['files'] = sorted(set(record['files'] + ['text.md']))
+    record['text_audit'] = AUDIT_VERSION
+    dump(destination / 'manifest.json', record)
+    return record
 
 
 def convert(job):
@@ -31,6 +71,8 @@ def convert(job):
         if old.get("key") == key and all((destination / p).is_file() for p in old.get("files", [])) and old.get("files"):
             return old
     destination.mkdir(parents=True, exist_ok=True)
+    # An interrupted forced rebuild must not leave an apparently valid old cache.
+    manifest.unlink(missing_ok=True)
     figures = destination / "images"
     originals = destination / "raster"
     figures.mkdir(exist_ok=True)
@@ -105,6 +147,8 @@ def convert(job):
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=ROOT / "coleta")
     parser.add_argument("--output", type=Path, default=ROOT / "output" / "pdf")
@@ -130,6 +174,7 @@ def main():
             name = futures[future]
             try:
                 result = future.result()
+                result = preserve_text(result, source / result['source'])
                 results.append(result)
                 print(f"[{len(results) + len(errors)}/{len(pdfs)}] OK {name}: {result['pages']} páginas, {result['figure_crops']} recortes", flush=True)
             except Exception as exc:

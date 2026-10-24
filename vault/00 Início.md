@@ -63,10 +63,10 @@ Mapa visual: [[Pipeline.canvas]]
 - [[P18 Daudt 2019|P18 Daudt 2019]] — Multitask Learning for Large-scale Semantic Change Detection · leitura: [[LP P18 Daudt 2019|profunda]]
 - [[P19 Yang 2021|P19 Yang 2021]] — Asymmetric Siamese Networks for Semantic Change Detection in Aerial Images · leitura: [[LP P19 Yang 2021|profunda]]
 - [[P46 Olofsson 2014|P46 Olofsson 2014]] — Good practices for estimating area and assessing accuracy of land change · leitura: [[LP P46 Olofsson 2014|parcial]]
-- [[P155 Wu 2026|P155 Wu 2026]] — GeoAI: A Python package for integrating artificial intelligence with geospatial data analy · *leitura pendente*
-- [[P156 Aszkowski 2023|P156 Aszkowski 2023]] — Deepness: Deep neural remote sensing plugin for QGIS · *leitura pendente*
-- [[P157 Tresson 2026|P157 Tresson 2026]] — IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited computing resources · *leitura pendente*
-- [[P164 Wang 2024|P164 Wang 2024]] — Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineation Using Segment Anyt · *leitura pendente*
+- [[P155 Wu 2026|P155 Wu 2026]] — GeoAI: A Python package for integrating artificial intelligence with geospatial data analy · leitura: [[LP P155 Wu 2026|profunda]]
+- [[P156 Aszkowski 2023|P156 Aszkowski 2023]] — Deepness: Deep neural remote sensing plugin for QGIS · leitura: [[LP P156 Aszkowski 2023|parcial]]
+- [[P157 Tresson 2026|P157 Tresson 2026]] — IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited computing resources · leitura: [[LP P157 Tresson 2026|profunda]]
+- [[P164 Wang 2024|P164 Wang 2024]] — Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineation Using Segment Anyt · leitura: [[LP P164 Wang 2024|parcial]]
 
 ## Sínteses da leitura profunda
 
@@ -74,6 +74,7 @@ Mapa visual: [[Pipeline.canvas]]
 - [[Síntese — métricas por tarefa e armadilhas]]
 - [[Síntese — partições, vazamento e domain shift]]
 - [[Síntese — cuidados específicos com produtos Planet]]
+- [[Síntese — GeoAI e QGIS- o que cada ferramenta faz no nosso fluxo]]
 - [[Síntese — receitas de treino comparadas (verificadas na leitura)]]
 - [[Síntese — protocolos de rotulagem comparados]]
 

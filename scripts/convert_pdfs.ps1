@@ -12,3 +12,5 @@ $pipelineArgs = @((Join-Path $PSScriptRoot 'pdf_to_markdown.py'), '--workers', $
 if ($Force) { $pipelineArgs += '--force' }
 & $pythonPath @pipelineArgs
 if ($LASTEXITCODE -ne 0) { throw 'Conversão incompleta: consulte output/pdf/report.json' }
+& $pythonPath (Join-Path $PSScriptRoot 'validate_pdf_markdown.py')
+if ($LASTEXITCODE -ne 0) { throw 'Falha na validação: consulte output/pdf/validation.json' }

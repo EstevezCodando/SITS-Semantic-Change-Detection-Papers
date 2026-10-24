@@ -21,6 +21,8 @@ Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em s�
 
 ## Conteúdo
 
+Os PDFs convertidos para Markdown, com imagens, estão em [`output/pdf/README.md`](output/pdf/README.md). Consulte a [pipeline de conversão](scripts/PDF_PIPELINE.md) para executar novamente ou processar novos PDFs.
+
 - [Resultado principal e ordem de leitura](#resultado-principal-e-ordem-de-leitura)
 - [Revisões](#revisões)
 - [Artigos e códigos](#artigos-e-códigos)

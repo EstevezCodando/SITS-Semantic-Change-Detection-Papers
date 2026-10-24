@@ -21,7 +21,8 @@ datasets: []
 metricas: []
 ferramentas: ["[[QGIS]]", "[[TorchGeo]]", "[[Hugging Face]]"]
 etapas_pipeline: ["[[E11 Operação e atualização|E11]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P157 Tresson 2026]]"
+status_leitura: lido (profundo)
 tags: [artigo, secao/N, prioridade/alta, etapa/E11]
 ---
 
@@ -31,7 +32,16 @@ tags: [artigo, secao/N, prioridade/alta, etapa/E11]
 
 Seção: **GeoAI e QGIS** · Prioridade: **alta** · Análise: *texto integral (PDF) + metadados*
 
+> [!success] Leitura profunda concluída: [[LP P157 Tresson 2026]]
+
 ## O que reaproveitar
+
+- **Mapas de similaridade e agrupamento sobre embeddings** como forma barata de **buscar exemplos parecidos** e escolher amostras para rotular na etapa [[E04 Rotulagem e pré-anotação]], sem treinar nada.
+- **Classificadores leves (RF/KNN) sobre embeddings** como baseline do EXP1 com poucos rótulos.
+- **Desenho de CPU primeiro** (quantização, pausas, progresso em disco) para rodar em máquinas sem GPU.
+- Padrão de **diálogo de dependências** (herdado do Deepness) para distribuir o ambiente.
+
+### Extraído automaticamente
 
 - **Relevância:** IAMAP: plugin QGIS para extração de características com modelos fundacionais autossupervisionados, agrupamento e mapas de similaridade.
 - **Código:** https://github.com/umr-lops/iamap

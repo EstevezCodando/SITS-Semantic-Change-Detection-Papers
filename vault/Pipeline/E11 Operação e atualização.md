@@ -68,3 +68,13 @@ tags: [pipeline, etapa/E11]
 | baixa | [[P177 Gluski 2024\|P177 Gluski 2024]] | Remote detection of asbestos-cement roofs: Evaluating a QGIS | Avaliação de plugin QGIS para detecção remota de telhados de amianto. |
 
 *(+8 artigos de prioridade menor; veja a tag `etapa/E11`.)*
+
+## Leituras profundas e sínteses
+
+- [[LP P155 Wu 2026]] → GeoAI: A Python package for integrating artificial intelligence with g (nota: [[P155 Wu 2026|P155 Wu 2026]])
+- [[LP P156 Aszkowski 2023]] → Deepness: Deep neural remote sensing plugin for QGIS (nota: [[P156 Aszkowski 2023|P156 Aszkowski 2023]])
+- [[LP P157 Tresson 2026]] → IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited comp (nota: [[P157 Tresson 2026|P157 Tresson 2026]])
+- [[LP P158 Febrita 2025]] → Evaluating AI-Driven Automated Map Digitization in QGIS (nota: [[P158 Febrita 2025|P158 Febrita 2025]])
+- [[LP P164 Wang 2024]] → Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineatio (nota: [[P164 Wang 2024|P164 Wang 2024]])
+- [[LP P165 Wang 2025]] → MO-SAM: Testing the reliability and limits of mine feature delineation (nota: [[P165 Wang 2025|P165 Wang 2025]])
+- [[Síntese — GeoAI e QGIS- o que cada ferramenta faz no nosso fluxo]]

@@ -78,4 +78,5 @@ tags: [pipeline, etapa/E06]
 - [[LP P05 Zaraza-Aguilera 2022]] → Change Detection over mining areas using Deep Neural Networks from Pla (nota: [[P05 Zaraza-Aguilera 2022|P05 Zaraza-Aguilera 2022]])
 - [[LP P07 Vizzari 2022]] → PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Ba (nota: [[P07 Vizzari 2022|P07 Vizzari 2022]])
 - [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — GeoAI e QGIS- o que cada ferramenta faz no nosso fluxo]]
 - [[Síntese — receitas de treino comparadas (verificadas na leitura)]]

@@ -57,3 +57,4 @@ tags: [pipeline, etapa/E09]
 ## Leituras profundas e sínteses
 
 - [[LP P10 Etten 2021]] → The Multi-Temporal Urban Development SpaceNet Dataset (nota: [[P10 Etten 2021|P10 Etten 2021]])
+- [[LP P165 Wang 2025]] → MO-SAM: Testing the reliability and limits of mine feature delineation (nota: [[P165 Wang 2025|P165 Wang 2025]])

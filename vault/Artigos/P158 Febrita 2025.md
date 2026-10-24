@@ -21,7 +21,8 @@ datasets: ["[[OpenStreetMap]]"]
 metricas: ["[[Precisão-Recall|Precisão/Recall]]", "[[F1]]", "[[IoU - mIoU|IoU / mIoU]]"]
 ferramentas: ["[[QGIS]]", "[[GeoAI (opengeos)]]"]
 etapas_pipeline: ["[[E11 Operação e atualização|E11]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P158 Febrita 2025]]"
+status_leitura: lido (profundo)
 tags: [artigo, secao/N, prioridade/baixa, etapa/E11]
 ---
 
@@ -31,7 +32,15 @@ tags: [artigo, secao/N, prioridade/baixa, etapa/E11]
 
 Seção: **GeoAI e QGIS** · Prioridade: **baixa** · Análise: *texto integral (PDF) + metadados*
 
+> [!success] Leitura profunda concluída: [[LP P158 Febrita 2025]]
+
 ## O que reaproveitar
+
+- **Lista de parâmetros que alteram muito o resultado** (resolução de processamento, sobreposição, remoção de segmentos pequenos) e a necessidade de **calibrar por área** antes de comparar modelos.
+- **Protocolo de casamento por IoU > 0,5** para contagem de edificações e relatório de TP/FP/FN, em linha com o SCOT (IoU > 0,25) de [[P10 Etten 2021]].
+- Reforça: **recall alto com precisão média** é adequado para triagem, e a revisão humana corrige os falsos positivos ([[E11 Operação e atualização]]).
+
+### Extraído automaticamente
 
 - **Relevância:** Avaliação do Deepness para digitalização automática de mapas, comparada ao OpenStreetMap (F1).
 - **Métricas usadas:** [[Precisão-Recall|Precisão/Recall]], [[F1]], [[IoU - mIoU|IoU / mIoU]]

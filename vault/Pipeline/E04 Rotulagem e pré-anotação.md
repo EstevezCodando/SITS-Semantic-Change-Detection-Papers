@@ -63,5 +63,7 @@ tags: [pipeline, etapa/E04]
 
 ## Leituras profundas e sínteses
 
+- [[LP P165 Wang 2025]] → MO-SAM: Testing the reliability and limits of mine feature delineation (nota: [[P165 Wang 2025|P165 Wang 2025]])
 - [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — GeoAI e QGIS- o que cada ferramenta faz no nosso fluxo]]
 - [[Síntese — protocolos de rotulagem comparados]]

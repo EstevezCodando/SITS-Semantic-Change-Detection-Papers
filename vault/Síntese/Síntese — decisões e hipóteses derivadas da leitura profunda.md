@@ -33,4 +33,14 @@ Cada linha é uma **hipótese de trabalho** apoiada por evidência dos artigos l
 - Quanto custa a revisão humana por evento confirmado?
 
 ## Lacunas de leitura
-- [[P02 Dalagnol 2023]], [[P14 He 2024]] e [[P46 Olofsson 2014]] foram lidos apenas em resumos e repositórios.
+- [[P02 Dalagnol 2023]], [[P14 He 2024]], [[P46 Olofsson 2014]], [[P156 Aszkowski 2023]] e [[P164 Wang 2024]] foram lidos apenas em resumos, documentação e repositórios.
+
+## Decisões adicionais (ferramentas GeoAI/QGIS)
+| # | Decisão / hipótese | Evidência | Etapa | Teste |
+|---|---|---|---|---|
+| D16 | Usar **QGIS para pré-anotar, revisar e inspecionar**, e o pipeline Python para a detecção temporal | [[P155 Wu 2026]], [[P156 Aszkowski 2023]] | [[E04 Rotulagem e pré-anotação]] | EXP6 |
+| D17 | Para SAM, partir de **20–30 pontos** e selecionar a máscara **sem usar a anotação** | [[P165 Wang 2025]] | E04 | variar pontos e medir mIoU e tempo |
+| D18 | **Codificar cada mosaico uma vez** (Geo-SAM pré-codificado) para cliques rápidos | [[P164 Wang 2024]] | E04 | tempo por evento |
+| D19 | **IAMAP** (similaridade/agrupamento) para escolher exemplos antes de rotular | [[P157 Tresson 2026]] | E04 / [[E05 Atributos e representações]] | amostras necessárias vs baseline EXP1 |
+| D20 | **Registrar parâmetros dos plugins** (resolução, sobreposição, remoção de segmentos) como parte do `processing_run` | [[P158 Febrita 2025]] | E11 | auditoria de reprodutibilidade |
+| D21 | Testar a rota **U-Net → ONNX → Deepness** para revisão em QGIS, verificando entradas de 4 bandas | [[P156 Aszkowski 2023]] | [[E11 Operação e atualização]] | teste de conversão |
