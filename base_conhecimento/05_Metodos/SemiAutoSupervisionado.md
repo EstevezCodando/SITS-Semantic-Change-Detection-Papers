@@ -4,7 +4,7 @@ subtipo: "estratégia"
 titulo: "Aprendizado semi/auto-supervisionado"
 aliases: ["Aprendizado semi/auto-supervisionado"]
 pasta_tematica: "05_Metodos"
-n_artigos: 10
+n_artigos: 4
 tags: [conceito, estrategia]
 ---
 
@@ -42,18 +42,10 @@ Erros sistemáticos nos pseudo-rótulos.
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Lei_2026_RemoteSensingImage\|Lei 2026]] | utiliza método | 70 | 4, 5, 6, 7, 11 | extraído automaticamente (não lido) |
-| [[Lu_2025_VisionFoundationModels\|Lu 2025]] | utiliza método | 31 | 1, 3, 4, 5, 6 | extraído automaticamente (não lido) |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | utiliza método | 28 | 1, 2, 3, 5, 7 | lido (profundo) |
-| [[Simeoni_2025_DINOv3\|Simeoni 2025]] | utiliza método | 22 | 1, 2, 6, 7, 8 | extraído automaticamente (não lido) |
-| [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | utiliza método | 19 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | utiliza método | 17 | 1, 4, 14, 16, 18 | lido (parcial) |
-| [[Kerdreux_2025_EfficientSelfSupervised\|Kerdreux 2025]] | utiliza método | 17 | 2, 3, 4, 6, 7 | extraído automaticamente (não lido) |
-| [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | utiliza método | 16 | 1, 2, 8, 9, 10 | extraído automaticamente (não lido) |
 | [[Li_2024_NewLearningParadigm\|Li 2024]] | utiliza método | 12 | 4, 7, 9, 10, 12 | lido (profundo) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | utiliza método | 9 | 1, 6, 7, 8 | lido (profundo) |
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
-- Mapa: [[MOC_06_DeepLearning|Deep Learning (arquiteturas e estratégias)]]

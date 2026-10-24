@@ -12,9 +12,9 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]"]
-sensores: ["[[Sentinel2|Sentinel-2]]", "[[Landsat|Landsat]]"]
+sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: []
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[TransferLearning|Aprendizado por transferência]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]"]
 preparo: []
 validacao: []
 ferramentas: []
@@ -180,10 +180,7 @@ Apresentar o **Prithvi-EO-2.0**, um **modelo fundacional geoespacial multitempor
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 288 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[Transformer|Transformers]] — 59 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 32 ocorrências (p. 1, 2, 5, 7, 8)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 37 ocorrências (p. 2, 6, 7, 8, 9)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 8 ocorrências (p. 1, 2, 6, 7, 18)
 - referência (curado pela leitura): [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
@@ -193,12 +190,6 @@ Apresentar o **Prithvi-EO-2.0**, um **modelo fundacional geoespacial multitempor
 
 ![[Szwarcman_2024_PrithviVersatileMultitemporal_p4_Fig.3.png|520]]
 *Fig. 3: Prithvi-EO-2.0 architecture and general pretraining framework. (p. 4; recorte do PDF convertido)*
-
-![[Szwarcman_2024_PrithviVersatileMultitemporal_p11_Figure6.png|520]]
-*Figure 6 shows the aggregated results of benchmarking (p. 11; recorte do PDF convertido)*
-
-![[Szwarcman_2024_PrithviVersatileMultitemporal_p7_Fig.4.png|520]]
-*Fig. 4: Locations of the burn intensity dataset used in training (p. 7; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

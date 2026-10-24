@@ -14,9 +14,9 @@ relevancia_objetivo: "A"
 tarefas: ["[[Edificacoes|Edificações e urbanização]]", "[[SITS|Séries temporais de imagens (SITS)]]"]
 sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]", "[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]"]
-metodos: ["[[UNet|U-Net]]", "[[SupervisaoFraca|Supervisão fraca]]"]
+metodos: ["[[UNet|U-Net]]"]
 preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]"]
-validacao: ["[[F1|F1]]"]
+validacao: []
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -171,10 +171,8 @@ Gerar o **TEMPO**, um conjunto global e trimestral de **densidade e altura de ed
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 6 ocorrências (p. 6, 10, 15)
-- referência (curado pela leitura): [[SupervisaoFraca|Supervisão fraca]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 3 ocorrências (p. 2, 3)
-- é avaliado por: [[F1|F1]] — 15 ocorrências (p. 1, 9, 11, 12)
 
 **Comparações substantivas com outros artigos:**
 - este artigo valida com o benchmark de [[Etten_2021_SpaceNetMultiTemporal|Etten 2021]] — P103 valida a presença de edificação no SpaceNet 7 (F1 0,85–0,88, p. 12), sem medir a mudança.
@@ -183,12 +181,6 @@ Gerar o **TEMPO**, um conjunto global e trimestral de **densidade e altura de ed
 
 ![[Glazer_2025_TEMPOGlobalTemporal_p3_Figure2.png|520]]
 *Figure 2: Our methods are split into a training workflow ( top ) and inference workflow ( bottom ). The training (p. 3; recorte do PDF convertido)*
-
-![[Glazer_2025_TEMPOGlobalTemporal_p7_Figure4.png|520]]
-*Figure 4: Examples of Planet quarterly imagery for 2023, digital elevation model data, water masks, UDMs, (p. 7; recorte do PDF convertido)*
-
-![[Glazer_2025_TEMPOGlobalTemporal_p5_Figure3.png|520]]
-*Figure 3: SpaceNet7 building density labels by geographic location. (p. 5; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

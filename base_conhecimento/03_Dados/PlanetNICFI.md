@@ -55,6 +55,5 @@ Cadência não é mensal antes de set/2020; sem correção atmosférica nos estu
 
 ## Navegação
 
-- Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]
 - Lacuna que afeta este conceito: [[L02_CadenciaPlanet|A cadência real dos mosaicos Planet nem sempre é mensal]]
 - Lacuna que afeta este conceito: [[L12_SupressaoSemComparacao|Supressão de vegetação em NICFI mensal: os métodos não foram comparados nos mesmos dados]]

@@ -16,7 +16,7 @@ sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: ["[[UNet|U-Net]]"]
 preparo: ["[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[F1|F1]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -180,7 +180,6 @@ Mapear, a **5 m** e em escala continental, **o uso da terra que sucede o desmata
 - referencia (suporte manual da leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 6 ocorrências (p. 9, 10, 11)
-- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 1, 2, 4, 10, 11)
 
 **Comparações substantivas com outros artigos:**
 - este artigo usa o mesmo mosaico NICFI de 4,77 m de [[Wagner_2023_MappingTropicalForest|Wagner 2023]] — P102 classifica o uso após a perda do Hansen e P01 classifica a floresta por data; ambos usam as quatro bandas do NICFI.
@@ -190,12 +189,6 @@ Mapear, a **5 m** e em escala continental, **o uso da terra que sucede o desmata
 
 ![[Masolele_2024_MappingDiversityLand_p7_Figure7.png|520]]
 *Figure 7. Map showing study location in the African continent along 30 [◦] south and 30 [◦] north. ( A ) is the study (p. 7; recorte do PDF convertido)*
-
-![[Masolele_2024_MappingDiversityLand_p3_Figure1.png|520]]
-*Figure 1. The bar chart shows the performance of the attention U-Net model in classifying land-use following (p. 3; recorte do PDF convertido)*
-
-![[Masolele_2024_MappingDiversityLand_p3_Figure2.png|520]]
-*Figure 2. A 5 m resolution land-use following deforestation map in Africa (30 [◦] south and 30 [◦] north) (p. 3; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -48,13 +48,13 @@ tags: [resultado]
 
 **Evidência:** [[Vizzari_2022_PlanetScopeSentinelSentinel|Vizzari 2022]] (início) (66,7%); com objetos, 82,2% no mesmo dado.
 
-**Conceitos:** [[OBIA|Análise baseada em objetos (OBIA)]], [[Textura|Textura (GLCM)]], [[RandomForest|Random Forest]]
+**Conceitos:** 
 
 ## 8. Mais pontos de prompt não melhoram sempre o SAM
 
 **Evidência:** [[Wang_2025_SAMTestingReliability|Wang 2025]] (p. 17): o ótimo ficou em ~20–30 pontos; contraste do alvo prevê o sucesso.
 
-**Conceitos:** [[SAM|Segment Anything (SAM)]], [[PreAnotacaoSAM|Pré-anotação assistida (SAM e plugins QGIS)]]
+**Conceitos:** [[PreAnotacaoSAM|Pré-anotação assistida (SAM e plugins QGIS)]]
 
 ## 9. Parâmetros do plugin importam tanto quanto o modelo
 

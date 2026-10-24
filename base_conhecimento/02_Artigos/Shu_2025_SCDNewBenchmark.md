@@ -13,10 +13,10 @@ status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Vias|Vias e estradas]]"]
 sensores: []
-conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[HRSCD|HRSCD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[ModeloFundacional|Modelos fundacionais]]"]
+conjuntos_dados: ["[[HRSCD|HRSCD]]", "[[SECOND|SECOND]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]"]
 preparo: []
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/B]
 ---
@@ -172,15 +172,10 @@ Detectar **mudança semântica de estradas e pontes** (estruturas lineares, cont
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 7, 17, 26)
-- referência (curado pela leitura): [[ModeloFundacional|Modelos fundacionais]] — suporte vindo da leitura/título/resumo
-- emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 12 ocorrências (p. 3, 18, 21, 22, 24)
-- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 9 ocorrências (p. 18, 21, 22, 24, 25)
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 3 ocorrências (p. 2, 3, 6)
 - referência (curado pela leitura): [[SECOND|SECOND]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 5 ocorrências (p. 6, 11, 19)
-- é avaliado por: [[IoU|IoU / mIoU]] — 22 ocorrências (p. 19, 20, 21, 22, 24)
-- é avaliado por: [[F1|F1]] — 18 ocorrências (p. 19, 20, 21, 22)
+- referência (curado pela leitura): [[ModeloFundacional|Modelos fundacionais]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - [[Lee_2026_RoadChangeDetection|Lee 2026]] usa informação prévia de vias como este artigo — P40 usa o mapa anterior como entrada do modelo; P36 define 11 transições de vias a partir de imagens bitemporais.
@@ -190,12 +185,6 @@ Detectar **mudança semântica de estradas e pontes** (estruturas lineares, cont
 
 ![[Shu_2025_SCDNewBenchmark_p12_Figure7.png|520]]
 *Figure 7: Overview of our proposed Multimodal Frequency-Driven Change Detector (MFDCD). The frame (p. 12; recorte do PDF convertido)*
-
-![[Shu_2025_SCDNewBenchmark_p8_Figure3.png|520]]
-*Figure 3: Annotation examples on RB-SCD dataset. T 1 and T 2 represent the pre- and post-change images, (p. 8; recorte do PDF convertido)*
-
-![[Shu_2025_SCDNewBenchmark_p4_Figure2.png|520]]
-*Figure 2: Frequency-domain transformation of visual and textual data. (a) The DWT separates a visual (p. 4; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

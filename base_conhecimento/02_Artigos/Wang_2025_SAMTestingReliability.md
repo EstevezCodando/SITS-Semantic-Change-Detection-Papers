@@ -14,9 +14,9 @@ relevancia_objetivo: "C"
 tarefas: ["[[Mineracao|Mineração]]"]
 sensores: []
 conjuntos_dados: []
-metodos: ["[[SAM|Segment Anything (SAM)]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[Textura|Textura (GLCM)]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[PrecisaoRecall|Precisão e recall]]"]
+metodos: []
+preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
+validacao: []
 ferramentas: ["[[QGIS|QGIS]]"]
 tags: [artigo, leitura/profunda, relevancia/C]
 ---
@@ -156,14 +156,8 @@ Testar a **confiabilidade e os limites do Segment Anything Model (SAM) com promp
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza método: [[SAM|Segment Anything (SAM)]] — 167 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 3, 10)
-- é avaliado por: [[IoU|IoU / mIoU]] — 68 ocorrências (p. 9, 10, 11, 12, 13)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 5 ocorrências (p. 1, 3, 4, 11, 19)
 - usa ferramenta: [[QGIS|QGIS]] — 11 ocorrências (p. 1, 2, 3, 5, 6)
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 72 ocorrências (p. 6, 7, 8, 9, 10)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 9 ocorrências (p. 10, 18)
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — 3 ocorrências (p. 15, 20, 23)
 - trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[PreAnotacaoSAM|Pré-anotação assistida (SAM e plugins QGIS)]] — suporte vindo da leitura/título/resumo
 

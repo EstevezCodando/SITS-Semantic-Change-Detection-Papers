@@ -51,5 +51,3 @@ Aumenta a latência (3 meses em P91, até um trimestre em P103) e remove mudanç
 
 ## Navegação
 
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]
-- Mapa: [[MOC_10_MonitoramentoOperacao|Monitoramento contínuo e operação]]

@@ -12,11 +12,11 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[Vias|Vias e estradas]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
-sensores: ["[[ImagensAereas|Imagens aéreas]]"]
+sensores: []
 conjuntos_dados: []
-metodos: ["[[TransferLearning|Aprendizado por transferência]]", "[[Transformer|Transformers]]"]
+metodos: []
 preparo: []
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/parcial, relevancia/B]
 ---
@@ -157,13 +157,8 @@ Detectar **mudança de vias** comparando um **mapa vetorial anterior** com uma *
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 12 ocorrências (p. 1, 3, 6, 12, 13)
-- referência (curado pela leitura): [[Transformer|Transformers]] — suporte vindo da leitura/título/resumo
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 4 ocorrências (p. 1, 2)
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 21 ocorrências (p. 1, 3, 7, 8, 9)
 - referência (curado pela leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[F1|F1]] — 30 ocorrências (p. 10, 11, 12, 13, 14)
-- é avaliado por: [[IoU|IoU / mIoU]] — 21 ocorrências (p. 10, 11, 13, 14, 15)
 
 **Comparações substantivas com outros artigos:**
 - este artigo usa informação prévia de vias como [[Shu_2025_SCDNewBenchmark|Shu 2025]] — P40 usa o mapa anterior como entrada do modelo; P36 define 11 transições de vias a partir de imagens bitemporais.
@@ -172,12 +167,6 @@ Detectar **mudança de vias** comparando um **mapa vetorial anterior** com uma *
 
 ![[Lee_2026_RoadChangeDetection_p3_Fig.1.png|520]]
 *Fig. 1. Geographical overview of the study area, displaying the training regions (Anyang-si and Jungnang-gu) and independent test areas (Gan (p. 3; recorte do PDF convertido)*
-
-![[Lee_2026_RoadChangeDetection_p8_Fig.6.png|520]]
-*Fig. 6. Visual comparison of synthesized and actual road changes across multiple scenarios. The figure displays three sample cases (a–c) for (p. 8; recorte do PDF convertido)*
-
-![[Lee_2026_RoadChangeDetection_p6_Fig.4.png|520]]
-*Fig. 4. Overview of the proposed map–image fusion-based road change detection framework illustrating input configuration, feature fusion, an (p. 6; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

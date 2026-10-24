@@ -1,11 +1,7 @@
 coleta/*.pdf
 __pycache__/
-dados/chunks/
 dados/textos_extra/
-vault/Chunks/
-vault/.obsidian/workspace*.json
 output/
 .venv-pdf/
-base_conhecimento.zip
 base_conhecimento/.obsidian/workspace*.json
 tmp/

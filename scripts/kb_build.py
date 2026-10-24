@@ -9,8 +9,9 @@ import kb_canvas as C
 
 cat, kb, LP, SYN = load()
 pages = Pages(kb)
-PIDS = sorted(set(kb) | set(LP), key=lambda x: int(x[1:]))
-NAMES = make_names(PIDS, cat)
+PIDS_ALL = sorted(set(kb) | set(LP), key=lambda x: int(x[1:]))     # todos os textos convertidos
+PIDS = [p_ for p_ in PIDS_ALL if p_ in LP]                         # so os lidos ganham nota
+NAMES = make_names(PIDS_ALL, cat)
 _keep = {}   # arquivos de aparencia que o Obsidian gravou: preservados entre reconstrucoes
 for _f in ('appearance.json',):
     _p = f'{KB}/.obsidian/{_f}'
@@ -33,7 +34,7 @@ def write(rel, text):
 def yq(s): return '"' + str(s).replace('\\', '\\\\').replace('"', '\\"') + '"'
 def ylist(xs): return '[' + ', '.join(yq(x) for x in xs) + ']' if xs else '[]'
 def label(pid): return f"{author_last(cat[pid])} {year_of(cat[pid])}"
-def plink(pid, lab=None): return f"[[{NAMES[pid]}|{lab or label(pid)}]]"
+def plink(pid, lab=None): return f"[[{NAMES[pid]}|{lab or label(pid)}]]" if pid in LP else (lab or label(pid))
 
 # ------------------------------------------------------------------ tarefas (a partir de titulo + resumo; documentado como inferencia)
 TASKS = {
@@ -98,7 +99,7 @@ for pid, fl in K.LINKS_MANUAL.items():
 for pid, lst in paper_concepts.items():
     for fid, verb, n, pg, first in lst:
         concepts[fid]['sup'].append((pid, verb, n, pg, first))
-ACTIVE = {fid for fid, c in concepts.items() if len(c['sup']) >= 2}
+ACTIVE = {fid for fid, c in concepts.items() if len(c['sup']) >= 2 and fid in K.KEEP_CONCEPTS}
 # limita links por artigo (evita conectar tudo a tudo): mantem os mais frequentes por categoria
 CAP = {'sensor': 3, 'dataset': 4, 'metodo': 6, 'metrica': 4, 'ferramenta': 3, 'preparo': 5, 'validacao': 4, 'monitoramento': 3, 'tarefa': 4, 'manual': 4}
 # artigos nao lidos (so extracao automatica) ligam apenas a sensor, dado, tarefa e poucos metodos: evita que conceitos genericos (rotulagem, F1, IoU...) virem
@@ -121,7 +122,7 @@ for pid in list(paper_concepts):
 for fid in concepts: concepts[fid]['sup'] = []
 for pid, lst in paper_concepts.items():
     for fid, verb, n, pg, first in lst: concepts[fid]['sup'].append((pid, verb, n, pg, first))
-ACTIVE = {fid for fid, c in concepts.items() if len(c['sup']) >= 2}
+ACTIVE = {fid for fid, c in concepts.items() if len(c['sup']) >= 2 and fid in K.KEEP_CONCEPTS}
 for fid in concepts:
     if fid not in ACTIVE: concepts[fid]['sup'] = []
 for pid in list(paper_concepts):
@@ -225,13 +226,13 @@ def sect_of(h):
 
 
 STATUS = {}
-for pid in PIDS:
+for pid in PIDS_ALL:
     if pid in LP:
         STATUS[pid] = 'lido (profundo)' if LP[pid][0].get('leitura', '').startswith('profunda') else 'lido (parcial)'
     else:
         STATUS[pid] = 'extraído automaticamente (não lido)'
-TIER = {pid: K.RELEV.get(pid, ('D', ''))[0] for pid in PIDS}
-TIER_WHY = {pid: (K.RELEV[pid][1] if pid in K.RELEV else 'não avaliada: texto não lido; ver a posição no ranking de relevância automática em [[Pendencias_Leitura]].') for pid in PIDS}
+TIER = {pid: K.RELEV.get(pid, ('D', ''))[0] for pid in PIDS_ALL}
+TIER_WHY = {pid: (K.RELEV[pid][1] if pid in K.RELEV else 'não avaliada: texto não lido; ver [[Pendencias_Leitura]].') for pid in PIDS_ALL}
 
 # ------------------------------------------------------------------ estrategia temporal e demais campos automaticos
 BI = re.compile(r'bi-?temporal|image pairs?|pairs of images|before and after|two (dates|images|time)', re.I)
@@ -471,7 +472,7 @@ def pick_figs():
     kw1 = re.compile(r'architecture|overview|pipeline|workflow|framework|methodolog|scheme|study area|location|flowchart', re.I)
     kw2 = re.compile(r'result|comparison|qualitative|prediction|example', re.I)
     for pid in PIDS:
-        if pid not in LP or pid not in kb: continue
+        if pid not in LP or pid not in kb or TIER.get(pid) not in ('A', 'B'): continue
         v = kb[pid]; src = f"{ROOT}/output/pdf/{v['dir']}"
         chosen = []
         anyfig = re.compile(r'.')
@@ -483,7 +484,7 @@ def pick_figs():
                     if not imgs: continue
                     best = max(imgs, key=lambda f: os.path.getsize(f'{src}/{f}'))
                     chosen.append(dict(key=(c['p'], c['k']), img=best, p=c['p'], cap=c['t'][:140])); break
-            if len(chosen) >= 3: break
+            if len(chosen) >= 1: break
         out = []
         for i, c in enumerate(chosen):
             fname = f"{NAMES[pid]}_p{c['p']}_{c['key'][1].replace(' ', '')}.png"

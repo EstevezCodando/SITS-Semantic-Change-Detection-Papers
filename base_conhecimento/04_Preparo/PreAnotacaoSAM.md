@@ -49,6 +49,5 @@ Resultado depende do contraste; avaliação otimista quando se usa a anotação 
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
 - Lacuna que afeta este conceito: [[L05_RotulosTemporais|Rótulos temporais são caros e subjetivos]]
 - Lacuna que afeta este conceito: [[L08_FerramentasSemAvaliacao|Ferramentas de QGIS/GeoAI carecem de avaliação quantitativa]]

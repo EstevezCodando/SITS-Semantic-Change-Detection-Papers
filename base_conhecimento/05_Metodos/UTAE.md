@@ -4,7 +4,7 @@ subtipo: "arquitetura"
 titulo: "U-TAE (U-Net com atenção temporal)"
 aliases: ["U-TAE (U-Net com atenção temporal)"]
 pasta_tematica: "05_Metodos"
-n_artigos: 3
+n_artigos: 2
 tags: [conceito, arquitetura]
 ---
 
@@ -43,10 +43,7 @@ Agrega o tempo, a menos de modificação.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | utiliza método | 16 | 2, 3, 6, 7, 8 | lido (profundo) |
-| [[Garnot_2021_PanopticSegmentationSatellite\|Garnot 2021]] | utiliza método | 9 | 2, 6, 7, 8 | extraído automaticamente (não lido) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | utiliza método | 5 | 6, 7 | lido (profundo) |
 
 ## Navegação
 
-- Mapa: [[MOC_06_DeepLearning|Deep Learning (arquiteturas e estratégias)]]
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]

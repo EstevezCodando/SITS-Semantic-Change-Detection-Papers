@@ -12,10 +12,10 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]"]
-sensores: ["[[ImagensAereas|Imagens aéreas]]"]
+sensores: []
 conjuntos_dados: ["[[HRSCD|HRSCD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[RedeSiamesa|Redes siamesas]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[AumentoDados|Aumento de dados]]"]
+metodos: ["[[RedeSiamesa|Redes siamesas]]"]
+preparo: []
 validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/B]
@@ -154,11 +154,8 @@ Mudança semântica bitemporal (**SCD**) quando as mudanças são **assimétrica
 - emprega conjunto de dados: [[SECOND|SECOND]] — 7 ocorrências (p. 2, 3, 6, 7, 9)
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 41 ocorrências (p. 1, 2, 3, 4, 5)
-- referência (curado pela leitura): [[CNN|Redes convolucionais (CNN)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 14 ocorrências (p. 1, 2, 3, 5, 6)
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 6 ocorrências (p. 1, 6, 14)
-- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo compara-se com e critica [[Daudt_2019_MultitaskLearningLarge|Daudt 2019]] — P19 supera HRSCD.str4 (P18): (p. 10); e critica a simetria: (p. 4).
@@ -169,12 +166,6 @@ Mudança semântica bitemporal (**SCD**) quando as mudanças são **assimétrica
 
 ![[Yang_2021_AsymmetricSiameseNetworks_p7_Fig.6.png|520]]
 *Fig. 6. Comparison between SeK and other metrics. SeK alleviates the influence of label imbalance caused by non-change pixels and shows most (p. 7; recorte do PDF convertido)*
-
-![[Yang_2021_AsymmetricSiameseNetworks_p1_Fig.1.png|520]]
-*Fig. 1. In aerial images, land-cover objects appearing at different geometrical (p. 1; recorte do PDF convertido)*
-
-![[Yang_2021_AsymmetricSiameseNetworks_p2_Fig.2.png|520]]
-*Fig. 2. Asymmetric Siamese Network (ASN) for SCD. ASN utilizes siamese (p. 2; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

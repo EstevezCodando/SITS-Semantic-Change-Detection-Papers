@@ -22,8 +22,6 @@ F1, IoU, kappa, SeK, SCS e SCOT medem coisas diferentes, em bases, classes e res
 ## O que isto afeta (método, dado ou resultado)
 
 - afeta métrica: [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]]
-- afeta métrica: [[Kappa|Coeficiente kappa]]
-- afeta métrica: [[F1|F1]]
 
 ## Oportunidade (interpretação)
 

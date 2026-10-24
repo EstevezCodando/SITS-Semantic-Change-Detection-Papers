@@ -14,9 +14,9 @@ relevancia_objetivo: "A"
 tarefas: ["[[Edificacoes|Edificações e urbanização]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]"]
-metodos: ["[[UNet|U-Net]]", "[[RedeSiamesa|Redes siamesas]]", "[[TransferLearning|Aprendizado por transferência]]"]
+metodos: ["[[UNet|U-Net]]", "[[RedeSiamesa|Redes siamesas]]"]
 preparo: []
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[F1|F1]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -166,10 +166,8 @@ tags: [artigo, leitura/profunda, relevancia/A]
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 7 ocorrências (p. 1, 2, 3)
 - utiliza método: [[RedeSiamesa|Redes siamesas]] — 7 ocorrências (p. 1, 2, 3)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 4 ocorrências (p. 3, 5, 6, 7)
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 8 ocorrências (p. 4, 5, 6, 7)
 - referência (curado pela leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[F1|F1]] — 10 ocorrências (p. 4, 5, 6, 7, 9)
 
 **Comparações substantivas com outros artigos:**
 - este artigo usa o conjunto de dados do desafio de [[Etten_2021_SpaceNetMultiTemporal|Etten 2021]] — P17 treina a previsão de construção no SpaceNet 7 e deriva as máscaras de mudança por subtração de máscaras de edificação.
@@ -178,12 +176,6 @@ tags: [artigo, leitura/profunda, relevancia/A]
 
 ![[Metzger_2023_UrbanChangeForecasting_p6_Fig.5.png|520]]
 *Fig. 5 Precision and recall of the foreground class of our change forecasting model w.r.t. the prediction range. The shown numbers correspon (p. 6; recorte do PDF convertido)*
-
-![[Metzger_2023_UrbanChangeForecasting_p4_Fig.2.png|520]]
-*Fig. 2 Spatial distribution of (p. 4; recorte do PDF convertido)*
-
-![[Metzger_2023_UrbanChangeForecasting_p6_Fig.6.png|520]]
-*Fig. 6 Precision-recall curve for the change forecast model with time (p. 6; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -29,13 +29,6 @@
       }
     },
     {
-      "query": "tag:#relevancia/D",
-      "color": {
-        "a": 1,
-        "rgb": 13358561
-      }
-    },
-    {
       "query": "path:\"01_Mapas\"",
       "color": {
         "a": 1,

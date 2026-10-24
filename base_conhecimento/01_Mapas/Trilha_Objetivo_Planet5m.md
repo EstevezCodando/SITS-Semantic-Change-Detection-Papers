@@ -56,7 +56,7 @@ A coluna final é interpretação desta base: resume o desenho de validação li
 - [[Crato_2025_DetectionRuralRoads|Crato 2025]] (relevância A) — Janelas de 41 × 41 pixels e rótulo com buffer de 2 pixels para alvos lineares.
 - [[Masolele_2024_MappingDiversityLand|Masolele 2024]] (relevância A) — NDVI, SAVI e NDMI como canais extras sobre as 4 bandas; patches escolhidos pela perda do Hansen.
 
-**Conceitos:** [[MascaraNuvem|Máscara de nuvem e sombra]], [[Normalizacao|Normalização e escala radiométrica]], [[IndicesEspectrais|Índices espectrais (NDVI etc.)]]
+**Conceitos:** [[MascaraNuvem|Máscara de nuvem e sombra]], [[IndicesEspectrais|Índices espectrais (NDVI etc.)]]
 
 **Lacunas:** [[L02_CadenciaPlanet|A cadência real dos mosaicos Planet nem sempre é mensal]]
 

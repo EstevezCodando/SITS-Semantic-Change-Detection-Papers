@@ -51,4 +51,3 @@ Não calculável a partir de RGB visual; não ajudou em um estudo lido.
 
 ## Navegação
 
-- Mapa: [[MOC_04_EngenhariaAtributos|Engenharia de atributos]]

@@ -12,9 +12,9 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
-sensores: ["[[Landsat|Landsat]]"]
-conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[S2Looking|S2Looking]]", "[[WHUCD|WHU-CD]]"]
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[TransferLearning|Aprendizado por transferência]]"]
+sensores: []
+conjuntos_dados: []
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
 preparo: []
 validacao: ["[[Generalizacao|Generalização e domain shift]]"]
 ferramentas: []
@@ -172,14 +172,8 @@ Como **reaproveitar o conhecimento de modelos fundacionais** (CLIP, RemoteCLIP, 
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 76 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza método: [[Transformer|Transformers]] — 62 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 12 ocorrências (p. 4, 7, 9, 10, 12)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 7 ocorrências (p. 3, 12)
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 11 ocorrências (p. 1, 6, 7, 8, 9)
-- emprega conjunto de dados: [[S2Looking|S2Looking]] — 6 ocorrências (p. 6, 7, 8)
-- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 5 ocorrências (p. 6, 7, 9, 11)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 5 ocorrências (p. 7, 9)
 - adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 4 ocorrências (p. 3, 7, 9, 12)
 
 **Comparações substantivas com outros artigos:**
@@ -189,12 +183,6 @@ Como **reaproveitar o conhecimento de modelos fundacionais** (CLIP, RemoteCLIP, 
 
 ![[Li_2024_NewLearningParadigm_p8_Fig.5.png|520]]
 *Fig. 5. Visualization results (semantic segmentation auxiliary task) of different methods on the BANDON dataset. (p. 8; recorte do PDF convertido)*
-
-![[Li_2024_NewLearningParadigm_p4_Fig.2.png|520]]
-*Fig. 2. The detailed illustration of BAN. The foundation model (blue area) accumulates general knowledge through pre-training techniques, an (p. 4; recorte do PDF convertido)*
-
-![[Li_2024_NewLearningParadigm_p5_Fig.2.png|520]]
-*Fig. 2(b). (p. 5; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -14,7 +14,7 @@ relevancia_objetivo: "A"
 tarefas: ["[[Edificacoes|Edificações e urbanização]]", "[[SITS|Séries temporais de imagens (SITS)]]"]
 sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]"]
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
+metodos: ["[[UNet|U-Net]]"]
 preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
 validacao: ["[[Generalizacao|Generalização e domain shift]]"]
 ferramentas: []
@@ -159,7 +159,6 @@ Relatar o **SpaceNet 7 (Multi-Temporal Urban Development Challenge)**: localizar
 - trata a tarefa: [[Edificacoes|Edificações e urbanização]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 6 ocorrências (p. 7, 8)
-- referência (curado pela leitura): [[CNN|Redes convolucionais (CNN)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 19 ocorrências (p. 3, 4, 5, 9, 10)
@@ -174,12 +173,6 @@ Relatar o **SpaceNet 7 (Multi-Temporal Urban Development Challenge)**: localizar
 
 ![[Etten_2021_SpaceNetMultiTemporal_p4_Figure1.png|520]]
 *Figure 1: A comparison between our dataset and related datasets. A. Annotated objects (p. 4; recorte do PDF convertido)*
-
-![[Etten_2021_SpaceNetMultiTemporal_p5_Figure2.png|520]]
-*Figure 2: Zoom-in of one particularly dense SpaceNet 7 region illustrating the very high fidelity of (p. 5; recorte do PDF convertido)*
-
-![[Etten_2021_SpaceNetMultiTemporal_p6_Figure3.png|520]]
-*Figure 3: Baseline algorithm for building footprint extraction and identifier tracking showing evolution from T = 0 (top row) to T = 5 (bott (p. 6; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

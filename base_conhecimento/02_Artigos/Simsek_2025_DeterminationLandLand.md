@@ -14,8 +14,8 @@ relevancia_objetivo: "A"
 tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]", "[[SITS|Séries temporais de imagens (SITS)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
-metodos: ["[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
+metodos: []
+preparo: ["[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
 validacao: ["[[AcuraciaGlobal|Acurácia global (OA)]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
@@ -168,9 +168,7 @@ Classificar **uso e cobertura da terra (LULC)** na planície de Gediz (Manisa, T
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 43 ocorrências (p. 1, 2, 3, 6, 8)
 - aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 20 ocorrências (p. 2, 3, 6, 7, 9)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 5 ocorrências (p. 6, 7, 11)
 - é avaliado por: [[AcuraciaGlobal|Acurácia global (OA)]] — 9 ocorrências (p. 1, 2, 3, 12, 15)
 
 **Comparações substantivas com outros artigos:**
@@ -180,12 +178,6 @@ Classificar **uso e cobertura da terra (LULC)** na planície de Gediz (Manisa, T
 
 ![[Simsek_2025_DeterminationLandLand_p4_Fig.1.png|520]]
 *Fig. 1 Study area (Gediz Plain, Manisa, Turkey) is shown as terrain with labels (p. 4; recorte do PDF convertido)*
-
-![[Simsek_2025_DeterminationLandLand_p13_Fig.8.png|520]]
-*Fig. 8 LULC classification result (p. 13; recorte do PDF convertido)*
-
-![[Simsek_2025_DeterminationLandLand_p8_Fig.4.png|520]]
-*Fig. 4 General workflow of this study (p. 8; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

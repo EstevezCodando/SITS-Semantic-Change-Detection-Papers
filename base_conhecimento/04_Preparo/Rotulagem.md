@@ -53,5 +53,4 @@ Subjetividade e ruído; custo; mudanças raras exigem amostragem.
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
 - Lacuna que afeta este conceito: [[L05_RotulosTemporais|Rótulos temporais são caros e subjetivos]]

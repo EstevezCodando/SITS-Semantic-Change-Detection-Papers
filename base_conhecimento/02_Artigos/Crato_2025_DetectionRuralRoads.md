@@ -15,8 +15,8 @@ tarefas: ["[[Vias|Vias e estradas]]"]
 sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: []
 metodos: ["[[UNet|U-Net]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
+validacao: []
 ferramentas: ["[[QGIS|QGIS]]"]
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -165,10 +165,7 @@ Detectar **estradas rurais** (terra compactada) na região metropolitana de Curi
 - trata a tarefa: [[Vias|Vias e estradas]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 30 ocorrências (p. 1, 2, 3, 5, 6)
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 20 ocorrências (p. 5, 6, 8, 10, 12)
-- referência (curado pela leitura): [[PatchesTiles|Recorte em patches/tiles]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[QGIS|QGIS]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[IoU|IoU / mIoU]] — 10 ocorrências (p. 8, 9, 10, 13)
-- é avaliado por: [[F1|F1]] — 9 ocorrências (p. 1, 8, 9, 10, 12)
 
 **Comparações substantivas com outros artigos:**
 - este artigo trata de vias, como [[Shu_2025_SCDNewBenchmark|Shu 2025]] — P100 detecta estradas rurais em Planet de ~5 m por data (F1 69%) e P36 define transições de vias em imagem de 0,59 m.
@@ -177,12 +174,6 @@ Detectar **estradas rurais** (terra compactada) na região metropolitana de Curi
 
 ![[Crato_2025_DetectionRuralRoads_p4_Figure1.png|520]]
 *Figure 1: Location map of the study area. A) Presents the study area, containing the scenes used in this study in (p. 4; recorte do PDF convertido)*
-
-![[Crato_2025_DetectionRuralRoads_p6_Figure3.png|520]]
-*Figure 3: The following examples illustrate the creation of cutouts in PLANET images and their respective visual (p. 6; recorte do PDF convertido)*
-
-![[Crato_2025_DetectionRuralRoads_p5_Figure2.png|520]]
-*Figure 2: The following flowchart illustrates the methodology employed to develop this research project. It (p. 5; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

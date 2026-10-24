@@ -48,4 +48,3 @@ Exige amostra independente e rótulos de referência.
 
 ## Navegação
 
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]

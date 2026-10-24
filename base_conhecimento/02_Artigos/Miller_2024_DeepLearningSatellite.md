@@ -14,7 +14,7 @@ relevancia_objetivo: "C"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[LSTM|Redes recorrentes (LSTM)]]", "[[Transformer|Transformers]]"]
+metodos: []
 preparo: []
 validacao: []
 ferramentas: []
@@ -156,23 +156,8 @@ Revisão de **aprendizado profundo aplicado a séries temporais de imagens de sa
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 111 ocorrências (p. 2, 3, 10, 11, 12)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 87 ocorrências (p. 10, 11, 12, 13, 14)
-- utiliza método: [[Transformer|Transformers]] — 31 ocorrências (p. 7, 11, 13, 15, 16)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 38 ocorrências (p. 2, 3, 4, 5, 6)
 - referência (curado pela leitura): [[PlanetScope|PlanetScope (Dove/SuperDove)]] — suporte vindo da leitura/título/resumo
-
-## Figuras selecionadas
-
-![[Miller_2024_DeepLearningSatellite_p19_FIGURE8.png|520]]
-*FIGURE 8: A U-Net architecture. Image credit: A Novel (p. 19; recorte do PDF convertido)*
-
-![[Miller_2024_DeepLearningSatellite_p10_FIGURE2.png|520]]
-*FIGURE 2: An example of a recurrent neural network. At each (p. 10; recorte do PDF convertido)*
-
-![[Miller_2024_DeepLearningSatellite_p10_FIGURE1.png|520]]
-*FIGURE 1: Neural Networks and Activation Functions. (a) A (p. 10; recorte do PDF convertido)*
-
 
 ## Anotações do leitor
 

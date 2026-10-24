@@ -20,7 +20,6 @@ Em Planet de ~4 m, edificações têm ≈4–5 px de extensão, com F1 de ~0,45 
 ## O que isto afeta (método, dado ou resultado)
 
 - afeta conjunto de dados: [[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]
-- afeta estratégia: [[SuperResolucao|Super-resolução]]
 
 ## Oportunidade (interpretação)
 

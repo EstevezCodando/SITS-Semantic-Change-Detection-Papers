@@ -15,8 +15,8 @@ tarefas: ["[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e
 sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: ["[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[AmostraIndependente|Amostra independente]]", "[[F1|F1]]"]
+preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
+validacao: ["[[AmostraIndependente|Amostra independente]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -190,13 +190,11 @@ Mapear **cobertura arbórea mensal** e **perturbação florestal anual** em toda
 - utiliza método: [[UNet|U-Net]] — 22 ocorrências (p. 1, 2, 3, 4, 6)
 - referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 5 ocorrências (p. 4, 12, 13)
 - referencia (suporte manual da leitura): [[AprendizadoAtivo|Aprendizado ativo para rotulagem]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[AmostraIndependente|Amostra independente]] — 3 ocorrências (p. 1, 6, 13)
 - emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 3 ocorrências (p. 2, 6)
-- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 6, 7)
 
 **Comparações substantivas com outros artigos:**
 - este artigo replica a receita de [[Wagner_2023_MappingTropicalForest|Wagner 2023]] — P03 aplica a ideia de P01 (U-Net por data e perda por diferença anual) ao produto visual RGB do PlanetScope e valida a perda contra LiDAR e CALFIRE.
@@ -205,9 +203,6 @@ Mapear **cobertura arbórea mensal** e **perturbação florestal anual** em toda
 
 ![[Carter_2024_DetectionForestDisturbance_p3_FIGURE1.png|520]]
 *FIGURE 1 (p. 3; recorte do PDF convertido)*
-
-![[Carter_2024_DetectionForestDisturbance_p3_FIGURE2.png|520]]
-*FIGURE 2 (p. 3; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

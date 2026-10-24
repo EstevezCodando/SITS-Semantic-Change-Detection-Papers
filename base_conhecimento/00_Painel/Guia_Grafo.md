@@ -11,8 +11,8 @@ O arquivo `.obsidian/graph.json` já traz os filtros e as cores abaixo. O Obsidi
 ## Como o grafo foi organizado
 
 - **Artigos por relevância para o objetivo** (Planet de ~5 m): quatro tons de azul, do mais escuro (A, dado Planet de 3–5 m e alvo próximo, lido) ao mais claro (D, não lido). A definição está em [[Trilha_Objetivo_Planet5m]].
-- **Conceitos de preparo, validação e métrica só se ligam a artigos lidos.** Artigos não lidos ligam apenas a sensor, dado, tarefa e poucos métodos, para que conceitos genéricos (rotulagem, F1, IoU) não virem nós ligados a tudo.
-- **Painéis, anexos e templates ficam ocultos** (campo de busca do grafo). Os mapas (`01_Mapas`) ficam em cinza-escuro e funcionam como centros de cada etapa.
+- **Só artigos lidos têm nota**, e os conceitos genéricos de manual (F1, IoU, CNN etc.) foram removidos; ficam os conceitos do projeto. Os textos não lidos estão em [[Pendencias_Leitura]].
+- **Painéis, anexos e templates ficam ocultos** (campo de busca do grafo). A trilha (`01_Mapas`) fica em cinza-escuro e funciona como centro das etapas.
 - Relações entre artigos (usa o dado de, valida com, compara-se com) são links com explicação na seção 12 de cada nota.
 
 ## Quatro visões úteis
@@ -33,8 +33,7 @@ O Obsidian aplica a cor do **primeiro grupo da lista** que casa com o nó; se as
 | Artigo relevância A | azul-escuro `#1E40AF` | `tag:#relevancia/A` |
 | Artigo relevância B | azul `#3B82F6` | `tag:#relevancia/B` |
 | Artigo relevância C | azul-claro `#93C5FD` | `tag:#relevancia/C` |
-| Artigo não lido (D) | cinza-azulado `#CBD5E1` | `tag:#relevancia/D` |
-| Mapas | cinza-escuro `#475569` | `path:"01_Mapas"` |
+| Trilha | cinza-escuro `#475569` | `path:"01_Mapas"` |
 | 03_Dados | ciano `#06B6D4` | `path:"03_Dados"` |
 | 04_Preparo | laranja `#F97316` | `path:"04_Preparo"` |
 | 05_Metodos | roxo `#8B5CF6` | `path:"05_Metodos"` |

@@ -12,12 +12,12 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
-sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: ["[[DETER|DETER (INPE)]]"]
 metodos: []
 preparo: []
 validacao: []
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
+ferramentas: []
 tags: [artigo, leitura/parcial, relevancia/B]
 ---
 
@@ -142,13 +142,11 @@ Descrever o **DETER-R**, sistema **operacional** de alerta de desmatamento da Am
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 26 ocorrências (p. 1, 2, 3, 4, 6)
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 10 ocorrências (p. 1, 2, 4, 7, 10)
 - referência (curado pela leitura): [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 19 ocorrências (p. 1, 2, 3, 17, 18)
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 12 ocorrências (p. 2, 3, 8, 10, 12)
 - emprega conjunto de dados: [[DETER|DETER (INPE)]] — 108 ocorrências (p. 1, 2, 3, 4, 5)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 11 ocorrências (p. 1, 2, 3, 4, 6)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
@@ -158,12 +156,6 @@ Descrever o **DETER-R**, sistema **operacional** de alerta de desmatamento da Am
 
 ![[Doblas_2022_DETEROperationalNear_p6_Figure3.png|520]]
 *Figure 3. Flowchart depicting the daily operational routine of the DETER-R system. (p. 6; recorte do PDF convertido)*
-
-![[Doblas_2022_DETEROperationalNear_p9_Figure6.png|520]]
-*Figure 6 shows an example of the output of this procedure, as a spatially explicit (p. 9; recorte do PDF convertido)*
-
-![[Doblas_2022_DETEROperationalNear_p11_Figure7.png|520]]
-*Figure 7. Flowchart of validation process. (p. 11; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -12,11 +12,11 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]"]
-sensores: ["[[ImagensAereas|Imagens aéreas]]"]
+sensores: []
 conjuntos_dados: ["[[HRSCD|HRSCD]]"]
-metodos: ["[[CNN|Redes convolucionais (CNN)]]"]
+metodos: []
 preparo: []
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[Kappa|Coeficiente kappa]]"]
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/B]
 ---
@@ -171,10 +171,7 @@ Como obter, numa mesma rede, **onde** houve mudança e **de qual classe para qua
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - emprega conjunto de dados: [[HRSCD|HRSCD]] — 16 ocorrências (p. 3, 4, 5, 7, 10)
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 20 ocorrências (p. 1, 3, 4, 7, 10)
-- utiliza dado/sensor: [[ImagensAereas|Imagens aéreas]] — 5 ocorrências (p. 4, 13)
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 10 ocorrências (p. 6, 8, 10, 11)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 10 ocorrências (p. 6, 9, 11, 12, 13)
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
@@ -185,9 +182,6 @@ Como obter, numa mesma rede, **onde** houve mudança e **de qual classe para qua
 
 ![[Daudt_2019_MultitaskLearningLarge_p10_Figure5.png|520]]
 *Figure 5: Detailed schematics for the integrated change detection and land cover mapping network (Strategy 4). The encoder-decoder architect (p. 10; recorte do PDF convertido)*
-
-![[Daudt_2019_MultitaskLearningLarge_p10_Fig.6.png|520]]
-*Fig. 6. (p. 10; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

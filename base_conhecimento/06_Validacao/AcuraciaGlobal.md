@@ -48,5 +48,4 @@ Enganosa quando 99% dos pixels não mudam.
 
 ## Navegação
 
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
 - Lacuna que afeta este conceito: [[L03_MudancaRara|Mudança rara: métricas e perdas ainda penalizam eventos]]

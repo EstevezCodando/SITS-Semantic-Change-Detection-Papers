@@ -11,13 +11,13 @@ paginas: 24
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "C"
-tarefas: ["[[Desmatamento|Desmatamento]]", "[[SegmentacaoSemantica|Segmentação semântica]]"]
-sensores: ["[[UAV|UAV / drones]]", "[[Landsat|Landsat]]", "[[Sentinel2|Sentinel-2]]"]
+tarefas: ["[[Desmatamento|Desmatamento]]"]
+sensores: ["[[Sentinel2|Sentinel-2]]"]
 conjuntos_dados: []
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
+metodos: ["[[UNet|U-Net]]"]
 preparo: []
 validacao: []
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
+ferramentas: []
 tags: [artigo, leitura/parcial, relevancia/C]
 ---
 
@@ -169,22 +169,8 @@ Revisão sistemática (PRISMA) do uso de **segmentação semântica com aprendiz
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- trata a tarefa: [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 94 ocorrências (p. 1, 6, 7, 8, 9)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 46 ocorrências (p. 2, 3, 6, 7, 8)
-- utiliza dado/sensor: [[UAV|UAV / drones]] — 41 ocorrências (p. 2, 6, 7, 8, 12)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 32 ocorrências (p. 2, 8, 9, 10, 12)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 30 ocorrências (p. 7, 8, 9, 12, 14)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 6 ocorrências (p. 15, 20, 21)
-
-## Figuras selecionadas
-
-![[Jelas_2024_DeforestationDetectionDeep_p5_FIGURE1.png|520]]
-*FIGURE 1 (p. 5; recorte do PDF convertido)*
-
-![[Jelas_2024_DeforestationDetectionDeep_p13_FIGURE2.png|520]]
-*FIGURE 2 (p. 13; recorte do PDF convertido)*
-
 
 ## Anotações do leitor
 

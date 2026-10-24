@@ -13,10 +13,10 @@ status_leitura: "lido (profundo)"
 relevancia_objetivo: "A"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
 sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
-conjuntos_dados: ["[[PRODES|PRODES (INPE)]]", "[[GlobalForestChange|Global Forest Change (Hansen)]]"]
-metodos: ["[[UNet|U-Net]]", "[[CNN|Redes convolucionais (CNN)]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Normalizacao|Normalização e escala radiométrica]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[AmostraIndependente|Amostra independente]]", "[[F1|F1]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
+conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
+metodos: ["[[UNet|U-Net]]"]
+preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[Rotulagem|Rotulagem e anotação]]"]
+validacao: ["[[AmostraIndependente|Amostra independente]]", "[[AcuraciaGlobal|Acurácia global (OA)]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -179,17 +179,12 @@ Mapear cobertura arbórea e desmatamento no Mato Grosso (~1 milhão de km²) com
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 21 ocorrências (p. 2, 3, 4, 5, 13)
-- emprega conjunto de dados: [[PRODES|PRODES (INPE)]] — 14 ocorrências (p. 3, 4, 5, 6, 11)
 - emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 6 ocorrências (p. 3, 5, 15, 16)
 - utiliza método: [[UNet|U-Net]] — 25 ocorrências (p. 3, 4, 6, 7, 8)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 4 ocorrências (p. 4, 16)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 26 ocorrências (p. 4, 5, 6, 7, 8)
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 12 ocorrências (p. 3, 6, 7, 8, 11)
-- referência (curado pela leitura): [[Normalizacao|Normalização e escala radiométrica]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Rotulagem|Rotulagem e anotação]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[AmostraIndependente|Amostra independente]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[F1|F1]] — 3 ocorrências (p. 7, 14, 17)
 - referência (curado pela leitura): [[AcuraciaGlobal|Acurácia global (OA)]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
@@ -204,9 +199,6 @@ Mapear cobertura arbórea e desmatamento no Mato Grosso (~1 milhão de km²) com
 
 ![[Wagner_2023_MappingTropicalForest_p5_Figure1.png|520]]
 *Figure 1: Planet NICFI mosaic of September 2021 constituted of the 2658 Planet image tiles covering the Mato Grosso (p. 5; recorte do PDF convertido)*
-
-![[Wagner_2023_MappingTropicalForest_p9_Figure4.png|520]]
-*Figure 4: Tree cover and tree cover loss per year for the 2658 Planet tiles covering the Mato Grosso State - Brazil, with (p. 9; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

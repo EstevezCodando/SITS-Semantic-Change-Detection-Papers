@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Séries temporais de imagens (SITS)"
 aliases: ["Séries temporais de imagens (SITS)"]
 pasta_tematica: "05_Metodos"
-n_artigos: 12
+n_artigos: 9
 tags: [conceito, tarefa]
 ---
 
@@ -45,16 +45,12 @@ Redundância entre datas próximas; lacunas por nuvem.
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
-| [[He_2022_TrackingUrbanizationDeveloping\|He 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Vincent_2024_SatelliteImageTime\|Vincent 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[He_2024_TimeSeriesLand\|He 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
-| [[Garnot_2021_PanopticSegmentationSatellite\|Garnot 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Szwarcman_2024_PrithviVersatileMultitemporal\|Szwarcman 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
-| [[Simoes_2021_SatelliteImageTime\|Simoes 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 
 ## Navegação
 
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]

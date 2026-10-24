@@ -1,27 +1,25 @@
 # Base de conhecimento — mudanças da cobertura terrestre com séries Planet
 
-Vault Obsidian gerado em 24/10/2026 a partir de 103 artigos (texto convertido em `output/pdf/`). **Autor da coleta:** Jean Michael Estevez Alvarez.
-Este vault **não substitui** o anterior (`../vault/`), que permanece intacto.
+Vault Obsidian gerado em 24/10/2026. **Autor da coleta:** Jean Michael Estevez Alvarez. Tem nota para os 41 artigos lidos (texto convertido em `../output/pdf/`); os demais textos estão em `00_Painel/Pendencias_Leitura.md`.
 
 ## Como abrir
 1. No Obsidian: *Abrir pasta como cofre* → selecione `base_conhecimento/`.
-2. Abra `00_Painel/00_Inicio.md`. Os mapas ficam em `01_Mapas/`; os canvases também (`Mapa_Metodologico.canvas` é o principal).
-3. As figuras selecionadas estão em `90_Anexos/figuras/`. Os PDFs e o Markdown completo ficam fora do vault (`../coleta/`, `../output/pdf/`); as notas citam o caminho.
+2. Abra `00_Painel/00_Inicio.md` e depois `01_Mapas/Trilha_Objetivo_Planet5m.md`.
+3. As figuras (uma por artigo de relevância A ou B) estão em `90_Anexos/figuras/`. Os PDFs e o Markdown completo ficam fora do vault (`../coleta/`, `../output/pdf/`); as notas citam o caminho.
 
 ## Estrutura
-`00_Painel` início e guias · `01_Mapas` mapas de conteúdo e canvases · `02_Artigos` uma nota por artigo (103) · `03_Dados` sensores, produtos e conjuntos · `04_Preparo` etapas de preparo · `05_Metodos` algoritmos, arquiteturas, estratégias e tarefas · `06_Validacao` desenhos e métricas · `07_Resultados` matriz comparativa e sínteses · `08_Monitoramento` operação e ferramentas · `09_Lacunas` · `90_Anexos` inventário, duplicatas, original e figuras · `99_Templates`.
+`00_Painel` início, guias e pendências · `01_Mapas` trilha e canvases · `02_Artigos` uma nota por artigo lido (41) · `03_Dados`, `04_Preparo`, `05_Metodos`, `06_Validacao`, `08_Monitoramento` conceitos do projeto · `07_Resultados` matriz comparativa, achados e sínteses · `09_Lacunas` · `90_Anexos/figuras` · `99_Templates`.
 
 ## Convenções
-- Relações são **links no texto** com o significado ao lado (“utiliza método: …”, “emprega conjunto de dados: …”, “é avaliado por: …”).
-- Artigos ligam-se entre si só quando há comparação substantiva (explicada na seção 12); o resto da conexão passa por conceitos compartilhados.
-- `status_leitura`: *lido (profundo)* · *lido (parcial)* · *extraído automaticamente (não lido)*. Onde faltou informação consta “não informado”.
+- Relações são **links no texto** com o significado ao lado (“utiliza método: …”, “emprega conjunto de dados: …”).
+- `relevancia_objetivo` (A–C) e `status_leitura` estão no YAML de cada artigo; A e B formam o núcleo para o objetivo (Planet de ~5 m).
 - **Evidência vs. interpretação:** cada nota rotula o que é fato do artigo (com página) e o que é leitura da base.
 
-## Grafo e Canvas
-Veja `00_Painel/Guia_Grafo.md` (cores por pasta, filtros, grafo local de profundidade 1–2 e forças iniciais). Canvases: cartões de 320×180, intervalos de 120 (horizontal) e 80 (vertical), cores da mesma paleta do grafo.
+## Grafo
+Veja `00_Painel/Guia_Grafo.md` (cores por relevância, filtros e visões prontas).
 
 ## Verificação
-`00_Painel/Verificacao.md`: 235 notas, 3190 wikilinks, 0 links quebrados, 0 nomes duplicados, 0 órfãs. Canvases validados geometricamente; **inspeção visual pendente**.
+`00_Painel/Verificacao.md`: 118 notas, 1287 wikilinks, 0 links quebrados, 0 nomes duplicados, 0 órfãs. Canvases validados geometricamente; **inspeção visual pendente**.
 
 ## Regenerar
 `python -I scripts/kb_extract.py .` e `python -I scripts/kb_build.py .` (a pasta `base_conhecimento/` é recriada; copie edições manuais antes).

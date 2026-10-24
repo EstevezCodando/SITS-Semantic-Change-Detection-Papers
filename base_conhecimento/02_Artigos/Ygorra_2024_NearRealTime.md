@@ -12,11 +12,11 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
-sensores: ["[[Sentinel1|Sentinel-1]]", "[[SAR|Radar (SAR)]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: []
 metodos: []
 preparo: []
-validacao: ["[[F1|F1]]"]
+validacao: []
 ferramentas: []
 tags: [artigo, leitura/parcial, relevancia/B]
 ---
@@ -151,7 +151,6 @@ Versão de **quase tempo real do CuSum** (soma cumulativa) para detectar desmata
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 14 ocorrências (p. 1, 2, 3, 4, 5)
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 13 ocorrências (p. 1, 2, 3, 5, 6)
 - referência (curado pela leitura): [[PlanetNICFI|Planet NICFI (basemaps)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 84 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 6 ocorrências (p. 1, 2, 5)
@@ -159,7 +158,6 @@ Versão de **quase tempo real do CuSum** (soma cumulativa) para detectar desmata
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[ReferenciaVisual|Referência por interpretação visual]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[F1|F1]] — 32 ocorrências (p. 1, 2, 6, 7, 8)
 
 **Comparações substantivas com outros artigos:**
 - este artigo adota o limite de confirmação de [[Reiche_2021_ForestDisturbanceAlerts|Reiche 2021]] — P120 define quase tempo real como até 90 dias, o limite de confirmação do RADD (P119).
@@ -168,9 +166,6 @@ Versão de **quase tempo real do CuSum** (soma cumulativa) para detectar desmata
 
 ![[Ygorra_2024_NearRealTime_p3_FIGURE1.png|520]]
 *FIGURE 1 (p. 3; recorte do PDF convertido)*
-
-![[Ygorra_2024_NearRealTime_p4_FIGURE2.png|520]]
-*FIGURE 2 (p. 4; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

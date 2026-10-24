@@ -51,5 +51,4 @@ Falsos alertas custam revisão.
 
 ## Navegação
 
-- Mapa: [[MOC_10_MonitoramentoOperacao|Monitoramento contínuo e operação]]
 - Lacuna que afeta este conceito: [[L01_ValidacaoOperacional|Quase nenhum estudo avalia monitoramento contínuo]]

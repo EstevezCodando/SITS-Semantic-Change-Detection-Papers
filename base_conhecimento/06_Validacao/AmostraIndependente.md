@@ -48,6 +48,4 @@ Cara de produzir.
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
 - Lacuna que afeta este conceito: [[L14_ReferenciaVisualFragil|Referência visual tem discordância e depende de dados sem nuvem]]

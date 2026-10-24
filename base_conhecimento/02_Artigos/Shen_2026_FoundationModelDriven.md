@@ -12,9 +12,9 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
-sensores: ["[[Landsat|Landsat]]"]
+sensores: []
 conjuntos_dados: ["[[SECOND|SECOND]]"]
-metodos: ["[[ModeloFundacional|Modelos fundacionais]]", "[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[TransferLearning|Aprendizado por transferência]]"]
+metodos: ["[[ModeloFundacional|Modelos fundacionais]]"]
 preparo: []
 validacao: []
 ferramentas: []
@@ -172,13 +172,9 @@ Como acoplar **modelos fundacionais de sensoriamento remoto** à detecção de m
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - emprega conjunto de dados: [[SECOND|SECOND]] — 11 ocorrências (p. 8, 9, 10, 11, 13)
 - utiliza método: [[ModeloFundacional|Modelos fundacionais]] — 39 ocorrências (p. 1, 2, 3, 4, 6)
-- utiliza método: [[Transformer|Transformers]] — 33 ocorrências (p. 3, 4, 5, 8, 9)
-- utiliza método: [[Mamba|Mamba / modelos de espaço de estados]] — 12 ocorrências (p. 3, 4, 9, 11, 12)
-- utiliza método: [[TransferLearning|Aprendizado por transferência]] — 4 ocorrências (p. 4, 5, 8)
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[Landsat|Landsat]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo usa a mesma família de encoder de [[Chen_2024_ChangeMambaRemoteSensing|Chen 2024]] — P34 integra o VMamba-B ao seu decodificador (SeK 25,31 no SECOND), a mesma família Mamba de P28 (SeK 22,92 no SECOND).
@@ -189,12 +185,6 @@ Como acoplar **modelos fundacionais de sensoriamento remoto** à detecção de m
 
 ![[Shen_2026_FoundationModelDriven_p4_Fig.2.png|520]]
 *Fig. 2. Overall pipeline: (a) PerA Pre-training: A selfsupervised paradigm combining contrastive learning and (p. 4; recorte do PDF convertido)*
-
-![[Shen_2026_FoundationModelDriven_p10_Fig.6.png|520]]
-*Fig. 6. Examples of results provided by different methods in the comparative experiments. (a) Results on the SECOND dataset; (p. 10; recorte do PDF convertido)*
-
-![[Shen_2026_FoundationModelDriven_p5_Fig.3.png|520]]
-*Fig. 3. Architecture of PerASCD. (p. 5; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

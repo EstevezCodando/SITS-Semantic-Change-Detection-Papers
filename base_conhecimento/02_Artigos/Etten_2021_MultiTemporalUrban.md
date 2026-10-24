@@ -16,7 +16,7 @@ sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]"]
 metodos: ["[[UNet|U-Net]]"]
 preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[MascaraNuvem|Máscara de nuvem e sombra]]"]
-validacao: ["[[F1|F1]]"]
+validacao: []
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -171,7 +171,6 @@ Dataset e tarefa de **rastreamento de edificações em séries mensais Planet**:
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 37 ocorrências (p. 1, 2, 3, 4, 5)
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 3 ocorrências (p. 2, 5)
-- é avaliado por: [[F1|F1]] — 13 ocorrências (p. 6, 7, 8)
 
 **Comparações substantivas com outros artigos:**
 - [[Vincent_2024_SatelliteImageTime|Vincent 2024]] emprega o conjunto de dados de este artigo — P13 usa o MUDS de P10 como segundo benchmark e gera mapas binários a partir dos polígonos (p. 6).
@@ -182,12 +181,6 @@ Dataset e tarefa de **rastreamento de edificações em séries mensais Planet**:
 
 ![[Etten_2021_MultiTemporalUrban_p3_Figure2.png|520]]
 *Figure 2: Location of MUDS data cubes. (p. 3; recorte do PDF convertido)*
-
-![[Etten_2021_MultiTemporalUrban_p3_Figure1.png|520]]
-*Figure 1: A comparison between our dataset and related (p. 3; recorte do PDF convertido)*
-
-![[Etten_2021_MultiTemporalUrban_p4_Figure3.png|520]]
-*Figure 3: Time series of two data cubes. Left column ( e.g . 1a) denotes the start of the times series, the middle column ( e.g . (p. 4; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

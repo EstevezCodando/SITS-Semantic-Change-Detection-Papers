@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Desmatamento"
 aliases: ["Desmatamento"]
 pasta_tematica: "05_Metodos"
-n_artigos: 16
+n_artigos: 12
 tags: [conceito, tarefa]
 ---
 
@@ -48,11 +48,7 @@ Fogo e degradação podem ser contados como perda em produtos de referência.
 | [[Wang_2024_ValidationDeforestationHigh\|Wang 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Alshehri_2024_DeepTransformerNetwork\|Alshehri 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Andrade_2020_EVALUATIONSEMANTICSEGMENTATION\|Andrade 2020]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Jelas_2024_DeforestationDetectionDeep\|Jelas 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
-| [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Doblas_2022_DETEROperationalNear\|Doblas 2022]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Reiche_2024_IntegratingSatelliteForest\|Reiche 2024]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Reiche_2021_ForestDisturbanceAlerts\|Reiche 2021]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |

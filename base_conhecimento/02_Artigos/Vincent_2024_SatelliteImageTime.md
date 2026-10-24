@@ -14,7 +14,7 @@ relevancia_objetivo: "A"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: []
 conjuntos_dados: ["[[SpaceNet7_MUDS|SpaceNet 7 / MUDS]]", "[[DynamicEarthNet|DynamicEarthNet]]"]
-metodos: ["[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[Transformer|Transformers]]"]
+metodos: ["[[UTAE|U-TAE (U-Net com atenção temporal)]]"]
 preparo: []
 validacao: ["[[Generalizacao|Generalização e domain shift]]", "[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
@@ -165,7 +165,6 @@ UTAE e TSViT (mono-temporais, mensal/semanal), A2Net e SCanNet (pares), TSSCD (p
 - trata a tarefa: [[SITS|Séries temporais de imagens (SITS)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 16 ocorrências (p. 2, 3, 6, 7, 8)
-- utiliza método: [[Transformer|Transformers]] — 3 ocorrências (p. 2, 6, 7)
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[Generalizacao|Generalização e domain shift]] — 50 ocorrências (p. 1, 2, 3, 4, 5)
@@ -180,12 +179,6 @@ UTAE e TSViT (mono-temporais, mensal/semanal), A2Net e SCanNet (pares), TSSCD (p
 
 ![[Vincent_2024_SatelliteImageTime_p4_Figure1.png|520]]
 *Figure 1. Overall architecture. Given an input SITS, we compute feature maps at various scales. Our contribution is the temporal attention (p. 4; recorte do PDF convertido)*
-
-![[Vincent_2024_SatelliteImageTime_p4_Figure2.png|520]]
-*Figure 2. Attention mechanism of TAE, LTAE and our method. (p. 4; recorte do PDF convertido)*
-
-![[Vincent_2024_SatelliteImageTime_p5_Figure3.png|520]]
-*Figure 3. Domain shift settings. We organize the dataset splits (p. 5; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

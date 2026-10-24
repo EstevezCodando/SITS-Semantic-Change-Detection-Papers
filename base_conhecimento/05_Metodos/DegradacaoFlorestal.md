@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Degradação e perturbação florestal"
 aliases: ["Degradação e perturbação florestal"]
 pasta_tematica: "05_Metodos"
-n_artigos: 4
+n_artigos: 3
 tags: [conceito, tarefa]
 ---
 
@@ -44,7 +44,6 @@ Pode não ser captada por classificadores de cobertura por data.
 |---|---|---:|---|---|
 | [[Dalagnol_2023_MappingTropicalForest\|Dalagnol 2023]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação

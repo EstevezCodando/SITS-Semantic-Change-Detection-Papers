@@ -140,15 +140,6 @@ Rodar o IAMAP com DINOv2 sobre um mosaico Planet de 4 bandas, comparar agrupamen
 **Comparações substantivas com outros artigos:**
 - este artigo reutiliza código de [[Aszkowski_2023_DeepnessDeepNeural|Aszkowski 2023]] — IAMAP reaproveita o diálogo de instalação de dependências do Deepness (JOSS, resumo).
 
-## Figuras selecionadas
-
-![[Tresson_2026_IAMAPUnlockingDeep_p2_Figure1.png|520]]
-*Figure 1). (p. 2; recorte do PDF convertido)*
-
-![[Tresson_2026_IAMAPUnlockingDeep_p3_Figure2.png|520]]
-*Figure 2: A Sentinel-2 image of a forested landscape in Thailand (Khao Banthat Wildlife Sanctuary; (p. 3; recorte do PDF convertido)*
-
-
 ## Anotações do leitor
 
 - 

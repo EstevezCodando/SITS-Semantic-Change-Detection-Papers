@@ -52,8 +52,6 @@ Valores não comparáveis entre datasets distintos.
 
 ## Navegação
 
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
 - Lacuna que afeta este conceito: [[L03_MudancaRara|Mudança rara: métricas e perdas ainda penalizam eventos]]
 - Lacuna que afeta este conceito: [[L06_MetricasIncomparaveis|Métricas e benchmarks não são comparáveis entre estudos]]
 - Lacuna que afeta este conceito: [[L10_TaxonomiaTransicoes|Transições (from–to) são pouco padronizadas]]

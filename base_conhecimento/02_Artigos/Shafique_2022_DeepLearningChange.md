@@ -12,9 +12,9 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "C"
 tarefas: ["[[Deteccao_Mudanca|Detecção de mudanças]]"]
-sensores: ["[[SAR|Radar (SAR)]]", "[[Sentinel1|Sentinel-1]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
-metodos: ["[[CNN|Redes convolucionais (CNN)]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[Transformer|Transformers]]"]
+metodos: ["[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
 preparo: []
 validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
@@ -170,24 +170,9 @@ Revisão da **detecção de mudança com aprendizado profundo** organizada **por
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- utiliza dado/sensor: [[SAR|Radar (SAR)]] — 65 ocorrências (p. 1, 2, 3, 4, 5)
 - referência (curado pela leitura): [[Sentinel1|Sentinel-1]] — suporte vindo da leitura/título/resumo
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 29 ocorrências (p. 15, 16, 17, 18, 19)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 17 ocorrências (p. 1, 4, 14, 16, 18)
-- referência (curado pela leitura): [[Transformer|Transformers]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Desbalanceamento|Desbalanceamento de classes]] — suporte vindo da leitura/título/resumo
-
-## Figuras selecionadas
-
-![[Shafique_2022_DeepLearningChange_p12_Figure3.png|520]]
-*Figure 3. The workflow of the change detection architecture. (p. 12; recorte do PDF convertido)*
-
-![[Shafique_2022_DeepLearningChange_p28_Figure4.png|520]]
-*Figure 4. Visual comparison of CD results using various methods for Farmland C : ( a ) reference, (p. 28; recorte do PDF convertido)*
-
-![[Shafique_2022_DeepLearningChange_p2_Figure1.png|520]]
-*Figure 1. Traditional change detection method. (p. 2; recorte do PDF convertido)*
-
 
 ## Anotações do leitor
 

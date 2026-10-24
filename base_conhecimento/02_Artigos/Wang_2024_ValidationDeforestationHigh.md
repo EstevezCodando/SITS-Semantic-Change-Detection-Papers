@@ -13,10 +13,10 @@ status_leitura: "lido (profundo)"
 relevancia_objetivo: "A"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
 sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
-conjuntos_dados: ["[[MapBiomas|MapBiomas]]", "[[DETER|DETER (INPE)]]"]
-metodos: ["[[UNet|U-Net]]", "[[RandomForest|Random Forest]]"]
-preparo: ["[[AumentoDados|Aumento de dados]]"]
-validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]", "[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]"]
+conjuntos_dados: ["[[DETER|DETER (INPE)]]"]
+metodos: ["[[UNet|U-Net]]"]
+preparo: []
+validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -159,14 +159,9 @@ tags: [artigo, leitura/profunda, relevancia/A]
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 4 ocorrências (p. 2, 3, 4, 6)
 - utiliza método: [[UNet|U-Net]] — 17 ocorrências (p. 2, 3, 4, 5)
-- utiliza método: [[RandomForest|Random Forest]] — 5 ocorrências (p. 2, 3, 4)
 - trata a tarefa: [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
-- emprega conjunto de dados: [[MapBiomas|MapBiomas]] — 4 ocorrências (p. 1, 3)
 - referência (curado pela leitura): [[DETER|DETER (INPE)]] — suporte vindo da leitura/título/resumo
 - adota desenho de validação: [[Desbalanceamento|Desbalanceamento de classes]] — 4 ocorrências (p. 2, 3, 5)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 24 ocorrências (p. 3, 5)
-- é avaliado por: [[F1|F1]] — 12 ocorrências (p. 3, 5)
-- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Alertas|Alertas de mudança]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
@@ -176,9 +171,6 @@ tags: [artigo, leitura/profunda, relevancia/A]
 
 ![[Wang_2024_ValidationDeforestationHigh_p4_Figure3.png|520]]
 *Figure 3. Deforestation sites collected in the study area (left), and the overall location within the Amazon Forest region (right). (p. 4; recorte do PDF convertido)*
-
-![[Wang_2024_ValidationDeforestationHigh_p4_Figure4.png|520]]
-*Figure 4. Visualizations of model’s performance in detecting deforestation given a pair of Planet NICFI images taken before and after (p. 4; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

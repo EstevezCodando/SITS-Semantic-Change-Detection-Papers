@@ -49,4 +49,3 @@ Discordância entre intérpretes (32,43% em P91) e janelas de observação limit
 
 ## Navegação
 
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]

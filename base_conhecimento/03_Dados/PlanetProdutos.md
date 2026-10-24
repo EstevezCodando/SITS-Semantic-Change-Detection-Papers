@@ -4,7 +4,7 @@ subtipo: "dado/produto"
 titulo: "Produtos Planet (visão geral)"
 aliases: ["Produtos Planet (visão geral)"]
 pasta_tematica: "03_Dados"
-n_artigos: 7
+n_artigos: 5
 tags: [conceito, dado]
 ---
 
@@ -42,9 +42,7 @@ Planet Fusion (diário, gap-filled) não equivale ao mosaico mensal convencional
 
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
-| [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | utiliza dado/sensor | 39 | 1, 2, 3, 4, 5 | extraído automaticamente (não lido) |
 | [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | utiliza dado/sensor | 17 | 2, 3, 5, 6, 7 | lido (profundo) |
-| [[Aragon_2021_CubeSatsDeliverNew\|Aragon 2021]] | utiliza dado/sensor | 11 | 1, 2, 3, 8, 9 | extraído automaticamente (não lido) |
 | [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | utiliza dado/sensor | 6 | 1, 3, 10 | lido (profundo) |
 | [[Toker_2022_DynamicEarthNetDailyMulti\|Toker 2022]] | utiliza dado/sensor | 5 | 1, 3, 4 | lido (profundo) |
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | utiliza dado/sensor | 3 | 2, 5 | lido (profundo) |
@@ -52,4 +50,3 @@ Planet Fusion (diário, gap-filled) não equivale ao mosaico mensal convencional
 
 ## Navegação
 
-- Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]

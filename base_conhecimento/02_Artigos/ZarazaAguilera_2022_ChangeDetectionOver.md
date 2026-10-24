@@ -15,8 +15,8 @@ tarefas: ["[[Mineracao|Mineração]]", "[[Deteccao_Mudanca|Detecção de mudanç
 sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
 metodos: ["[[UNet|U-Net]]"]
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[AumentoDados|Aumento de dados]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[Kappa|Coeficiente kappa]]", "[[EstimativaArea|Estimativa de área com intervalo de confiança]]", "[[F1|F1]]"]
+preparo: ["[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
+validacao: ["[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -153,15 +153,10 @@ Comparar **duas estratégias de deep learning** para detectar mudança em **áre
 - trata a tarefa: [[Mineracao|Mineração]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 24 ocorrências (p. 1, 2, 3, 4, 5)
-- referência (curado pela leitura): [[PatchesTiles|Recorte em patches/tiles]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[AumentoDados|Aumento de dados]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[AmostragemEstratificada|Amostragem estratificada]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[IoU|IoU / mIoU]] — 19 ocorrências (p. 4, 5)
-- é avaliado por: [[Kappa|Coeficiente kappa]] — 8 ocorrências (p. 1, 7)
 - referência (curado pela leitura): [[EstimativaArea|Estimativa de área com intervalo de confiança]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[F1|F1]] — suporte vindo da leitura/título/resumo
+- referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo aplica o protocolo de avaliação de [[Olofsson_2014_GoodPracticesEstimating|Olofsson 2014]] — P05 valida os mapas de mudança pelo método de Olofsson: (p. 4).
@@ -171,9 +166,6 @@ Comparar **duas estratégias de deep learning** para detectar mudança em **áre
 
 ![[ZarazaAguilera_2022_ChangeDetectionOver_p3_Fig.1.png|520]]
 *Fig. 1. Área de estudio Mina el Cerrejón. (p. 3; recorte do PDF convertido)*
-
-![[ZarazaAguilera_2022_ChangeDetectionOver_p3_Fig.2.png|520]]
-*Fig. 2. Metodología para la detección de áreas de cambio por minería. (p. 3; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -47,4 +47,3 @@ Exige ciclos de anotação; o teste independente precisa ficar separado das áre
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]

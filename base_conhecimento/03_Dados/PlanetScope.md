@@ -52,4 +52,3 @@ Variabilidade radiométrica entre satélites; quantidade de bandas pode variar e
 
 ## Navegação
 
-- Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]

@@ -68,7 +68,7 @@
       "height": 180,
       "color": "#F97316",
       "type": "text",
-      "text": "**Normalização e patches**\nEscala para 8 bits; recortes 256×256; aumento de dados.\n[[Normalizacao]]"
+      "text": "**Normalização e patches**\nEscala para 8 bits; recortes 256×256; aumento de dados."
     },
     {
       "id": "p3",
@@ -98,7 +98,7 @@
       "height": 180,
       "color": "#8B5CF6",
       "type": "text",
-      "text": "**ML sobre atributos**\nRandom Forest, XGBoost; objetos + textura.\n[[RandomForest]]"
+      "text": "**ML sobre atributos**\nRandom Forest, XGBoost; objetos + textura."
     },
     {
       "id": "m2",
@@ -208,7 +208,7 @@
       "height": 180,
       "color": "#22C55E",
       "type": "text",
-      "text": "**Edificações em 4–5 px**\nF1 ≈ 0,45; mudança < 0,1.\n[[Sintese_Edificacoes_Vias]]"
+      "text": "**Edificações em 4–5 px**\nF1 ≈ 0,45; mudança < 0,1.\n[[L11_InicioConstrucao5m]]"
     },
     {
       "id": "g_5",

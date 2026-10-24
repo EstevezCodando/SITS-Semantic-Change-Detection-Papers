@@ -15,8 +15,8 @@ tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]
 sensores: ["[[Sentinel2|Sentinel-2]]", "[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
 metodos: ["[[UNet|U-Net]]", "[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]"]
-preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[PatchesTiles|Recorte em patches/tiles]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]", "[[Normalizacao|Normalização e escala radiométrica]]"]
-validacao: ["[[IoU|IoU / mIoU]]", "[[F1|F1]]"]
+preparo: ["[[Rotulagem|Rotulagem e anotação]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
+validacao: []
 ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
@@ -192,13 +192,9 @@ Detectar mudança de **uso e cobertura (LULC) em floresta tropical seca** no val
 - referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 47 ocorrências (p. 1, 5, 7, 10, 12)
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 28 ocorrências (p. 1, 2, 3, 5, 7)
-- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 62 ocorrências (p. 1, 2, 3, 8, 10)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 13 ocorrências (p. 2, 8, 10, 12, 15)
-- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 9 ocorrências (p. 10, 11, 13)
-- aplica etapa de preparo: [[Normalizacao|Normalização e escala radiométrica]] — 7 ocorrências (p. 5, 8, 10, 11, 24)
 - referência (curado pela leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
-- é avaliado por: [[IoU|IoU / mIoU]] — 53 ocorrências (p. 1, 10, 11, 12, 13)
-- é avaliado por: [[F1|F1]] — 17 ocorrências (p. 11, 13, 14, 15, 18)
+- aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 62 ocorrências (p. 1, 2, 3, 8, 10)
+- aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 9 ocorrências (p. 10, 11, 13)
 
 **Comparações substantivas com outros artigos:**
 - [[Simsek_2025_DeterminationLandLand|Simsek 2025]] compartilha o problema de fontes diferentes com este artigo — P06 compara o mapa de 2023 com o cadastro de 2015, e P09 compara o mapa de 2019 com o de 2017 de outra fonte; ambos herdam diferenças de fonte.
@@ -207,12 +203,6 @@ Detectar mudança de **uso e cobertura (LULC) em floresta tropical seca** no val
 
 ![[GonzalezVelez_2026_TropicalDryForest_p3_Fig.1.png|520]]
 *Fig. 1 Proposed SSL framework to integrate optical and SAR images for LULC (p. 3; recorte do PDF convertido)*
-
-![[GonzalezVelez_2026_TropicalDryForest_p9_Fig.4.png|520]]
-*Fig. 4 Location of the extended “Center Antioquia Study Area” (approx. 15,000 ­km ) used for the final scalability and generalization analys (p. 9; recorte do PDF convertido)*
-
-![[GonzalezVelez_2026_TropicalDryForest_p16_Fig.5.png|520]]
-*Fig. 5 a Predicted LULC classification map for 2019. b Predicted LULC classification map for 2021. The maps use the WGS 84 (p. 16; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -13,10 +13,10 @@ status_leitura: "lido (profundo)"
 relevancia_objetivo: "C"
 tarefas: []
 sensores: []
-conjuntos_dados: ["[[OpenStreetMap|OpenStreetMap]]"]
+conjuntos_dados: []
 metodos: []
-preparo: ["[[PatchesTiles|Recorte em patches/tiles]]", "[[Rotulagem|Rotulagem e anotação]]"]
-validacao: ["[[PrecisaoRecall|Precisão e recall]]", "[[F1|F1]]", "[[IoU|IoU / mIoU]]"]
+preparo: ["[[Rotulagem|Rotulagem e anotação]]"]
+validacao: []
 ferramentas: ["[[QGIS|QGIS]]"]
 tags: [artigo, leitura/profunda, relevancia/C]
 ---
@@ -130,28 +130,11 @@ Avaliar o **Deepness** (plugin QGIS) na digitalização automática de **edifica
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- emprega conjunto de dados: [[OpenStreetMap|OpenStreetMap]] — 24 ocorrências (p. 1, 2, 3, 8, 9)
-- é avaliado por: [[PrecisaoRecall|Precisão e recall]] — 12 ocorrências (p. 2, 3, 11, 12)
-- é avaliado por: [[F1|F1]] — 8 ocorrências (p. 1, 3, 8, 11, 12)
-- é avaliado por: [[IoU|IoU / mIoU]] — 7 ocorrências (p. 3, 9)
 - usa ferramenta: [[QGIS|QGIS]] — 11 ocorrências (p. 1, 2, 9)
-- aplica etapa de preparo: [[PatchesTiles|Recorte em patches/tiles]] — 20 ocorrências (p. 3, 4, 5, 6, 7)
 - aplica etapa de preparo: [[Rotulagem|Rotulagem e anotação]] — 7 ocorrências (p. 2, 3, 9)
 
 **Comparações substantivas com outros artigos:**
 - este artigo avalia [[Aszkowski_2023_DeepnessDeepNeural|Aszkowski 2023]] — P158 avalia o Deepness em edificações e mostra a dependência dos parâmetros (F1 48,1 → 78,6%).
-
-## Figuras selecionadas
-
-![[Febrita_2025_EvaluatingDrivenAutomated_p4_Figure1.png|520]]
-*Figure 1. AI-based digitization results with a 100 cm/px resolution (p. 4; recorte do PDF convertido)*
-
-![[Febrita_2025_EvaluatingDrivenAutomated_p4_Figure2.png|520]]
-*Figure 2. AI-based digitization results with a 300 cm/px resolution (p. 4; recorte do PDF convertido)*
-
-![[Febrita_2025_EvaluatingDrivenAutomated_p5_Figure3.png|520]]
-*Figure 3. AI digitization results in a 300 cm/px resolution & 0% of tiles overlap (p. 5; recorte do PDF convertido)*
-
 
 ## Anotações do leitor
 

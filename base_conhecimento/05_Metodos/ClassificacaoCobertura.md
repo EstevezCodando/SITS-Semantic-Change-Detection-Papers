@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Classificação de cobertura e uso da terra"
 aliases: ["Classificação de cobertura e uso da terra"]
 pasta_tematica: "05_Metodos"
-n_artigos: 13
+n_artigos: 4
 tags: [conceito, tarefa]
 ---
 
@@ -46,15 +46,6 @@ Classificar uma data não valida transições mensais.
 | [[Vizzari_2022_PlanetScopeSentinelSentinel\|Vizzari 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[GonzalezVelez_2026_TropicalDryForest\|GonzalezVelez 2026]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Zhang_2025_UniChangeUnifyingChange\|Zhang 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Cubillas_2024_LandClassificationPlugin\|Cubillas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Kumari_2025_SimulationLandLand\|Kumari 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Bou_2026_RemoteSensingChange\|Bou 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Brown_2022_DynamicWorldNear\|Brown 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 
 ## Navegação
 

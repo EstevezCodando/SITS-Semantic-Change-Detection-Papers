@@ -49,4 +49,3 @@ Atrasa a data do alerta.
 
 ## Navegação
 
-- Mapa: [[MOC_10_MonitoramentoOperacao|Monitoramento contínuo e operação]]

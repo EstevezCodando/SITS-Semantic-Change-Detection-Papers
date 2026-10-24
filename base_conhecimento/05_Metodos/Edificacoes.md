@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Edificações e urbanização"
 aliases: ["Edificações e urbanização"]
 pasta_tematica: "05_Metodos"
-n_artigos: 15
+n_artigos: 4
 tags: [conceito, tarefa]
 ---
 
@@ -44,19 +44,8 @@ Objetos de poucos pixels em 3–5 m.
 |---|---|---:|---|---|
 | [[Etten_2021_MultiTemporalUrban\|Etten 2021]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Glazer_2025_TEMPOGlobalTemporal\|Glazer 2025]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[McVicar_2023_SmartflowEnablingScalable\|McVicar 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[He_2022_TrackingUrbanizationDeveloping\|He 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Etten_2021_SpaceNetMultiTemporal\|Etten 2021]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Doblas_2024_DETERNewINPE\|Doblas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Shen_2021_S2LookingSatelliteSide\|Shen 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Guo_2025_HRMSSCDHigh\|Guo 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Papadomanolaki_2019_DetectingUrbanChanges\|Papadomanolaki 2019]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Cubillas_2024_LandClassificationPlugin\|Cubillas 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Sanca_2023_ENDENDDEEP\|Sanca 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Georganos_2018_VeryHighResolution\|Georganos 2018]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Ferreira_2022_BuildingEarthObservation\|Ferreira 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 
 ## Navegação
 

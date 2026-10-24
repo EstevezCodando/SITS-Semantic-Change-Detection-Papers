@@ -4,7 +4,7 @@ subtipo: "conjunto de dados"
 titulo: "HRSCD"
 aliases: ["HRSCD"]
 pasta_tematica: "03_Dados"
-n_artigos: 8
+n_artigos: 3
 tags: [conceito, conjunto-de-dados]
 ---
 
@@ -43,16 +43,9 @@ Rótulos com 80–85% de precisão e bordas de parcela.
 | Artigo | Relação | Ocorrências | Páginas | Status de leitura |
 |---|---|---:|---|---|
 | [[Yang_2021_AsymmetricSiameseNetworks\|Yang 2021]] | emprega conjunto de dados | 35 | 4, 7, 8, 9, 10 | lido (profundo) |
-| [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | emprega conjunto de dados | 18 | 4, 9, 10, 12 | extraído automaticamente (não lido) |
 | [[Daudt_2019_MultitaskLearningLarge\|Daudt 2019]] | emprega conjunto de dados | 16 | 3, 4, 5, 7, 10 | lido (profundo) |
-| [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | emprega conjunto de dados | 10 | 1, 2, 5, 6, 7 | extraído automaticamente (não lido) |
-| [[Zhang_2025_RecurrentSemanticChange\|Zhang 2025]] | emprega conjunto de dados | 8 | 8, 11, 12 | extraído automaticamente (não lido) |
-| [[Guo_2025_HRMSSCDHigh\|Guo 2025]] | emprega conjunto de dados | 7 | 1, 2, 3, 5 | extraído automaticamente (não lido) |
 | [[Shu_2025_SCDNewBenchmark\|Shu 2025]] | emprega conjunto de dados | 3 | 2, 3, 6 | lido (profundo) |
-| [[Yongshuo_2025_SemanticRemoteSensing\|Yongshuo 2025]] | emprega conjunto de dados | 2 | 3, 4 | extraído automaticamente (não lido) |
 
 ## Navegação
 
-- Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]
 - Lacuna que afeta este conceito: [[L10_TaxonomiaTransicoes|Transições (from–to) são pouco padronizadas]]

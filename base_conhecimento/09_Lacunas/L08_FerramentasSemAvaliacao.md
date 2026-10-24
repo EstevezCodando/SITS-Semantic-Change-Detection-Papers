@@ -21,7 +21,6 @@ Os artigos de software (GeoAI, IAMAP) descrevem capacidades, mas não medem acur
 ## O que isto afeta (método, dado ou resultado)
 
 - afeta ferramenta: [[QGIS|QGIS]]
-- afeta modelo fundacional: [[SAM|Segment Anything (SAM)]]
 - afeta etapa: [[PreAnotacaoSAM|Pré-anotação assistida (SAM e plugins QGIS)]]
 
 ## Oportunidade (interpretação)

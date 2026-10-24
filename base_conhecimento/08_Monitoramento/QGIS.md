@@ -50,6 +50,4 @@ Sem painel nativo de mudança temporal.
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
-- Mapa: [[MOC_10_MonitoramentoOperacao|Monitoramento contínuo e operação]]
 - Lacuna que afeta este conceito: [[L08_FerramentasSemAvaliacao|Ferramentas de QGIS/GeoAI carecem de avaliação quantitativa]]

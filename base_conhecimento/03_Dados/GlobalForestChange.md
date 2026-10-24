@@ -4,7 +4,7 @@ subtipo: "base de referência"
 titulo: "Global Forest Change (Hansen)"
 aliases: ["Global Forest Change (Hansen)"]
 pasta_tematica: "03_Dados"
-n_artigos: 6
+n_artigos: 5
 tags: [conceito, base-de-referencia]
 ---
 
@@ -46,9 +46,7 @@ Inclui fogo e degradação como perda; resolução de 30 m.
 | [[Zhang_2023_MonitoringMonthlyTropical\|Zhang 2023]] | emprega conjunto de dados | 11 | 2, 5, 6, 10, 14 | lido (profundo) |
 | [[Wagner_2023_MappingTropicalForest\|Wagner 2023]] | emprega conjunto de dados | 6 | 3, 5, 15, 16 | lido (profundo) |
 | [[Carter_2024_DetectionForestDisturbance\|Carter 2024]] | emprega conjunto de dados | 3 | 2, 6 | lido (profundo) |
-| [[McCallum_2023_CrowdDrivenDeep\|McCallum 2023]] | emprega conjunto de dados | 2 | 2, 11 | extraído automaticamente (não lido) |
 | [[Masolele_2024_MappingDiversityLand\|Masolele 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (profundo) |
 
 ## Navegação
 
-- Mapa: [[MOC_01_AquisicaoDados|Aquisição e seleção de dados]]

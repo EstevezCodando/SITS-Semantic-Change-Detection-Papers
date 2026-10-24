@@ -53,6 +53,5 @@ Exige mais áreas rotuladas.
 
 ## Navegação
 
-- Mapa: [[MOC_08_ValidacaoIncerteza|Validação e incerteza]]
 - Lacuna que afeta este conceito: [[L04_DomainShift|Domain shift espacial e temporal degrada mudança e segmentação]]
 - Lacuna que afeta este conceito: [[L13_DivisaoAleatoriaComum|Divisão aleatória ou por pixel é comum e infla as métricas]]

@@ -13,8 +13,8 @@ status_leitura: "lido (profundo)"
 relevancia_objetivo: "B"
 tarefas: ["[[MudancaSemantica|Mudança semântica (from–to)]]", "[[Deteccao_Mudanca|Detecção de mudanças]]"]
 sensores: []
-conjuntos_dados: ["[[LEVIRCD|LEVIR-CD]]", "[[WHUCD|WHU-CD]]", "[[SECOND|SECOND]]"]
-metodos: ["[[Transformer|Transformers]]", "[[Mamba|Mamba / modelos de espaço de estados]]", "[[CNN|Redes convolucionais (CNN)]]", "[[RedeSiamesa|Redes siamesas]]"]
+conjuntos_dados: ["[[SECOND|SECOND]]"]
+metodos: ["[[RedeSiamesa|Redes siamesas]]"]
 preparo: []
 validacao: []
 ferramentas: []
@@ -164,16 +164,11 @@ Verificar se a arquitetura **Mamba** (modelo de espaço de estados com varredura
 ## 12. Relações justificadas com outras notas
 
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
-- utiliza método: [[Transformer|Transformers]] — 73 ocorrências (p. 1, 2, 3, 4, 6)
-- utiliza método: [[Mamba|Mamba / modelos de espaço de estados]] — 49 ocorrências (p. 1, 2, 4, 5, 6)
-- utiliza método: [[CNN|Redes convolucionais (CNN)]] — 32 ocorrências (p. 1, 2, 3, 4, 10)
-- utiliza método: [[RedeSiamesa|Redes siamesas]] — 20 ocorrências (p. 2, 3, 5, 10, 14)
 - referência (curado pela leitura): [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[Deteccao_Mudanca|Detecção de mudanças]] — suporte vindo da leitura/título/resumo
-- emprega conjunto de dados: [[LEVIRCD|LEVIR-CD]] — 6 ocorrências (p. 9, 11, 17, 18)
-- emprega conjunto de dados: [[WHUCD|WHU-CD]] — 6 ocorrências (p. 9, 11, 12)
 - emprega conjunto de dados: [[SECOND|SECOND]] — 5 ocorrências (p. 9, 12, 13, 14)
 - referência (curado pela leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
+- utiliza método: [[RedeSiamesa|Redes siamesas]] — 20 ocorrências (p. 2, 3, 5, 10, 14)
 
 **Comparações substantivas com outros artigos:**
 - [[Shen_2026_FoundationModelDriven|Shen 2026]] usa a mesma família de encoder de este artigo — P34 integra o VMamba-B ao seu decodificador (SeK 25,31 no SECOND), a mesma família Mamba de P28 (SeK 22,92 no SECOND).
@@ -183,12 +178,6 @@ Verificar se a arquitetura **Mamba** (modelo de espaço de estados com varredura
 
 ![[Chen_2024_ChangeMambaRemoteSensing_p6_Fig.2.png|520]]
 *Fig. 2: The specific structure of the encoder network is based on the visual state space model used in our three architectures. (p. 6; recorte do PDF convertido)*
-
-![[Chen_2024_ChangeMambaRemoteSensing_p7_Fig.4.png|520]]
-*Fig. 4: The specific structure of the change decoder used in MambaBCD, MambaSCD, and MambaBDA architectures based on the proposed (p. 7; recorte do PDF convertido)*
-
-![[Chen_2024_ChangeMambaRemoteSensing_p6_Fig.3.png|520]]
-*Fig. 3: Illustration of the (a) self-attention mechanism , (p. 6; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

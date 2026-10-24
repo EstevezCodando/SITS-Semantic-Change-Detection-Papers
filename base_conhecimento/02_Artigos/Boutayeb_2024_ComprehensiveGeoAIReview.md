@@ -11,7 +11,7 @@ paginas: 50
 tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "C"
-tarefas: ["[[SegmentacaoSemantica|Segmentação semântica]]"]
+tarefas: []
 sensores: ["[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
 metodos: ["[[UNet|U-Net]]"]
@@ -161,19 +161,6 @@ Revisão ampla de **GeoAI** (IA aplicada a dados geoespaciais), com três pergun
 - referência (curado pela leitura): [[QGIS|QGIS]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[PlanetScope|PlanetScope (Dove/SuperDove)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[UNet|U-Net]] — 21 ocorrências (p. 6, 17, 18, 19, 20)
-- referência (curado pela leitura): [[SegmentacaoSemantica|Segmentação semântica]] — suporte vindo da leitura/título/resumo
-
-## Figuras selecionadas
-
-![[Boutayeb_2024_ComprehensiveGeoAIReview_p5_Figure2.png|520]]
-*Figure 2: Review workflow. (p. 5; recorte do PDF convertido)*
-
-![[Boutayeb_2024_ComprehensiveGeoAIReview_p5_Figure3.png|520]]
-*Figure 3: Example of linear regression. (p. 5; recorte do PDF convertido)*
-
-![[Boutayeb_2024_ComprehensiveGeoAIReview_p7_Figure7.png|520]]
-*Figure 7: CNN architecture. (p. 7; recorte do PDF convertido)*
-
 
 ## Anotações do leitor
 

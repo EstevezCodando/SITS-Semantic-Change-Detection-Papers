@@ -12,7 +12,7 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
-sensores: ["[[Landsat|Landsat]]", "[[Sentinel1|Sentinel-1]]", "[[Sentinel2|Sentinel-2]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[Sentinel2|Sentinel-2]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: []
 metodos: []
 preparo: []
@@ -159,7 +159,6 @@ tags: [artigo, leitura/parcial, relevancia/B]
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 230 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 8 ocorrências (p. 4, 5, 6, 7, 8)
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 7 ocorrências (p. 2, 3, 4, 7, 15)
-- utiliza dado/sensor: [[Landsat|Landsat]] — 25 ocorrências (p. 2, 3, 4, 5, 6)
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 19 ocorrências (p. 2, 3, 5, 6, 8)
 - utiliza dado/sensor: [[Sentinel2|Sentinel-2]] — 16 ocorrências (p. 2, 3, 4, 5, 6)
 - utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 5 ocorrências (p. 5, 8, 9, 16)
@@ -174,12 +173,6 @@ tags: [artigo, leitura/parcial, relevancia/B]
 
 ![[Reiche_2024_IntegratingSatelliteForest_p12_Figure6.png|520]]
 *Figure 6. Disturbance alerts at two sample locations for each of the individual alert systems and for the integrated alert based on (p. 12; recorte do PDF convertido)*
-
-![[Reiche_2024_IntegratingSatelliteForest_p8_Figure2.png|520]]
-*Figure 2. Example of pixel-based alert integration without (A) and with (B) considering the spatial neighborhood rule. Ruleset-1 (p. 8; recorte do PDF convertido)*
-
-![[Reiche_2024_IntegratingSatelliteForest_p13_Figure7.png|520]]
-*Figure 7. Disturbance alerts at two sample locations based on all 3 systems (ruleset-1) without (distance = 0 m) and with (p. 13; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

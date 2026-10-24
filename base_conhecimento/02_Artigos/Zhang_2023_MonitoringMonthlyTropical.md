@@ -14,10 +14,10 @@ relevancia_objetivo: "A"
 tarefas: ["[[Desmatamento|Desmatamento]]", "[[DegradacaoFlorestal|Degradação e perturbação florestal]]"]
 sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
-metodos: ["[[RandomForest|Random Forest]]"]
+metodos: []
 preparo: ["[[MascaraNuvem|Máscara de nuvem e sombra]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
 validacao: ["[[EstimativaArea|Estimativa de área com intervalo de confiança]]"]
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
+ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/A]
 ---
 
@@ -162,10 +162,8 @@ Mapear **mensalmente** perturbações florestais de pequena escala (corte seleti
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[PlanetNICFI|Planet NICFI (basemaps)]] — 56 ocorrências (p. 1, 2, 5, 6, 7)
 - emprega conjunto de dados: [[GlobalForestChange|Global Forest Change (Hansen)]] — 11 ocorrências (p. 2, 5, 6, 10, 14)
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — 5 ocorrências (p. 6, 24, 26)
 - aplica etapa de preparo: [[MascaraNuvem|Máscara de nuvem e sombra]] — 25 ocorrências (p. 1, 3, 8, 9, 10)
 - aplica etapa de preparo: [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — 7 ocorrências (p. 7, 26, 29, 30)
-- referência (curado pela leitura): [[RandomForest|Random Forest]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Desmatamento|Desmatamento]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[DegradacaoFlorestal|Degradação e perturbação florestal]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[PosProcessamentoTemporal|Pós-processamento temporal (persistência, janela e colapso)]] — suporte vindo da leitura/título/resumo

@@ -49,4 +49,3 @@ Latência depende de nuvem e de revisão.
 
 ## Navegação
 
-- Mapa: [[MOC_10_MonitoramentoOperacao|Monitoramento contínuo e operação]]

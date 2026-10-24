@@ -14,7 +14,7 @@ relevancia_objetivo: "A"
 tarefas: ["[[SITS|Séries temporais de imagens (SITS)]]", "[[MudancaSemantica|Mudança semântica (from–to)]]"]
 sensores: ["[[PlanetProdutos|Produtos Planet (visão geral)]]"]
 conjuntos_dados: ["[[DynamicEarthNet|DynamicEarthNet]]"]
-metodos: ["[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]", "[[LSTM|Redes recorrentes (LSTM)]]"]
+metodos: ["[[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]]", "[[UTAE|U-TAE (U-Net com atenção temporal)]]"]
 preparo: []
 validacao: ["[[Desbalanceamento|Desbalanceamento de classes]]"]
 ferramentas: []
@@ -166,7 +166,6 @@ Benchmark de **segmentação semântica de mudança** em séries diárias Planet
 - trata a tarefa: [[MudancaSemantica|Mudança semântica (from–to)]] — suporte vindo da leitura/título/resumo
 - utiliza método: [[SemiAutoSupervisionado|Aprendizado semi/auto-supervisionado]] — 9 ocorrências (p. 1, 6, 7, 8)
 - utiliza método: [[UTAE|U-TAE (U-Net com atenção temporal)]] — 5 ocorrências (p. 6, 7)
-- utiliza método: [[LSTM|Redes recorrentes (LSTM)]] — 5 ocorrências (p. 6, 7)
 - referencia (suporte manual da leitura): [[MetricasMudancaSemantica|Métricas de mudança semântica (SeK, SCS, SCOT)]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[RotulagemTemporal|Rotulagem temporalmente consistente]] — suporte vindo da leitura/título/resumo
 - referencia (suporte manual da leitura): [[DivisaoEspacialBlocos|Divisão espacial por blocos e áreas]] — suporte vindo da leitura/título/resumo
@@ -180,12 +179,6 @@ Benchmark de **segmentação semântica de mudança** em séries diárias Planet
 
 ![[Toker_2022_DynamicEarthNetDailyMulti_p4_Figure2.png|520]]
 *Figure 2. An example of a changing surface. We show four sample frames of one AOI from our dataset at different times. Two subregions are ma (p. 4; recorte do PDF convertido)*
-
-![[Toker_2022_DynamicEarthNetDailyMulti_p1_Figure1.png|520]]
-*Figure 1. Visualization of the DynamicEarthNet dataset. For a specific area of interest, we show two satellite observations, 2019-08-01 (p. 1; recorte do PDF convertido)*
-
-![[Toker_2022_DynamicEarthNetDailyMulti_p8_Figure3.png|520]]
-*Figure 3. Qualitative results on validation set. Semantic maps (bottom row) of the semi-supervised baseline CAC trained on (p. 8; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

@@ -47,5 +47,4 @@ Custo alto (7 meses e 5 pessoas em P10).
 
 ## Navegação
 
-- Mapa: [[MOC_03_RotulagemReferencia|Rotulagem e referência]]
 - Lacuna que afeta este conceito: [[L05_RotulosTemporais|Rótulos temporais são caros e subjetivos]]

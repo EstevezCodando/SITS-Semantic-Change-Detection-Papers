@@ -4,7 +4,7 @@ subtipo: "tarefa"
 titulo: "Detecção de mudanças"
 aliases: ["Detecção de mudanças"]
 pasta_tematica: "05_Metodos"
-n_artigos: 33
+n_artigos: 9
 tags: [conceito, tarefa]
 ---
 
@@ -44,38 +44,13 @@ Binária não diz o que mudou; segmentação de uma imagem isolada não é evid�
 |---|---|---:|---|---|
 | [[ZarazaAguilera_2022_ChangeDetectionOver\|ZarazaAguilera 2022]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
 | [[Simsek_2025_DeterminationLandLand\|Simsek 2025]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Rahul_2023_AlignedMultiTemporal\|Rahul 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Shafique_2022_DeepLearningChange\|Shafique 2022]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
 | [[Miller_2024_DeepLearningSatellite\|Miller 2024]] | referência (curado pela leitura) | — | ver nota do artigo | lido (parcial) |
-| [[Shen_2021_S2LookingSatelliteSide\|Shen 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Zhou_2025_SChangerChangeDetection\|Zhou 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Ding_2024_AdaptingSegmentAnything\|Ding 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Li_2024_NewLearningParadigm\|Li 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Zhang_2025_RecurrentSemanticChange\|Zhang 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Benidir_2025_ChangeYouWant\|Benidir 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Guo_2025_HRMSSCDHigh\|Guo 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Zhang_2025_UniChangeUnifyingChange\|Zhang 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Papadomanolaki_2019_DetectingUrbanChanges\|Papadomanolaki 2019]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Chen_2021_SelfSupervisedChange\|Chen 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Wu_2023_FullyConvolutionalChange\|Wu 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Metzger_2023_UrbanChangeForecasting\|Metzger 2023]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Ramadan_2022_PredictionSimulationLand\|Ramadan 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Ding_2022_TemporalSemanticReasoning\|Ding 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Daudt_2018_FullyConvolutionalSiamese\|Daudt 2018]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Chen_2021_RemoteSensingImage\|Chen 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Bandara_2022_TransformerSiameseNetwork\|Bandara 2022]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Zheng_2021_ChangeEverywhereSingle\|Zheng 2021]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Chen_2024_ChangeMambaRemoteSensing\|Chen 2024]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Zheng_2024_SegmentAnyChange\|Zheng 2024]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Yongshuo_2025_SemanticRemoteSensing\|Yongshuo 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Huang_2025_TextSCDLeveragingText\|Huang 2025]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Bou_2026_RemoteSensingChange\|Bou 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Shen_2026_FoundationModelDriven\|Shen 2026]] | trata a tarefa | — | ver nota do artigo | lido (profundo) |
-| [[Su_2026_Seg2ChangeAdaptingOpen\|Su 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
-| [[Bernhard_2023_MapFormerBoostingChange\|Bernhard 2023]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 | [[Lee_2026_RoadChangeDetection\|Lee 2026]] | trata a tarefa | — | ver nota do artigo | lido (parcial) |
-| [[Lei_2026_RemoteSensingImage\|Lei 2026]] | trata a tarefa | — | ver nota do artigo | extraído automaticamente (não lido) |
 
 ## Navegação
 
-- Mapa: [[MOC_07_MudancaSeries|Detecção de mudanças e séries temporais]]

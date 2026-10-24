@@ -49,4 +49,3 @@ Resíduos de nuvem e sombra viram mudança falsa.
 
 ## Navegação
 
-- Mapa: [[MOC_02_PreparoQualidade|Preparação e qualidade das imagens]]

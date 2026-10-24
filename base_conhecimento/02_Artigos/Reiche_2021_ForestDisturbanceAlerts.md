@@ -12,7 +12,7 @@ tipo_documento: "artigo completo (texto integral convertido)"
 status_leitura: "lido (parcial)"
 relevancia_objetivo: "B"
 tarefas: ["[[Desmatamento|Desmatamento]]"]
-sensores: ["[[Sentinel1|Sentinel-1]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]", "[[SAR|Radar (SAR)]]"]
+sensores: ["[[Sentinel1|Sentinel-1]]", "[[PlanetScope|PlanetScope (Dove/SuperDove)]]"]
 conjuntos_dados: ["[[GlobalForestChange|Global Forest Change (Hansen)]]"]
 metodos: []
 preparo: []
@@ -154,7 +154,6 @@ Gerar **alertas de perturbação florestal** para a bacia do Congo com **Sentine
 **Conceitos (ligam o estudo ao mapa conceitual; a relação está descrita ao lado do link):**
 - utiliza dado/sensor: [[Sentinel1|Sentinel-1]] — 44 ocorrências (p. 1, 2, 3, 4, 5)
 - utiliza dado/sensor: [[PlanetScope|PlanetScope (Dove/SuperDove)]] — 5 ocorrências (p. 4, 6, 8)
-- referência (curado pela leitura): [[SAR|Radar (SAR)]] — suporte vindo da leitura/título/resumo
 - discute aspecto de monitoramento: [[Alertas|Alertas de mudança]] — 78 ocorrências (p. 1, 2, 3, 4, 5)
 - discute aspecto de monitoramento: [[PersistenciaConfirmacao|Persistência e confirmação]] — 32 ocorrências (p. 2, 3, 5, 7, 8)
 - discute aspecto de monitoramento: [[QuaseTempoReal|Quase tempo real e latência]] — 10 ocorrências (p. 2, 3, 6, 8, 10)
@@ -174,12 +173,6 @@ Gerar **alertas de perturbação florestal** para a bacia do Congo com **Sentine
 
 ![[Reiche_2021_ForestDisturbanceAlerts_p5_Figure3.png|520]]
 *Figure 3 depicts the flowchart of the presented (p. 5; recorte do PDF convertido)*
-
-![[Reiche_2021_ForestDisturbanceAlerts_p10_Figure8.png|520]]
-*Figure 8. Visual comparison between our Sentinel-1-based alerts for 2019 with the Landsat-based GLAD alerts (Hansen et al (p. 10; recorte do PDF convertido)*
-
-![[Reiche_2021_ForestDisturbanceAlerts_p4_Figure1.png|520]]
-*Figure 1. Logging road expansion (January, February, March) followed by selective logging (September and October) and rapid (p. 4; recorte do PDF convertido)*
 
 
 ## Anotações do leitor

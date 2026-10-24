@@ -14,10 +14,10 @@ relevancia_objetivo: "B"
 tarefas: ["[[ClassificacaoCobertura|Classificação de cobertura e uso da terra]]"]
 sensores: ["[[PlanetNICFI|Planet NICFI (basemaps)]]", "[[Sentinel2|Sentinel-2]]", "[[Sentinel1|Sentinel-1]]"]
 conjuntos_dados: []
-metodos: ["[[RandomForest|Random Forest]]", "[[OBIA|Análise baseada em objetos (OBIA)]]"]
-preparo: ["[[Textura|Textura (GLCM)]]", "[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
-validacao: ["[[Kappa|Coeficiente kappa]]"]
-ferramentas: ["[[GoogleEarthEngine|Google Earth Engine]]"]
+metodos: []
+preparo: ["[[IndicesEspectrais|Índices espectrais (NDVI etc.)]]"]
+validacao: []
+ferramentas: []
 tags: [artigo, leitura/profunda, relevancia/B]
 ---
 
@@ -141,12 +141,7 @@ Páginas: não informado (leitura feita sem texto integral convertido; ver a fon
 - referência (curado pela leitura): [[Sentinel2|Sentinel-2]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[Sentinel1|Sentinel-1]] — suporte vindo da leitura/título/resumo
 - trata a tarefa: [[ClassificacaoCobertura|Classificação de cobertura e uso da terra]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[RandomForest|Random Forest]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[OBIA|Análise baseada em objetos (OBIA)]] — suporte vindo da leitura/título/resumo
-- aplica etapa de preparo: [[Textura|Textura (GLCM)]] — suporte vindo da leitura/título/resumo
 - referência (curado pela leitura): [[IndicesEspectrais|Índices espectrais (NDVI etc.)]] — suporte vindo da leitura/título/resumo
-- usa ferramenta: [[GoogleEarthEngine|Google Earth Engine]] — suporte vindo da leitura/título/resumo
-- referência (curado pela leitura): [[Kappa|Coeficiente kappa]] — suporte vindo da leitura/título/resumo
 
 **Comparações substantivas com outros artigos:**
 - este artigo complementa com classificação estática [[ZarazaAguilera_2022_ChangeDetectionOver|ZarazaAguilera 2022]] — P07 classifica cobertura (RF/OBIA) e P05 detecta mudança em PlanetScope; juntos separam classificação estática de mudança temporal.
