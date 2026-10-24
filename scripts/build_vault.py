@@ -256,17 +256,52 @@ def reuse_lines(r):
     if t.get('dataset'): L.append('**Dados/benchmarks citados:** ' + ', '.join(f'{cl(n)}' for n in t['dataset']))
     return L
 
+# ---- fichas de leitura profunda (dados/leitura_profunda/Pxx.md) e sinteses (_sintese_*.md)
+LPDIR = f'{root}/dados/leitura_profunda'
+
+
+def split_fm(txt):
+    m = re.match(r'---\n(.*?)\n---\n(.*)', txt, re.S)
+    meta = {}
+    for l in m.group(1).split('\n'):
+        if ': ' in l:
+            k, v = l.split(': ', 1)
+            meta[k.strip()] = v.strip().strip('"')
+    return meta, m.group(2).strip()
+
+
+LP, SYN = {}, {}
+if os.path.isdir(LPDIR):
+    for f in sorted(os.listdir(LPDIR)):
+        meta, body_txt = split_fm(open(f'{LPDIR}/{f}', encoding='utf-8').read())
+        if re.fullmatch(r'P\d+\.md', f): LP[f[:-3]] = (meta, body_txt)
+        elif f.startswith('_sintese_'): SYN[f] = (meta, body_txt)
+
+
+def lp_name(r): return f"LP {r['id']} {author_last(r)} {year(r)}"
+def syn_name(meta): return san(meta['titulo'])
+def lp_section(pid, title):
+    m = re.search(r'## ' + re.escape(title) + r'\n(.*?)(?=\n## |\Z)', LP[pid][1], re.S)
+    return m.group(1).strip() if m else ''
+
+
 for r in cat:
     t = ents[r['id']]
     b = r.get('bullets') or {}
+    deep = r['id'] in LP
+    if deep and 'texto integral' in LP[r['id']][0].get('leitura', '') and not r.get('pdf_file'): r['_fonte_analise'] = 'leitura profunda do texto integral (HTML aberto) + metadados'
     fm = ['---', 'tipo: artigo', f"id: {r['id']}", f"titulo: {yq(r['title'])}", f"autores: {yq(', '.join((r.get('authors') or [])[:4]) or 'a importar')}", f"ano: {year(r)}",
           f"secao: {r['section']}", f"categoria: {yq(SEC[r['section']])}", f"tipo_publicacao: {yq(r['kind'])}", f"papel: {ylist(papel(r))}", f"prioridade: {prioridade(r)}",
-          f"doi: {yq(r.get('doi', ''))}", f"pdf: {yq('coleta/' + r['pdf_file']) if r.get('pdf_file') else yq('')}", f"texto_integral: {'sim' if r.get('pdf_file') else 'nao'}",
+          f"doi: {yq(r.get('doi', ''))}", f"pdf: {yq('coleta/' + r['pdf_file']) if r.get('pdf_file') else yq('')}", f"texto_integral: {'sim' if (r.get('pdf_file') or (deep and 'texto integral' in LP[r['id']][0].get('leitura', ''))) else 'nao'}",
           f"fonte_analise: {yq(r['_fonte_analise'])}", f"n_chunks: {len(chunks_by.get(r['id'], []))}"]
     for c, key in [('sensor', 'sensores'), ('tarefa', 'tarefas'), ('metodo', 'metodos'), ('dataset', 'datasets'), ('metrica', 'metricas'), ('ferramenta', 'ferramentas')]:
         fm.append(f"{key}: {ylist([f'{cl(n)}' for n in t.get(c, {})])}")
     fm.append(f"etapas_pipeline: {ylist([f'[[{s} {next(x[1] for x in STAGES if x[0]==s)}|{s}]]' for s in stage_of[r['id']]])}")
-    fm.append('status_leitura: não lido')
+    if deep:
+        fm.append(f"leitura_profunda: {yq('[[' + lp_name(r) + ']]')}")
+        fm.append('status_leitura: ' + ('lido (profundo)' if LP[r['id']][0].get('leitura', '').startswith('profunda') else 'lido (parcial)'))
+    else:
+        fm.append('status_leitura: não lido')
     tg = ['artigo', f"secao/{r['section']}", f"prioridade/{prioridade(r)}"] + [f"etapa/{s}" for s in stage_of[r['id']]]
     fm.append('tags: [' + ', '.join(tg) + ']')
     fm.append('---')
@@ -275,8 +310,15 @@ for r in cat:
     link = (r.get('fonte_urls') or [None])[0] if r['origin'] == 'original' and r.get('fonte_urls') else ('https://doi.org/' + r['doi'] if r.get('doi') else '')
     body.append(meta + (f" · [publicação]({link})" if link else '') + (f" · [PDF](../../coleta/{r['pdf_file']})" if r.get('pdf_file') else ' · PDF indisponível em coleta/') + '\n')
     body.append(f"Seção: **{SEC[r['section']]}** · Prioridade: **{prioridade(r)}** · Análise: *{r['_fonte_analise']}*\n")
-    body.append('## O que reaproveitar\n')
-    body += [f'- {x}' for x in reuse_lines(r)] or ['- (sem item extraído)']
+    if deep:
+        body.append(f"> [!success] Leitura {'profunda' if LP[r['id']][0].get('leitura', '').startswith('profunda') else 'parcial'} concluída: [[{lp_name(r)}]]\n")
+        body.append('## O que reaproveitar\n')
+        body.append(lp_section(r['id'], 'O que reaproveitar') + '\n')
+        body.append('### Extraído automaticamente\n')
+        body += [f'- {x}' for x in reuse_lines(r)] or ['- (sem item extraído)']
+    else:
+        body.append('## O que reaproveitar\n')
+        body += [f'- {x}' for x in reuse_lines(r)] or ['- (sem item extraído)']
     body.append('')
     if b.get('Método/dados') or b.get('Método') or b.get('Evidência direta') or b.get('Contribuição'):
         body.append('## Método e dados (da revisão original)\n')
@@ -315,6 +357,20 @@ for r in cat:
     body.append('')
     body.append('## Anotações\n\n- ')
     write(f"{V}/Artigos/{note_name(r)}.md", '\n'.join(fm + [''] + body) + '\n')
+
+# ---------------------------------------------------------------- Leitura profunda e sinteses
+stage_name = {s[0]: s[1] for s in STAGES}
+for pid, (meta, body_txt) in LP.items():
+    r = byid[pid]
+    fm = ['---', 'tipo: leitura_profunda', f'paper: {yq(pid)}', f"leitura: {yq(meta.get('leitura', ''))}", f"fonte_lida: {yq(meta.get('fonte_lida', ''))}",
+          f"etapas_pipeline: {ylist([f'[[{s} {stage_name[s]}|{s}]]' for s in stage_of[pid]])}", f"tags: [leitura_profunda, prioridade/{prioridade(r)}]", '---']
+    head = [f"# Leitura profunda — {pid} {author_last(r)} {year(r)}\n", f"**{r['title']}**\n",
+            f"Nota do artigo: {wl(r, note_name(r))}" + (f" · Chunks: [[{pid} chunks]]" if pid in chunks_by else '') + f" · Leitura: *{meta.get('leitura', '')}*\n",
+            '> Leitura feita nesta coleta; valores e afirmações vêm do texto lido, com link para o chunk de origem. O que não foi verificado está marcado.\n']
+    write(f'{V}/Leitura profunda/{lp_name(r)}.md', '\n'.join(fm + [''] + head) + '\n' + body_txt + '\n')
+for f, (meta, body_txt) in SYN.items():
+    fm = ['---', 'tipo: sintese', f"etapas: {ylist([f'[[{s} {stage_name[s]}|{s}]]' for s in [x.strip() for x in meta.get('etapas', '').strip('[]').split(',') if x.strip()]])}", 'tags: [sintese]', '---']
+    write(f"{V}/Síntese/{syn_name(meta)}.md", '\n'.join(fm + ['']) + '\n' + body_txt + '\n')
 
 # ---------------------------------------------------------------- Notas de conceito
 ent_papers = collections.defaultdict(list)   # (cat,nome) -> [ (id,count) ]
@@ -371,8 +427,12 @@ for i, (sid, name, obj, ins, outs, trig) in enumerate(STAGES):
         use = (r.get('bullets') or {}).get('Aplicação') or r.get('note') or ''
         L.append(f"| {prioridade(r)} | {wl(r, note_name(r))} | {r['title'][:60]} | {use[:110].replace('|', '/')} |")
     if len(papers) > 40: L.append(f'\n*(+{len(papers) - 40} artigos de prioridade menor; veja a tag `etapa/{sid}`.)*')
-    L.append('\n## Experimentos ligados\n')
-    L.append(', '.join(f'[[{e}]]' for e in [] ) or '')
+    lps = [byid[k] for k in LP if sid in stage_of.get(k, [])]
+    sy = [m for m, _ in SYN.values() if sid in [x.strip() for x in m.get('etapas', '').strip('[]').split(',')]]
+    if lps or sy:
+        L.append('\n## Leituras profundas e sínteses\n')
+        L += [f"- [[{lp_name(r)}]] → {r['title'][:70]} (nota: {wl(r, note_name(r))})" for r in lps]
+        L += [f"- [[{syn_name(m)}]]" for m in sy]
     write(f'{V}/Pipeline/{stage_note[sid]}.md', '\n'.join(L) + '\n')
 
 # ---------------------------------------------------------------- Experimentos
@@ -471,7 +531,9 @@ L += [f"{i+1}. [[{stage_note[s[0]]}]] — {s[2][:100]}" for i, s in enumerate(ST
 L += ['', 'Mapa visual: [[Pipeline.canvas]]\n', '## Experimentos\n'] + [f'- [[{e[0]}]]' for e in EXPS] + ['- [[Quadro de resultados]]\n', '## Reuso\n',
       '- [[Receitas de treino]] · [[Datasets e benchmarks]] · [[Código e repositórios]] · [[Taxonomia from-to]] · [[Métricas e protocolos]]\n', '## Navegação\n',
       '- [[01 Guia de uso]] · [[02 Estratégia de chunks]] · [[03 Mapa do grafo]]\n', '## Ordem de leitura (prioridade alta)\n']
-L += [f"- {wl(r, note_name(r))} — {r['title'][:90]}" for r in sorted(cat, key=lambda x: x['n']) if prioridade(r) == 'alta']
+L += [f"- {wl(r, note_name(r))} — {r['title'][:90]}" + (f" · leitura: [[{lp_name(r)}|{LP[r['id']][0].get('leitura', '').split(' ')[0]}]]" if r['id'] in LP else ' · *leitura pendente*')
+      for r in sorted(cat, key=lambda x: x['n']) if prioridade(r) == 'alta']
+L += ['\n## Sínteses da leitura profunda\n'] + [f"- [[{syn_name(m)}]]" for m, _ in SYN.values()]
 L += ['\n## Artigos por seção\n']
 for k in SEC:
     L.append(f"- **{SEC[k]}** ({sum(1 for r in cat if r['section'] == k)}): " + ' '.join(wl(r) for r in sorted(cat, key=lambda x: x['n']) if r['section'] == k))
@@ -651,7 +713,7 @@ write(f'{V}/Pipeline.canvas', json.dumps({'nodes': nodes, 'edges': edges}, ensur
 def rgb(h): return int(h, 16)
 groups = [('path:Artigos', '4c9be8'), ('path:"Conceitos/Datasets"', 'f2b134'), ('path:"Conceitos/Métodos"', '9b6de0'), ('path:"Conceitos/Sensores e produtos"', '45b36b'),
           ('path:"Conceitos/Tarefas"', 'e8704c'), ('path:"Conceitos/Métricas"', 'd44f9a'), ('path:"Conceitos/Ferramentas"', '9aa5b1'), ('path:Pipeline', 'e03c3c'),
-          ('path:Experimentos', '7a4de0'), ('path:Reuso', '2db39e'), ('path:Resultados', 'f2e234')]
+          ('path:Experimentos', '7a4de0'), ('path:Reuso', '2db39e'), ('path:Resultados', 'f2e234'), ('path:"Leitura profunda"', '1fd1c9'), ('path:Síntese', 'ff7f50')]
 write(f'{V}/.obsidian/graph.json', json.dumps({'search': '-path:Chunks -path:Templates', 'showTags': False, 'showAttachments': False, 'hideUnresolved': True,
     'colorGroups': [{'query': q, 'color': {'a': 1, 'rgb': rgb(c)}} for q, c in groups], 'showOrphans': False, 'centerStrength': 0.4, 'repelStrength': 12, 'linkStrength': 1, 'linkDistance': 200, 'nodeSizeMultiplier': 1.1}, indent=1))
 write(f'{V}/.obsidian/app.json', json.dumps({'useMarkdownLinks': False, 'newLinkFormat': 'shortest', 'alwaysUpdateLinks': True, 'showFrontmatter': True}, indent=1))

@@ -1,14 +1,14 @@
 ---
 tipo: conceito
 categoria: sensor
-n_artigos: 35
+n_artigos: 36
 tags: [conceito, sensor]
 ---
 # Sentinel-2
 
 Sentinel-2 (10–20 m, 5 dias). Complemento para séries e harmonização; não resolve edificações de 3–5 m.
 
-## Artigos (35)
+## Artigos (36)
 
 | Artigo | Ano | Ocorrências | Prioridade |
 |---|---|---:|---|
@@ -30,6 +30,7 @@ Sentinel-2 (10–20 m, 5 dias). Complemento para séries e harmonização; não 
 | [[P119 Reiche 2021\|P119 Reiche 2021]] — Forest disturbance alerts for the Congo Basin using Sentinel-1 | 2021 | 8 | baixa |
 | [[P103 Glazer 2025\|P103 Glazer 2025]] — TEMPO: Global Temporal Building Density and Height Estimation from Sat | 2025 | 7 | baixa |
 | [[P70 Simões 2021\|P70 Simões 2021]] — Satellite Image Time Series Analysis for Big Earth Observation Data | 2021 | 7 | média |
+| [[P05 Zaraza-Aguilera 2022\|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 6 | alta |
 | [[P154 Ramos-Pollán 2024\|P154 Ramos-Pollán 2024]] — Uncertainty and Generalizability in Foundation Models for Earth Observ | 2024 | 6 | baixa |
 | [[P146 Papadomanolaki 2019\|P146 Papadomanolaki 2019]] — Detecting Urban Changes with Recurrent Neural Networks from Multitempo | 2019 | 5 | baixa |
 | [[P12 Toker 2022\|P12 Toker 2022]] — DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C | 2022 | 4 | alta |

@@ -13,7 +13,7 @@ Lista curada de **185 trabalhos** sobre detecção semântica de mudanças em s�
 - **Data da coleta e verificação:** 24/10/2026.
 - **Fontes:** OpenAlex, Crossref, arXiv, Semantic Scholar, páginas de editoras, GitHub e PyPI. Sem consulta autenticada a Scopus ou Web of Science.
 - **Origem dos registros:** 80 do documento de revisão original (P01–P80) e 105 acrescentados nesta coleta (P81 em diante).
-- **Pasta `coleta/`:** 96 PDFs de acesso aberto, com nomes `ID_Autor-Ano_titulo.pdf`. Veja também [`coleta/_manifesto.csv`](coleta/_manifesto.csv). Os demais são de acesso restrito, sem versão aberta localizada ou bloqueados contra download automático (parte do MDPI e do ScienceDirect, onde o 403 persistiu mesmo com o fallback); use o link da publicação na tabela.
+- **Pasta `coleta/`:** 97 PDFs de acesso aberto, com nomes `ID_Autor-Ano_titulo.pdf`. Veja também [`coleta/_manifesto.csv`](coleta/_manifesto.csv). Os demais são de acesso restrito, sem versão aberta localizada ou bloqueados contra download automático (parte do MDPI e do ScienceDirect, onde o 403 persistiu mesmo com o fallback); use o link da publicação na tabela.
 - **Scripts** em [`scripts/`](scripts/) reproduzem a coleta: `build_catalog.py`, `download_pdfs.py`, `download_fallback.py`, `check_tools.py`, `make_readme.py`. Quando uma editora bloqueou o download simples, o fallback usou o `curl_cffi` (a mesma base do Scrapling de `C:\Desenvolvimento\WebScrapping`).
 - **Direitos autorais:** os PDFs são de acesso aberto (arXiv, MDPI, Frontiers e repositórios institucionais), baixados para estudo pessoal. Respeite as licenças de cada artigo ao redistribuir.
 
@@ -94,7 +94,7 @@ Estudos que usam Planet/PlanetScope/NICFI diretamente. Ponto de partida para sup
 | P02 | 2023 | Mapping tropical forest degradation with deep learning and Planet NICFI data ✓ | Artigo | [Remote Sensing of Environment](https://doi.org/10.1016/j.rse.2023.113798) | — | — |
 | P03 | 2024 | Detection of forest disturbance across California using deep-learning on PlanetScope imagery ✓ | Artigo | [Frontiers in Remote Sensing](https://doi.org/10.3389/frsen.2024.1409400) | — | [PDF](coleta/P03_Carter2024_Detection-of-forest-disturbance-across-California-using-deep.pdf) |
 | P04 | 2024 | AI-based Validation of Deforestation Using High-Resolution Satellite Imagery in the Brazilian Amazon ✓ | Artigo | [The international archives of the phot…](https://doi.org/10.5194/isprs-archives-XLVIII-3-2024-583-2024) | — | [PDF](coleta/P04_Wang2024_AI-based-Validation-of-Deforestation-Using-High-Resolution-S.pdf) |
-| P05 | 2022 | Change Detection over mining areas using Deep Neural Networks from Planetscope image time series ✓ | Artigo | [IEEE Latin America Transactions](https://latamt.ieeer9.org/index.php/transactions/article/view/6556) | — | — |
+| P05 | 2022 | Change Detection over mining areas using Deep Neural Networks from Planetscope image time series ✓ | Artigo | [IEEE Latin America Transactions](https://latamt.ieeer9.org/index.php/transactions/article/view/6556) | — | [PDF](coleta/P05_Zaraza-Aguilera2022_Change-Detection-over-mining-areas-using-Deep-Neural-Netw.pdf) |
 | P06 | 2025 | Determination of land use and land cover change using multi-temporal PlanetScope images and deep learning CNN model ✓ | Artigo | [Paddy and Water Environment](https://doi.org/10.1007/s10333-025-01024-9) | — | [PDF](coleta/P06_Simsek2025_Determination-of-land-use-and-land-cover-change-using-multi-.pdf) |
 | P07 | 2022 | PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Based Land Cover Classification in Google Earth Engine ✓ | Artigo | [Remote Sensing](https://doi.org/10.3390/rs14112628) | — | — |
 | P08 | 2025 | Evaluating satellite data and deep learning for identifying direct deforestation drivers in Cameroon ✓ | Artigo | [Remote Sensing Applications Society and …](https://doi.org/10.1016/j.rsase.2025.101653) | — | — |
@@ -1095,6 +1095,7 @@ dados/tools.json          repositórios GitHub e pacotes PyPI verificados
 dados/links_original.json resultado da checagem dos URLs do documento original
 dados/analysis.json       entidades, hiperparametros e frases de resultado extraidos dos PDFs
 dados/chunks/             chunks por secao em JSONL (para RAG; fora do git)
+dados/leitura_profunda/   fichas de leitura profunda (11 artigos) e sinteses; fonte do vault
 vault/                    vault Obsidian: artigos, conceitos, pipeline, experimentos, reuso (abra esta pasta no Obsidian)
 fonte_original/           documento de revisão que originou a coleta (inalterado)
 scripts/                  scripts de coleta, verificação e geração do README

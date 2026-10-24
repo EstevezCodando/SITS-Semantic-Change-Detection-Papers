@@ -71,6 +71,11 @@ tags: [pipeline, etapa/E06]
 
 *(+16 artigos de prioridade menor; veja a tag `etapa/E06`.)*
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[LP P01 Wagner 2023]] → Mapping Tropical Forest Cover and Deforestation with Planet NICFI Sate (nota: [[P01 Wagner 2023|P01 Wagner 2023]])
+- [[LP P02 Dalagnol 2023]] → Mapping tropical forest degradation with deep learning and Planet NICF (nota: [[P02 Dalagnol 2023|P02 Dalagnol 2023]])
+- [[LP P05 Zaraza-Aguilera 2022]] → Change Detection over mining areas using Deep Neural Networks from Pla (nota: [[P05 Zaraza-Aguilera 2022|P05 Zaraza-Aguilera 2022]])
+- [[LP P07 Vizzari 2022]] → PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Ba (nota: [[P07 Vizzari 2022|P07 Vizzari 2022]])
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — receitas de treino comparadas (verificadas na leitura)]]

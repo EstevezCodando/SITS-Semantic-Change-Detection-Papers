@@ -1,0 +1,63 @@
+---
+tipo: leitura_profunda
+paper: "P05"
+leitura: "profunda (texto integral, PDF da revista)"
+fonte_lida: "IEEE Latin America Transactions 20(9) (coleta/P05_...pdf); chunks P05_c001–c032"
+etapas_pipeline: ["[[E06 Modelos-base de cobertura|E06]]"]
+tags: [leitura_profunda, prioridade/alta]
+---
+
+# Leitura profunda — P05 Zaraza-Aguilera 2022
+
+**Change Detection over mining areas using Deep Neural Networks from Planetscope image time series**
+
+Nota do artigo: [[P05 Zaraza-Aguilera 2022|P05 Zaraza-Aguilera 2022]] · Chunks: [[P05 chunks]] · Leitura: *profunda (texto integral, PDF da revista)*
+
+> Leitura feita nesta coleta; valores e afirmações vêm do texto lido, com link para o chunk de origem. O que não foi verificado está marcado.
+
+## Pergunta e escopo
+Comparar **duas estratégias de deep learning** para detectar mudança em **áreas de mineração a céu aberto** com **PlanetScope**: (1) pós-classificação com U-Net/FPN e (2) **detecção direta** com U-Net modificada sobre pares de imagens. É o único estudo do catálogo que compara as duas famílias na mesma série PlanetScope.
+
+## Dados
+- Mina do Cerrejón (La Guajira, Colômbia), 327,16 km², cinco municípios ([[P05 chunks#^P05_c011|c011]]).
+- **8 imagens PlanetScope** (4 bandas B, G, R, NIR; nível 3B ortorretificado; reflectância de superfície; 3 m), de out/2017 a nov/2019, escolhidas pelo menor percentual de nuvem ([[P05 chunks#^P05_c011|c011]]).
+- Vetores de mineração/não-mineração para dez/2017, dez/2018 e dez/2019 ([[P05 chunks#^P05_c012|c012]]).
+- Ambiente: TensorFlow 2.1 e Google Colab (GPU Tesla K80) ([[P05 chunks#^P05_c011|c011]]).
+
+## Amostragem e partições (reaproveitável)
+- Grade de **blocos de 1,6 × 1,6 km separados por 0,4 km** (estratégia de trabalhos anteriores) e patches aleatórios de 256 × 256 dentro dos blocos; rotação e flips ([[P05 chunks#^P05_c012|c012]], [[P05 chunks#^P05_c016|c016]]).
+- 57 blocos: 42 treino, 11 validação, 4 avaliação. Esquema 1: 11.050 / 2.700 / 1.050 patches; esquema 2: 8.150 / 1.950 / 800 ([[P05 chunks#^P05_c016|c016]]).
+
+## Esquema 1 — pós-classificação
+- U-Net e FPN com encoder EfficientNet-B3 pré-treinado; 12 modelos variando entradas (RGB; RGB+NIR; RGB+NIR+NDVI) e épocas (50/100); perdas DiceFocal (U-Net) e Focal-Tversky (FPN); os quatro melhores foram re-treinados com as três datas ([[P05 chunks#^P05_c013|c013]]).
+- Escolhido: **U-Net, DiceFocal, 4 bandas, 75 épocas** ([[P05 chunks#^P05_c019|c019]]). IoU de avaliação 0,72–0,81 (modelos iniciais) e ~0,70–0,74 após re-treino ([[P05 chunks#^P05_c018|c018]], [[P05 chunks#^P05_c021|c021]]).
+
+## Esquema 2 — detecção direta
+- U-Net modificada (pares de imagens), 5 modelos (4 ou 5 bandas, 20–50 épocas, DiceFocal); melhor: **4 bandas, 45 épocas** — IoU de treino 0,88 e de avaliação 0,73 ([[P05 chunks#^P05_c013|c013]], [[P05 chunks#^P05_c023|c023]], [[P05 chunks#^P05_c031|c031]]).
+- Hiperparâmetros: batch 16, Adam, **taxa de aprendizado 0,1** (valor declarado no artigo, incomum) ([[P05 chunks#^P05_c014|c014]]).
+
+## Avaliação
+- Modelos: IoU e Loss por conjunto; **mapas de mudança avaliados pelo protocolo de Olofsson** (amostragem probabilística, desenho da resposta e matriz de erro) ([[P05 chunks#^P05_c015|c015]]).
+- Esquema 1: exatidão de usuário de mudança 0,62–0,93 e kappa 0,70–0,95; os primeiros períodos pioram por nuvem ([[P05 chunks#^P05_c027|c027]], [[P05 chunks#^P05_c028|c028]]).
+- Esquema 2: exatidão de usuário > 0,93 (exceto 0,80 no segundo período) e kappa > 0,92 (0,84 no segundo); média 0,94 ([[P05 chunks#^P05_c028|c028]], [[P05 chunks#^P05_c029|c029]]).
+- Áreas de mudança: 140–228 ha por período (esq. 1), máximo de 250 ha (esq. 2) ([[P05 chunks#^P05_c025|c025]], [[P05 chunks#^P05_c026|c026]]).
+
+## Conclusões do artigo
+- A detecção direta (esq. 2) é a mais apropriada; ambas as abordagens são aceitáveis e próximas em métricas e visualmente ([[P05 chunks#^P05_c030|c030]], [[P05 chunks#^P05_c031|c031]]).
+- **4 bandas > 5 bandas**: incluir NDVI não melhorou a exatidão ([[P05 chunks#^P05_c031|c031]]).
+- U-Net > FPN para esta imagem de resolução média ([[P05 chunks#^P05_c032|c032]]).
+- Nuvem e sombra causam **superestimativa de mudança na pós-classificação**, por diferenças entre mapas ([[P05 chunks#^P05_c030|c030]]).
+- Só se contou **ampliação** de mineração; recuperação não entrou na análise ([[P05 chunks#^P05_c025|c025]]).
+- Conjunto de dados e códigos disponibilizados num repositório citado pelo artigo ([[P05 chunks#^P05_c032|c032]]).
+
+## O que reaproveitar
+- **Comparação pareada EXP2 vs EXP3** com os mesmos blocos e métricas (pós-classificação vs mudança direta).
+- **Desenho de blocos** (1,6 km com folga de 0,4 km) como política de partição espacial contra vazamento.
+- **Tratamento de nuvem** como prioridade: a pós-classificação exige máscara de observação válida.
+- **Não gastar tempo com NDVI** como entrada extra no primeiro ciclo (resultado negativo relatado).
+- **Loss DiceFocal** como padrão para classes raras.
+
+## Limites e cuidados
+- Apenas 8 datas, uma mina e uma classe; as avaliações de mudança são por período e não por evento datado.
+- O kappa é alto numa amostra por pares; **não substitui** estimativa de área com IC (ver [[P46 Olofsson 2014]]).
+- Taxa de aprendizado de 0,1 deve ser confirmada no código antes de replicar.

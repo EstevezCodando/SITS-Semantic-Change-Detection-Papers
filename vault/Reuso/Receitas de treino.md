@@ -11,6 +11,7 @@ Trechos detectados automaticamente nos PDFs (primeira ocorrência de cada item).
 | [[P01 Wagner 2023\|P01]] | `learning rate of 0.0001 was used` | `batch size of 256 images and the m` | `20000 epochs` |  | `binary cross-entropy and Dice coef` | `256 × 256 pixel` | [[P01 chunks#^P01_c017\|c017]] |
 | [[P03 Carter 2024\|P03]] | `learning rate of 0.0001` | `batch size of 256 images and the m` | `25,000 epochs` | `Adam optimizer with a learning rat` | `binary cross-entropy and Dice coef` | `256 × 256 pixel` | [[P03 chunks#^P03_c016\|c016]] |
 | [[P04 Wang 2024\|P04]] | `learning rate of 0.0001` |  | `50 epochs` | `Adam optimizer with a learning rat` | `Dice loss, which is a widely used ` |  | [[P04 chunks#^P04_c013\|c013]] |
+| [[P05 Zaraza-Aguilera 2022\|P05]] |  | `batch size) de 16, como indica el ` |  |  |  |  | [[P05 chunks#^P05_c014\|c014]] |
 | [[P09 Gonzalez-Velez 2026\|P09]] | `learning rate of 1.58 × 10−4 that ` | `batch size of 10 images, using the` | `300 epochs` | `AdamW optimizer with a weight deca` |  | `288 × 288 pixel` | [[P09 chunks#^P09_c027\|c027]] |
 | [[P10 Etten 2021\|P10]] | `learning rate of 10−4 (baseline) o` |  | `300 epochs` | `Adam optimizer on the 1424 images ` | `BCE, where J is Jaccard distance a` | `1024 × 1024 pixel` | [[P10 chunks#^P10_c025\|c025]] |
 | [[P12 Toker 2022\|P12]] |  |  |  |  |  | `1024x1024 with a pixel` | [[P12 chunks#^P12_c017\|c017]] |

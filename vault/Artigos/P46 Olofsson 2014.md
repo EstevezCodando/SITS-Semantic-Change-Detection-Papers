@@ -11,8 +11,8 @@ papel: ["método clássico/avaliação"]
 prioridade: alta
 doi: "10.1016/j.rse.2014.02.015"
 pdf: ""
-texto_integral: nao
-fonte_analise: "apenas metadados e comentário (sem PDF)"
+texto_integral: sim
+fonte_analise: "leitura profunda do texto integral (HTML aberto) + metadados"
 n_chunks: 0
 sensores: []
 tarefas: []
@@ -21,7 +21,8 @@ datasets: []
 metricas: []
 ferramentas: []
 etapas_pipeline: ["[[E10 Avaliação e incerteza|E10]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P46 Olofsson 2014]]"
+status_leitura: lido (parcial)
 tags: [artigo, secao/E, prioridade/alta, etapa/E10]
 ---
 
@@ -29,9 +30,15 @@ tags: [artigo, secao/E, prioridade/alta, etapa/E10]
 
 **Pontus Olofsson, Giles M. Foody, Martin Herold** · 2014 · Artigo · Remote Sensing of Environment · [publicação](https://doi.org/10.1016/j.rse.2014.02.015) · PDF indisponível em coleta/
 
-Seção: **Métodos temporais clássicos e avaliação** · Prioridade: **alta** · Análise: *apenas metadados e comentário (sem PDF)*
+Seção: **Métodos temporais clássicos e avaliação** · Prioridade: **alta** · Análise: *leitura profunda do texto integral (HTML aberto) + metadados*
+
+> [!success] Leitura parcial concluída: [[LP P46 Olofsson 2014]]
 
 ## O que reaproveitar
+
+
+
+### Extraído automaticamente
 
 - **Uso proposto:** essencial para sustentar quantos hectares mudaram e a incerteza associada.
 

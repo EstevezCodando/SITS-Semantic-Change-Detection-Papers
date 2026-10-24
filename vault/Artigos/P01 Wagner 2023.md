@@ -21,7 +21,8 @@ datasets: ["[[PRODES]]", "[[Global Forest Change (Hansen)]]"]
 metricas: ["[[F1]]"]
 ferramentas: ["[[TensorFlow]]"]
 etapas_pipeline: ["[[E06 Modelos-base de cobertura|E06]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P01 Wagner 2023]]"
+status_leitura: lido (profundo)
 tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 ---
 
@@ -31,7 +32,17 @@ tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 
 Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *texto integral (PDF) + metadados*
 
+> [!success] Leitura profunda concluída: [[LP P01 Wagner 2023]]
+
 ## O que reaproveitar
+
+- **Receita de treino pronta para o EXP2:** U-Net 256 × 256 × 4, BCE + Dice, Adam 1e-4, flips, escala 8 bits sem correção atmosférica, borda espelhada na inferência.
+- **Cadeia de rotulagem barata:** auto-segmentação por textura + escolha de classes + correção manual, mais amostras de nuvem/neblina como "não-floresta" explícito.
+- **Regra de persistência** (a classe não pode ir floresta → não-floresta → floresta) e **nível de confiança por pixel**; ambas migram para a etapa [[E09 Pós-processamento e eventos]].
+- **Comparação com produtos oficiais por interseção por tile** ponderada pelo número de pixels, útil para [[E10 Avaliação e incerteza]].
+- **Validação com altura LiDAR** como referência independente do próprio rótulo.
+
+### Extraído automaticamente
 
 - **Uso proposto:** principal ponto de partida para a frente de supressão vegetal no Brasil.
 - **Receita de treino extraída:** taxa de aprendizado — `learning rate of 0.0001 was used`; batch size — `batch size of 256 images and the model with the be`; épocas — `20000 epochs`; função de perda — `binary cross-entropy and Dice coefficient-related lo`; tamanho do patch — `256 × 256 pixel` (confirmar nos chunks).

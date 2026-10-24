@@ -11,8 +11,8 @@ papel: ["aplicação Planet"]
 prioridade: alta
 doi: "10.1016/j.rse.2023.113798"
 pdf: ""
-texto_integral: nao
-fonte_analise: "apenas metadados e comentário (sem PDF)"
+texto_integral: sim
+fonte_analise: "leitura profunda do texto integral (HTML aberto) + metadados"
 n_chunks: 0
 sensores: ["[[Planet NICFI]]", "[[Planet (mosaicos e cenas)]]"]
 tarefas: ["[[Degradação florestal]]"]
@@ -21,7 +21,8 @@ datasets: []
 metricas: []
 ferramentas: []
 etapas_pipeline: ["[[E06 Modelos-base de cobertura|E06]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P02 Dalagnol 2023]]"
+status_leitura: lido (parcial)
 tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 ---
 
@@ -29,9 +30,17 @@ tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 
 **Ricardo Dalagnol, Fabien Hubert Wagner, Lênio Soares Galvão** · 2023 · Artigo · Remote Sensing of Environment · [publicação](https://doi.org/10.1016/j.rse.2023.113798) · PDF indisponível em coleta/
 
-Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *apenas metadados e comentário (sem PDF)*
+Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *leitura profunda do texto integral (HTML aberto) + metadados*
+
+> [!success] Leitura parcial concluída: [[LP P02 Dalagnol 2023]]
 
 ## O que reaproveitar
+
+- **Taxonomia de degradação** (corte seletivo, fogo, estradas) como extensão da classe "perda parcial / mudança de estrutura" em [[Taxonomia from-to]].
+- **Ideia de rotular classes de perda por padrão espacial**, que combina com a recomendação de P01 de tratar degradação separadamente do desmatamento.
+- Validação por **amostragem estratificada**, em linha com [[P46 Olofsson 2014]].
+
+### Extraído automaticamente
 
 - **Uso proposto:** permite formular uma classe de degradação, além da supressão completa.
 

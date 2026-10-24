@@ -40,6 +40,8 @@ tags: [pipeline, etapa/E03]
 | baixa | [[P79 Reed 2022\|P79 Reed 2022]] | Scale-MAE: A Scale-Aware Masked Autoencoder for Multiscale G | estudar representações quando o acervo mistura resoluções e tamanhos físicos de objetos. |
 | baixa | [[P80 Feng 2025\|P80 Feng 2025]] | BuildingSAM: A Dual-Branch Feature-Augmented Segment Anythin | candidato especializado para comparar com SAM genérico e YOLO-seg. |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — partições, vazamento e domain shift]]
+- [[Síntese — protocolos de rotulagem comparados]]

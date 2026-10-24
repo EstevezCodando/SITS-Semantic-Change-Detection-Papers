@@ -80,6 +80,20 @@
     "a": 1,
     "rgb": 15917620
    }
+  },
+  {
+   "query": "path:\"Leitura profunda\"",
+   "color": {
+    "a": 1,
+    "rgb": 2085321
+   }
+  },
+  {
+   "query": "path:S\u00edntese",
+   "color": {
+    "a": 1,
+    "rgb": 16744272
+   }
   }
  ],
  "showOrphans": false,

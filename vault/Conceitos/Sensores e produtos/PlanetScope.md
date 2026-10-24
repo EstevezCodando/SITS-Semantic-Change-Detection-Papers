@@ -1,14 +1,14 @@
 ---
 tipo: conceito
 categoria: sensor
-n_artigos: 22
+n_artigos: 23
 tags: [conceito, sensor]
 ---
 # PlanetScope
 
 Constelação Planet de cenas diárias (~3 m), 4 ou 8 bandas (SuperDove). Mosaicos mensais compõem observações de dias distintos.
 
-## Artigos (22)
+## Artigos (23)
 
 | Artigo | Ano | Ocorrências | Prioridade |
 |---|---|---:|---|
@@ -18,6 +18,7 @@ Constelação Planet de cenas diárias (~3 m), 4 ou 8 bandas (SuperDove). Mosaic
 | [[P09 Gonzalez-Velez 2026\|P09 Gonzalez-Velez 2026]] — Tropical dry forest land use/land cover change detection using semi-su | 2026 | 15 | baixa |
 | [[P04 Wang 2024\|P04 Wang 2024]] — AI-based Validation of Deforestation Using High-Resolution Satellite I | 2024 | 8 | média |
 | [[P120 Ygorra 2024\|P120 Ygorra 2024]] — A near-real-time tropical deforestation monitoring algorithm based on  | 2024 | 5 | baixa |
+| [[P05 Zaraza-Aguilera 2022\|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 3 | alta |
 | [[P51 Rodrigues 2025\|P51 Rodrigues 2025]] — Machine Learning-Based Cerrado Land Cover Classification Using PlanetS | 2025 | 2 | média |
 | [[P82 Roy 2021\|P82 Roy 2021]] — A global analysis of the temporal availability of PlanetScope high spa | 2021 | 2 | média |
 | [[P83 Wang 2021\|P83 Wang 2021]] — Automatic cloud and cloud shadow detection in tropical areas for Plane | 2021 | 2 | média |

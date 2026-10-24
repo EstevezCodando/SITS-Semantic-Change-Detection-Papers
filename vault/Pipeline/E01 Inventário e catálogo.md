@@ -34,6 +34,6 @@ tags: [pipeline, etapa/E01]
 | baixa | [[P73 Trujillo 2026\|P73 Trujillo 2026]] | Incremental Data Cube Architecture for Sentinel-2 Time Serie | incorporar o próximo mês sem recomputar indiscriminadamente toda a série 2020–2026. |
 | baixa | [[P74 Xi 2019\|P74 Xi 2019]] | A spatiotemporal cube model for analyzing satellite image ti | fundamenta a organização conjunta de espaço, tempo e atributos. |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[Síntese — cuidados específicos com produtos Planet]]

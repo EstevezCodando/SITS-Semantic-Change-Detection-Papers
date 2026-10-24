@@ -241,6 +241,54 @@
   ],
   "qualidade_texto": "ok"
  },
+ "P05": {
+  "paginas": 10,
+  "chars_por_pagina": 4850,
+  "n_chunks": 32,
+  "secoes": {
+   "resumo": 15,
+   "resultados": 17
+  },
+  "entidades": {
+   "sensor": {
+    "PlanetScope": 3,
+    "Planet (mosaicos e cenas)": 1,
+    "Sentinel-2": 6,
+    "Landsat": 1,
+    "UAV/drone": 1
+   },
+   "metodo": {
+    "U-Net": 32,
+    "Pós-classificação": 1,
+    "NDVI/índices": 2
+   },
+   "metrica": {
+    "IoU / mIoU": 20,
+    "Kappa": 12,
+    "Precisão/Recall": 1
+   },
+   "tarefa": {
+    "Detecção de mudança (binária)": 3,
+    "Séries temporais de imagens": 4,
+    "Classificação de cobertura": 2,
+    "Mineração": 2
+   }
+  },
+  "hiperparametros": {
+   "batch size": {
+    "trecho": "batch size) de 16, como indica el trabajo de Ball,",
+    "chunk": "P05_c014"
+   }
+  },
+  "github": [],
+  "frases_resultado": [
+   "A nivel general los 12 modelos bajo el esquema 1 en el entrenamiento poseen métricas de exactitud (IoU) superiores a 0.98 (TABLA I) mientras que con los datos de validación los modelos disminuyen su exactitud levemente rodeando va",
+   "Con los datos de evaluación los valores en general son buenos los cuales se encuentran entre 0.75 y 0.81 a excepción del modelo 6 el cual obtuvo un IoU de 0.72 esto puede indicar que un modelo con dicha configuración requiere de m",
+   "Id Modelo Entrenamiento Validación Evaluación Loss IoU Loss IoU Loss IoU FPN_3b_100e 0.12 0.99 0.29 0.91 0.46 0.75 FPN_3b_50e 0.14 0.99 0.30 0.90 0.45 0.76 FPN_4b_100e 0.12 0.99 0.32 0.88 0.48 0.75 FPN_4b_50e 0.14 0.99 0.30 0.89 0",
+   "Id Modelo Entrenamiento Validación Evaluación Loss IoU Loss IoU Loss IoU FPN_4b_50e 0.15 0.98 0.31 0.89 0.49 0.71 FPN_5b_75e 0.13 0.99 0.31 0.89 0.50 0.70 UNET_4b_75e 0.01 0.99 0.15 0.89 0.33 0.70 UNET_5b_75e 0.01 0.98 0.17 0.89 0"
+  ],
+  "qualidade_texto": "ok"
+ },
  "P06": {
   "paginas": 19,
   "chars_por_pagina": 3468,

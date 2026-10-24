@@ -53,7 +53,3 @@ tags: [pipeline, etapa/E05]
 | baixa | [[P137 Li 2024\|P137 Li 2024]] | A New Learning Paradigm for Foundation Model-Based Remote-Se | Novo paradigma de aprendizado para detecção de mudanças com modelo fundacional. |
 | baixa | [[P151 Lu 2025\|P151 Lu 2025]] | Vision Foundation Models in Remote Sensing: A survey | Levantamento sobre modelos fundacionais de visão em sensoriamento remoto. |
 | baixa | [[P172 Mai 2025\|P172 Mai 2025]] | Towards the next generation of Geospatial Artificial Intelli | Rumo à próxima geração de inteligência artificial geoespacial. |
-
-## Experimentos ligados
-
-

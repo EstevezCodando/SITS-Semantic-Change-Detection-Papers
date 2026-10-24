@@ -11,9 +11,9 @@ papel: ["aplicação Planet"]
 prioridade: alta
 doi: "10.3390/rs14112628"
 pdf: ""
-texto_integral: nao
-fonte_analise: "apenas metadados e comentário (sem PDF)"
-n_chunks: 0
+texto_integral: sim
+fonte_analise: "leitura profunda do texto integral (HTML aberto) + metadados"
+n_chunks: 35
 sensores: ["[[PlanetScope]]", "[[Sentinel-2]]", "[[Sentinel-1-SAR|Sentinel-1/SAR]]"]
 tarefas: []
 metodos: ["[[Random Forest]]"]
@@ -21,7 +21,8 @@ datasets: []
 metricas: []
 ferramentas: ["[[Google Earth Engine]]"]
 etapas_pipeline: ["[[E06 Modelos-base de cobertura|E06]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P07 Vizzari 2022]]"
+status_leitura: lido (profundo)
 tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 ---
 
@@ -29,9 +30,18 @@ tags: [artigo, secao/A, prioridade/alta, etapa/E06]
 
 **Marco Vizzari** · 2022 · Artigo · Remote Sensing · [publicação](https://doi.org/10.3390/rs14112628) · PDF indisponível em coleta/
 
-Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *apenas metadados e comentário (sem PDF)*
+Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *leitura profunda do texto integral (HTML aberto) + metadados*
+
+> [!success] Leitura profunda concluída: [[LP P07 Vizzari 2022]]
 
 ## O que reaproveitar
+
+- **Pipeline OB (SNIC + GLCM + RF)** como baseline barato do EXP1, inclusive em Python (scikit-image `slic`/`skimage.feature.graycomatrix` + scikit-learn), definindo janelas em **metros** (não px) para 3 m e 5 m.
+- **Fluxo de rotulagem no QGIS** com AcATaMa e pontos de um cubo de dados oficial (Brazil Data Cube) para ampliar a amostra.
+- **McNemar** para comparar classificadores no mesmo conjunto de teste; ao relatar, usar PA/UA/F por classe.
+- Regra de que **objetos + textura do PlanetScope** trazem o ganho espacial, enquanto S2/S1 acrescentam espectro/estrutura.
+
+### Extraído automaticamente
 
 - **Uso proposto:** baseline de ML para testar se o custo adicional do deep learning produz benefício real.
 
@@ -61,7 +71,12 @@ Seção: **Planet: aplicações diretas** · Prioridade: **alta** · Análise: *
 
 ## Chunks
 
-- Sem PDF em `coleta/` (acesso restrito ou bloqueado); chunking indisponível. Use o link da publicação.
+- Arquivo de chunks: [[P07 chunks]] (35 chunks; introdução 6, dados 6, métodos 11, resultados 5, discussão 5, conclusão 2)
+- Dados / área de estudo: [[P07 chunks#^P07_c007|c007]], [[P07 chunks#^P07_c008|c008]]
+- Método: [[P07 chunks#^P07_c009|c009]], [[P07 chunks#^P07_c014|c014]], [[P07 chunks#^P07_c015|c015]]
+- Hiperparâmetros / treino: [[P07 chunks#^P07_c015|c015]], [[P07 chunks#^P07_c016|c016]]
+- Resultados numéricos: [[P07 chunks#^P07_c020|c020]]
+- Limitações / discussão: [[P07 chunks#^P07_c025|c025]], [[P07 chunks#^P07_c026|c026]]
 
 ## Relações
 

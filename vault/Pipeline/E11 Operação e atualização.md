@@ -68,7 +68,3 @@ tags: [pipeline, etapa/E11]
 | baixa | [[P177 Gluski 2024\|P177 Gluski 2024]] | Remote detection of asbestos-cement roofs: Evaluating a QGIS | Avaliação de plugin QGIS para detecção remota de telhados de amianto. |
 
 *(+8 artigos de prioridade menor; veja a tag `etapa/E11`.)*
-
-## Experimentos ligados
-
-

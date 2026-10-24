@@ -4,7 +4,7 @@ tags: [hub]
 ---
 # 00 Início — Mudanças de cobertura com séries Planet
 
-Vault construído a partir de **185 artigos** (96 com texto integral analisado em `coleta/`). **Autor da coleta:** Jean Michael Estevez Alvarez.
+Vault construído a partir de **185 artigos** (97 com texto integral analisado em `coleta/`). **Autor da coleta:** Jean Michael Estevez Alvarez.
 
 ## Perguntas do piloto
 
@@ -52,21 +52,30 @@ Mapa visual: [[Pipeline.canvas]]
 
 ## Ordem de leitura (prioridade alta)
 
-- [[P01 Wagner 2023|P01 Wagner 2023]] — Mapping Tropical Forest Cover and Deforestation with Planet NICFI Satellite Images and Dee
-- [[P02 Dalagnol 2023|P02 Dalagnol 2023]] — Mapping tropical forest degradation with deep learning and Planet NICFI data
-- [[P05 Zaraza-Aguilera 2022|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Planetscope image time 
-- [[P07 Vizzari 2022|P07 Vizzari 2022]] — PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Based Land Cover Class
-- [[P10 Etten 2021|P10 Etten 2021]] — The Multi-Temporal Urban Development SpaceNet Dataset
-- [[P12 Toker 2022|P12 Toker 2022]] — DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic Change Segmentation
-- [[P13 Vincent 2024|P13 Vincent 2024]] — Satellite Image Time Series Semantic Change Detection: Novel Architecture and Analysis of 
-- [[P14 He 2024|P14 He 2024]] — Time-series land cover change detection using deep learning-based temporal semantic segmen
-- [[P18 Daudt 2019|P18 Daudt 2019]] — Multitask Learning for Large-scale Semantic Change Detection
-- [[P19 Yang 2021|P19 Yang 2021]] — Asymmetric Siamese Networks for Semantic Change Detection in Aerial Images
-- [[P46 Olofsson 2014|P46 Olofsson 2014]] — Good practices for estimating area and assessing accuracy of land change
-- [[P155 Wu 2026|P155 Wu 2026]] — GeoAI: A Python package for integrating artificial intelligence with geospatial data analy
-- [[P156 Aszkowski 2023|P156 Aszkowski 2023]] — Deepness: Deep neural remote sensing plugin for QGIS
-- [[P157 Tresson 2026|P157 Tresson 2026]] — IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited computing resources
-- [[P164 Wang 2024|P164 Wang 2024]] — Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineation Using Segment Anyt
+- [[P01 Wagner 2023|P01 Wagner 2023]] — Mapping Tropical Forest Cover and Deforestation with Planet NICFI Satellite Images and Dee · leitura: [[LP P01 Wagner 2023|profunda]]
+- [[P02 Dalagnol 2023|P02 Dalagnol 2023]] — Mapping tropical forest degradation with deep learning and Planet NICFI data · leitura: [[LP P02 Dalagnol 2023|parcial]]
+- [[P05 Zaraza-Aguilera 2022|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Planetscope image time  · leitura: [[LP P05 Zaraza-Aguilera 2022|profunda]]
+- [[P07 Vizzari 2022|P07 Vizzari 2022]] — PlanetScope, Sentinel-2, and Sentinel-1 Data Integration for Object-Based Land Cover Class · leitura: [[LP P07 Vizzari 2022|profunda]]
+- [[P10 Etten 2021|P10 Etten 2021]] — The Multi-Temporal Urban Development SpaceNet Dataset · leitura: [[LP P10 Etten 2021|profunda]]
+- [[P12 Toker 2022|P12 Toker 2022]] — DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic Change Segmentation · leitura: [[LP P12 Toker 2022|profunda]]
+- [[P13 Vincent 2024|P13 Vincent 2024]] — Satellite Image Time Series Semantic Change Detection: Novel Architecture and Analysis of  · leitura: [[LP P13 Vincent 2024|profunda]]
+- [[P14 He 2024|P14 He 2024]] — Time-series land cover change detection using deep learning-based temporal semantic segmen · leitura: [[LP P14 He 2024|parcial]]
+- [[P18 Daudt 2019|P18 Daudt 2019]] — Multitask Learning for Large-scale Semantic Change Detection · leitura: [[LP P18 Daudt 2019|profunda]]
+- [[P19 Yang 2021|P19 Yang 2021]] — Asymmetric Siamese Networks for Semantic Change Detection in Aerial Images · leitura: [[LP P19 Yang 2021|profunda]]
+- [[P46 Olofsson 2014|P46 Olofsson 2014]] — Good practices for estimating area and assessing accuracy of land change · leitura: [[LP P46 Olofsson 2014|parcial]]
+- [[P155 Wu 2026|P155 Wu 2026]] — GeoAI: A Python package for integrating artificial intelligence with geospatial data analy · *leitura pendente*
+- [[P156 Aszkowski 2023|P156 Aszkowski 2023]] — Deepness: Deep neural remote sensing plugin for QGIS · *leitura pendente*
+- [[P157 Tresson 2026|P157 Tresson 2026]] — IAMAP: Unlocking Deep Learning in QGIS for non-coders and limited computing resources · *leitura pendente*
+- [[P164 Wang 2024|P164 Wang 2024]] — Geo-Sam: Testing the Reliability and Limits of Mine Feature Delineation Using Segment Anyt · *leitura pendente*
+
+## Sínteses da leitura profunda
+
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — métricas por tarefa e armadilhas]]
+- [[Síntese — partições, vazamento e domain shift]]
+- [[Síntese — cuidados específicos com produtos Planet]]
+- [[Síntese — receitas de treino comparadas (verificadas na leitura)]]
+- [[Síntese — protocolos de rotulagem comparados]]
 
 ## Artigos por seção
 

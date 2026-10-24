@@ -42,6 +42,6 @@ tags: [pipeline, etapa/E02]
 | baixa | [[P91 Zhang 2023\|P91 Zhang 2023]] | Monitoring monthly tropical humid forest disturbances with P | Perturbações florestais mensais com mosaicos Planet NICFI em Camarões; próximo da cadência mensal do projeto. |
 | baixa | [[P105 He 2022\|P105 He 2022]] | Tracking Urbanization in Developing Regions with Remote Sens | Acompanhamento da urbanização com super-resolução espaço-temporal (SpaceNet 7). |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[Síntese — cuidados específicos com produtos Planet]]

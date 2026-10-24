@@ -61,6 +61,7 @@ tags: [pipeline, etapa/E04]
 | baixa | [[P151 Lu 2025\|P151 Lu 2025]] | Vision Foundation Models in Remote Sensing: A survey | Levantamento sobre modelos fundacionais de visão em sensoriamento remoto. |
 | baixa | [[P165 Wang 2025\|P165 Wang 2025]] | MO-SAM: Testing the reliability and limits of mine feature d | MO-SAM: confiabilidade do Geo-SAM na delineação de feições de mineração. |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — protocolos de rotulagem comparados]]

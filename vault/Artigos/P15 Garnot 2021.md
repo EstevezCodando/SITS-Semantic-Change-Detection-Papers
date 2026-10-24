@@ -78,7 +78,7 @@ Seção: **Séries temporais, edificações e transições semânticas** · Prio
 
 ## Relações
 
-- Vizinhos por entidades em comum: [[P127 Miller 2024|P127]], [[P12 Toker 2022|P12]], [[P146 Papadomanolaki 2019|P146]], [[P32 Szwarcman 2024|P32]]
+- Vizinhos por entidades em comum: [[P127 Miller 2024|P127]], [[P12 Toker 2022|P12]], [[P05 Zaraza-Aguilera 2022|P05]], [[P146 Papadomanolaki 2019|P146]]
 
 ## Anotações
 

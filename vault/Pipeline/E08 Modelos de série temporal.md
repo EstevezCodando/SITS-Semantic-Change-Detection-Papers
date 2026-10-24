@@ -47,6 +47,13 @@ tags: [pipeline, etapa/E08]
 | baixa | [[P127 Miller 2024\|P127 Miller 2024]] | Deep Learning for Satellite Image Time-Series Analysis: A re | Revisão de deep learning para séries temporais de imagens de satélite. |
 | baixa | [[P146 Papadomanolaki 2019\|P146 Papadomanolaki 2019]] | Detecting Urban Changes with Recurrent Neural Networks from  | Mudança urbana com redes recorrentes em séries Sentinel-2 (OSCD). |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[LP P10 Etten 2021]] → The Multi-Temporal Urban Development SpaceNet Dataset (nota: [[P10 Etten 2021|P10 Etten 2021]])
+- [[LP P12 Toker 2022]] → DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C (nota: [[P12 Toker 2022|P12 Toker 2022]])
+- [[LP P13 Vincent 2024]] → Satellite Image Time Series Semantic Change Detection: Novel Architect (nota: [[P13 Vincent 2024|P13 Vincent 2024]])
+- [[LP P14 He 2024]] → Time-series land cover change detection using deep learning-based temp (nota: [[P14 He 2024|P14 He 2024]])
+- [[LP P18 Daudt 2019]] → Multitask Learning for Large-scale Semantic Change Detection (nota: [[P18 Daudt 2019|P18 Daudt 2019]])
+- [[LP P19 Yang 2021]] → Asymmetric Siamese Networks for Semantic Change Detection in Aerial Im (nota: [[P19 Yang 2021|P19 Yang 2021]])
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — receitas de treino comparadas (verificadas na leitura)]]

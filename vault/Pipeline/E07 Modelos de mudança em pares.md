@@ -71,6 +71,11 @@ tags: [pipeline, etapa/E07]
 
 *(+17 artigos de prioridade menor; veja a tag `etapa/E07`.)*
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[LP P10 Etten 2021]] → The Multi-Temporal Urban Development SpaceNet Dataset (nota: [[P10 Etten 2021|P10 Etten 2021]])
+- [[LP P12 Toker 2022]] → DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C (nota: [[P12 Toker 2022|P12 Toker 2022]])
+- [[LP P18 Daudt 2019]] → Multitask Learning for Large-scale Semantic Change Detection (nota: [[P18 Daudt 2019|P18 Daudt 2019]])
+- [[LP P19 Yang 2021]] → Asymmetric Siamese Networks for Semantic Change Detection in Aerial Im (nota: [[P19 Yang 2021|P19 Yang 2021]])
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — receitas de treino comparadas (verificadas na leitura)]]

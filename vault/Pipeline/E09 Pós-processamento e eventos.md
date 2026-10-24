@@ -54,6 +54,6 @@ tags: [pipeline, etapa/E09]
 | baixa | [[P122 Cortinhas 2024\|P122 Cortinhas 2024]] | Uncontrolled Illegal Mining and Garimpo in the Brazilian Ama | Mineração ilegal (garimpo) na Amazônia brasileira; contexto de uma transição relevante ao projeto. |
 | baixa | [[P165 Wang 2025\|P165 Wang 2025]] | MO-SAM: Testing the reliability and limits of mine feature d | MO-SAM: confiabilidade do Geo-SAM na delineação de feições de mineração. |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[LP P10 Etten 2021]] → The Multi-Temporal Urban Development SpaceNet Dataset (nota: [[P10 Etten 2021|P10 Etten 2021]])

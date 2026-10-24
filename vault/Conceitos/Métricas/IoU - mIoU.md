@@ -1,7 +1,7 @@
 ---
 tipo: conceito
 categoria: metrica
-n_artigos: 42
+n_artigos: 43
 tags: [conceito, metrica]
 ---
 # IoU / mIoU
@@ -10,7 +10,7 @@ Interseção sobre união por classe; sensível a objetos pequenos.
 
 **Etapas relacionadas:** [[E10 Avaliação e incerteza|E10]]
 
-## Artigos (42)
+## Artigos (43)
 
 | Artigo | Ano | Ocorrências | Prioridade |
 |---|---|---:|---|
@@ -25,6 +25,7 @@ Interseção sobre união por classe; sensível a objetos pequenos.
 | [[P36 Shu 2025\|P36 Shu 2025]] — RB-SCD: A New Benchmark for Semantic Change Detection of Roads and Bri | 2025 | 23 | baixa |
 | [[P33 Bou 2026\|P33 Bou 2026]] — Remote Sensing Change Detection via Weak Temporal Supervision | 2026 | 22 | média |
 | [[P139 Benidir 2025\|P139 Benidir 2025]] — The Change You Want To Detect: Semantic Change Detection In Earth Obse | 2025 | 21 | baixa |
+| [[P05 Zaraza-Aguilera 2022\|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 20 | alta |
 | [[P27 Zheng 2021\|P27 Zheng 2021]] — Change Is Everywhere: Single-Temporal Supervised Object Change Detecti | 2021 | 20 | baixa |
 | [[P12 Toker 2022\|P12 Toker 2022]] — DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C | 2022 | 19 | alta |
 | [[P25 Chen 2021\|P25 Chen 2021]] — Remote Sensing Image Change Detection With Transformers | 2021 | 18 | baixa |

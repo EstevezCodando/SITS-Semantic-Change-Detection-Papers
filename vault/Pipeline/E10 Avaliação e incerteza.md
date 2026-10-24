@@ -38,6 +38,13 @@ tags: [pipeline, etapa/E10]
 | baixa | [[P79 Reed 2022\|P79 Reed 2022]] | Scale-MAE: A Scale-Aware Masked Autoencoder for Multiscale G | estudar representações quando o acervo mistura resoluções e tamanhos físicos de objetos. |
 | baixa | [[P80 Feng 2025\|P80 Feng 2025]] | BuildingSAM: A Dual-Branch Feature-Augmented Segment Anythin | candidato especializado para comparar com SAM genérico e YOLO-seg. |
 
-## Experimentos ligados
+## Leituras profundas e sínteses
 
-
+- [[LP P10 Etten 2021]] → The Multi-Temporal Urban Development SpaceNet Dataset (nota: [[P10 Etten 2021|P10 Etten 2021]])
+- [[LP P12 Toker 2022]] → DynamicEarthNet: Daily Multi-Spectral Satellite Dataset for Semantic C (nota: [[P12 Toker 2022|P12 Toker 2022]])
+- [[LP P13 Vincent 2024]] → Satellite Image Time Series Semantic Change Detection: Novel Architect (nota: [[P13 Vincent 2024|P13 Vincent 2024]])
+- [[LP P19 Yang 2021]] → Asymmetric Siamese Networks for Semantic Change Detection in Aerial Im (nota: [[P19 Yang 2021|P19 Yang 2021]])
+- [[LP P46 Olofsson 2014]] → Good practices for estimating area and assessing accuracy of land chan (nota: [[P46 Olofsson 2014|P46 Olofsson 2014]])
+- [[Síntese — decisões e hipóteses derivadas da leitura profunda]]
+- [[Síntese — métricas por tarefa e armadilhas]]
+- [[Síntese — partições, vazamento e domain shift]]

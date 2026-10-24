@@ -21,7 +21,8 @@ datasets: ["[[SpaceNet 7 (MUDS)]]", "[[DynamicEarthNet]]"]
 metricas: ["[[IoU - mIoU|IoU / mIoU]]", "[[SCS (DynamicEarthNet)]]"]
 ferramentas: []
 etapas_pipeline: ["[[E08 Modelos de série temporal|E08]]", "[[E10 Avaliação e incerteza|E10]]"]
-status_leitura: não lido
+leitura_profunda: "[[LP P13 Vincent 2024]]"
+status_leitura: lido (profundo)
 tags: [artigo, secao/B, prioridade/alta, etapa/E08, etapa/E10]
 ---
 
@@ -31,7 +32,16 @@ tags: [artigo, secao/B, prioridade/alta, etapa/E08, etapa/E10]
 
 Seção: **Séries temporais, edificações e transições semânticas** · Prioridade: **alta** · Análise: *texto integral (PDF) + metadados*
 
+> [!success] Leitura profunda concluída: [[LP P13 Vincent 2024]]
+
 ## O que reaproveitar
+
+- **Os três regimes de validação** como desenho oficial da etapa [[E03 Cubo espaço-temporal e partições]]: sem shift, shift temporal (ano futuro) e shift espacial (áreas inéditas), reportados lado a lado.
+- **Inferência com a série completa** e treino com subamostragem aleatória de meses.
+- **Arquitetura** como candidata do EXP5 (modelo de série temporal); código dos autores (SitsSCD) referenciado no artigo.
+- Evidência de que **mudança rara** exige tratar a escassez de eventos (reamostragem, perda focal, métricas por evento).
+
+### Extraído automaticamente
 
 - **Uso proposto:** fundamenta avaliar anos e áreas inéditos, em vez de apenas sortear patches da mesma paisagem.
 - **Código:** https://github.com/CUG-BEODL/TSSCD · https://github.com/VSainteuf/utae-paps · https://github.com/guanyuezhen/UFCD · https://github.com/michaeltrs/DeepSatModels

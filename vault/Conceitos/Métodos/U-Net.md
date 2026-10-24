@@ -17,6 +17,7 @@ Encoder–decoder para segmentação. Baseline dominante para cobertura arbórea
 | [[P113 Jelas 2024\|P113 Jelas 2024]] — Deforestation detection using deep learning-based semantic segmentatio | 2024 | 59 | baixa |
 | [[P09 Gonzalez-Velez 2026\|P09 Gonzalez-Velez 2026]] — Tropical dry forest land use/land cover change detection using semi-su | 2026 | 53 | baixa |
 | [[P100 Crato 2025\|P100 Crato 2025]] — Detection of rural roads from planet images using convolutional neural | 2025 | 33 | baixa |
+| [[P05 Zaraza-Aguilera 2022\|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 32 | alta |
 | [[P32 Szwarcman 2024\|P32 Szwarcman 2024]] — Prithvi-EO-2.0: A Versatile Multitemporal Foundation Model for Earth O | 2024 | 31 | baixa |
 | [[P01 Wagner 2023\|P01 Wagner 2023]] — Mapping Tropical Forest Cover and Deforestation with Planet NICFI Sate | 2023 | 27 | alta |
 | [[P127 Miller 2024\|P127 Miller 2024]] — Deep Learning for Satellite Image Time-Series Analysis: A review | 2024 | 27 | baixa |
@@ -45,7 +46,6 @@ Encoder–decoder para segmentação. Baseline dominante para cobertura arbórea
 | [[P25 Chen 2021\|P25 Chen 2021]] — Remote Sensing Image Change Detection With Transformers | 2021 | 4 | baixa |
 | [[P112 Andrade 2020\|P112 Andrade 2020]] — EVALUATION OF SEMANTIC SEGMENTATION METHODS FOR DEFORESTATION DETECTIO | 2020 | 3 | baixa |
 | [[P133 Ding 2024\|P133 Ding 2024]] — Adapting Segment Anything Model for Change Detection in VHR Remote Sen | 2024 | 3 | baixa |
-| [[P05 Zaraza-Aguilera 2022\|P05 Zaraza-Aguilera 2022]] — Change Detection over mining areas using Deep Neural Networks from Pla | 2022 | 2 | alta |
 | [[P96 Wang 2022\|P96 Wang 2022]] — An MLC and U-Net Integrated Method for Land Use/Land Cover Change Dete | 2022 | 2 | baixa |
 | [[P02 Dalagnol 2023\|P02 Dalagnol 2023]] — Mapping tropical forest degradation with deep learning and Planet NICF | 2023 | 1 | alta |
 | [[P26 Bandara 2022\|P26 Bandara 2022]] — A Transformer-Based Siamese Network for Change Detection | 2022 | 1 | média |
